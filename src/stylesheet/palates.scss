@@ -1,0 +1,129 @@
+html {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-main-green: #07e57d;
+  --color-main-gold: #fdcf1d;
+  --color-sulu: #a0ed8d;
+  --color-sunglow: #febf32;
+  --color-woodsmoke: #17171a;
+  --color-charade: #2a2d3c;
+  --color-amaranth: #ea3943;
+  --color-rosebud: #faa49e;
+  --color-shark: #21232c;
+  --color-shark2: #252b2f;
+  --color-Shark3: #20222b;
+  --color-indigo : #4B7FCD;
+  --color-red : #FF0000;
+  --color-darkpink : #ED017F;
+--color-red-orange: #FE4226;
+}
+
+.text-black {
+  color: var(--color-black);
+}
+.text-white {
+  color: var(--color-white);
+}
+.text-main-green {
+  color: var(--color-main-green);
+}
+.text-main-gold {
+  color: var(--color-main-gold);
+}
+.text-sulu {
+  color: var(--color-sulu);
+}
+.text-sunglow {
+  color: var(--color-sunglow);
+}
+.text-woodsmoke {
+  color: var(--color-woodsmoke);
+}
+.text-charade {
+  color: var(--color-charade);
+}
+.text-amaranth {
+  color: var(--color-amaranth);
+}
+.text-rosebud {
+  color: var(--color-rosebud);
+}
+.text-shark {
+  color: var(--color-shark);
+}
+.text-indigo {
+  color: var(--color-indigo);
+}
+.text-red {
+  color: var(--color-red);
+}
+.text-darkpink {
+  color: var(--color-darkpink);
+}
+.text-main-gradient {
+  background: linear-gradient(
+    to right,
+    #72f6d1 12%,
+    #07e57d 33%,
+    #a0ed8d 16%,
+    #fed365 41%,
+    #faa49e 91%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22.731px;
+  line-height: 19px;
+}
+
+.bg-charade {
+  background-color: var(--color-charade);
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.bg-green {
+  background-color: var(--color-main-green);
+}
+.bg-main-green {
+  background: rgb(7, 229, 125);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 229, 125, 1) 0%,
+    rgba(7, 229, 125, 1) 25%,
+    rgba(160, 237, 141, 1) 50%,
+    rgba(254, 211, 101, 1) 75%,
+    rgba(250, 164, 158, 1) 100%
+  );
+}
+.bg-shark2 {
+  background-color: var(--color-shark2);
+}
+.bg-shark3 {
+  background-color: var(--color-Shark3);
+}
+.bg-green-gradient {
+  background: linear-gradient(
+    90deg,
+    #07e67d 0%,
+    #07e57d 33.84%,
+    #a0ed8d 66.1%,
+    #fed365 100.46%,
+    #faa49e 100.47%
+  );
+  box-shadow: 0px 0px 46.9898px rgba(14, 173, 98, 0.3);
+  border-radius: 7.51836px;
+}
+.bg-dark-gradient {
+  background: rgb(38, 44, 48);
+  background: linear-gradient(
+    90deg,
+    rgba(38, 44, 48, 1) 0%,
+    rgba(30, 34, 38, 1) 100%
+  );
+}
+.prelative {
+  position: relative;
+}

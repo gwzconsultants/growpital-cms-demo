@@ -6,7 +6,7 @@ import Logo from "../assets/img/logo.png";
 const Header = () => {
     return (
         <>
-            <Navbar expand="lg" className="py-3 fixed-top" data-aos="zoom-in-down">
+            <Navbar expand="lg" className="py-3 fixed-top " data-aos="zoom-in-down">
                 <Container>
                     <Navbar.Brand href="/" className="d-none d-lg-block">
                         <Image src={Logo} className="img-fluid" alt="" />
@@ -33,7 +33,7 @@ const Header = () => {
                             </NavDropdown>
                             <Nav.Link href="/blog">Blog</Nav.Link>
                             <Nav.Link href="/faqs">FAQs</Nav.Link>
-                            <Nav.Link href="/contact">Contact-us</Nav.Link>
+                            <Nav.Link href="/contact">Contact Us</Nav.Link>
 
                         </Nav>
                         <div className="d-flex d-none d-md-block">

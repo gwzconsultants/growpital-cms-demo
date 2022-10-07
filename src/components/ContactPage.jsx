@@ -49,28 +49,28 @@ const ContactPage = () => {
                                 <h1 className='fs-48 fw-bold mb-4'>Contact Us</h1>
                                 <p className='mb-4'>Would you like to speak to one of our financial advisers over the phone? Just submit your details and we’ll be in touch shortly. You can also e-mail us for any further concern.</p>
                             </div>
+                            <div className='contact-from'>
+                                <Form>
+                                    <Form.Group className="mb-5" controlId="exampleForm.ControlInput1">
 
-                            <Form>
-                                <Form.Group className="mb-5" controlId="exampleForm.ControlInput1">
+                                        <Form.Control size="lg" type="name" placeholder="name" />
+                                    </Form.Group>
+                                    <Form.Group className="mb-5" controlId="exampleForm.ControlInput1">
 
-                                    <Form.Control size="lg" type="name" placeholder="name" />
-                                </Form.Group>
-                                <Form.Group className="mb-5" controlId="exampleForm.ControlInput1">
+                                        <Form.Control size="lg" type="tel" placeholder="phone number" pattern="[0-9]{5}-[0-9]{5}" />
+                                    </Form.Group>
+                                    <Form.Group className="mb-5" controlId="exampleForm.ControlInput1">
 
-                                    <Form.Control size="lg" type="tel" placeholder="phone number" pattern="[0-9]{5}-[0-9]{5}" />
-                                </Form.Group>
-                                <Form.Group className="mb-5" controlId="exampleForm.ControlInput1">
+                                        <Form.Control size="lg" type="email" placeholder="Email" />
+                                    </Form.Group>
+                                    <Form.Group className="mb-5" controlId="exampleForm.ControlTextarea1">
 
-                                    <Form.Control size="lg" type="email" placeholder="Email" />
-                                </Form.Group>
-                                <Form.Group className="mb-5" controlId="exampleForm.ControlTextarea1">
+                                        <Form.Control as="textarea" placeholder="Massage" rows={3} />
+                                    </Form.Group>
+                                </Form>
 
-                                    <Form.Control as="textarea" placeholder="Massage" rows={3} />
-                                </Form.Group>
-                            </Form>
-
-                            <button className="main-btn maincolor mb-2">Submit</button>
-
+                                <button className="main-btn maincolor mb-2">Submit</button>
+                            </div>
 
                         </Col>
                     </Row>

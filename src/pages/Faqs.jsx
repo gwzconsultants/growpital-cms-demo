@@ -7,7 +7,10 @@ const Faqs = () => {
   return (
     <>
     <Header />
+    <div className='mt-5 py-5'>
+
     <FaqsPage />
+    </div>
     <Footer />
     </>
   )

@@ -5,6 +5,7 @@
 .navbar {
   background-color: var(--color-woodsmoke);
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 32%);
   .navbar-toggler,
   .navbar-toggler:focus,
   .navbar-toggler:hover {
@@ -17,6 +18,10 @@
       background-image: url(../assets/img/Menu.png);
     }
   }
+
+
+  
+
   .navbar-nav {
     .nav-link {
       font-family: "Poppins";
@@ -72,6 +77,8 @@
       }
     }
   }
+
+ 
 }
 .navbar.shrink {
   background-color: var(--color-blue-zodiac);
@@ -121,6 +128,8 @@
         background-color: var(--color-gold);
       }
     }
+
+
   }
   .offcanvas-header {
     padding: 1rem 3rem;
@@ -145,8 +154,8 @@
   }
 }
 
-.hero-area {
-}
+// .hero-area {
+// }
 
 .darkcard {
   background-color: transparent;
@@ -392,23 +401,163 @@ footer {
     }
   }
 }
-
-.form-control{
-  background-color: transparent;
-  color: white;
-}
-.form-control::placeholder{
-  color: white;
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.singupBtn{
-  border: none;
+.contact-from{
+  .form-control{
+    background-color: transparent;
+    color: white;
+  }
+  .form-control::placeholder{
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
 }
 
-.translate-middle-y {
-  transform: translateY(100%) !important;
-  transition-property:all ;
-  transition-timing-function:cubic-bezier(4, 0.8, -0.5, 0.68)
+
+
+// faqs search button 
+
+.faqs-search{
+  .form-control{
+    box-shadow: none;
+    border-top-right-radius:0 ;
+    border-bottom-right-radius:0 ;
+    
+  }
+
+  .searchbtn{
+    border-top-left-radius:0 ;
+    border-bottom-left-radius:0 ;
+    border:1px solid #ced4da;
+    
+  }
+  .searchbtn:hover{
+    border:1px solid #ced4da
+  }
+}
+
+// for faqs
+
+.faqs-accordian {
+  .accordion-item {
+    border: 1px solid var(--color-charade);
+    margin-bottom: 0;
+    padding: 3px;
+    border-radius: 6px;
+    &:first-child,
+    &:last-child {
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 1.22411px 1.22411px 6.12057px rgba(32, 34, 43, 0.2),
+        -1.22411px -1.22411px 6.12057px rgba(32, 34, 43, 0.2),
+        1.22411px -1.22411px 6.12057px rgba(32, 34, 43, 0.9),
+        -1.22411px 1.22411px 6.12057px rgba(32, 34, 43, 0.9);
+      border-radius: 7.34468px;
+    }
+    .accordion-header {
+      border: 0;
+      .accordion-button,
+      .accordion-button:focus {
+        border: 1px solid transparent;
+        outline: none;
+        box-shadow: none;
+        padding: 1rem 1rem;
+        background: rgb(38, 44, 48);
+        background: linear-gradient(
+          90deg,
+          rgba(38, 44, 48, 1) 0%,
+          rgba(30, 34, 38, 1) 100%
+        );
+        font-size: 22px;
+        font-weight: 600;
+        border-radius: 6px 6px 0px 0px;
+        color: var(--color-white);
+        span {
+          color: var(--color-main-gold);
+        }
+        &::after {
+          background-image: url(../assets/img/10.png);
+          height: 30px;
+          width: 30px;
+          background-color: var(--color-woodsmoke);
+          box-shadow: 0px 0px 8px 3px #3b4451;
+          border-radius: 50%;
+          background-position: 8px 10px;
+          background-size: 15px;
+        }
+      }
+
+      .accordion-button.collapsed {
+        padding: 1rem 1rem;
+        background: rgb(38, 44, 48);
+        background: linear-gradient(
+          90deg,
+          rgba(38, 44, 48, 1) 0%,
+          rgba(30, 34, 38, 1) 100%
+        );
+        font-size: 22px;
+        font-weight: 600;
+        border: 1px solid var(--color-charade);
+        border-radius: 6px;
+        color: var(--color-white);
+        span {
+          color: var(--color-main-gold);
+        }
+      }
+      @media (max-width: 576px) {
+        .accordion-button,
+        .accordion-button:focus,
+        .accordion-button.collapsed {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .accordion-body {
+      color: var(--color-white);
+      font-size: 17px;
+      font-weight: 400;
+      text-align: left;
+      // padding: 0.5rem 1rem 1.5rem 3.75rem;
+      border: 0;
+      background: rgb(38, 44, 48);
+      background: linear-gradient(
+        90deg,
+        rgba(38, 44, 48, 1) 0%,
+        rgba(30, 34, 38, 1) 100%
+      );
+      border: 1px solid transparent;
+      border-radius: 0px 0px 6px 6px;
+    }
+    @media (max-width: 576px) {
+      .accordion-body {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+// signup btn
+.signup-page{
+
+  .darkcard {
+    background-color: transparent;
+    margin-bottom: 4px;
+    border: 1px solid var(--color-shark);
+    .darkcard-icon {
+      height: 50px;
+      width: 50px;
+      background-color: var(--color-woodsmoke);
+      box-shadow: -5.89397px -5.89397px 17.6819px #3b4451,
+        5.89397px 5.89397px 17.6819px #000000;
+      border-radius: 11.7879px;
+    }
+  }
+  
 }

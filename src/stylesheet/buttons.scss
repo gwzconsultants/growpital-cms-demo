@@ -100,12 +100,25 @@
   color: var(--color-charade);
 }
 
+// signup mobile button  page
+.signup-page{
+  .signup-trans{
+    transition: all;
+    // transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .translate-middle-y{
+    transform: translateY(100%) !important;
+   
+  }
+  .singupBtn{
+    border: none;
+    background-color: black;
+    padding:8px 8px;
+  }
+  }
 
-.singupBtn{
-  border: none;
-  background-color: black;
-  padding:8px 8px;
-}
+
 
 
 @media (max-width:750px) {
@@ -119,13 +132,12 @@
   }
 }
 
-// @media  (max-width:550px) {
+
 .main-btn {
-  width: 250px;
+  width: 225px;
   font-size: 15px;
   height: 56px;
 }
 
 
-// }
 

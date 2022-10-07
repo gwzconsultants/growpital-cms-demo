@@ -378,7 +378,7 @@ const Home = () => {
                 boisterous the attachment.
               </p>
               <a href="/" className="fs-16 fw-700 text-white">More FAQs</a>
-              <div className="mt-5">
+              <div className="mt-5 d-none d-md-block ">
               <ButtonStar />
               </div>
             </Col>

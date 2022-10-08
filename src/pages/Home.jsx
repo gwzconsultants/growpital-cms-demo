@@ -36,8 +36,8 @@ const Home = () => {
         <Container>
           <Row className="d-flex justify-content-center align-items-center py-0 py-md-5 mt-0 mt-lg-5" data-aos="zoom-in-up">
             <Col xs={12} md={12} lg={7} className="text-center text-md-start">
-              <div className="bg-shark3 rounded py-3 px-3 px-md-4 d-inline-block mb-5 mb-md-3">
-                <h5 className="text-main-gradient fw-500 fs-22 fs-sm-20 mb-0">
+              <div className="bg-shark3 rounded py-3 px-1 px-md-4 d-inline-block mb-5 mb-md-3">
+                <h5 className="text-main-gradient fw-500 fs-22 fs-sm-18 mb-0">
                   <Image src={HeroIcon5} className="img-fluid me-2" alt="" />
                   Agriculture Investments
                   <Image src={HeroIcon4} className="img-fluid ms-2" alt="" />

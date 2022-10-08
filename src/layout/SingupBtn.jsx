@@ -15,9 +15,9 @@ const SingupBtn = () => {
     return (
         <>
             <section className='signup-page signup-trans'>
-                <Container className={`fixed-bottom ${scrollDirection === "down" ? "translate-middle-y" : "bottom-25px"} d-block d-sm-none`}  >
+                <Container className={`fixed-bottom ${scrollDirection === "down" ? "translate-middle-y" : "bottom-12"} d-block d-sm-none`}  >
                     <Row >
-                        <Col className='d-flex align-items-center singupBtn mb-3'>
+                        <Col className='d-flex align-items-center singupBtn mb-0'>
                             <div className="mx-2">
                                 <Link to="/singup"> <Button className="main-btn maincolor  fs-11">Signup/Login</Button></Link>
                             </div>

@@ -118,7 +118,7 @@ const TestiSlider = () => {
   return (
     <div>
       <div className="testislider">
-        <Slider {...settings}>
+        <Slider {...settings} >
           {Testimoni.map((Items) => (
             <div key={Items.Id} className="mx-2">
               <Card className="darkcard mx-2 mb-md-4 p-0 rounded text-start text-white">

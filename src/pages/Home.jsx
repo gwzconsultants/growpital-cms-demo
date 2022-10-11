@@ -118,7 +118,7 @@ const Home = () => {
           <Row className="d-flex justify-content-center align-items-center pb-0 pb-md-5">
             <Col xs={12} md={12} lg={6} className="text-center text-md-start">
               <p className="text-uppercase fs-18 fw-500 text-main-green" data-aos="zoom-in-up">
-                <BsFillCircleFill size={8} className="me-1" /> wHAT ARE
+                <BsFillCircleFill size={8} className="me-1" /> WHAT ARE
                 GROWPITAL INVESTMENTS LIKE?
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" data-aos="zoom-in-up">
@@ -228,12 +228,12 @@ const Home = () => {
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
               <p className="text-uppercase fs-18 fw-500 text-main-green" data-aos="zoom-in-up">
-                <BsFillCircleFill size={8} className="me-1" /> WANT TO MEET OUR
-                TEAM
+                <BsFillCircleFill size={8} className="me-1" />CALCULATE YOUR RETURNS ON INVESTMENT
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" data-aos="zoom-in-up">
-                The superstar bheind
-                <span className="text-main-green"> Growpital</span>
+              Estimate your
+                <span className="text-main-green">  Earning</span>
+                before Investing
               </h2>
             </Col>
           </Row>

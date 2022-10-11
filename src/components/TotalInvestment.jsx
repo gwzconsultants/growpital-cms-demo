@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Col, Image, Row, ProgressBar } from "react-bootstrap";
+import {  Col, Row, ProgressBar } from "react-bootstrap";
 
 const TotalInvestment = () => {
   return (

@@ -6,9 +6,8 @@ import Slider from "react-slick";
 
 
 
-const Superstars = (props) => {
+const SuperstarsAbout = (props) => {
   var settings = {
-    className: "center",
     responsive: [
      
        {
@@ -67,13 +66,29 @@ const Superstars = (props) => {
       SubTitle:
         "During the performance review process, you will measure an employee’s performance relative to a set period.",
     },
-  ];
+    {
+      Id: "5",
+      Img: Start1,
+      Title: "Rajeev Malviya",
+      Designa: "Directore",
+      SubTitle:
+        "During the performance review process, you will measure an employee’s performance relative to a set period.",
+    },
+    {
+      Id: "6",
+      Img: Start1,
+      Title: "Rajeev Malviya",
+      Designa: "Directore",
+      SubTitle:
+        "During the performance review process, you will measure an employee’s performance relative to a set period.",
+    },
+  ]
   return (
-    < >
-     {/* <section className="">  */}
-     
+    <>
+     <div className="superstarsAbout"> 
+     <Row>
         {SuperStars.map((Items) => (
-          <Col md={12} lg={6} key={Items.Id} data-aos="zoom-in-up" className="d-none d-md-block">
+          <Col md={6}  key={Items.Id}  className="d-none d-lg-block">
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
               <Card.Body className="m-1 bg-dark-gradient rounded p-4">
                 <Row>
@@ -97,11 +112,12 @@ const Superstars = (props) => {
             </Card>
           </Col>
         ))}
-        {/* </section> */}
+        </Row>
 
-       <Slider {...settings} className="d-md-none" >
+
+       <Slider {...settings} className="d-lg-none" >
      {SuperStars.map((Items) => (
-          <Col md={12} lg={6} key={Items.Id} data-aos="zoom-in-up">
+          <Col md={12} lg={6} key={Items.Id} >
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
               <Card.Body className="m-1 bg-dark-gradient rounded p-4">
                 <Row>
@@ -126,9 +142,9 @@ const Superstars = (props) => {
           </Col>
         ))}
         </Slider>
-
+        </div>
     </>
   );
 };
 
-export default Superstars;
+export default SuperstarsAbout;

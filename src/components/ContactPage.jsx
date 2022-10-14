@@ -13,8 +13,8 @@ import {
 const ContactPage = () => {
     return (
         <>
-
-            <section>
+            <div className='contact-us' >
+            <section className=''>
                 <Container fluid className='my-5'>
                     <div>
                         <Image src={contactImg} alt="" className='img-fluid' />
@@ -28,7 +28,7 @@ const ContactPage = () => {
                         <Col md={5} className="px-4 px-md-5 mb-5">
                             <div className='d-flex flex-column '>
 
-                                <h1 className='fw-bold fs-48 mb-4'>Get in touch</h1>
+                                <h1 className='fw-bold fs-md-48 fs-40 mb-4'>Get in touch</h1>
                                 <div className='d-inline-flex mb-4'><img src={map_mark} alt="" className='img-fluid me-3 mb-4' /><p className='ms-1'>S-2, V Cube Lavender, Plot 166A, Vishvesariya Nagar, Gopalpura Bypass, Jaipur RJ 302018  </p></div>
                                 <div className='d-inline-flex mb-4'><img src={call} alt="" className='img-fluid me-3 mb-4' /><p className='me-5'>+91-7231844488</p></div>
                                 <div className='d-inline-flex mb-4'><i className='fas fa-at me-4 mt-1' /><p className='me-5'>info@growpital.com</p></div>
@@ -46,24 +46,24 @@ const ContactPage = () => {
                         <Col md={7} className="px-4 px-md-5">
 
                             <div>
-                                <h1 className='fs-48 fw-bold mb-4'>Contact Us</h1>
+                                <h1 className='fs-md-48 fs-40 fw-bold mb-4'>Contact Us</h1>
                                 <p className='mb-4'>Would you like to speak to one of our financial advisers over the phone? Just submit your details and we’ll be in touch shortly. You can also e-mail us for any further concern.</p>
                             </div>
                             <div className='contact-from'>
                                 <Form>
-                                    <Form.Group className="mb-5" controlId="exampleForm.ControlInput1">
+                                    <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
 
                                         <Form.Control size="lg" type="name" placeholder="name" />
                                     </Form.Group>
-                                    <Form.Group className="mb-5" controlId="exampleForm.ControlInput1">
+                                    <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
 
                                         <Form.Control size="lg" type="tel" placeholder="phone number" pattern="[0-9]{5}-[0-9]{5}" />
                                     </Form.Group>
-                                    <Form.Group className="mb-5" controlId="exampleForm.ControlInput1">
+                                    <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
 
                                         <Form.Control size="lg" type="email" placeholder="Email" />
                                     </Form.Group>
-                                    <Form.Group className="mb-5" controlId="exampleForm.ControlTextarea1">
+                                    <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
 
                                         <Form.Control as="textarea" placeholder="Massage" rows={3} />
                                     </Form.Group>
@@ -76,6 +76,7 @@ const ContactPage = () => {
                     </Row>
                 </Container>
             </section>
+            </div>,
         </>
     )
 }

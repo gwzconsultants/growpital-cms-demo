@@ -92,6 +92,9 @@
 .fs-56{
     font-size: 56px;
 }
+.fs-164{
+    font-size:164px;
+}
   
 .lh-18{
     line-height: 18px;
@@ -157,6 +160,9 @@
         font-size: calc(var(--font-size-md) + 0.125rem);
     }
     
+    .fs-164{
+        font-size: calc(var(--font-size-md) - 0.125rem);
+    }
 
  }
 

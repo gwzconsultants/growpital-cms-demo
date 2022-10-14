@@ -7,7 +7,7 @@ import upi from "../assets/img/upi.png"
 const Footer = () => {
   return (
     <>
-      <footer className="py-5 mt-3" data-aos="zoom-in-up">
+      <footer className="py-5 mt-3">
         <Container>
           <Row>
             <Col xs={12} md={6} lg={3}>
@@ -74,10 +74,10 @@ const Footer = () => {
                     <Nav.Link>Investors</Nav.Link>
                   </Nav.Item>
                   <Nav.Item className="py-2">
-                    <Nav.Link> Privacy Policy</Nav.Link>
+                    <Nav.Link href="/privacy-policy"> Privacy Policy</Nav.Link>
                   </Nav.Item>
                   <Nav.Item className="py-2">
-                    <Nav.Link>Terms of Use</Nav.Link>
+                    <Nav.Link href="/terms">Terms of Use</Nav.Link>
                   </Nav.Item>
                   <Nav.Item className="py-2">
                     <Nav.Link>Disclaimer</Nav.Link>

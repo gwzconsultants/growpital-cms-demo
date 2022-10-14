@@ -23,10 +23,13 @@ import HeroIcon5 from "../assets/img/16.png";
 import CardIcon1 from "../assets/img/4.png";
 import CardIcon2 from "../assets/img/5.png";
 import CardIcon3 from "../assets/img/9.png";
+
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
 
 const Home = () => {
+ 
+
   return (
     <>
       <Header />
@@ -105,7 +108,7 @@ const Home = () => {
               md={12}
               lg={5}
               className="text-center text-lg-end mt-lg-0 mt-md-5 mt-5"
-              
+
             >
               <Image src={mobile} className="img-fluid" alt="" />
             </Col>
@@ -140,26 +143,26 @@ const Home = () => {
                 </div>
               </div>
               <div>
-              <ButtonStar/>
+                <ButtonStar />
               </div>
             </Col>
             <Col xs={12} md={12} lg={6} className="text-center text-md-end mt-5 mt-md-5 mt-lg-0">
               <Row className="d-flex justify-content-center align-items-center">
                 <Col md={6}>
                   <CardDark
-                  Cardicon={CardIcon1}
+                    Cardicon={CardIcon1}
                     Title="Assured Growth "
                     SubTitle="Free from Stock Mad...rash, As safe as bank Fixed Deposits."
                   />
                   <CardDark
-                  Cardicon={CardIcon3}
+                    Cardicon={CardIcon3}
                     Title="Safe, Secure"
                     SubTitle="Our team is dedicated to support you anytime, anywhere."
                   />
                 </Col>
                 <Col md={6}>
                   <CardDark
-                  Cardicon={CardIcon2}
+                    Cardicon={CardIcon2}
                     Title="Consistent Returns"
                     SubTitle="We providing much higher returns than FD, Bank and several mutual funds."
                   />
@@ -208,11 +211,8 @@ const Home = () => {
             </Col>
           </Row>
           <Row className="d-flex justify-content-center align-items-start pt-5">
-            <Col xs={12} md={12} lg={6} className="text-center text-lg-start mb-5 mb-lg-0" data-aos="zoom-in-up">
-              <Image src={mobile} className="img-fluid w-75" alt="" />
-            </Col>
-            <Col xs={12} md={12} lg={6} className="text-center text-md-end" data-aos="zoom-in-up">
-              <Accordian Display_Sr_No="text-main-gold me-3"/>
+            <Col className="text-center text-md-end" data-aos="zoom-in-up">
+              <Accordian Display_Sr_No="text-main-gold me-3" />
             </Col>
           </Row>
           <Row>
@@ -231,8 +231,8 @@ const Home = () => {
                 <BsFillCircleFill size={8} className="me-1" />CALCULATE YOUR RETURNS ON INVESTMENT
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" data-aos="zoom-in-up">
-              Estimate your
-                <span className="text-main-green">  Earning</span>
+                Estimate your
+                <span className="text-main-green">  Earning </span>
                 before Investing
               </h2>
             </Col>
@@ -242,7 +242,7 @@ const Home = () => {
               <RangeProgressBar />
             </Col>
             <Col xs={12} md={12} lg={6} className="text-center text-md-start" data-aos="zoom-in-up">
-              <TotalInvestment/>
+              <TotalInvestment />
             </Col>
           </Row>
           <Row>
@@ -333,7 +333,7 @@ const Home = () => {
               </h2>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-center align-items-start pt-5">
+          <Row className="d-flex justify-content-center align-items-start pt-5 superstars">
             <Superstars />
           </Row>
         </Container>
@@ -379,12 +379,12 @@ const Home = () => {
               </p>
               <a href="/" className="fs-16 fw-700 text-white">More FAQs</a>
               <div className="mt-5 d-none d-md-block ">
-              <ButtonStar />
+                <ButtonStar />
               </div>
             </Col>
             <Col xs={12} md={12} lg={6} className="text-center text-lg-end mt-5 mt-lg-0">
               <div className="faq-accordian" data-aos="zoom-in-up">
-              <Accordian Display_Sr_No="text-main-gold me-3 d-none"/>
+                <Accordian Display_Sr_No="text-main-gold me-3 d-none" />
               </div>
             </Col>
           </Row>

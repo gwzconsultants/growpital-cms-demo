@@ -7,8 +7,12 @@ import Header from '../layout/Header'
 const Contact = () => {
   return (
     <>
+
     <Header />
+
+   
     <ContactPage />
+  
     <Footer/>
     </>
   )

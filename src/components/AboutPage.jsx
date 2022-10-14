@@ -1,57 +1,62 @@
+
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Card, Col, Container, Image, Row } from 'react-bootstrap'
+
 import {
-    faqspage,
-    // faqsimg1,
-    // faqsimg2,
+
+
+    team,
+    eco,
+    strong
 } from "../assets/img/contactimg"
 
+
+
 const AboutPage = () => {
+    const Abouter = [
+        {
+            Id: "",
+            Title: "Strong Execution",
+            content: "Tech driven and process orientated farm projects with no default till date. ",
+            Img: strong
+        },
+        {
+            Id: "",
+            Title: "Economies of Scale",
+            content: "850+ Acres of farm portfolio",
+            Img: eco
+        },
+        {
+            Id: "",
+            Title: "Strong Team",
+            content: "Cumulative experience in Agriculture, management, finance, marketing and operations.",
+            Img: team
+        },
+    ];
     return (
         <>
-            <section className='my-5' >
-                <Container fluid >
-                    <Row >
-                        <Col>
-                            <div className='position-relative'>
-                                <img src={faqspage} alt="" className='img-fluid mt-5' />
-                                <div className='position-absolute top-50 start-0 translate-middle'>
-                                    <h1 className=''>About us</h1>
-                                    <p>Fusce gravida cursus ante nec fringilla. Curabitur hendrerit
-                                        <br />pretium auctor. Mauris sit amet aliquet nulla.</p>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section className='mb-3 text-start text-white'>
-                <Container>
-                    <div>
-                        <p>We are leading in agriculture investment</p>
-                        <h1>Farm investments demystified!</h1>
-                        <p>
-                            Growpital was incepted to radically democratize farm investment by providing access to high profit
-                            opportunities to retail investors. We Firmly believe that agriculture is a safe, stable and attractive long-term
-                            investment for everyone, if invested with right projects.
-                        </p>
-                        <button className="main-btn maincolor mb-3 my-3">Submit</button>
 
-                    </div>
-                </Container>
-            </section>
 
             <section>
-                <Container>
-                    <Row>
-                        <Col >
-                            <Row>
-                                <Col md={6}></Col>
-                                <Col md={6}></Col>
-                            </Row>
-                        </Col>
+                <Container className='text-white'>
 
-                        <Col ></Col>
+                    <Row>
+                        {Abouter.map((item, index) => (
+                            <Col xs={12} md={12} lg={4} className="d-flex justify-content-center  ps-md-5 ps-lg-3" key={index}>
+                                <Card className=" text-center darkcard rounded p-1 d-flex mb-3" style={{ width: '28rem' }} >
+                                    <Card.Body className=" bg-dark-gradient ">
+                                        <Image src={item.Img} className="img-fluid my-3" alt="" />
+                                        <div className='mt-3'>
+                                            <Card.Title className="fw-600 fs-22 text-white text-uppercase">
+                                                {item.Title}
+                                            </Card.Title>
+
+                                            <Card.Text className="fw-500 fs-14 text-white text-uppercase">{item.content}</Card.Text>
+                                        </div>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                        ))}
                     </Row>
                 </Container>
             </section>

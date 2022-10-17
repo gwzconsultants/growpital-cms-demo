@@ -54,40 +54,14 @@ const SuccessSlider = styled(Slider)(({ theme }) => ({
  
 }));
 
-// const finalTheme = createTheme({
-//   overrides: {
-//     MuiTableCell: {
-//       root: {
-//         paddingTop: 3,
-//         paddingBottom: 3,
-//         "&:last-child": {
-//           paddingRight: 50
-//         }
-//       }
-//     },
-//     MuiSlider: {
-//       markLabel: {
-//         color: "red",
-//         transform: "none",
-//         "&:last-child": {
-//           color: "green",
-//           transform: "translateX(-100%)"
-//         }
-//       },
-//       markLabelActive: {
-//         color: "red"
-//       }
-//     }
-//   }
 
-    
-// });
 
 
 const RangeProgressBar = () => {
   const [value, setValue] = useState(0);
   const [calculetOne, setCalculetOne] = useState(500)
   const [calculetThree, setCalculetThree] = useState(1500)
+  // const[newValue,setNewValue] = useState()
 
   const rupee_format = (str) => {
     if (str) {
@@ -105,56 +79,51 @@ const RangeProgressBar = () => {
 
 
   const scale = (value) => {
-
     const previousMarkIndex = value;
     const previousMark = marks[previousMarkIndex];
-    const remainder = value % 1;
+    const remainder = value % 1
     if (remainder === 0) {
 
-      return previousMark.scaledValue;
+     return previousMark.scaledValue;
     }
 
-    const nextMark = marks[previousMarkIndex + 1];
-    console.log(nextMark)
-    const increment = (nextMark.scaledValue - previousMark.scaledValue) / 1;
-    return remainder * increment + previousMark.scaledValue;
-
+   
   };
 
+ 
+
   const roi = (value) => {
-    const previousMarkIndex = value;
+    const previousMarkIndex = value/1;
     const previousMark = marks[previousMarkIndex];
     const remainder = value % 1;
     if (remainder === 0) {
       return  previousMark.roi;
     } 
-    const nextMark = marks[previousMarkIndex + 1];
-    const increment = (nextMark.scaledValue - previousMark.scaledValue) / 1;
-    return remainder * increment + previousMark.scaledValue;
+    
   }
 
   const name = (value) => {
     const previousMarkIndex = value;
     const previousMark = marks[previousMarkIndex];
     const remainder = value % 1;
-    console.log(remainder)
     if (remainder === 0) {
+   
       return  previousMark.name;
-    } 
-    const nextMark = marks[previousMarkIndex - 1];
-    const increment = (nextMark.scaledValue - previousMark.scaledValue) / 1;
-    return remainder * increment + previousMark.scaledValue;
+    }
+   
   }
+  const scaleValue = scale(value) 
+  const scaleRoi = roi(value)
 
+  const handleChangeCommit =() =>{
 
+    setCalculetOne( ((scaleValue * scaleRoi / 100) * 1))
+    setCalculetThree(((scale(value) * roi(value)) / 100) * 3);
+  }
 
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    setCalculetOne(((scale(value) * roi(value)) / 100) * 1);
-    // console.log(scale(value))
-    // console.log( roi(value))
-    setCalculetThree(((scale(value) * roi(value)) / 100) * 3);
 
   };
 
@@ -169,7 +138,7 @@ const RangeProgressBar = () => {
             <div className="text-center">
               <h2 className="text-main-green fw-600 fs-30 text-capitalize mb-3 mb-md-3">
                 Investment Amount {" "}
-                <span className="text-main-gold">  ₹ { rupee_format(scale(value))}</span>
+                <span className="text-main-gold">  ₹ { rupee_format(scaleValue)}</span>
               </h2>
               <p className="fs-14 fw-500 text-white my-4">
                 Move the slider to change thd investment amount
@@ -180,7 +149,7 @@ const RangeProgressBar = () => {
               {/* <ThemeProvider theme={finalTheme}> */}
                 <Box  >
                
-                  <SuccessSlider marks={marks} min={0} step={1} max={6} value={value} scale={scale} onChange={handleChange} valueLabelDisplay="auto" aria-labelledby="non-linear-slider" />
+                  <SuccessSlider marks={marks} min={0} step={1} max={6} value={value} scale={scale}  onChange={handleChange} onChangeCommitted={handleChangeCommit}  valueLabelDisplay="off" aria-labelledby="non-linear-slider" />
                   {/* <Form.Range value={value} onChange={handleChange}/> */}
                 </Box>
                
@@ -209,7 +178,7 @@ const RangeProgressBar = () => {
             <Row className="pt-4">
               <Col className="text-center">
                 <h2 className="text-main-green fw-600 fs-30 text-capitalize mb-1">
-                  {roi(value)}%
+                  {scaleRoi}%
                 </h2>
                 <p className="fs-18 fw-500 text-white mb-4 mb-md-0">ROI</p>
               </Col>

@@ -14,10 +14,6 @@ const Accordian = (props) => {
     setIndex(selectedIndex);
   };
 
-  const handleClick =()=>{
-    setIndex()
-    
-  }
 
  
   const AccorianItems = [
@@ -95,14 +91,14 @@ const Accordian = (props) => {
 
         </Col>
         <Col xs={12} md={12} lg={6} className="text-center text-md-end" >
-          <Accordion activeKey={index} className="home-accordian" onClick={handleClick} >
+          <Accordion activeKey={index} className="home-accordian"  >
             {AccorianItems.map((Items) => (
               <Accordion.Item
                 eventKey={Items.Id}
                 key={Items.Id}
                 className="mb-3 bg-transparent"
               >
-                <Accordion.Header className="text-white fw-600 fs-22">
+                <Accordion.Header className="text-white fw-600 fs-22" onClick={()=>{setIndex(Items.Id);}}>
                   <span className={props.Display_Sr_No}>0{Items.Id}</span>{" "}
                   {Items.Title}
                 </Accordion.Header>

@@ -53,7 +53,7 @@ const Home = () => {
                   <BsArrowRight /> Tax Free
                 </span>
               </h1>
-              <p className="text-white fw-400 fs-24 m-3 mb-md-4 py-2">
+              <p className="text-white fw-400 fs-24 my-3 mb-md-4 py-2">
                 Diversify your portfolio with safe agri-investments.
               </p>
               <div className="px-5 px-lg-0">
@@ -213,7 +213,7 @@ const Home = () => {
               </h2>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-center align-items-start pt-5">
+          <Row className="d-flex justify-content-center align-items-start pt-3">
             <Col className="text-center text-md-end" >
               <Accordian Display_Sr_No="text-main-gold me-3" />
             </Col>

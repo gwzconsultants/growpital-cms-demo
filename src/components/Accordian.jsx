@@ -16,8 +16,9 @@ const Accordian = (props) => {
 
   const handleClick =()=>{
     setIndex()
+    
   }
-console.log(index)
+
  
   const AccorianItems = [
     {
@@ -50,7 +51,7 @@ console.log(index)
 
       <Row className="d-flex justify-content-center align-items-start pt-5">
         <Col xs={12} md={12} lg={6} className="text-center text-lg-start mb-5 mb-lg-0" >
-          <Carousel activeIndex={index} className="vertical" controls={false} indicators={false} autoPlay={true} interval={5000} onSelect={handleSelect}  >
+          <Carousel activeIndex={index}  className="vertical" controls={false} indicators={false} autoPlay={true} interval={5000} onSelect={handleSelect}  >
             <Carousel.Item  >
               <img
               

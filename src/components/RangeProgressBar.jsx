@@ -137,10 +137,11 @@ const RangeProgressBar = () => {
     const previousMarkIndex = value;
     const previousMark = marks[previousMarkIndex];
     const remainder = value % 1;
+    console.log(remainder)
     if (remainder === 0) {
       return  previousMark.name;
     } 
-    const nextMark = marks[previousMarkIndex + 1];
+    const nextMark = marks[previousMarkIndex - 1];
     const increment = (nextMark.scaledValue - previousMark.scaledValue) / 1;
     return remainder * increment + previousMark.scaledValue;
   }
@@ -151,6 +152,8 @@ const RangeProgressBar = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
     setCalculetOne(((scale(value) * roi(value)) / 100) * 1);
+    // console.log(scale(value))
+    // console.log( roi(value))
     setCalculetThree(((scale(value) * roi(value)) / 100) * 3);
 
   };

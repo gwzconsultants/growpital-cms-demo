@@ -11,14 +11,16 @@ const CardCounter = (props) => {
       Title: "Total Investments",
       Count: "₹480+",
       Tenur: "Lakhs",
-      Img: Icon1
+      Img: Icon1,
+      middel:"@"
     },
     {
       Id: "",
       Title: "Returns",
       Count: "16%",
       Tenur: "Per AnnUm",
-      Img: Icon2
+      Img: Icon2,
+      middel:"from"
     },
     {
       Id: "",
@@ -46,7 +48,9 @@ const CardCounter = (props) => {
               </div>
             </Card.Body>
           </Card>
+          <div><p className="text-white">{Item.middel}</p></div>
         </Col>
+        
       ))}
     </>
   );

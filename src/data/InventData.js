@@ -12,7 +12,7 @@ export const marks = [
             name:"Baby Farming",
             scaledValue: 10000,
             roi: 10,
-            label: "10k"
+            label: ""
           },
           {
             value: 2,
@@ -26,7 +26,7 @@ export const marks = [
             name:"Planty Returns",
             scaledValue: 40000,
             roi: 12,
-            label: "40k"
+            label: ""
           },
           {
             value: 4,
@@ -40,7 +40,7 @@ export const marks = [
             name:"Banyan Tree",
             scaledValue: 1000000,
             roi: 17,
-            label: "10L"
+            label: ""
           },
           {
             value: 6,

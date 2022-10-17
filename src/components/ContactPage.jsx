@@ -34,12 +34,19 @@ const ContactPage = () => {
                                 <div className='d-inline-flex mb-4'><i className='fas fa-at me-4 mt-1' /><p className='me-5'>info@growpital.com</p></div>
                                 <div className='d-inline-flex mb-4'><i className='fas fa-clock-o me-4 mt-1' /><p className='me-5'>Mon – Fri : 9:00 – 18:00 </p></div>
                             </div>
-                            <Row className="me-5 px-4">
+                            <Row className="me-5 px-4 mb-5">
                                 <Col xs={3} className=" p-0"><img src={fb} alt="" /></Col>
                                 <Col xs={3} className=" p-0"><img src={youtube} alt="" /></Col>
                                 <Col xs={3} className=" p-0"><img src={linkdin} alt="" /></Col>
                                 <Col xs={3} className=" p-0"><img src={insta} alt="" /></Col>
                             </Row>
+                            <Row className='my-3'>
+                                <Col >
+                                <div className="mapouter"><div className="gmap_canvas"><iframe className="gmap_iframe" width="100%" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} src="https://maps.google.com/maps?width=372&height=272&hl=en&q=166A, Triveni Nagar, Arjun Nagar, Jaipur, Rajasthan 302018&t=&z=14&ie=UTF8&iwloc=B&output=embed" /><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style dangerouslySetInnerHTML={{__html: ".mapouter{position:relative;text-align:right;width:100%;height:272px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:272px;}.gmap_iframe {height:272px!important;}" }} /></div>
+
+                                </Col>
+                            </Row>
+
 
 
                         </Col>

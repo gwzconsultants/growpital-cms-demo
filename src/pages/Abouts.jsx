@@ -3,23 +3,24 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { BsFillCircleFill } from 'react-icons/bs'
 import { faqsimg1, faqspage } from '../assets/img/contactimg'
 import AboutPage from '../components/AboutPage'
+import LogoSlider from '../components/LogoSlider'
 import SuperstarsAbout from '../components/SuperStartAbout'
 import Footer from '../layout/Footer'
 import Header from '../layout/Header'
-
+// import contactImg from "../assets/img/Rectangle 71.jpg"
 const Abouts = () => {
   return (
     <>
       <Header />
       <div className='about'>
-        <section className='mb-5' >
+        <section className='mb-md-5 mb-3' >
           <Container fluid >
             <Row >
               <Col>
                 <div className='position-relative'>
-                  <img src={faqspage} alt="" className='img-fluid mt-5' />
-                  <div className='position-absolute top-50 about-heading'>
-                    <h1 className='fs-164 display-2 fw-bold'>About us</h1>
+                  <img src={faqspage} alt="" className='w-100 h-auto mt-5' />
+                  <div className='position-absolute  about-heading'>
+                    <h1 className='fs-164 fw-bold about-text'>About us</h1>
                   </div>
                 </div>
               </Col>
@@ -27,11 +28,11 @@ const Abouts = () => {
           </Container>
         </section>
 
-        <section className='mb-5 text-start text-white'>
+        <section className='mb-md-5 mb-3 text-start text-white'>
           <Container>
             <div>
-              <p className="fs-md-24 fs-16 text-main-green">We are leading in agriculture investment </p>
-              <h1 className='fw-bold fs-md-48 fs-22'>What is Growpital</h1>
+            <p className="text-uppercase fs-18 fs-fm-16 fw-500 text-main-green pb-1 mb-1" > <BsFillCircleFill size={8} className="me-1" />We are leading in agriculture investment </p>
+              <h1 className='fw-bold fs-48 content-text '>What is Growpital</h1>
               <p>
                 We open up tax free passive earning avenues for you while increasing income and productivity of agriculture sector.<br />
                 Investments in Alternative asset classes was previously reserved only for institutions and the ultra-wealthy. Sub-segmenting it to Agriculture, it is pretty niche and popular as an investment class. We want to provide opportunity to own fraction of Agriculture asset classes and participate in passive income generation for yourself that were typically off-limits.<br />
@@ -43,29 +44,32 @@ const Abouts = () => {
           </Container>
         </section>
 
-        <section>
-          <Container className='text-white mb-3'>
-            <Row className=''>
+        <section className='mb-md-5 mb-3'>
+          <Container className='text-white'>
+            <Row className='d-flex align-items-center'>
 
               <Col md={6} className="pe-5 text-md-start mb-3">
-                <p className='fw-bold fs-md-48 fs-22 text-md-start  text-center'>Company Objective</p>
-                <p className='text-center text-md-start px-2 ms-1'>Growpital was incepted to radically democratize farm investment by providing access to high profit opportunities to retail investors. We Firmly believe that agriculture is a safe, stable and attractive long-term
+              <p className="text-uppercase fs-18 fs-fm-16 fw-500 text-main-green text-md-start  text-center pb-1 mb-1" >
+                  <BsFillCircleFill size={8} className="me-1" /> WANT TO MEET OUR TEAM ?
+                </p>
+                <p className='fw-bold fs-48  text-md-start  text-center content-text'>Company Objective</p>
+                <p className='text-center text-md-start ms-1'>Growpital was incepted to radically democratize farm investment by providing access to high profit opportunities to retail investors. We Firmly believe that agriculture is a safe, stable and attractive long-term
                   investment for everyone, if invested with right projects.</p>
               </Col>
-              <Col md={6} className="ps-md-5 text-center text-md-end">
-                <img src={faqsimg1} alt="" className='img-fluid  h-75' />
+              <Col md={6} className="ps-md-5 text-center text-md-end py-5 px-5">
+                <img src={faqsimg1} alt="" className='img-fluid px-5' />
               </Col>
             </Row>
           </Container>
         </section>
-        <section>
-          <Container className='text-white mb-5'>
+        <section className='mb-md-5 mb-3'>
+          <Container className='text-white'>
             <Row className="d-flex justify-content-center align-items-center">
               <Col className="text-center">
-                <p className="text-uppercase fs-18 fw-500 text-main-green" >
+                <p className="text-uppercase fs-18 fs-fm-16 fw-500 text-main-green pb-1 mb-1" >
                   <BsFillCircleFill size={8} className="me-1" /> WANT TO MEET OUR TEAM ?
                 </p>
-                <p className="text-white fw-600 fs-md-48 fs-22 mb-3 mb-md-4" >
+                <p className="text-white fw-600 display-6 mb-3 mb-md-4 content-text" >
                   Why Choose Growpital
                 </p>
               </Col>
@@ -75,15 +79,15 @@ const Abouts = () => {
             </Row>
           </Container>
         </section>
-        <section className="py-5">
+        <section className="py-5 mb-md-5 mb-3">
           <Container>
             <Row className="d-flex justify-content-center align-items-center">
               <Col className="text-center">
-                <p className="text-uppercase fs-18 fw-500 text-main-green" >
+                <p className="text-uppercase fs-18 fw-500 fs-fm-16 text-main-green pb-1 mb-1" >
                   <BsFillCircleFill size={8} className="me-1" /> WANT TO MEET OUR
                   TEAM ?
                 </p>
-                <h2 className="text-white fw-600 display-6 mb-3 mb-md-4">
+                <h2 className="text-white fw-600 display-6 mb-3 mb-md-4 content-text">
                   The superstar behind{" "}
                   <span className="text-main-green">Growpital</span>
                 </h2>
@@ -94,23 +98,21 @@ const Abouts = () => {
             </Row>
           </Container>
         </section>
-        <section className="bg-charade py-5" >
+        <section className="bg-charade py-5 mb-md-5 mb-3" >
           <Container className="py-5 py-md-5">
             <Row className="d-flex justify-content-center align-items-center">
               <Col className="text-center">
-                <p className="text-uppercase fs-18 fw-500 text-main-green" >
+                <p className="text-uppercase fs-18 fs-fm-16 fw-500 text-main-green pb-1 mb-1" >
                   <BsFillCircleFill size={8} className="me-1" /> WANT TO MEET OUR TEAM ?
                 </p>
-                <p className="text-white fw-600 fs-48 mb-3 mb-md-4" >
+                <p className="text-white fw-600 fs-48 mb-3 mb-md-4 content-text" >
                   Marquee Customers
                 </p>
               </Col>
             </Row>
-            <Row className="d-flex justify-content-center align-items-center mb-4">
+            <Row >
 
-              <Col md={12} className="text-center mt-5 mt-md-0" data-aos="zoom-in-up">
-
-              </Col>
+              <LogoSlider />
             </Row>
           </Container>
         </section>

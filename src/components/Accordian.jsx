@@ -17,7 +17,7 @@ const Accordian = (props) => {
   const handleClick =()=>{
     setIndex()
   }
-
+console.log(index)
  
   const AccorianItems = [
     {
@@ -49,10 +49,11 @@ const Accordian = (props) => {
     <>
 
       <Row className="d-flex justify-content-center align-items-start pt-5">
-        <Col xs={12} md={12} lg={6} className="text-center text-lg-start mb-5 mb-lg-0" data-aos="zoom-in-up">
-          <Carousel className="vertical" controls={false} indicators={false} autoPlay={true} interval={5000} onSelect={handleSelect}  >
+        <Col xs={12} md={12} lg={6} className="text-center text-lg-start mb-5 mb-lg-0" >
+          <Carousel activeIndex={index} className="vertical" controls={false} indicators={false} autoPlay={true} interval={5000} onSelect={handleSelect}  >
             <Carousel.Item  >
               <img
+              
                 className="d-block w-100"
                 src={img1}
                 alt="First slide"
@@ -61,6 +62,7 @@ const Accordian = (props) => {
             </Carousel.Item>
             <Carousel.Item>
               <img
+              
                 className="d-block w-100"
                 src={img2}
                 alt="First slide"
@@ -69,14 +71,16 @@ const Accordian = (props) => {
             </Carousel.Item>
             <Carousel.Item>
               <img
+              
                 className="d-block w-100"
                 src={img3}
                 alt="First slide"
               />
 
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item >
               <img
+             
                 className="d-block w-100"
                 src={img4}
                 alt="First slide"
@@ -89,7 +93,7 @@ const Accordian = (props) => {
 
 
         </Col>
-        <Col xs={12} md={12} lg={6} className="text-center text-md-end" data-aos="zoom-in-up">
+        <Col xs={12} md={12} lg={6} className="text-center text-md-end" >
           <Accordion activeKey={index} className="home-accordian" onClick={handleClick} >
             {AccorianItems.map((Items) => (
               <Accordion.Item

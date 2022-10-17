@@ -15,13 +15,14 @@ import { marks } from "../data/InventData";
 
 const SuccessSlider = styled(Slider)(({ theme }) => ({
 
-  height:"8px",
+  height:"12px",
   trackColor: "yellow",
-  selectionColor: "green",
+  selectionColor: "white",
   color: 'var(--color-main-green)',
   "& .MuiSlider-markLabel":{color:"white",fontWeight: "600",marginTop:"4px",
-  fontSize: "14px"},
+  fontSize: "18px"},
   '& .MuiSlider-thumb': {
+    color:"white",
     '&:hover, &.Mui-focusVisible': {
       boxShadow: `0px 0px 0px 8px ${alpha("#07e67d", 0.16)}`,
     },
@@ -85,8 +86,8 @@ const SuccessSlider = styled(Slider)(({ theme }) => ({
 
 const RangeProgressBar = () => {
   const [value, setValue] = useState(0);
-  const [calculetOne, setCalculetOne] = useState(0)
-  const [calculetThree, setCalculetThree] = useState(0)
+  const [calculetOne, setCalculetOne] = useState(500)
+  const [calculetThree, setCalculetThree] = useState(1500)
 
   const rupee_format = (str) => {
     if (str) {
@@ -164,8 +165,8 @@ const RangeProgressBar = () => {
           <Card.Body className="m-1 bg-dark-gradient rounded p-4">
             <div className="text-center">
               <h2 className="text-main-green fw-600 fs-30 text-capitalize mb-3 mb-md-3">
-                Investment Amount
-                <span className="text-main-gold"> ₹ {scale(value)}</span>
+                Investment Amount {" "}
+                <span className="text-main-gold">  ₹ { rupee_format(scale(value))}</span>
               </h2>
               <p className="fs-14 fw-500 text-white my-4">
                 Move the slider to change thd investment amount
@@ -211,7 +212,7 @@ const RangeProgressBar = () => {
               </Col>
               <Col className="text-center">
                 <h2 className="text-main-green fw-600 fs-30 text-capitalize mb-1">
-                ₹ {calculetOne}
+                ₹ { rupee_format(calculetOne)}
                 </h2>
                 <p className="fs-18 fw-500 text-white mb-4 mb-md-0">
                   12 Months
@@ -219,7 +220,7 @@ const RangeProgressBar = () => {
               </Col>
               <Col className="text-center">
                 <h2 className="text-main-green fw-600 fs-30 text-capitalize mb-1">
-                ₹ {calculetThree}
+                ₹ {rupee_format(calculetThree)}
                 </h2>
                 <p className="fs-18 fw-500 text-white mb-4 mb-md-0">
                   36 Months

@@ -1,12 +1,17 @@
-import React from "react";
-import { Container, Nav, Navbar, NavDropdown, Button, Image } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Nav, Navbar, Button, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../assets/img/logo.png";
 
 const Header = () => {
+    const [isActive, setIsActive] = useState(false);
+
+    const handleClick=() =>{
+        setIsActive(current => !current);
+    }
     return (
         <>
-            <Navbar expand="lg" className="py-3 fixed-top mb-4" data-aos="zoom-in-down">
+            <Navbar expand="lg" className="py-3 fixed-top mb-4" >
                 <Container>
                     <Navbar.Brand href="/" className="d-none d-lg-block">
                         <Image src={Logo} className="img-fluid" alt="" />
@@ -17,8 +22,8 @@ const Header = () => {
                     </Navbar.Brand>
                    
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="m-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
+                        <Nav className="m-auto" onClick={handleClick}>
+                            <Nav.Link href="/"   style={{ color: isActive ? 'green' : ''  }}>Home</Nav.Link>
                             <Nav.Link href="/abouts">About</Nav.Link>
                           
                             
@@ -28,7 +33,7 @@ const Header = () => {
 
                         </Nav>
                         <div className="d-flex d-none d-md-block">
-                            <Link to="/singup"> <Button className="main-btn maincolor mb-2 fs-11">Singup/Login</Button></Link>
+                            <Link to="/singup"> <Button className="main-btn-nav maincolor mb-2 fs-11">Singup/Login</Button></Link>
                         </div>
                     </Navbar.Collapse>
                     

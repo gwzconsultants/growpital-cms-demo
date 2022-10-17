@@ -47,17 +47,17 @@ const Footer = () => {
                   Bypass, Jaipur RJ 302018{" "}
                 </Nav.Link>
               </Nav>
-              <Nav className="justify-content-start" activeKey="/home">
-                <Nav.Item className="pe-4">
-                  <Nav.Link ><FaFacebookF className="text-indigo"/></Nav.Link>
+              <Nav className="justify-content-start " activeKey="/home">
+                <Nav.Item className="pe-4 foot-icon ">
+                  <Nav.Link ><FaFacebookF className="text-indigo "/></Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="pe-4">
-                  <Nav.Link ><BsYoutube className="text-red"/></Nav.Link>
+                <Nav.Item className="pe-4 foot-icon">
+                  <Nav.Link ><BsYoutube className="text-red "/></Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="pe-4">
-                  <Nav.Link ><BsLinkedin className="text-indigo"/></Nav.Link>
+                <Nav.Item className="pe-4 foot-icon">
+                  <Nav.Link ><BsLinkedin className="text-indigo foot-icon"/></Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="pe-4">
+                <Nav.Item className="pe-4 foot-icon">
                   <Nav.Link ><BsInstagram className="text-darkpink"/></Nav.Link>
                 </Nav.Item>
               </Nav>

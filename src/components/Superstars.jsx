@@ -73,7 +73,7 @@ const Superstars = (props) => {
      {/* <section className="">  */}
      
         {SuperStars.map((Items) => (
-          <Col md={12} lg={6} key={Items.Id} data-aos="zoom-in-up" className="d-none d-md-block">
+          <Col md={12} lg={6} key={Items.Id}  className="d-none d-md-block">
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
               <Card.Body className="m-1 bg-dark-gradient rounded p-4">
                 <Row>
@@ -101,7 +101,7 @@ const Superstars = (props) => {
 
        <Slider {...settings} className="d-md-none" >
      {SuperStars.map((Items) => (
-          <Col md={12} lg={6} key={Items.Id} data-aos="zoom-in-up">
+          <Col md={12} lg={6} key={Items.Id} >
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
               <Card.Body className="m-1 bg-dark-gradient rounded p-4">
                 <Row>

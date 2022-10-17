@@ -4,7 +4,7 @@ import { Card, Image } from "react-bootstrap";
 const CardDark = (props) => {
   return (
     <>
-      <Card className="darkcard mb-5 mb-md-5 p-0 rounded text-start text-white" data-aos="zoom-in-up">
+      <Card className="darkcard mb-5 mb-md-5 p-0 rounded text-start text-white" >
         <Card.Body className="m-1 bg-dark-gradient rounded p-4">
           <div className="darkcard-icon p-3 mx-auto mb-4">
             <Image src={props.Cardicon} className="img-fluid" alt="" />

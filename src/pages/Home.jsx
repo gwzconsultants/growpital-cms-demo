@@ -26,6 +26,7 @@ import CardIcon3 from "../assets/img/9.png";
 
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
+import AccordingQue from "../components/AccordingQue";
 
 const Home = () => {
  
@@ -35,30 +36,30 @@ const Home = () => {
       <Header />
       <SingupBtn />
 
-      <section className="hero-area py-5 mt-5 mt-md-0">
+      <section className="hero-area pt-5 ">
         <Container>
-          <Row className="d-flex justify-content-center align-items-center py-0 py-md-5 mt-0 mt-lg-5" data-aos="zoom-in-up">
+          <Row className="d-flex justify-content-center align-items-center py-0 py-md-5 mt-0 mt-lg-5" >
             <Col xs={12} md={12} lg={7} className="text-center text-md-start">
-              <div className="bg-shark3 rounded py-3 px-1 px-md-4 d-inline-block mb-5 mb-md-3">
+              <div className="bg-shark3 rounded p-1 p-md-2 d-inline-block mb-3 ">
                 <h5 className="text-main-gradient fw-500 fs-22 fs-sm-18 mb-0">
                   <Image src={HeroIcon5} className="img-fluid me-2" alt="" />
                   Agriculture Investments
                   <Image src={HeroIcon4} className="img-fluid ms-2" alt="" />
                 </h5>
               </div>
-              <h1 className="text-white fw-600 display-5 mb-5 mb-md-4">
+              <h1 className="text-white fw-600 display-5 mb-3 mb-md-4">
                 Invest and earn regular assured return
                 <span className="text-main-green">
                   <BsArrowRight /> Tax Free
                 </span>
               </h1>
-              <p className="text-white fw-400 fs-24 mb-5 mb-md-4 pt-2">
+              <p className="text-white fw-400 fs-24 m-3 mb-md-4 py-2">
                 Diversify your portfolio with safe agri-investments.
               </p>
-              <div className="px-5 px-md-0">
+              <div className="px-5 px-lg-0">
                 <Row>
                   <Col md={4} lg={4}>
-                    <Card className="darkcard mb-5 mb-md-4 p-0 rounded text-start text-white">
+                    <Card className="darkcard mb-3 mb-md-4 p-0 rounded text-start text-white">
                       <Card.Body className="m-1 bg-dark-gradient rounded px-4 py-5 py-md-4">
                         <div className="darkcard-icon p-3 mx-auto mb-4 mb-md-2 d-flex justify-content-center align-items-center">
                           <Image src={HeroIcon1} className="img-fluid" alt="" />
@@ -72,7 +73,7 @@ const Home = () => {
                     </Card>
                   </Col>
                   <Col md={4} lg={4}>
-                    <Card className="darkcard mb-5 mb-md-4 p-0 rounded text-start text-white">
+                    <Card className="darkcard mb-3 mb-md-4 p-0 rounded text-start text-white">
                       <Card.Body className="m-1 bg-dark-gradient rounded px-4 py-5 py-md-4">
                         <div className="darkcard-icon p-3 mx-auto mb-4 mb-md-2 d-flex justify-content-center align-items-center">
                           <Image src={HeroIcon2} className="img-fluid" alt="" />
@@ -116,20 +117,20 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="py-5 mt-5" >
+      <section className="py-5 " >
         <Container>
           <Row className="d-flex justify-content-center align-items-center pb-0 pb-md-5">
             <Col xs={12} md={12} lg={6} className="text-center text-md-start">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" data-aos="zoom-in-up">
+              <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> WHAT ARE
                 GROWPITAL INVESTMENTS LIKE?
               </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" data-aos="zoom-in-up">
+              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Its like a{" "}
                 <span className="text-main-green">Fixed Deposit</span> but a
                 much better one!
               </h2>
-              <div className="d-flex justify-content-start align-items-center my-5 my-md-5 py-4 py-md-4" data-aos="zoom-in-up">
+              <div className="d-flex justify-content-start align-items-center my-5 my-md-5 py-4 py-md-4" >
                 {/* <h2 className="display-1 fw-900 text-main-gold mb-0">0</h2> */}
                 <Image src={zero} className="img-fluid" alt="" />
                 <div className="text-start">
@@ -173,15 +174,16 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="bg-charade py-5" data-aos="zoom-in-up">
-        <Container className="py-5 py-md-5">
+      <section className=" py-5" >
+        <div className="bg-charade">
+        <Container className="py-3">
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" data-aos="zoom-in-up">
+              <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> WHAT ARE WE PROUD
                 ABOUT?
               </p>
-              <p className="text-white fw-600 fs-24 mb-3 mb-md-4" data-aos="zoom-in-up">
+              <p className="text-white fw-600 fs-24 mb-3 mb-md-4" >
                 Agriculture Sector is growing rapidly. Join us in the fast
                 growing industry
               </p>
@@ -189,29 +191,30 @@ const Home = () => {
           </Row>
           <Row className="d-flex justify-content-center align-items-center mb-4">
             <CardCounter />
-            <Col md={12} className="text-center mt-5 mt-md-0" data-aos="zoom-in-up">
+            <Col md={12} className="text-center mt-5 mt-md-0" >
               <ButtonStar />
             </Col>
           </Row>
         </Container>
+        </div>
       </section>
 
-      <section className="py-5 my-4 my-md-5">
+      <section className="py-5">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" data-aos="zoom-in-up">
+              <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> HOW TO GET
                 STARTED?
               </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" data-aos="zoom-in-up">
+              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Start investing in{" "}
                 <span className="text-main-green">4 simple steps</span>
               </h2>
             </Col>
           </Row>
           <Row className="d-flex justify-content-center align-items-start pt-5">
-            <Col className="text-center text-md-end" data-aos="zoom-in-up">
+            <Col className="text-center text-md-end" >
               <Accordian Display_Sr_No="text-main-gold me-3" />
             </Col>
           </Row>
@@ -227,21 +230,21 @@ const Home = () => {
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" data-aos="zoom-in-up">
+              <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" />CALCULATE YOUR RETURNS ON INVESTMENT
               </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" data-aos="zoom-in-up">
+              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Estimate your
                 <span className="text-main-green">  Earning </span>
                 before Investing
               </h2>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-center align-items-center pt-5">
-            <Col xs={12} md={12} lg={6} className="text-center text-md-start" data-aos="zoom-in-up">
+          <Row className="d-flex justify-content-center align-items-center pt-2">
+            <Col xs={12} md={12} lg={6} className="text-center text-md-start" >
               <RangeProgressBar />
             </Col>
-            <Col xs={12} md={12} lg={6} className="text-center text-md-start" data-aos="zoom-in-up">
+            <Col xs={12} md={12} lg={6} className="text-center text-md-start" >
               <TotalInvestment />
             </Col>
           </Row>
@@ -257,21 +260,21 @@ const Home = () => {
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" data-aos="zoom-in-up">
+              <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> HAVE QUATIONS YOU
                 WANT TO ASK?
               </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" data-aos="zoom-in-up">
+              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Connect with us & get all your answers
               </h2>
             </Col>
           </Row>
           <Row className="d-flex justify-content-center align-items-strech pt-5">
             <Col xs={12} md={12} lg={5} className="text-center text-md-start">
-              <p className="fs-26 fs-sm-22 fw-500 text-white mb-5" data-aos="zoom-in-up">
+              <p className="fs-26 fs-sm-22 fw-500 text-white mb-5" >
                 Doubts, questions, queries and suggensions? We here for you
               </p>
-              <ul className="list-unstyled fs-20 fs-sm-18 fw-500 text-white text-start" data-aos="zoom-in-up">
+              <ul className="list-unstyled fs-20 fs-sm-18 fw-500 text-white text-start" >
                 <li className="d-flex justify-content-start mt-3">
                   <BsCheck2Square className="text-main-gold mt-2 me-3" />{" "}
                   connect with os over call or whatsapp
@@ -298,7 +301,7 @@ const Home = () => {
                     variant="dark"
                     size="lg"
                     className="px-3 px-md-5 py-3"
-                    data-aos="zoom-in-up"
+                    
                   >
                     <img src={Call24} className="img-fluid me-3" alt="" />{" "}
                     Schedule a call
@@ -307,7 +310,7 @@ const Home = () => {
                     variant="dark"
                     size="lg"
                     className="px-3 px-md-5 py-3"
-                    data-aos="zoom-in-up"
+                    
                   >
                     <img src={WhatsapIcon} className="img-fluid me-3" alt="" />{" "}
                     Message on Whatsapp
@@ -323,11 +326,11 @@ const Home = () => {
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" data-aos="zoom-in-up">
+              <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> WANT TO MEET OUR
                 TEAM ?
               </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" data-aos="zoom-in-up">
+              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 The superstar behind{" "}
                 <span className="text-main-green">Growpital</span>
               </h2>
@@ -343,11 +346,11 @@ const Home = () => {
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" data-aos="zoom-in-up">
+              <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> HOW TO GET
                 STARTED?
               </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" data-aos="zoom-in-up">
+              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Happy to boast a <span className="text-main-green"> 4.7 rating</span>  by customers
               </h2>
             </Col>
@@ -355,7 +358,7 @@ const Home = () => {
         </Container>
         <Container fluid>
           <Row className="d-flex justify-content-center align-items-start pt-5">
-            <Col className="text-center text-md-start" data-aos="zoom-in">
+            <Col className="text-center text-md-start">
               <TestiSlider />
             </Col>
           </Row>
@@ -366,13 +369,13 @@ const Home = () => {
         <Container>
           <Row className="d-flex justify-content-center align-items-start">
             <Col xs={12} md={12} lg={6} className="text-center text-lg-start">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" data-aos="zoom-in-up">
+              <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> ASK ANY QUESTIONS
               </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" data-aos="zoom-in-up">
+              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Any questions? We got you.
               </h2>
-              <p className="text-white fw-400 fs-18 py-4" data-aos="zoom-in-up">
+              <p className="text-white fw-400 fs-18 py-4" >
                 Yet bed any for assistance indulgence unpleasing. Not thoughts
                 all exercise blessing. Indulgence way everything joy alteration
                 boisterous the attachment.
@@ -383,8 +386,8 @@ const Home = () => {
               </div>
             </Col>
             <Col xs={12} md={12} lg={6} className="text-center text-lg-end mt-5 mt-lg-0">
-              <div className="faq-accordian" data-aos="zoom-in-up">
-                <Accordian Display_Sr_No="text-main-gold me-3 d-none" />
+              <div className="faq-accordian" >
+                <AccordingQue Display_Sr_No="text-main-gold me-3 d-none" />
               </div>
             </Col>
           </Row>

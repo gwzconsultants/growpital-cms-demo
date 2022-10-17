@@ -6,6 +6,8 @@
   background-color: var(--color-woodsmoke);
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 32%);
+  font-family: "Poppins";
+
 
   .navbar-toggler,
   .navbar-toggler:focus,
@@ -36,9 +38,11 @@
 
       &:hover,
       &:focus,
+      &:focus-visible,
       &.active {
         color: var(--color-main-green);
       }
+     
     }
 
     .dropdown .dropdown-toggle::after {
@@ -169,8 +173,9 @@
   }
 }
 
-// .hero-area {
-// }
+.hero-area {
+  margin-top: 5rem;
+}
 
 .darkcard {
   background-color: transparent;
@@ -322,6 +327,20 @@ footer {
       }
     }
 
+    .foot-icon{
+      .nav-link {
+       
+         
+
+          &:hover {
+            
+        transform: scale(1.5) all 0.3s ;
+
+          }
+        
+      }
+    }
+
     @media (max-width: 576px) {
       .nav-link {
         font-size: 19px;
@@ -330,7 +349,10 @@ footer {
   }
 }
 
-.testislider ,.superstars,.superstarsAbout {
+.testislider,
+.superstars,
+.superstarsAbout,
+.about-logo {
   .colan-icon {
     height: 30px;
     width: 30px;
@@ -604,37 +626,85 @@ footer {
 
 }
 
-.contact-us{
+.contact-us {
   margin-top: 12rem;
 
 
-@media (max-width:800px) {
-  margin-top:10rem ;
+  @media (max-width:800px) {
+    margin-top: 10rem;
+  }
+
+  @media (max-width:800px) {
+    margin-top: 10rem;
+  }
+
+  @media (max-width:500px) {
+    margin-top: 7rem;
+  }
 }
 
-@media (max-width:800px) {
-  margin-top:10rem ;
-}
-@media (max-width:500px) {
-  margin-top:7rem ;
-}
-}
 
-
-.about{
+.about {
   margin-top: 8rem;
 
+  .about-heading {
+    top: 42%;
+    left: 10%;
+
+    .about-text {
+      font-size: 8rem;
+    }
+  }
+
+  @media (max-width:1000px) {
+    margin-top: 10rem;
+
+    .about-heading {
+      top: 40%;
+      left: 10%;
+
+      .about-text {
+        font-size: 6rem;
+      }
+    }
+
+
+  }
 
   @media (max-width:800px) {
-    margin-top:10rem ;
+    margin-top: 10rem;
   }
-  
+
   @media (max-width:800px) {
-    margin-top:10rem ;
+    margin-top: 10rem;
+
+    .about-heading {
+      top: 40%;
+      left: 8%;
+
+      .about-text {
+        font-size: 4rem;
+      }
+    }
+
+    .content-text {
+      font-size: 1.2rem;
+    }
   }
+
   @media (max-width:500px) {
-    margin-top:7rem ;
+    margin-top: 7rem;
+
+    .about-heading {
+      top: 50%;
+      left: 8%;
+
+      .about-text {
+        font-size: 2.5rem;
+      }
+    }
   }
+
   // .about-heading{
   //   top: 40%;
   //   left: 4%;

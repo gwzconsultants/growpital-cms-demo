@@ -3,8 +3,6 @@ import React from 'react'
 import { Card, Col, Container, Image, Row } from 'react-bootstrap'
 
 import {
-
-
     team,
     eco,
     strong
@@ -38,9 +36,9 @@ const AboutPage = () => {
 
 
             <section>
-                <Container className='text-white'>
+                <Container  >
 
-                    <Row>
+                    <Row className='text-white'>
                         {Abouter.map((item, index) => (
                             <Col xs={12} md={12} lg={4} className="d-flex justify-content-center  ps-md-5 ps-lg-3" key={index}>
                                 <Card className=" text-center darkcard rounded p-1 d-flex mb-3" style={{ width: '28rem' }} >

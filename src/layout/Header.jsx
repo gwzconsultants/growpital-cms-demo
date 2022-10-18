@@ -10,7 +10,7 @@ const Header = () => {
         <>
             <Navbar expand="lg" className="py-3 fixed-top overflow-hidden top-0 mb-3" >
                 <Container>
-                    <Navbar.Brand href="/" className="d-none d-lg-block fixed-top">
+                    <Navbar.Brand href="/" className="d-none d-lg-block">
                         <Image src={Logo} className="img-fluid" alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

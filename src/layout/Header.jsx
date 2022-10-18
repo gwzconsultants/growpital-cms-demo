@@ -1,19 +1,16 @@
-import React, { useState } from "react";
+
+// import React, { useState } from "react";
 import { Container, Nav, Navbar, Button, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../assets/img/logo.png";
 
 const Header = () => {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick=() =>{
-        setIsActive(current => !current);
-    }
+    // const [active, setActive] = useState('default');
     return (
         <>
-            <Navbar expand="lg" className="py-3 fixed-top mb-4" >
+            <Navbar expand="lg" className="py-3 fixed-top overflow-hidden top-0 mb-3" >
                 <Container>
-                    <Navbar.Brand href="/" className="d-none d-lg-block">
+                    <Navbar.Brand href="/" className="d-none d-lg-block fixed-top">
                         <Image src={Logo} className="img-fluid" alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -21,15 +18,13 @@ const Header = () => {
                         <Image src={Logo} className="logo-img" alt=""  />
                     </Navbar.Brand>
                    
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="m-auto" onClick={handleClick}>
-                            <Nav.Link href="/"   style={{ color: isActive ? 'green' : ''  }}>Home</Nav.Link>
-                            <Nav.Link href="/abouts">About</Nav.Link>
-                          
-                            
-                            <Nav.Link href="/blog">Blog</Nav.Link>
-                            <Nav.Link href="/faqs">FAQs</Nav.Link>
-                            <Nav.Link href="/contact">Contact Us</Nav.Link>
+                    <Navbar.Collapse id="basic-navbar-nav" >
+                        <Nav className="m-auto"  activeKey="/home">
+                            <Nav.Link href="/" eventKey="default" >Home</Nav.Link>
+                            <Nav.Link href="/abouts" eventKey="link-1">About</Nav.Link>
+                          <Nav.Link href="/blog" eventKey="link-2">Blog</Nav.Link>
+                            <Nav.Link href="/faqs" eventKey="link-3">FAQs</Nav.Link>
+                            <Nav.Link href="/contact" eventKey="link-4">Contact Us</Nav.Link>
 
                         </Nav>
                         <div className="d-flex d-none d-md-block">

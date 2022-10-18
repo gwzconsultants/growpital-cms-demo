@@ -31,7 +31,7 @@ const Footer = () => {
               <h6 className="fs-22 fs-sm-24 mb-4 mb-md-3 mt-4 mt-md-0 fw-600 text-white">Get Started</h6>
               <Nav defaultActiveKey="/home" className="flex-column">
                 <Nav.Link href="">Career</Nav.Link>
-                <Nav.Link eventKey="link-1">Contact Us</Nav.Link>
+                <Nav.Link eventKey="link-1" href="/contact">Contact Us</Nav.Link>
                 <Nav.Link eventKey="link-2">Government Securities</Nav.Link>
                 <Nav.Link eventKey="disabled">Examples</Nav.Link>
                 <Nav.Link eventKey="disabled">NIS</Nav.Link>

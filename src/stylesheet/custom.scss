@@ -27,6 +27,7 @@
 
 
   .navbar-nav {
+  
     .nav-link {
       font-family: "Poppins";
       font-style: normal;
@@ -37,13 +38,16 @@
       padding: 0.4rem 1rem;
 
       &:hover,
-      &:focus,
-      &:focus-visible,
-      &.active {
-        color: var(--color-main-green);
+      &:focus
+     {
+        color: var(--color-main-green) !important;
       }
-     
+      &:active{
+        color: var(--color-main-green) !important;
+        
+      }
     }
+    
 
     .dropdown .dropdown-toggle::after {
       display: inline-block;
@@ -329,14 +333,9 @@ footer {
 
     .foot-icon{
       .nav-link {
-       
-         
-
-          &:hover {
-            
-        transform: scale(1.5) all 0.3s ;
-
-          }
+       &:hover {
+             transform: scale(1.5) ;
+            }
         
       }
     }

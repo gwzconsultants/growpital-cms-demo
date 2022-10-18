@@ -184,7 +184,7 @@ const RangeProgressBar = () => {
               </Col>
               <Col className="text-center">
                 <h2 className="text-main-green fw-600 fs-30 text-capitalize mb-1">
-                ₹ { rupee_format(calculetOne)}
+                ₹{ rupee_format(calculetOne)}
                 </h2>
                 <p className="fs-18 fw-500 text-white mb-4 mb-md-0">
                   12 Months
@@ -192,7 +192,7 @@ const RangeProgressBar = () => {
               </Col>
               <Col className="text-center">
                 <h2 className="text-main-green fw-600 fs-30 text-capitalize mb-1">
-                ₹ {rupee_format(calculetThree)}
+                ₹{rupee_format(calculetThree)}
                 </h2>
                 <p className="fs-18 fw-500 text-white mb-4 mb-md-0">
                   36 Months

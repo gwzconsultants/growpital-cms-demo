@@ -8,7 +8,7 @@ const Header = () => {
     // const [active, setActive] = useState('default');
     return (
         <>
-            <Navbar expand="lg" className="py-3 fixed-top overflow-hidden top-0 mb-3" >
+            <Navbar expand="lg" className="py-3 sticky-top overflow-hidden top-0 mb-3" >
                 <Container>
                     <Navbar.Brand href="/" className="d-none d-lg-block">
                         <Image src={Logo} className="img-fluid" alt="" />

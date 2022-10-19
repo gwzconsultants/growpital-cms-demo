@@ -7,6 +7,7 @@ import { Card, Col, Row } from "react-bootstrap";
 import { BsFillCircleFill } from "react-icons/bs";
 import { alpha,styled} from '@mui/material/styles';
 import { marks } from "../data/InventData";
+import moneyWings from "../assets/img/emojione-v1_money-with-wings.svg"
 // import { red } from "@mui/material/colors";
 
 
@@ -138,7 +139,7 @@ const RangeProgressBar = () => {
             <div className="text-center">
               <h2 className="text-main-green fw-600 fs-30 text-capitalize mb-3 mb-md-3">
                 Investment Amount {" "}
-                <span className="text-main-gold">  ₹ { rupee_format(scaleValue)}</span>
+                <span className="text-main-gold">  <span className="px-1">₹</span>{rupee_format(scaleValue)}</span>
               </h2>
               <p className="fs-14 fw-500 text-white my-4">
                 Move the slider to change thd investment amount
@@ -170,33 +171,36 @@ const RangeProgressBar = () => {
                 </p>
               </Col>
             </Row>
-            <div className="text-center">
+            <div className="text-center ">
+              
               <h3 className="text-main-gold fw-600 fs-30 my-3 my-md-4">
-              {name(value)}
+              <img src={moneyWings} alt="" className="img-fluid"/> {name(value)}
               </h3>
             </div>
             <Row className="pt-4">
-              <Col className="text-center">
-                <h2 className="text-main-green fw-600 fs-30 text-capitalize mb-1">
+              <Col className="d-flex justify-content-around">
+              <div className="text-center px-2 mx-0">
+                <h2 className="text-main-green fw-600 fs-30 fs-sm-22 text-capitalize mb-1">
                   {scaleRoi}%
                 </h2>
-                <p className="fs-18 fw-500 text-white mb-4 mb-md-0">ROI</p>
-              </Col>
-              <Col className="text-center">
-                <h2 className="text-main-green fw-600 fs-30 text-capitalize mb-1">
-                ₹{ rupee_format(calculetOne)}
+                <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">ROI</p>
+              </div>
+              <div className="text-center px-2">
+                <h2 className="text-main-green fw-600 fs-30 fs-sm-22 text-capitalize mb-1">
+                <span className="px-1">₹</span>{ rupee_format(calculetOne)}
                 </h2>
-                <p className="fs-18 fw-500 text-white mb-4 mb-md-0">
-                  12 Months
+                <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">
+                 <span className="pe-2">12</span>Months
                 </p>
-              </Col>
-              <Col className="text-center">
-                <h2 className="text-main-green fw-600 fs-30 text-capitalize mb-1">
-                ₹{rupee_format(calculetThree)}
+              </div>
+              <div className="text-center">
+                <h2 className="text-main-green fw-600 fs-30 fs-sm-22 text-capitalize mb-1">
+                <span className="px-1">₹</span>{rupee_format(calculetThree)}
                 </h2>
-                <p className="fs-18 fw-500 text-white mb-4 mb-md-0">
-                  36 Months
+                <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">
+                <span className="pe-2">36</span>Months
                 </p>
+              </div>
               </Col>
             </Row>
           </Card.Body>

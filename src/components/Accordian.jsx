@@ -21,25 +21,25 @@ const Accordian = (props) => {
       Id: 0,
       Title: "Create account and complete KYC",
       SubTitle:
-        "KYC process includes ID card verification, face verification, document verification such as utility bills as proof of address, and biometric verification.",
+        "Sign up with username and password. Verify your KYC which includes Pan Card, Adhaar card & Bank account details.",
     },
     {
       Id: 1,
       Title: " Choose investment option",
       SubTitle:
-        "KYC process includes ID card verification, face verification, document verification such as utility bills as proof of address, and biometric verification.",
+        "Select the plan best suited to you and select the number of units you want to invest in.",
     },
     {
       Id: 2,
       Title: " Add money and invest",
       SubTitle:
-        "KYC process includes ID card verification, face verification, document verification such as utility bills as proof of address, and biometric verification.",
+        "Simply add money to Growpital Wallet, e-sign required documents.",
     },
     {
       Id: 3,
       Title: " Harvest your earnings ",
       SubTitle:
-        "KYC process includes ID card verification, face verification, document verification such as utility bills as proof of address, and biometric verification.",
+        "See your earning growing with assured returns at regular intervals.",
     },
   ];
   return (
@@ -91,14 +91,14 @@ const Accordian = (props) => {
 
         </Col>
         <Col xs={12} md={12} lg={6} className="text-center text-md-end" >
-          <Accordion activeKey={index} className="home-accordian"  >
+          <Accordion activeKey={index} className="home-accordian" >
             {AccorianItems.map((Items) => (
               <Accordion.Item
                 eventKey={Items.Id}
                 key={Items.Id}
                 className="mb-3 bg-transparent"
               >
-                <Accordion.Header className="text-white fw-600 fs-22" onClick={()=>{setIndex(Items.Id);}}>
+                <Accordion.Header className="text-white fw-600 fs-22" onClick={()=>{setIndex(Items.Id)}}>
                   <span className={props.Display_Sr_No}>0{Items.Id}</span>{" "}
                   {Items.Title}
                 </Accordion.Header>

@@ -5,27 +5,33 @@ const AccordingQue = (props) => {
     const AccorianItems = [
         {
           Id: "0",
-          Title: "Create account and complete KYC",
+          Title: "What is Growpital? (In a Nutshell)",
           SubTitle:
-            "KYC process includes ID card verification, face verification, document verification such as utility bills as proof of address, and biometric verification.",
+            "The all-new Agro investment platform with tax-free income. It’s the new clutter-free, fixed-income platform with ESG benefits for smart investors giving a whopping 8% -16% fixed returns.",
         },
         {
           Id: "1",
-          Title: " Choose investment option",
-          SubTitle:
-            "KYC process includes ID card verification, face verification, document verification such as utility bills as proof of address, and biometric verification.",
+          Title: "What is the lock-in period after I invest via Growpital?",
+          SubTitle:"To make your investment experience hassle-free, the project entities just put a minimum Lock-in period. If you withdraw before the lock-in period ends, the project entity would deduct all payouts given to you from the original investment amount and pay the remaining amount to you. This will result in no profit/return to you.",
+          SubTitle1:"However, if you make any withdraw request after the lock in period before the maturity period, the original investment amount shall be paid at that time; no future profits and no pro-rata calculation of payouts will be done.",
+          
         },
         {
           Id: "2",
-          Title: " Add money and invest",
-          SubTitle:
-            "KYC process includes ID card verification, face verification, document verification such as utility bills as proof of address, and biometric verification.",
+          Title: "How much is the minimum and maximum amount I can invest?",
+          SubTitle:"In order to provide this opportunity for as many retail investors as possible, the price of one unit is kept as low as INR 5,000/-. This provides you a fractional ownership of the farm projects under your name as per the amount invested by you",
+          SubTitle1:"That said, you can buy as many units as you want (subject to availability) and get profits in the same proportion.",
         },
         {
           Id: "3",
-          Title: " Harvest your earnings ",
-          SubTitle:
-            "KYC process includes ID card verification, face verification, document verification such as utility bills as proof of address, and biometric verification.",
+          Title: " Are the returns guaranteed?",
+          SubTitle:"The returns are projected revenues from farm project after sales of agri produce. So the revenues of the farm project will deviate from crop to crop, but we keep a satisfactory buffer to provide fixed returns in the form of advance profits.",
+        },
+        {
+          Id: "4",
+          Title: " How is my earning Tax Free?",
+          SubTitle:"There are no tax deduction on the returns received by you as it is the share of profit given by the Farm project entity, which is an LLP, as per section 10(2A).",
+          SubTitle1:"The earnings of the LLP is agriculture income, and is exempted under Section 10(1) of the Income Tax Act,1961 in India.",
         },
       ];
   return (
@@ -42,7 +48,13 @@ const AccordingQue = (props) => {
             <span className={props.Display_Sr_No}>0{Items.Id}</span>{" "}
             {Items.Title}
           </Accordion.Header>
-          <Accordion.Body>{Items.SubTitle}</Accordion.Body>
+          <Accordion.Body>
+            <ul type="none">
+              <li className='py-2'>{Items.SubTitle}</li>
+              <li className='py-2'>{Items.SubTitle1}</li>
+              <li className='py-2'>{Items.SubTitle2}</li>
+            </ul>
+          </Accordion.Body>
         </Accordion.Item>
       ))}
     </Accordion>

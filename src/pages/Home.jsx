@@ -23,22 +23,24 @@ import HeroIcon5 from "../assets/img/16.png";
 import CardIcon1 from "../assets/img/4.png";
 import CardIcon2 from "../assets/img/5.png";
 import CardIcon3 from "../assets/img/9.png";
+import gif1 from "../assets/img/Story_02_2.gif"
+import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalable-vector-graph-png-telegram-transparent-5ab08470747435.671490841521517680477.png"
 
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
 import AccordingQue from "../components/AccordingQue";
 
 const Home = () => {
- 
+
 
   return (
     <>
       <Header />
       <SingupBtn />
 
-      <section className="hero-area pt-5 ">
+      <section className="hero-area py-5 ">
         <Container>
-          <Row className="d-flex justify-content-center align-items-center py-0 py-md-5 mt-0 mt-lg-5" >
+          <Row className="d-flex justify-content-center align-items-center py-0  mt-0 " >
             <Col xs={12} md={12} lg={7} className="text-center text-md-start">
               <div className="bg-shark3 rounded p-1 p-md-2 d-inline-block mb-3 ">
                 <h5 className="text-main-gradient fw-500 fs-22 fs-sm-18 mb-0">
@@ -65,9 +67,10 @@ const Home = () => {
                           <Image src={HeroIcon1} className="img-fluid" alt="" />
                         </div>
                         <Card.Title className="fw-400 text-center fs-20 mb-0 pt-2">
-                          Pay{" "}
-                          <span className="fw-600 text-main-gold">ZERO</span>{" "}
-                          tax on gains
+                          Grow your {" "}
+                          <span className="fw-600 text-main-gold">capital</span>
+                          {/* <span className="fw-600 text-main-gold">ZERO</span>{" "} */}
+
                         </Card.Title>
                       </Card.Body>
                     </Card>
@@ -79,23 +82,26 @@ const Home = () => {
                           <Image src={HeroIcon2} className="img-fluid" alt="" />
                         </div>
                         <Card.Title className="fw-400 text-center fs-20 mb-0 pt-2">
-                          <span className="fw-600 text-main-gold">12%</span> to{" "}
-                          <span className="fw-600 text-main-gold">16%</span>{" "}
+                          <span className="fw-600 text-main-gold">10%</span> to{" "}
+                          <span className="fw-600 text-main-gold">17%</span>{" "}
                           returns
                         </Card.Title>
                       </Card.Body>
                     </Card>
                   </Col>
                   <Col md={4} lg={4}>
+                   
                     <Card className="darkcard mb-5 mb-md-4 p-0 rounded text-start text-white">
                       <Card.Body className="m-1 bg-dark-gradient rounded px-4 py-5 py-md-4">
+                   
                         <div className="darkcard-icon px-3 py-1 mx-auto mb-4 mb-md-2 d-flex justify-content-center align-items-center">
                           <Image src={HeroIcon3} className="img-fluid" alt="" />
                         </div>
                         <Card.Title className="fw-400 text-center fs-20 mb-0 pt-2">
-                          <span className="fw-600 text-main-gold">#1</span>{" "}
-                          Green investments
+                          {/* <span className="fw-600 text-main-gold">#1</span>{" "} */}
+                          Managed {" "}<span className="fw-600 text-main-gold">farm</span> {" "}projects
                         </Card.Title>
+        
                       </Card.Body>
                     </Card>
                   </Col>
@@ -119,7 +125,7 @@ const Home = () => {
 
       <section className="py-5 " >
         <Container>
-          <Row className="d-flex justify-content-center align-items-center pb-0 pb-md-5">
+          <Row className="d-flex justify-content-center align-items-center pb-0 ">
             <Col xs={12} md={12} lg={6} className="text-center text-md-start">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> WHAT ARE
@@ -135,15 +141,15 @@ const Home = () => {
                 <Image src={zero} className="img-fluid" alt="" />
                 <div className="text-start">
                   <p className="fs-24 fs-sm-18 fw-400 text-white ms-2 mb-5">
-                    Charge on early withdrawal
+                    Exit Fee
                   </p>
-                  <p className="fs-24 fs-sm-18 fw-400 text-white ms-4 mb-5">Default</p>
+                  <p className="fs-24 fs-sm-18 fw-400 text-white ms-4 mb-5">Delay</p>
                   <p className="fs-24 fs-sm-18 fw-400 text-white ms-2 mb-0">
                     Brokerage fees
                   </p>
                 </div>
               </div>
-              <div>
+              <div className="mb-2">
                 <ButtonStar />
               </div>
             </Col>
@@ -158,7 +164,7 @@ const Home = () => {
                   <CardDark
                     Cardicon={CardIcon3}
                     Title="Safe, Secure"
-                    SubTitle="Our team is dedicated to support you anytime, anywhere."
+                    SubTitle="Experienced and customer centric team for awesome output always."
                   />
                 </Col>
                 <Col md={6}>
@@ -169,14 +175,17 @@ const Home = () => {
                   />
                 </Col>
               </Row>
+
             </Col>
           </Row>
         </Container>
       </section>
+<div>
+  <img src={gif1} alt="" />
+</div>
 
-      <section className=" py-5" >
-        <div className="bg-charade">
-        <Container className="py-3">
+      <section className="py-5 d-flex justify-content-center align-items-center bg-charade">
+        <Container className="">
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
@@ -189,14 +198,14 @@ const Home = () => {
               </p>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-center align-items-center mb-4">
+          <Row className="d-flex justify-content-center align-items-center ">
             <CardCounter />
             <Col md={12} className="text-center mt-5 mt-md-0" >
               <ButtonStar />
             </Col>
           </Row>
+
         </Container>
-        </div>
       </section>
 
       <section className="py-5">
@@ -207,7 +216,7 @@ const Home = () => {
                 <BsFillCircleFill size={8} className="me-1" /> HOW TO GET
                 STARTED?
               </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
+              <h2 className="text-white fw-600 display-6 mb-3 mb-md-3" >
                 Start investing in{" "}
                 <span className="text-main-green">4 simple steps</span>
               </h2>
@@ -275,17 +284,19 @@ const Home = () => {
                 Doubts, questions, queries and suggensions? We here for you
               </p>
               <ul className="list-unstyled fs-20 fs-sm-18 fw-500 text-white text-start" >
+              
                 <li className="d-flex justify-content-start mt-3">
                   <BsCheck2Square className="text-main-gold mt-2 me-3" />{" "}
-                  connect with os over call or whatsapp
+                  Connect with us over call, whatsapp or Telegram
                 </li>
+      
                 <li className="d-flex justify-content-start mt-3">
                   <BsCheck2Square className="text-main-gold mt-2 me-3" />{" "}
                   Available for you, even on sundays
                 </li>
                 <li className="d-flex justify-content-start mt-3">
                   <BsCheck2Square className="text-main-gold mt-2 me-3" /> Get
-                  your answers instantly
+                  Get your answers in no time
                 </li>
               </ul>
             </Col>
@@ -297,24 +308,39 @@ const Home = () => {
             >
               <Row className="mt-5 mt-lg-0">
                 <Col xs={12} className="d-grid gap-4">
+                  <a href="https://koalendar.com/e/know-growpital-pc">
                   <Button
                     variant="dark"
                     size="lg"
                     className="px-3 px-md-5 py-3"
-                    
+
                   >
                     <img src={Call24} className="img-fluid me-3" alt="" />{" "}
                     Schedule a call
                   </Button>
+                  </a>
+                  <a href="https://wa.me/message/FCMTNVU3NDJOB1"> 
                   <Button
                     variant="dark"
                     size="lg"
                     className="px-3 px-md-5 py-3"
-                    
+
                   >
                     <img src={WhatsapIcon} className="img-fluid me-3" alt="" />{" "}
                     Message on Whatsapp
                   </Button>
+                  </a>
+                  <a href="https://wa.me/message/FCMTNVU3NDJOB1"> 
+                  <Button
+                    variant="dark"
+                    size="lg"
+                    className="px-3 px-md-5 py-3"
+
+                  >
+                    <img src={telegram} className="img-fluid me-3" style={{maxWidth:"50px"}} alt="" />{" "}
+                    Join Telegram Channel
+                  </Button>
+                  </a>
                 </Col>
               </Row>
             </Col>

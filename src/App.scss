@@ -12,6 +12,7 @@ html.transition *:after {
 body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
-  background-color: var(--color-woodsmoke)
+  background-color: var(--color-woodsmoke);
+  scroll-behavior: smooth;
 }
 @import './stylesheet/style.scss';

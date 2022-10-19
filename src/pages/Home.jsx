@@ -180,9 +180,9 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-<div>
+{/* <div>
   <img src={gif1} alt="" />
-</div>
+</div> */}
 
       <section className="py-5 d-flex justify-content-center align-items-center bg-charade">
         <Container className="">

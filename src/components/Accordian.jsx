@@ -10,33 +10,38 @@ const Accordian = (props) => {
 
   const [index, setIndex] = useState();
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
+
+  // const handleSelect = (selectedIndex, e) => {
+  //   console.log(e.target.value)
+  // };
 
 
  
   const AccorianItems = [
     {
       Id: 0,
+      no:1,
       Title: "Create account and complete KYC",
       SubTitle:
         "Sign up with username and password. Verify your KYC which includes Pan Card, Adhaar card & Bank account details.",
     },
     {
       Id: 1,
+      no:2,
       Title: " Choose investment option",
       SubTitle:
         "Select the plan best suited to you and select the number of units you want to invest in.",
     },
     {
       Id: 2,
+      no:3,
       Title: " Add money and invest",
       SubTitle:
         "Simply add money to Growpital Wallet, e-sign required documents.",
     },
     {
       Id: 3,
+      no:4,
       Title: " Harvest your earnings ",
       SubTitle:
         "See your earning growing with assured returns at regular intervals.",
@@ -47,7 +52,7 @@ const Accordian = (props) => {
 
       <Row className="d-flex justify-content-center align-items-start pt-5">
         <Col xs={12} md={12} lg={6} className="text-center text-lg-start mb-5 mb-lg-0" >
-          <Carousel activeIndex={index}  className="vertical" controls={false} indicators={false} autoPlay={true} interval={5000} onSelect={handleSelect}  >
+          <Carousel activeIndex={index}  className="vertical" controls={false} indicators={false} autoPlay={true} interval={5000}   >
             <Carousel.Item  >
               <img
               
@@ -91,15 +96,15 @@ const Accordian = (props) => {
 
         </Col>
         <Col xs={12} md={12} lg={6} className="text-center text-md-end" >
-          <Accordion activeKey={index} className="home-accordian" >
+          <Accordion activeKey={index} className="home-accordian"  >
             {AccorianItems.map((Items) => (
               <Accordion.Item
                 eventKey={Items.Id}
                 key={Items.Id}
                 className="mb-3 bg-transparent"
               >
-                <Accordion.Header className="text-white fw-600 fs-22" onClick={()=>{setIndex(Items.Id)}}>
-                  <span className={props.Display_Sr_No}>0{Items.Id}</span>{" "}
+                <Accordion.Header className="text-white fw-600 fs-22" onClick={()=>{ setIndex(Items.Id) }} >
+                  <span className={props.Display_Sr_No}>0{Items.no}</span>{" "}
                   {Items.Title}
                 </Accordion.Header>
                 <Accordion.Body>{Items.SubTitle}</Accordion.Body>

@@ -23,14 +23,15 @@ import HeroIcon5 from "../assets/img/16.png";
 import CardIcon1 from "../assets/img/4.png";
 import CardIcon2 from "../assets/img/5.png";
 import CardIcon3 from "../assets/img/9.png";
-import gif1 from "../assets/img/Story_04.gif"
+import gif1 from "../assets/img/Story_02_2.gif"
+import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalable-vector-graph-png-telegram-transparent-5ab08470747435.671490841521517680477.png"
 
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
 import AccordingQue from "../components/AccordingQue";
 
 const Home = () => {
- 
+
 
   return (
     <>
@@ -66,9 +67,10 @@ const Home = () => {
                           <Image src={HeroIcon1} className="img-fluid" alt="" />
                         </div>
                         <Card.Title className="fw-400 text-center fs-20 mb-0 pt-2">
-                          Grow your capital{" "}
+                          Grow your {" "}
+                          <span className="fw-600 text-main-gold">capital</span>
                           {/* <span className="fw-600 text-main-gold">ZERO</span>{" "} */}
-                          
+
                         </Card.Title>
                       </Card.Body>
                     </Card>
@@ -88,15 +90,18 @@ const Home = () => {
                     </Card>
                   </Col>
                   <Col md={4} lg={4}>
+                   
                     <Card className="darkcard mb-5 mb-md-4 p-0 rounded text-start text-white">
                       <Card.Body className="m-1 bg-dark-gradient rounded px-4 py-5 py-md-4">
+                   
                         <div className="darkcard-icon px-3 py-1 mx-auto mb-4 mb-md-2 d-flex justify-content-center align-items-center">
                           <Image src={HeroIcon3} className="img-fluid" alt="" />
                         </div>
                         <Card.Title className="fw-400 text-center fs-20 mb-0 pt-2">
                           {/* <span className="fw-600 text-main-gold">#1</span>{" "} */}
-                          Managed farm projects
+                          Managed {" "}<span className="fw-600 text-main-gold">farm</span> {" "}projects
                         </Card.Title>
+        
                       </Card.Body>
                     </Card>
                   </Col>
@@ -136,7 +141,7 @@ const Home = () => {
                 <Image src={zero} className="img-fluid" alt="" />
                 <div className="text-start">
                   <p className="fs-24 fs-sm-18 fw-400 text-white ms-2 mb-5">
-                  Exit Fee
+                    Exit Fee
                   </p>
                   <p className="fs-24 fs-sm-18 fw-400 text-white ms-4 mb-5">Delay</p>
                   <p className="fs-24 fs-sm-18 fw-400 text-white ms-2 mb-0">
@@ -170,16 +175,17 @@ const Home = () => {
                   />
                 </Col>
               </Row>
-              
+
             </Col>
           </Row>
         </Container>
       </section>
-     
-      <section className="py-5 d-flex justify-content-center align-items-center bg-charade">
+<div>
+  <img src={gif1} alt="" />
+</div>
 
-      
-          <Container className="">
+      <section className="py-5 d-flex justify-content-center align-items-center bg-charade">
+        <Container className="">
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
@@ -278,17 +284,19 @@ const Home = () => {
                 Doubts, questions, queries and suggensions? We here for you
               </p>
               <ul className="list-unstyled fs-20 fs-sm-18 fw-500 text-white text-start" >
+              
                 <li className="d-flex justify-content-start mt-3">
                   <BsCheck2Square className="text-main-gold mt-2 me-3" />{" "}
-                  connect with os over call or whatsapp
+                  Connect with us over call, whatsapp or Telegram
                 </li>
+      
                 <li className="d-flex justify-content-start mt-3">
                   <BsCheck2Square className="text-main-gold mt-2 me-3" />{" "}
                   Available for you, even on sundays
                 </li>
                 <li className="d-flex justify-content-start mt-3">
                   <BsCheck2Square className="text-main-gold mt-2 me-3" /> Get
-                  your answers instantly
+                  Get your answers in no time
                 </li>
               </ul>
             </Col>
@@ -300,24 +308,39 @@ const Home = () => {
             >
               <Row className="mt-5 mt-lg-0">
                 <Col xs={12} className="d-grid gap-4">
+                  <a href="https://koalendar.com/e/know-growpital-pc">
                   <Button
                     variant="dark"
                     size="lg"
                     className="px-3 px-md-5 py-3"
-                    
+
                   >
                     <img src={Call24} className="img-fluid me-3" alt="" />{" "}
                     Schedule a call
                   </Button>
+                  </a>
+                  <a href="https://wa.me/message/FCMTNVU3NDJOB1"> 
                   <Button
                     variant="dark"
                     size="lg"
                     className="px-3 px-md-5 py-3"
-                    
+
                   >
                     <img src={WhatsapIcon} className="img-fluid me-3" alt="" />{" "}
                     Message on Whatsapp
                   </Button>
+                  </a>
+                  <a href="https://wa.me/message/FCMTNVU3NDJOB1"> 
+                  <Button
+                    variant="dark"
+                    size="lg"
+                    className="px-3 px-md-5 py-3"
+
+                  >
+                    <img src={telegram} className="img-fluid me-3" style={{maxWidth:"50px"}} alt="" />{" "}
+                    Join Telegram Channel
+                  </Button>
+                  </a>
                 </Col>
               </Row>
             </Col>

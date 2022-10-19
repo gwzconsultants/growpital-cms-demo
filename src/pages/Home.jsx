@@ -23,7 +23,7 @@ import HeroIcon5 from "../assets/img/16.png";
 import CardIcon1 from "../assets/img/4.png";
 import CardIcon2 from "../assets/img/5.png";
 import CardIcon3 from "../assets/img/9.png";
-import gif1 from "../assets/img/Story_02_2.gif"
+// import gif1 from "../assets/img/Story_02_2.gif"
 import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalable-vector-graph-png-telegram-transparent-5ab08470747435.671490841521517680477.png"
 
 // import Icon1 from "../assets/img/dark-card-icon.png";
@@ -270,7 +270,7 @@ const Home = () => {
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
-                <BsFillCircleFill size={8} className="me-1" /> HAVE QUATIONS YOU
+                <BsFillCircleFill size={8} className="me-1" /> HAVE QUESTIONS YOU
                 WANT TO ASK?
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
@@ -281,7 +281,7 @@ const Home = () => {
           <Row className="d-flex justify-content-center align-items-strech pt-5">
             <Col xs={12} md={12} lg={5} className="text-center text-md-start">
               <p className="fs-26 fs-sm-22 fw-500 text-white mb-5" >
-                Doubts, questions, queries and suggensions? We here for you
+              Doubts, questions, queries and suggestions? We are here for you
               </p>
               <ul className="list-unstyled fs-20 fs-sm-18 fw-500 text-white text-start" >
               

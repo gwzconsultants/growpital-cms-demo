@@ -28,7 +28,7 @@ const Header = () => {
 
                         </Nav>
                         <div className="d-flex d-none d-md-block">
-                            <Link to="/singup"> <Button className="main-btn-nav maincolor mb-2 fs-11">Singup/Login</Button></Link>
+                            <Link to="/singup"> <Button className="main-btn-nav maincolor mb-2 fs-11">Login/Singup</Button></Link>
                         </div>
                     </Navbar.Collapse>
                     

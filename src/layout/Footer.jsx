@@ -7,7 +7,7 @@ import upi from "../assets/img/upi.png"
 const Footer = () => {
   return (
     <>
-      <footer className="py-5 mt-3">
+      <footer className="py-4  margin-top">
         <Container>
           <Row>
             <Col xs={12} md={6} lg={3}>
@@ -69,7 +69,7 @@ const Footer = () => {
           <Container>
             <Row>
               <Col>
-                <Nav className="flex-column flex-sm-row justify-content-between" activeKey="/home">
+                <Nav className="flex-column flex-sm-row justify-content-between w-60" activeKey="/home">
                   <Nav.Item className="py-2">
                     <Nav.Link>Investors</Nav.Link>
                   </Nav.Item>
@@ -100,10 +100,10 @@ const Footer = () => {
             <img src={upi} className="img-fluid" alt="" />
             </Col>
             <Col lg={9}>
-              <p className="text-white fw-400 mb-3 mb-md-0">CIN No. U74900HR2011PTC044581 © Copyright 2021-2022 growpital.com. All Rights Reserved.</p>
+              <p className="text-white fw-400 mb-3 mb-md-0 pt-5">CIN No. U74900HR2011PTC044581 © Copyright 2021-2022 growpital.com. All Rights Reserved.</p>
             </Col>
             <Col lg={3} className="text-center text-lg-end pt-3 pt-lg-0">
-              <p className="text-white fw-400 mb-3 mb-md-0">Made with  in India.</p>
+              <p className="text-white fw-400 mb-3 mb-md-0 pt-5">Made with  in India.</p>
             </Col>
           </Row>
         </Container>

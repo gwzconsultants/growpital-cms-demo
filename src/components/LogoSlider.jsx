@@ -9,14 +9,14 @@ const LogoSlider = () => {
         className: "center",
         centerMode: true,
         centerPadding: "100px",
-        slidesToShow: 1,
+        slidesToShow: 3,
         rows: 1,
         slidesPerRow: 1,
         slidesToScroll: 1,
         dots: true,
         infinite: true,
         autoplay: true,
-        speed: 4000,
+        speed: 3000,
         autoplaySpeed: 1000,
         cssEase: "linear",
         arrows: false,
@@ -49,19 +49,28 @@ const LogoSlider = () => {
         ],
     };
     return (
-        <div className='about-logo'>
+        <div className='about-logo pb-4'>
+            {/* <Col className='d-flex justify-content-evenly p-3'> */}
             <Slider {...settings} >
 
-               <Col className='d-flex justify-content-evenly p-3'>
+                    <div >
                     <img src={Logo} alt="" className='me-4'/>
+                    </div>
+                    <div>
                     <img src={Logo} alt="" className='me-4'/>
+                    </div>
+                    <div>
                     <img src={Logo} alt="" className='me-4'/>
+                    </div>
+                    <div>
                     <img src={Logo} alt="" className='me-4'/>
+                    </div>
+                    <div>
                     <img src={Logo} alt="" className='me-4'/>
-               </Col>
-
+                    </div>
 
             </Slider>
+            {/* </Col> */}
         </div>
     )
 }

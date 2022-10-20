@@ -42,14 +42,14 @@ const AboutPage = () => {
                         {Abouter.map((item, index) => (
                             <Col xs={12} md={12} lg={4} className="d-flex justify-content-center  ps-md-5 ps-lg-3" key={index}>
                                 <Card className=" text-center darkcard rounded p-1 d-flex mb-3" style={{ width: '28rem' }} >
-                                    <Card.Body className=" bg-dark-gradient ">
+                                    <Card.Body className=" bg-dark-gradient rounded">
                                         <Image src={item.Img} className="img-fluid my-3" alt="" />
                                         <div className='mt-3'>
                                             <Card.Title className="fw-600 fs-22 text-white text-uppercase">
                                                 {item.Title}
                                             </Card.Title>
 
-                                            <Card.Text className="fw-500 fs-14 text-white text-uppercase">{item.content}</Card.Text>
+                                            <Card.Text className="fw-300 fs-14 text-white ">{item.content}</Card.Text>
                                         </div>
                                     </Card.Body>
                                 </Card>

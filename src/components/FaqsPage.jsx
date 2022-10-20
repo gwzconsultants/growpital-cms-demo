@@ -13,9 +13,9 @@ const FaqsPage = () => {
                         <Col className="d-flex justify-content-center align-items-center text-white">
                             <div className='text-center '>
                                 <h1>Frequently Asked Questions</h1>
-                                <p>Got a question? We've got answers.<br />
+                                <p className="subheading">Got a question? We've got answers.<br />
                                     If you have some other questions, contact us using email.</p>
-                                <div className='faqs-search my-4 py-3'>
+                                {/* <div className='faqs-search my-4 py-3'>
                                     <Form className="d-flex ">
                                         <Form.Control
                                             type="search"
@@ -34,7 +34,7 @@ const FaqsPage = () => {
 
                                         </IconContext.Provider>
                                     </Form>
-                                </div>
+                                </div> */}
 
                             </div>
 
@@ -49,19 +49,19 @@ const FaqsPage = () => {
                     <Row>
                         <Col>
                         <div className='text-center mx-auto mb-3'>
-                            <p className='fw-bold fs-32 mb-3 py-3'>GENERAL QUESTIONS</p>
+                            <p className='fw-500 fs-32 mb-3 py-3'>GENERAL QUESTIONS</p>
                         </div>
                         <FaqsAccordian />
                         </Col>
                     </Row>
                 </Container>
             </section>
-            <section className='mt-4 mb-3 py-3'>
+            <section className='mt-5 mb-3 py-3'>
                 <Container className='text-white'>
                     <Row>
                         <Col>
                         <div className='text-center mx-auto mb-3'>
-                            <p className='fw-bold fs-32 mb-3 py-3'>Finance</p>
+                            <p className='fw-500 fs-32 mb-3 py-4'>Finance</p>
                         </div>
                         <FaqsAccordian />
                         </Col>
@@ -75,7 +75,7 @@ const FaqsPage = () => {
                     <Row>
                         <Col>
                         <div className='text-center mx-auto mb-2'>
-                            <p className='fw-bold fs-32 mb-3 py-3'>Banking</p>
+                            <p className='fw-500 fs-32 mb-3 py-4'>Banking</p>
                         </div>
                      <FaqsAccordian />
                         </Col>

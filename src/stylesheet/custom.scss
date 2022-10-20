@@ -67,7 +67,9 @@
     .dropdown:hover .dropdown-toggle::after,
     .dropdown:focus .dropdown-toggle::after,
     .dropdown.show .dropdown-toggle::after {
-      background-image: url(../assets/img/down-arrow-yelow.png);
+      // background-image: url(../assets/img/down-arrow-yelow.png);
+      background-image: url(../assets/img/10.png);
+
       transform: rotate(180deg);
     }
   }
@@ -540,7 +542,9 @@ footer {
         }
 
         &::after {
-          background-image: url(../assets/img/10.png);
+          // transform: rotateX(180deg);\
+          background-image: url(../assets/img/down-arrow-yelow.png);
+
           height: 30px;
           width: 30px;
           background-color: var(--color-woodsmoke);
@@ -580,10 +584,11 @@ footer {
 
     .accordion-body {
       color: var(--color-white);
-      font-size: 17px;
-      font-weight: 400;
+      font-size: 15px;
+      font-weight: 300;
       text-align: left;
       // padding: 0.5rem 1rem 1.5rem 3.75rem;
+      padding-top: 0%;
       border: 0;
       background: rgb(38, 44, 48);
       background: linear-gradient(90deg,
@@ -708,4 +713,13 @@ footer {
 
 
 
+}
+
+.subheading{
+  font-size: 1.1rem;
+  // background-color: aquamarine;
+  
+}
+.margin-top{
+  margin-top: 6rem !important;
 }

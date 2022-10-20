@@ -5,15 +5,15 @@ const FaqsAccordian = (props) => {
     const AccorianItems = [
         {
             Id: "0",
-            Title: "How this work?",
+            Title: "What is Growpital? (In a Nutshell)",
             SubTitle:
-                "Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.",
+                "The all-new Agro investment platform with tax-free income. It’s the new clutter-free, fixed-income platform with ESG benefits for smart investors giving a whopping 8% -16% fixed returns.",
         },
         {
             Id: "2",
-            Title: " Choose investment option",
+            Title: " How does Growpital works?",
             SubTitle:
-                "KYC process includes ID card verification, face verification, document verification such as utility bills as proof of address, and biometric verification.",
+                "- Choose your investment plan and units of investments in farm projects.- Confirm details and pay securely. Our team handles administration and property management – from crop selection, farm inputs, to working with local farmers and improving soil sustainability. Get your fixed payouts every financial quarter end. You can withdraw this directly in your bank account or even choose to re-invest for more wealth creation.",
         },
         {
             Id: "3",

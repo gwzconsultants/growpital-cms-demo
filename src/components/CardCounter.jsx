@@ -9,7 +9,7 @@ const CardCounter = (props) => {
     {
       Id: "",
       Title: "Total Investments",
-      Count: "₹480+",
+      Count: "₹700+",
       Tenur: "Lakhs",
       Img: Icon1
     },
@@ -22,9 +22,9 @@ const CardCounter = (props) => {
     },
     {
       Id: "",
-      Title: "Crop Harvested",
-      Count: "4500+",
-      Tenur: "Tonnes",
+      Title: "Managed Area",
+      Count: "1000+",
+      Tenur: "Acres",
       Img: Icon3
     },
   ];

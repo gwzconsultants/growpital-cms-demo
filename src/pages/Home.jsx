@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Image, Row, Button, Card } from "react-bootstrap";
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";
-import { BsArrowRight, BsFillCircleFill, BsCheck2Square } from "react-icons/bs";
+import { BsArrowRight, BsFillCircleFill, BsCheck2Square, BsFillStarFill } from "react-icons/bs";
 import mobile from "../assets/img/mobile.png";
 import zero from "../assets/img/zero.png";
 import CardDark from "../components/CardDark";
@@ -14,7 +14,7 @@ import TestiSlider from "../components/TestiSlider";
 import Call24 from "../assets/img/24call.png";
 import WhatsapIcon from "../assets/img/whatsapp-icon.png";
 import RangeProgressBar from "../components/RangeProgressBar";
-import TotalInvestment from "../components/TotalInvestment";
+// import TotalInvestment from "../components/TotalInvestment";
 import HeroIcon1 from "../assets/img/2.png";
 import HeroIcon2 from "../assets/img/1.png";
 import HeroIcon3 from "../assets/img/3.png";
@@ -90,10 +90,10 @@ const Home = () => {
                     </Card>
                   </Col>
                   <Col md={4} lg={4}>
-                   
+
                     <Card className="darkcard mb-5 mb-md-4 p-0 rounded text-start text-white">
                       <Card.Body className="m-1 bg-dark-gradient rounded px-4 py-5 py-md-4">
-                   
+
                         <div className="darkcard-icon px-3 py-1 mx-auto mb-4 mb-md-2 d-flex justify-content-center align-items-center">
                           <Image src={HeroIcon3} className="img-fluid" alt="" />
                         </div>
@@ -101,7 +101,7 @@ const Home = () => {
                           {/* <span className="fw-600 text-main-gold">#1</span>{" "} */}
                           Managed {" "}<span className="fw-600 text-main-gold">farm</span> {" "}projects
                         </Card.Title>
-        
+
                       </Card.Body>
                     </Card>
                   </Col>
@@ -109,6 +109,19 @@ const Home = () => {
               </div>
 
               <ButtonStar />
+              <div className="mx-2 py-1">
+                <p className="mb-1 text-md-start  text-center ">
+                  <span className="text-white fs-18 me-2">Rated </span>
+                 
+                  <BsFillStarFill size={18} className="text-sunglow me-1" />
+                  <BsFillStarFill size={18} className="text-sunglow me-1" />
+                  <BsFillStarFill size={18} className="text-sunglow me-1" />
+                  <BsFillStarFill size={18} className="text-sunglow me-1" />
+                  <BsFillStarFill size={18} className="text-sunglow me-1" />
+               
+                  <span className="text-white fs-18 ms-1">4.7 by user</span>
+                </p>
+              </div>
             </Col>
             <Col
               xs={12}
@@ -159,19 +172,19 @@ const Home = () => {
                   <CardDark
                     Cardicon={CardIcon1}
                     Title="Assured Growth "
-                    SubTitle="Free from Stock Mad...rash, As safe as bank Fixed Deposits."
+                    SubTitle="Free from Stock market volatality. Quaterly payouts in your wallet"
                   />
                   <CardDark
                     Cardicon={CardIcon3}
-                    Title="Safe, Secure"
-                    SubTitle="Experienced and customer centric team for awesome output always."
+                    Title="Safe & Secure"
+                    SubTitle="Revenue contracts, crop insurance & professional farmers ensuring assured returns."
                   />
                 </Col>
                 <Col md={6}>
                   <CardDark
                     Cardicon={CardIcon2}
                     Title="Consistent Returns"
-                    SubTitle="We providing much higher returns than FD, Bank and several mutual funds."
+                    SubTitle="We providing much higher returns than FD and several bonds."
                   />
                 </Col>
               </Row>
@@ -180,7 +193,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-{/* <div>
+      {/* <div>
   <img src={gif1} alt="" />
 </div> */}
 
@@ -249,13 +262,13 @@ const Home = () => {
               </h2>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-center align-items-center pt-2">
-            <Col xs={12} md={12} lg={6} className="text-center text-md-start" >
+          <Row className="d-flex justify-content-center px-md-5  align-items-center pt-2 " >
+            <Col xs={12} md={12} lg={12} className="text-center" style={{maxWidth:"40rem"}}  >
               <RangeProgressBar />
             </Col>
-            <Col xs={12} md={12} lg={6} className="text-center text-md-start" >
+            {/* <Col xs={12} md={12} lg={6} className="text-center text-md-start" >
               <TotalInvestment />
-            </Col>
+            </Col> */}
           </Row>
           <Row>
             <Col md={12} className="text-center mt-5 mt-md-4">
@@ -281,21 +294,21 @@ const Home = () => {
           <Row className="d-flex justify-content-center align-items-strech pt-5">
             <Col xs={12} md={12} lg={5} className="text-center text-md-start">
               <p className="fs-26 fs-sm-22 fw-500 text-white mb-5" >
-              Doubts, questions, queries and suggestions? We are here for you
+                Curiosity is one of the great secrets of Success.
               </p>
               <ul className="list-unstyled fs-20 fs-sm-18 fw-500 text-white text-start" >
-              
+
                 <li className="d-flex justify-content-start mt-3">
                   <BsCheck2Square className="text-main-gold mt-2 me-3" />{" "}
                   Connect with us over call, whatsapp or Telegram
                 </li>
-      
+
                 <li className="d-flex justify-content-start mt-3">
                   <BsCheck2Square className="text-main-gold mt-2 me-3" />{" "}
                   Available for you, even on sundays
                 </li>
                 <li className="d-flex justify-content-start mt-3">
-                  <BsCheck2Square className="text-main-gold mt-2 me-3" /> Get
+                  <BsCheck2Square className="text-main-gold mt-2 me-3" />
                   Get your answers in no time
                 </li>
               </ul>
@@ -308,39 +321,48 @@ const Home = () => {
             >
               <Row className="mt-5 mt-lg-0">
                 <Col xs={12} className="d-grid gap-4">
+                  <div>
                   <a href="https://koalendar.com/e/know-growpital-pc">
-                  <Button
-                    variant="dark"
-                    size="lg"
-                    className="px-3 px-md-5 py-3"
+                    <Button
+                      variant="dark"
+                      size="lg"
+                      className="px-3 px-md-5 py-3 w-100"
+                      
 
-                  >
-                    <img src={Call24} className="img-fluid me-3" alt="" />{" "}
-                    Schedule a call
-                  </Button>
+                    >
+                      <img src={Call24} className="img-fluid me-3" alt="" />{" "}
+                      Schedule a call 
+                    </Button>
                   </a>
-                  <a href="https://wa.me/message/FCMTNVU3NDJOB1"> 
-                  <Button
-                    variant="dark"
-                    size="lg"
-                    className="px-3 px-md-5 py-3"
+                  </div>
 
-                  >
-                    <img src={WhatsapIcon} className="img-fluid me-3" alt="" />{" "}
-                    Message on Whatsapp
-                  </Button>
-                  </a>
-                  <a href="https://wa.me/message/FCMTNVU3NDJOB1"> 
-                  <Button
-                    variant="dark"
-                    size="lg"
-                    className="px-3 px-md-5 py-3"
+                  <div>
+                  <a href="https://wa.me/message/FCMTNVU3NDJOB1">
+                    <Button
+                      variant="dark"
+                      size="lg"
+                      className="px-3 px-md-5 py-3"
 
-                  >
-                    <img src={telegram} className="img-fluid me-3" style={{maxWidth:"50px"}} alt="" />{" "}
-                    Join Telegram Channel
-                  </Button>
+                    >
+                      <img src={WhatsapIcon} className="img-fluid me-3" alt="" />{" "}
+                      Message on Whatsapp
+                    </Button>
                   </a>
+                  </div>
+
+                  <div>
+                  <a href="https://wa.me/message/FCMTNVU3NDJOB1">
+                    <Button
+                      variant="dark"
+                      size="lg"
+                      className="px-3 px-md-5 py-3"
+
+                    >
+                      <img src={telegram} className="img-fluid me-3" style={{ maxWidth: "50px" }} alt="" />{" "}
+                      Join Telegram Channel
+                    </Button>
+                  </a>
+                  </div>
                 </Col>
               </Row>
             </Col>
@@ -362,9 +384,9 @@ const Home = () => {
               </h2>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-center align-items-start pt-5 superstars">
-            <Superstars />
-          </Row>
+
+          <Superstars />
+
         </Container>
       </section>
 
@@ -383,7 +405,7 @@ const Home = () => {
           </Row>
         </Container>
         <Container fluid>
-          <Row className="d-flex justify-content-center align-items-start pt-5">
+          <Row className="d-flex justify-content-center align-items-start pt-3">
             <Col className="text-center text-md-start">
               <TestiSlider />
             </Col>
@@ -395,26 +417,37 @@ const Home = () => {
         <Container>
           <Row className="d-flex justify-content-center align-items-start">
             <Col xs={12} md={12} lg={6} className="text-center text-lg-start">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" >
-                <BsFillCircleFill size={8} className="me-1" /> ASK ANY QUESTIONS
+              <p className="text-uppercase fs-18 fw-500 text-main-green text-uppercase" >
+                <BsFillCircleFill size={8} className="me-1" />Join us on our Telegram channel
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
-                Any questions? We got you.
+                Be part of our community!
               </h2>
               <p className="text-white fw-400 fs-18 py-4" >
-                Yet bed any for assistance indulgence unpleasing. Not thoughts
-                all exercise blessing. Indulgence way everything joy alteration
-                boisterous the attachment.
+                Get content straight to you.
+                Be the first to learn the news about new features and product updates. What is going on in agri industry, promotions and more.
               </p>
-              <a href="/" className="fs-16 fw-700 text-white">More FAQs</a>
               <div className="mt-5 d-none d-md-block ">
-                <ButtonStar />
+                <div>
+                  <a href="https://wa.me/message/FCMTNVU3NDJOB1">
+                    <Button
+                      variant="dark"
+                      size="lg"
+                      className="px-3 px-md-5 py-3"
+
+                    >
+                      <img src={telegram} className="img-fluid me-3" style={{ maxWidth: "50px" }} alt="" />{" "}
+                      Join Telegram Channel
+                    </Button>
+                  </a>
+                  </div>
               </div>
             </Col>
-            <Col xs={12} md={12} lg={6} className="text-center text-lg-end mt-5 mt-lg-0">
-              <div className="faq-accordian" >
+            <Col xs={12} md={12} lg={6} className="  mt-5 mt-lg-0">
+              <div className="faq-accordian text-center text-lg-end"  >
                 <AccordingQue Display_Sr_No="text-main-gold me-3 d-none" />
               </div>
+              <a href="/faqs" className="fs-16 fw-700 text-white text-start">More FAQs</a>
             </Col>
           </Row>
         </Container>

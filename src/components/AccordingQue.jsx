@@ -37,7 +37,7 @@ const AccordingQue = (props) => {
   return (
     <Row>
     <Col xs={12} md={12}  className="text-center text-md-end" >
-    <Accordion defaultActiveKey="0" className="home-accordian"  >
+    <Accordion defaultActiveKey="" className="home-accordian"  >
       {AccorianItems.map((Items) => (
         <Accordion.Item
           eventKey={Items.Id}
@@ -48,8 +48,8 @@ const AccordingQue = (props) => {
             <span className={props.Display_Sr_No}>0{Items.Id}</span>{" "}
             {Items.Title}
           </Accordion.Header>
-          <Accordion.Body>
-            <ul type="none">
+          <Accordion.Body className='pb-2'>
+            <ul type="none" className='mb-0'>
               <li className='py-2'>{Items.SubTitle}</li>
               <li className='py-2'>{Items.SubTitle1}</li>
               <li className='py-2'>{Items.SubTitle2}</li>

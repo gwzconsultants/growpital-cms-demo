@@ -9,17 +9,35 @@ import Slider from "react-slick";
 const Superstars = (props) => {
   var settings = {
     className: "center",
+    centerMode: true,
+    centerPadding: "15px",
+    slidesToShow: 2,
+    rows: 2,
+    slidesPerRow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 700,
+    cssEase: "linear",
+    arrows: false,
     responsive: [
-     
-       {
-        breakpoint: 800,
+      {
+        breakpoint: 1024,
         settings: {
-          className: "center",
-          centerMode: true,
-          infinite: true,
-          autoplay: true,
-          cssEase: "linear",
-          arrows: false,
+          centerPadding: "10px",
+          slidesToShow: 1,
+          rows: 2,
+          slidesPerRow: 1,
+          slidesToScroll: 1,
+          speed: 3000,
+          autoplaySpeed: 700,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
           centerPadding: "10px",
           slidesToShow: 1,
           rows: 1,
@@ -29,7 +47,6 @@ const Superstars = (props) => {
           dots: true,
           autoplaySpeed: 1000,
         },
-        
       },
     ],
   };
@@ -67,20 +84,53 @@ const Superstars = (props) => {
       SubTitle:
         "During the performance review process, you will measure an employee’s performance relative to a set period.",
     },
+    {
+      Id: "1",
+      Img: Start1,
+      Title: "Rajeev Malviya",
+      Designa: "Directore",
+      SubTitle:
+        "During the performance review process, you will measure an employee’s performance relative to a set period.",
+    },
+    {
+      Id: "2",
+      Img: Start1,
+      Title: "Rajeev Malviya",
+      Designa: "Directore",
+      SubTitle:
+        "During the performance review process, you will measure an employee’s performance relative to a set period.",
+    },
+    {
+      Id: "3",
+      Img: Start1,
+      Title: "Rajeev Malviya",
+      Designa: "Directore",
+      SubTitle:
+        "During the performance review process, you will measure an employee’s performance relative to a set period.",
+    },
+    {
+      Id: "4",
+      Img: Start1,
+      Title: "Rajeev Malviya",
+      Designa: "Directore",
+      SubTitle:
+        "During the performance review process, you will measure an employee’s performance relative to a set period.",
+    },
   ];
   return (
     < >
      {/* <section className="">  */}
-     
+     <Row className="d-flex justify-content-center align-items-start pt-3 superstars">
+       <Col md={12}   className="d-none d-md-block">
+     <Slider {...settings} className="" >
         {SuperStars.map((Items) => (
-          <Col md={12} lg={6} key={Items.Id}  className="d-none d-md-block">
-            <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
-              <Card.Body className="m-1 bg-dark-gradient rounded p-4">
-                <Row>
-                  <Col xs={12} md={4}>
-                    <Image src={Items.Img} className="img-fluid w-100 mb-md-0 mb-3" alt="" />
-                  </Col>
-                  <Col xs={12} md={8}>
+            <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white" key={Items.Id}>
+              <Card.Body className="m-1 bg-dark-gradient rounded p-4 d-flex">
+               
+                  <div >
+                    <Image src={Items.Img} className="img-fluid w-100  mb-md-0 mb-3 " alt="" />
+                  </div>
+                  <div className="ms-3">
                     <Card.Title className="fw-600 fs-20 mb-0 pt-2">
                       {Items.Title}
                     </Card.Title>
@@ -91,14 +141,15 @@ const Superstars = (props) => {
                     <Card.Text className="fw-300 fs-15 lh-24">
                       {Items.SubTitle}
                     </Card.Text>
-                  </Col>
-                </Row>
+                  </div>
+        
               </Card.Body>
             </Card>
-          </Col>
         ))}
         {/* </section> */}
-
+        </Slider>
+        </Col>
+        </Row>
        <Slider {...settings} className="d-md-none" >
      {SuperStars.map((Items) => (
           <Col md={12} lg={6} key={Items.Id} >

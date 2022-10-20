@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Image, Row, Nav } from "react-bootstrap";
 import Logo from "../assets/img/logo.png";
 import { FaFacebookF } from "react-icons/fa";
-import { BsYoutube, BsLinkedin, BsInstagram } from "react-icons/bs";
+import { BsYoutube, BsLinkedin, BsInstagram, BsWhatsapp, BsTelegram } from "react-icons/bs";
 import upi from "../assets/img/upi.png"
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
         <Container>
           <Row>
             <Col xs={12} md={6} lg={3}>
-              <Image src={Logo} className="img-fluid" alt="" />
+              <Image src={Logo} className="img-fluid w-75" alt="logo" />
               <p className="text-white fs-18 fs-sm-22 fw-400 my-3">
                 Learn To Love Growth And Change And You Will Be A Success.
                 Microsoft Patch
@@ -49,16 +49,22 @@ const Footer = () => {
               </Nav>
               <Nav className="justify-content-start " activeKey="/home">
                 <Nav.Item className="pe-4 foot-icon ">
-                  <Nav.Link ><FaFacebookF className="text-indigo "/></Nav.Link>
+                  <Nav.Link href=" https://www.facebook.com/growpital" ><FaFacebookF className="text-indigo "/></Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="pe-4 foot-icon">
-                  <Nav.Link ><BsYoutube className="text-red "/></Nav.Link>
+                  <Nav.Link href="https://www.youtube.com/channel/UC01PIsA1RufWKdul_yve63g" ><BsYoutube className="text-red "/></Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="pe-4 foot-icon">
-                  <Nav.Link ><BsLinkedin className="text-indigo foot-icon"/></Nav.Link>
+                  <Nav.Link href=" https://www.linkedin.com/company/growpital/"><BsLinkedin className="text-indigo foot-icon"/></Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="pe-4 foot-icon">
-                  <Nav.Link ><BsInstagram className="text-darkpink"/></Nav.Link>
+                  <Nav.Link href="https://www.instagram.com/growpital/" ><BsInstagram className="text-darkpink"/></Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="pe-4 foot-icon">
+                  <Nav.Link href="https://wa.me/message/FCMTNVU3NDJOB1" ><BsWhatsapp className="text-darkgreen"/></Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="pe-4 foot-icon">
+                  <Nav.Link href="" ><BsTelegram className="text-blue"/></Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>

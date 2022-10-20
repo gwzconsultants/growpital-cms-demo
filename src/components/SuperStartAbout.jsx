@@ -36,7 +36,7 @@ const SuperstarsAbout = (props) => {
 
   const SuperStars = [
     {
-      Id: "1",
+      Id: "0",
       Img: Start1,
       Title: "Rituraj Sharma",
       Designa: "Founder, CEO",
@@ -44,7 +44,7 @@ const SuperstarsAbout = (props) => {
         "https://www.linkedin.com/in/riturajsharma123/",
     },
     {
-      Id: "2",
+      Id: "1",
       Img: Start1,
       Title: "Krishna Sharma",
       Designa: "Co-founder, COO",
@@ -52,7 +52,7 @@ const SuperstarsAbout = (props) => {
         "https://www.linkedin.com/in/krishnna-joshi-a33638118/",
     },
     {
-      Id: "3",
+      Id: "2",
       Img: Start1,
       Title: "Sudhir Paswan",
       Designa: "CEO - Agriculture Projects",
@@ -60,7 +60,7 @@ const SuperstarsAbout = (props) => {
         "https://www.linkedin.com/in/sudhir-paswan-19326969/",
     },
     {
-      Id: "4",
+      Id: "3",
       Img: Start1,
       Title: "Karan Agrawal",
       Designa: "Growth & Operations",
@@ -68,7 +68,7 @@ const SuperstarsAbout = (props) => {
         "https://www.linkedin.com/in/karan-agrawal-623b5531/",
     },
     {
-      Id: "5",
+      Id: "4",
       Img: Start1,
       Title: "Ankush Agrawal",
       Designa: "Arhtiya",
@@ -76,7 +76,7 @@ const SuperstarsAbout = (props) => {
         "https://www.linkedin.com/in/ankushragrawal/",
     },
     {
-      Id: "6",
+      Id: "5",
       Img: Start1,
       Title: "Utkarsh Srivastava",
       Designa: "",
@@ -84,7 +84,7 @@ const SuperstarsAbout = (props) => {
         "https://www.linkedin.com/in/utkarsh-srivastava-30210417/",
     },
     {
-      Id: "7",
+      Id: "6",
       Img: Start1,
       Title: "Shubhanshu Chouhan",
       Designa: "CTO",
@@ -92,7 +92,7 @@ const SuperstarsAbout = (props) => {
         "https://www.linkedin.com/in/shubhanshu-chouhan/",
     },
     {
-      Id: "8",
+      Id: "7",
       Img: Start1,
       Title: "Fahad Shaikh",
       Designa: "Head of Operations",
@@ -124,7 +124,7 @@ const SuperstarsAbout = (props) => {
                     </Card.Title>
                     <Card.Title className="fw-600 fs-14 mb-3 pt-2 text-italian">
                       <cite>{Items.Designa}</cite>
-                      <a href={Items.link}>
+                      <a href={Items.link} >
                       <AiFillLinkedin size={18} className="ms-2 text-indigo" />
                       </a>
                     </Card.Title>

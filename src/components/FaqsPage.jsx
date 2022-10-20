@@ -2,12 +2,14 @@ import React from 'react'
 import { Button, Col, Container, Form, Row } from 'react-bootstrap'
 import { IconContext } from 'react-icons';
 import { BsSearch } from "react-icons/bs";
+import FinanceAccordian  from './FinanceAccordian';
+import PostInvestmentAccordian from "./PostInvestmentAccordian";
 
 import FaqsAccordian from './FaqsAccordian';
 const FaqsPage = () => {
     return (
         <>
-            <section className='py-5 mt-5 mt-md-0'>
+            <section className='py-0 mt-0 mt-md-0'>
                 <Container>
                     <Row>
                         <Col className="d-flex justify-content-center align-items-center text-white">
@@ -56,28 +58,28 @@ const FaqsPage = () => {
                     </Row>
                 </Container>
             </section>
-            <section className='mt-5 mb-3 py-3'>
+            <section className='mt-5 mb-3 py-0'>
                 <Container className='text-white'>
                     <Row>
                         <Col>
                         <div className='text-center mx-auto mb-3'>
-                            <p className='fw-500 fs-32 mb-3 py-4'>Finance</p>
+                            <p className='fw-bold fs-32 mb-3 py-4'>Finance</p>
                         </div>
-                        <FaqsAccordian />
+                        <FinanceAccordian />
                         </Col>
                     </Row>
                 </Container>
             </section>
 
 
-            <section className='my-5 mb-3 py-3'>
+            <section className='my-5 mb-3 py-0'>
                 <Container className='text-white'>
                     <Row>
                         <Col>
                         <div className='text-center mx-auto mb-2'>
-                            <p className='fw-500 fs-32 mb-3 py-4'>Banking</p>
+                            <p className='fw-bold fs-32 mb-3 py-4'>Banking</p>
                         </div>
-                     <FaqsAccordian />
+                     <PostInvestmentAccordian />
                         </Col>
                     </Row>
                 </Container>

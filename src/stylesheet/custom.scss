@@ -31,7 +31,7 @@
     .nav-link {
       font-family: "Poppins";
       font-style: normal;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 19.7234px;
       line-height: 20px;
       color: var(--color-white);
@@ -628,7 +628,7 @@ footer {
 }
 
 .contact-us {
-  margin-top: 12rem;
+  margin-top: 5rem;
 
 
   @media (max-width:800px) {
@@ -646,7 +646,7 @@ footer {
 
 
 .about {
-  margin-top: 8rem;
+  margin-top: 4rem;
 
   .about-heading {
     top: 42%;
@@ -658,7 +658,7 @@ footer {
   }
 
   @media (max-width:1000px) {
-    margin-top: 10rem;
+    margin-top: 5rem;
 
     .about-heading {
       top: 40%;
@@ -673,11 +673,11 @@ footer {
   }
 
   @media (max-width:800px) {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 
   @media (max-width:800px) {
-    margin-top: 10rem;
+    margin-top: 5rem;
 
     .about-heading {
       top: 40%;
@@ -694,7 +694,7 @@ footer {
   }
 
   @media (max-width:500px) {
-    margin-top: 7rem;
+    margin-top: 5rem;
 
     .about-heading {
       top: 50%;
@@ -722,4 +722,7 @@ footer {
 }
 .margin-top{
   margin-top: 6rem !important;
+}
+.que-div{
+  background-color: transparent;
 }

@@ -60,8 +60,8 @@ const SuccessSlider = styled(Slider)(({ theme }) => ({
 
 const RangeProgressBar = () => {
   const [value, setValue] = useState(0);
-  const [calculetOne, setCalculetOne] = useState(500)
-  const [calculetThree, setCalculetThree] = useState(1500)
+  const [calculetOne, setCalculetOne] = useState(6500)
+  // const [calculetThree, setCalculetThree] = useState(6500)
   // const[newValue,setNewValue] = useState()
 
   const rupee_format = (str) => {
@@ -113,13 +113,23 @@ const RangeProgressBar = () => {
     }
    
   }
+  const frequen = (value) => {
+    const previousMarkIndex = value;
+    const previousMark = marks[previousMarkIndex];
+    const remainder = value % 1;
+    if (remainder === 0) {
+   
+      return  previousMark.frequency;
+    }
+   
+  }
   const scaleValue = scale(value) 
   const scaleRoi = roi(value)
 
   const handleChangeCommit =() =>{
 
-    setCalculetOne( ((scaleValue * scaleRoi / 100) * 1))
-    setCalculetThree(((scale(value) * roi(value)) / 100) * 3);
+    setCalculetOne( ((scaleValue * scaleRoi / 100) * 3) + scale(value) )
+    // setCalculetThree(((scale(value) * roi(value) / 100) * 3) + scale(value));
   }
 
 
@@ -142,11 +152,11 @@ const RangeProgressBar = () => {
                 <span className="text-main-gold">  <span className="px-1">₹</span>{rupee_format(scaleValue)}</span>
               </h2>
               <p className="fs-14 fw-500 text-white my-4">
-                Move the slider to change thd investment amount
+                Move the slider to change the investment amount
               </p>
             </div>
             <div>
-              <div className="mb-3">
+              <div className="mb-3 px-2">
               {/* <ThemeProvider theme={finalTheme}> */}
                 <Box  >
                
@@ -190,15 +200,16 @@ const RangeProgressBar = () => {
                 <span className="px-1">₹</span>{ rupee_format(calculetOne)}
                 </h2>
                 <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">
-                 <span className="pe-2">12</span>Months
+                 <span className="pe-2">Total Returns</span>
                 </p>
               </div>
               <div className="text-center">
                 <h2 className="text-main-green fw-600 fs-30 fs-sm-22 text-capitalize mb-1">
-                <span className="px-1">₹</span>{rupee_format(calculetThree)}
+                {/* <span className="px-1">₹</span>{rupee_format(calculetThree)} */}
+                {frequen(value)}
                 </h2>
                 <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">
-                <span className="pe-2">36</span>Months
+                <span className="pe-2">Payout Frequency</span>
                 </p>
               </div>
               </Col>

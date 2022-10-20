@@ -1,10 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Accordion, Carousel, Col, Row } from "react-bootstrap";
-import img1 from "../assets/img/pic-1.png";
-import img2 from "../assets/img/pic-2.png";
-import img3 from "../assets/img/pic-3.png";
-import img4 from "../assets/img/pic-4.png";
+import { step1, step2, step3, step4 } from "../assets/img/contactimg";
 
 const Accordian = (props) => {
 
@@ -44,7 +41,7 @@ const Accordian = (props) => {
       no:4,
       Title: " Harvest your earnings ",
       SubTitle:
-        "See your earning growing with assured returns at regular intervals.",
+        "Automate your earnings with assured return at scheduled dates.",
     },
   ];
   return (
@@ -56,26 +53,29 @@ const Accordian = (props) => {
             <Carousel.Item  >
               <img
               
-                className="d-block w-100"
-                src={img1}
+                className="d-block "
+                src={step1}
                 alt="First slide"
+                style={{width:"27rem"}}
+                />
+
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+              
+              style={{width:"27rem"}}
+              className="d-block "
+              src={step3}
+              alt="First slide"
               />
 
             </Carousel.Item>
             <Carousel.Item>
               <img
               
-                className="d-block w-100"
-                src={img2}
-                alt="First slide"
-              />
-
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-              
-                className="d-block w-100"
-                src={img3}
+              style={{width:"27rem"}}
+                className="d-block "
+                src={step2}
                 alt="First slide"
               />
 
@@ -83,9 +83,10 @@ const Accordian = (props) => {
             <Carousel.Item >
               <img
              
-                className="d-block w-100"
-                src={img4}
+                className="d-block img-fluid"
+                src={step4}
                 alt="First slide"
+                style={{width:"27rem"}}
               />
 
             </Carousel.Item>

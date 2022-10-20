@@ -14,13 +14,13 @@ const ContactPage = () => {
     return (
         <>
             <div className='contact-us' >
-            <section className=''>
-                <Container fluid className='my-5'>
+            {/* <section className=''>
+                <Container fluid className='my-0'>
                     <div>
                         <Image src={contactImg} alt="" className='img-fluid' />
                     </div>
                 </Container>
-            </section>
+            </section> */}
 
             <section>
                 <Container>

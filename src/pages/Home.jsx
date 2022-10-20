@@ -248,7 +248,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="py-5">
+      <section className="py-5" id="calci">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">

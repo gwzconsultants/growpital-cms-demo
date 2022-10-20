@@ -13,7 +13,7 @@ const Abouts = () => {
     <>
       <Header />
       <div className='about'>
-        <section className='mb-md-5 mb-3' >
+        {/* <section className='mb-md-5 mb-3' >
           <Container fluid >
             <Row >
               <Col>
@@ -26,23 +26,31 @@ const Abouts = () => {
               </Col>
             </Row>
           </Container>
-        </section>
+        </section> */}
 
-        <section className='mb-md-5 mb-3 text-start text-white'>
+        <section className='mb-md-5 mb-3 pt-5 text-start text-white'>
           <Container>
             <div>
-            <p className="text-uppercase fs-18 fs-fm-16 fw-500 text-main-green pb-1 mb-1" > <BsFillCircleFill size={8} className="me-1" /> Diversify your investment portfolio with farm projects </p>
+              <Row>
+                <Col md={6}>
+                <p className="text-uppercase fs-18 fs-fm-16 fw-500 text-main-green pb-1 mb-1" > <BsFillCircleFill size={8} className="me-1" /> Diversify your investment portfolio with farm projects </p>
               <h1 className='fw-bold fs-48 content-text '>Farm investments demystified!</h1>
               <p>
-              Content: Growpital was incepted to radically democratize farm investment by providing access to high profit opportunities to retail investors. We Firmly believe that agriculture is a safe, stable and attractive long-term investment for everyone, if invested with right projects.
+              Growpital was incepted to radically democratize farm investment by providing access to high profit opportunities to retail investors. We Firmly believe that agriculture is a safe, stable and attractive long-term investment for everyone, if invested with right projects.
               </p>
               <button className="main-btn maincolor mb-3 my-3 fs-5">Get Started</button>
-
+</Col>
+                <Col md={6}>
+                {/* <img src="" alt="Farm GIF" /> */}
+                <p>Farm GIF</p>
+                </Col>
+              </Row>
+            
             </div>
           </Container>
         </section>
 
-        <section className='mb-md-5 mb-3'>
+        <section className='mb-md-5 mb-3 ' id="how_it_works">
           <Container className='text-white'>
             <Row className='d-flex align-items-center'>
 
@@ -79,7 +87,7 @@ const Abouts = () => {
             </Row>
           </Container>
         </section>
-        <section className="py-5 mb-md-5 mb-3">
+        <section className="py-5 mb-md-5 mb-3" id="team">
           <Container>
             <Row className="d-flex justify-content-center align-items-center">
               <Col className="text-center">

@@ -60,7 +60,7 @@ const SuccessSlider = styled(Slider)(({ theme }) => ({
 
 const RangeProgressBar = () => {
   const [value, setValue] = useState(0);
-  const [calculetOne, setCalculetOne] = useState(5500)
+  const [calculetOne, setCalculetOne] = useState(6500)
   // const [calculetThree, setCalculetThree] = useState(6500)
   // const[newValue,setNewValue] = useState()
 
@@ -128,7 +128,7 @@ const RangeProgressBar = () => {
 
   const handleChangeCommit =() =>{
 
-    setCalculetOne( ((scaleValue * scaleRoi / 100) * 1) + scale(value) )
+    setCalculetOne( ((scaleValue * scaleRoi / 100) * 3) + scale(value) )
     // setCalculetThree(((scale(value) * roi(value) / 100) * 3) + scale(value));
   }
 

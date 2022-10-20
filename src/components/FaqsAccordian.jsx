@@ -4,16 +4,16 @@ import { Accordion, Col, Container, Row } from "react-bootstrap";
 const FaqsAccordian = (props) => {
     const AccorianItems = [
         {
-          Id: "0",
-          Title: "What is Growpital? (In a Nutshell)",
-          SubTitle:
-            "The all-new Agro investment platform with tax-free income. It’s the new clutter-free, fixed-income platform with ESG benefits for smart investors giving a whopping 8% -16% fixed returns.",
+            Id: "0",
+            Title: "What is Growpital? (In a Nutshell)",
+            SubTitle:
+                "The all-new Agro investment platform with tax-free income. It’s the new clutter-free, fixed-income platform with ESG benefits for smart investors giving a whopping 8% -16% fixed returns.",
         },
         {
-          Id: "1",
-          Title: " How does Growpital works?",
-          SubTitle:
-            "Choose your investment plan and units of investments in farm projects.Confirm details and pay securely.Our team handles administration and property management – from crop selection, farm inputs, to working with local farmers and improving soil sustainability.Get your fixed payouts every financial quarter end. You can withdraw this directly in your bank account or even choose to re-invest for more wealth creation.",
+            Id: "2",
+            Title: " How does Growpital works?",
+            SubTitle:
+                "- Choose your investment plan and units of investments in farm projects.- Confirm details and pay securely. Our team handles administration and property management – from crop selection, farm inputs, to working with local farmers and improving soil sustainability. Get your fixed payouts every financial quarter end. You can withdraw this directly in your bank account or even choose to re-invest for more wealth creation.",
         },
         {
           Id: "2",

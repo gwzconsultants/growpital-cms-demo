@@ -51,7 +51,7 @@ const FaqsPage = () => {
                     <Row>
                         <Col>
                         <div className='text-center mx-auto mb-3'>
-                            <p className='fw-bold fs-32 mb-3 py-3'>GENERAL QUESTIONS</p>
+                            <p className='fw-500 fs-32 mb-3 py-3'>GENERAL QUESTIONS</p>
                         </div>
                         <FaqsAccordian />
                         </Col>

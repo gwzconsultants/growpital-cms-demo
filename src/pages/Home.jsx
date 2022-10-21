@@ -3,7 +3,7 @@ import { Col, Container, Image, Row, Button, Card } from "react-bootstrap";
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";
 import { BsArrowRight, BsFillCircleFill, BsCheck2Square, BsFillStarFill } from "react-icons/bs";
-import mobile from "../assets/img/mobile.png";
+// import mobile from "../assets/img/mobile.png";
 import zero from "../assets/img/zero.png";
 import CardDark from "../components/CardDark";
 import CardCounter from "../components/CardCounter";
@@ -11,8 +11,6 @@ import Accordian from "../components/Accordian";
 import Superstars from "../components/Superstars";
 import ButtonStar from "../components/ButtonStar";
 import TestiSlider from "../components/TestiSlider";
-import Call24 from "../assets/img/24call.png";
-import WhatsapIcon from "../assets/img/whatsapp-icon.png";
 import RangeProgressBar from "../components/RangeProgressBar";
 // import TotalInvestment from "../components/TotalInvestment";
 import HeroIcon1 from "../assets/img/2.png";
@@ -29,6 +27,7 @@ import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalabl
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
 import AccordingQue from "../components/AccordingQue";
+import { callImg, gifHome1,  tractormain, whatsappImg } from "../assets/img/contactimg";
 
 const Home = () => {
 
@@ -112,13 +111,13 @@ const Home = () => {
               <div className="mx-2 py-1">
                 <p className="mb-1 text-md-start  text-center ">
                   <span className="text-white fs-18 me-2">Rated </span>
-                 
+
                   <BsFillStarFill size={18} className="text-sunglow me-1" />
                   <BsFillStarFill size={18} className="text-sunglow me-1" />
                   <BsFillStarFill size={18} className="text-sunglow me-1" />
                   <BsFillStarFill size={18} className="text-sunglow me-1" />
                   <BsFillStarFill size={18} className="text-sunglow me-1" />
-               
+
                   <span className="text-white fs-18 ms-1">4.7 by user</span>
                 </p>
               </div>
@@ -131,7 +130,7 @@ const Home = () => {
 
             >
               {/* <img src="BrowserPreview_tmp.gif?1666269773" className="img-fluid"  alt=""/> */}
-              <Image src={mobile} className="img-fluid" alt="" />
+              <Image src={gifHome1} className="img-fluid" alt="" />
             </Col>
           </Row>
         </Container>
@@ -140,7 +139,7 @@ const Home = () => {
       <section className="py-5 " >
         <Container>
           <Row className="d-flex justify-content-center align-items-center pb-0 ">
-            <Col xs={12} md={12} lg={6} className="text-center text-md-start">
+            <Col xs={12} md={12} lg={6} className="text-center text-md-start ">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> WHAT ARE
                 GROWPITAL INVESTMENTS LIKE?
@@ -167,8 +166,8 @@ const Home = () => {
                 <ButtonStar />
               </div>
             </Col>
-            <Col xs={12} md={12} lg={6} className="text-center text-md-end mt-5 mt-md-5 mt-lg-0">
-              <Row className="d-flex justify-content-center align-items-center">
+            <Col xs={12} md={12} lg={6} className="text-center text-md-end mt-5 mt-md-5 mt-lg-0 position-relative">
+              <Row className="d-flex justify-content-center align-items-center ">
                 <Col md={6}>
                   <CardDark
                     Cardicon={CardIcon1}
@@ -188,15 +187,16 @@ const Home = () => {
                     SubTitle="We providing much higher returns than FD and several bonds."
                   />
                 </Col>
+              <div>
+                <img src={ tractormain} alt="" className="position-absolute main-gift-tractor" />
+              </div>
               </Row>
-
             </Col>
           </Row>
+
         </Container>
       </section>
-      {/* <div>
-  <img src={gif1} alt="" />
-</div> */}
+
 
       <section className="py-5 d-flex justify-content-center align-items-center bg-charade">
         <Container className="">
@@ -236,7 +236,7 @@ const Home = () => {
               </h2>
             </Col>
           </Row>
-          <Row className="d-flex justify-content-center align-items-start pt-3">
+          <Row className="d-flex  pt-3">
             <Col className="text-center text-md-end" >
               <Accordian Display_Sr_No="text-main-gold me-3" />
             </Col>
@@ -264,7 +264,7 @@ const Home = () => {
             </Col>
           </Row>
           <Row className="d-flex justify-content-center px-md-5  align-items-center pt-2 " >
-            <Col xs={12} md={12} lg={12} className="text-center" style={{maxWidth:"40rem"}}  >
+            <Col xs={12} md={12} lg={12} className="text-center" style={{ maxWidth: "40rem" }}  >
               <RangeProgressBar />
             </Col>
             {/* <Col xs={12} md={12} lg={6} className="text-center text-md-start" >
@@ -323,46 +323,46 @@ const Home = () => {
               <Row className="mt-5 mt-lg-0">
                 <Col xs={12} className="d-grid gap-4">
                   <div>
-                  <a href="https://koalendar.com/e/know-growpital-pc">
-                    <Button
-                      variant="dark"
-                      size="lg"
-                      className="px-3 px-md-5 py-3 w-100"
-                      
+                    <a href="https://koalendar.com/e/know-growpital-pc">
+                      <Button
+                        variant="dark"
+                        size="lg"
+                        className="px-3 px-md-5 py-3 w-100"
 
-                    >
-                      <img src={Call24} className="img-fluid me-3" alt="" />{" "}
-                      Schedule a call 
-                    </Button>
-                  </a>
+
+                      >
+                        <img src={callImg} className="img-fluid me-3 bg-yellow" alt=""  style={{width:"3rem"}} />{" "}
+                        Schedule a call
+                      </Button>
+                    </a>
                   </div>
 
                   <div>
-                  <a href="https://wa.me/message/FCMTNVU3NDJOB1">
-                    <Button
-                      variant="dark"
-                      size="lg"
-                      className="px-3 px-md-5 py-3"
+                    <a href="https://wa.me/message/FCMTNVU3NDJOB1">
+                      <Button
+                        variant="dark"
+                        size="lg"
+                        className="px-3 px-md-5 py-3"
 
-                    >
-                      <img src={WhatsapIcon} className="img-fluid me-3" alt="" />{" "}
-                      Message on Whatsapp
-                    </Button>
-                  </a>
+                      >
+                        <img src={whatsappImg} className="img-fluid me-3 " style={{width:"3rem"}}  alt="" />{" "}
+                        Message on Whatsapp
+                      </Button>
+                    </a>
                   </div>
 
                   <div>
-                  <a href="https://wa.me/message/FCMTNVU3NDJOB1">
-                    <Button
-                      variant="dark"
-                      size="lg"
-                      className="px-3 px-md-5 py-3"
+                    <a href="https://wa.me/message/FCMTNVU3NDJOB1">
+                      <Button
+                        variant="dark"
+                        size="lg"
+                        className="px-3 px-md-5 py-3"
 
-                    >
-                      <img src={telegram} className="img-fluid me-3" style={{ maxWidth: "50px" }} alt="" />{" "}
-                      Join Telegram Channel
-                    </Button>
-                  </a>
+                      >
+                        <img src={telegram} className="img-fluid me-3" style={{ maxWidth: "50px" }} alt="" />{" "}
+                        Join Telegram Channel
+                      </Button>
+                    </a>
                   </div>
                 </Col>
               </Row>
@@ -441,7 +441,7 @@ const Home = () => {
                       Join Telegram Channel
                     </Button>
                   </a>
-                  </div>
+                </div>
               </div>
             </Col>
             <Col xs={12} md={12} lg={6} className="  mt-5 mt-lg-0">

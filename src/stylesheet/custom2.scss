@@ -1,0 +1,33 @@
+.main-gift-tractor{
+    top: 31rem;
+    left: 57%;
+}
+
+@media (max-width:1200px) {
+    .main-gift-tractor{
+        top: 36rem;
+        left: 57%;
+    }
+    
+}
+@media (max-width:1000px) {
+    .main-gift-tractor{
+        top: 30rem;
+        left: 61%;
+    }
+    
+}
+@media (max-width:750px) {
+    .main-gift-tractor{
+        top: 51rem;
+        left: 34%;
+    };
+    }
+    
+@media (max-width:550px) {
+    .main-gift-tractor{
+        top: 97%;
+        left: 23%;
+    };
+    }
+    

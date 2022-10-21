@@ -1,6 +1,7 @@
 @import "./palates";
 @import "./typography";
 @import "./buttons";
+@import "./custom2.scss";
 
 .navbar {
   background-color: var(--color-woodsmoke);
@@ -354,7 +355,8 @@ footer {
   .colan-icon {
     height: 30px;
     width: 30px;
-    background-color: var(--color-woodsmoke);
+    // background-color: white;
+    // background-color: var(--color-woodsmoke);
     box-shadow: -5.89397px -5.89397px 17.6819px #3b4451,
       5.89397px 5.89397px 17.6819px #000000;
     border-radius: 50%;
@@ -427,7 +429,16 @@ footer {
 .about-logo img{
   // display: none;
   // background-color: aquamarine;
-  width: 80%;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+}
+.about-slider{
+  height: 15rem;
+  // background-color: #000;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .range-progress {
@@ -650,28 +661,36 @@ footer {
   }
 }
 
-
+.about-padding{
+  padding: 4rem;
+  padding-top: 0%;
+  padding-bottom: 0;
+  @media (max-width:1460px) {
+    padding: 0%;
+  }
+}
 .about {
   margin-top: 4rem;
 
   .about-heading {
-    top: 42%;
+    top: 3%;
     left: 10%;
 
     .about-text {
-      font-size: 8rem;
+      font-size: 4.5vw;
     }
   }
 
   @media (max-width:1000px) {
+    padding: 0%;
     margin-top: 5rem;
 
     .about-heading {
-      top: 40%;
-      left: 10%;
+      top: 8%;
+      left: 5%;
 
       .about-text {
-        font-size: 6rem;
+        font-size: 5vw;
       }
     }
 
@@ -686,11 +705,11 @@ footer {
     margin-top: 5rem;
 
     .about-heading {
-      top: 40%;
-      left: 8%;
+      top: 10%;
+      left: 5%;
 
       .about-text {
-        font-size: 4rem;
+        font-size: 4vw;
       }
     }
 
@@ -703,7 +722,7 @@ footer {
     margin-top: 5rem;
 
     .about-heading {
-      top: 50%;
+      top: 10%;
       left: 8%;
 
       .about-text {
@@ -732,3 +751,23 @@ footer {
 .que-div{
   background-color: transparent;
 }
+
+.accordian-main{
+
+  .carousel-inner {
+    .carousel-item{
+      .accordian-main-img{
+
+        width: 25rem;
+      }
+
+      @media (max-width:500px) {
+        .accordian-main-img{
+// margin-left: 1.5rem;
+          width: 20rem;
+        }
+      }
+    }
+  }
+}
+

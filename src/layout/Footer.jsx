@@ -4,6 +4,7 @@ import Logo from "../assets/img/logo.png";
 import { FaFacebookF } from "react-icons/fa";
 import { BsYoutube, BsLinkedin, BsInstagram, BsWhatsapp, BsTelegram } from "react-icons/bs";
 import upi from "../assets/img/upi.png"
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -32,7 +33,7 @@ const Footer = () => {
               <Nav defaultActiveKey="/home" className="flex-column">
                 <Nav.Link href="/#calci">Returns Calculator</Nav.Link>
                 <Nav.Link href="/faqs">FAQs</Nav.Link>
-                <Nav.Link href="https://app.growpital.com/login">Login / Signup</Nav.Link>
+                <Nav.Link href="https://app.growpital.com/signup?_gl=1*jb0rsu*_ga*MTM4OTAyNDk1Ny4xNjY1Mzg2MTc4*_ga_YFL1QCKH2V*MTY2NjI3NTU3Ny4xOC4xLjE2NjYyNzU1NzcuMC4wLjA.">Sign up/Login </Nav.Link>
                 <Nav.Link href="/terms">Terms of Service</Nav.Link>
                 <Nav.Link href="/privacy-policy">Privacy Policy</Nav.Link>
               </Nav>
@@ -40,8 +41,8 @@ const Footer = () => {
             <Col xs={12} md={6} lg={3}>
               <h6 className="fs-22 fs-sm-24 mb-4 mb-md-3 mt-4 mt-md-0 fw-600 text-white">Contact us</h6>
               <Nav defaultActiveKey="/home" className="flex-column">
-                <Nav.Link eventKey="disabled" disabled>+91-7231844488</Nav.Link>
-                <Nav.Link eventKey="disabled" disabled>info@growpital.com</Nav.Link>
+                <a href='tel:+91-7231844488' style={{ color: "#07e57d", textDecorationColor: "#17171a"}}>+91-7231844488</a>
+                <a  href="mailto:info@growpital.com" style={{ color: "#07e57d" ,textDecorationColor: "#17171a" }}>info@growpital.com</a>
                 <Nav.Link eventKey="disabled" disabled>
                   S-2, V Cube Lavender, Plot 166A, Vishvesariya Nagar, Gopalpura
                   Bypass, Jaipur RJ 302018{" "}
@@ -106,7 +107,7 @@ const Footer = () => {
             <img src={upi} className="img-fluid" alt="" />
             </Col> */}
             <Col lg={9}>
-              <p className="text-white fw-400 mb-3 mb-md-0 pt-0"> © Copyright 2021-2022 growpital.com. All Rights Reserved.</p>
+              <p className="text-white fw-400 mb-3 mb-md-0 pt-0"> © Copyright 2021-2022 <a href="/" style={{ color: "#07e57d" ,textDecorationColor: "#17171a" }}><span >www.growpital.com </span></a>. All Rights Reserved.</p>
             </Col>
             <Col lg={3} className="text-center text-lg-end pt-3 pt-lg-0">
               <p className="text-white fw-400 mb-3 mb-md-0 pt-0">Made with ❤ in India.</p>

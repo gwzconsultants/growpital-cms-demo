@@ -3,27 +3,32 @@ import { Col, Card, Image } from "react-bootstrap";
 import Icon1 from "../assets/img/icon-investment.png";
 import Icon2 from "../assets/img/icon-return.png";
 import Icon3 from "../assets/img/8.png";
+import CountUp from 'react-countup';
 
 const CardCounter = (props) => {
   const Counter = [
     {
       Id: "",
       Title: "Total Investments",
-      Count: "₹700+",
+      before:"₹",
+      Count: "700",
+      after:"+",
       Tenur: "Lakhs",
       Img: Icon1
     },
     {
       Id: "",
       Title: "Returns",
-      Count: "16%",
+      Count: "16",
+      after:"%",
       Tenur: "Per AnnUm",
       Img: Icon2
     },
     {
       Id: "",
       Title: "Managed Area",
-      Count: "1000+",
+      Count: "1000",
+      after:"+",
       Tenur: "Acres",
       Img: Icon3
     },
@@ -40,7 +45,9 @@ const CardCounter = (props) => {
                   {Item.Title}
                 </Card.Title>
                 <Card.Title className="fw-700 display-5 text-main-green mb-0">
-                  {Item.Count}
+                {Item.before}
+                <CountUp end={Item.Count} duration={2} enableScrollSpy> </CountUp>
+                {Item.after}
                 </Card.Title>
                 <Card.Text className="fw-500 fs-14 text-white text-uppercase">{Item.Tenur}</Card.Text>
               </div>

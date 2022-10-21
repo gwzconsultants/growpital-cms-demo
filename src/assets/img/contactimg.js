@@ -21,6 +21,25 @@ import step4 from "./step4.png"
 import step1 from "./step-1.png"
 import step2 from "./step2.png"
 import step3 from "./step3.png"
+import Star1 from "./Rituraj_Sharma.jpg"
+import Star2 from "./Krishnna_Joshi.jpg"
+import Star3 from "./Sudhir_Paswan.jpg"
+import Star4 from "./Karan_Agrawal.jpg"
+import Star5 from "./Ankush_Ramesh_Agrawal.jpg"
+import Star6 from "./Utkarsh_Srivastava.jpg"
+import Star7 from "./Shubhanshu_Chouhan.jpg"
+import Star8 from "./Fahad_Shaikh.jpg"
+import logo1 from "./logo1.png"
+import logo2 from "./logo2.png"
+import logo3 from "./logo3.png"
+import logo4 from "./logo4.png"
+import logo5 from "./logo5.png"
+import logo6 from "./logo6.png"
+import About_us_img from "./About-Us.jpg"
+import growpital_icon from "./Growpital_Icon.png"
+import tractor from "./tractor_gif.gif"
+
+
 
 export {
     youtube,
@@ -45,5 +64,22 @@ export {
     step4 ,
     step1 ,
     step2,
-    step3
+    step3,
+    Star1,
+    Star2,
+    Star3,
+    Star4,
+    Star5,
+    Star6,
+    Star7,
+    Star8,
+    logo1,
+    logo2,
+    logo3,
+    logo4,
+    logo5,
+    logo6,
+    About_us_img,
+    growpital_icon,
+    tractor
 }

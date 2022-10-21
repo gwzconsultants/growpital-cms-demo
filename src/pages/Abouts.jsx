@@ -8,17 +8,18 @@ import SuperstarsAbout from '../components/SuperStartAbout'
 import Footer from '../layout/Footer'
 import Header from '../layout/Header'
 // import contactImg from "../assets/img/Rectangle 71.jpg"
+import { About_us_img, tractor } from "../assets/img/contactimg";
 const Abouts = () => {
   return (
     <>
       <Header />
       <div className='about'>
-        {/* <section className='mb-md-5 mb-3' >
-          <Container fluid >
+        <section className='mb-md-5 mb-3  '  >
+          <Container  >
             <Row >
               <Col>
                 <div className='position-relative'>
-                  <img src={faqspage} alt="" className='w-100 h-auto mt-5' />
+                  <img src={About_us_img} alt="" className='w-100 h-auto mt-0' />
                   <div className='position-absolute  about-heading'>
                     <h1 className='fs-164 fw-bold about-text'>About us</h1>
                   </div>
@@ -26,7 +27,7 @@ const Abouts = () => {
               </Col>
             </Row>
           </Container>
-        </section> */}
+        </section>
 
         <section className='mb-md-5 mb-3 pt-5 text-start text-white'>
           <Container>
@@ -41,8 +42,8 @@ const Abouts = () => {
               <button className="main-btn maincolor mb-3 my-3 fs-5">Get Started</button>
 </Col>
                 <Col md={6}>
-                {/* <img src="" alt="Farm GIF" /> */}
-                <p>Farm GIF</p>
+                <img src={tractor} alt="Farm GIF" />
+                {/* <p>Farm GIF</p> */}
                 </Col>
               </Row>
             
@@ -110,10 +111,10 @@ const Abouts = () => {
             <Row className="d-flex justify-content-center align-items-center">
               <Col className="text-center">
                 <p className="text-uppercase fs-18 fs-fm-16 fw-500 text-main-green pb-0 mb-0" >
-                  <BsFillCircleFill size={8} className="me-1" /> WANT TO MEET OUR TEAM ?
+                  <BsFillCircleFill size={8} className="me-1" /> We waited until we could do it right
                 </p>
                 <p className="text-white fw-600 fs-48 mb-3 mb-md-4 content-text" >
-                  Marquee Customers
+                Meet our Portolio Partners
                 </p>
               </Col>
             </Row>

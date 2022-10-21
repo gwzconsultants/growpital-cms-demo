@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Col } from 'react-bootstrap';
 import Slider from 'react-slick';
-import Logo from "../assets/img/logo.png";
+import {logo1, logo2, logo3,logo4,logo5,logo6} from "../assets/img/contactimg";
 
 
 const LogoSlider = () => {
@@ -33,7 +33,7 @@ const LogoSlider = () => {
                     autoplaySpeed: 1000,
                 },
             },
-            {
+            { 
                 breakpoint: 768,
                 settings: {
                     centerPadding: "10px",
@@ -49,24 +49,27 @@ const LogoSlider = () => {
         ],
     };
     return (
-        <div className='about-logo pb-4'>
+        <div className='about-logo pb-4 '>
             {/* <Col className='d-flex justify-content-evenly p-3'> */}
-            <Slider {...settings} >
+            <Slider {...settings}  className="bg-white p-4  about-slider" >
 
-                    <div >
-                    <img src={Logo} alt="" className='me-4'/>
+                    <div  className='about-slider'>
+                    <img src={logo1} alt="" className='me-4'/>
+                    </div >
+                    <div className='about-slider'>
+                    <img src={logo2} alt="" className='me-4'/>
                     </div>
-                    <div>
-                    <img src={Logo} alt="" className='me-4'/>
+                    <div className='about-slider'>
+                    <img src={logo3} alt="" className='me-4'/>
                     </div>
-                    <div>
-                    <img src={Logo} alt="" className='me-4'/>
+                    <div className='about-slider'>
+                    <img src={logo4} alt="" className='me-4'/>
                     </div>
-                    <div>
-                    <img src={Logo} alt="" className='me-4'/>
-                    </div>
-                    <div>
-                    <img src={Logo} alt="" className='me-4'/>
+                    <div className='about-slider'>
+                    <img src={logo5} alt="" className='me-4'/>
+                    </div >
+                    <div className='about-slider'>
+                    <img src={logo6} alt="" className='me-4'/>
                     </div>
 
             </Slider>

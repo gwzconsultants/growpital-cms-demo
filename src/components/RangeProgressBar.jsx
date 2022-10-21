@@ -1,13 +1,12 @@
 import { Slider,  } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-
 import { useState } from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import { BsFillCircleFill } from "react-icons/bs";
 import { alpha,styled} from '@mui/material/styles';
 import { marks } from "../data/InventData";
-import moneyWings from "../assets/img/emojione-v1_money-with-wings.svg"
+import { locking, timerglass } from "../assets/img/contactimg";
+// import moneyWings from "../assets/img/emojione-v1_money-with-wings.svg"
 // import { red } from "@mui/material/colors";
 
 
@@ -20,8 +19,14 @@ const SuccessSlider = styled(Slider)(({ theme }) => ({
   trackColor: "yellow",
   selectionColor: "white",
   color: 'var(--color-main-green)',
+  "& .MuiSlider-mark":{
+    backgroundColor:"transparent"
+  },
   "& .MuiSlider-markLabel":{color:"white",fontWeight: "600",marginTop:"4px",
   fontSize: "18px"},
+  "& .MuiSlider-rail":{
+    backgroundColor:"white"
+  },
   '& .MuiSlider-thumb': {
     color:"white",
     '&:hover, &.Mui-focusVisible': {
@@ -31,6 +36,7 @@ const SuccessSlider = styled(Slider)(({ theme }) => ({
       boxShadow: `0px 0px 0px 14px ${alpha("#07e67d", 0.16)}`,
       
     },
+    
 
   
     
@@ -60,7 +66,7 @@ const SuccessSlider = styled(Slider)(({ theme }) => ({
 
 const RangeProgressBar = () => {
   const [value, setValue] = useState(0);
-  const [calculetOne, setCalculetOne] = useState(6500)
+  // const [calculetOne, setCalculetOne] = useState(6500)
   // const [calculetThree, setCalculetThree] = useState(6500)
   // const[newValue,setNewValue] = useState()
 
@@ -102,6 +108,15 @@ const RangeProgressBar = () => {
     } 
     
   }
+  const CalLogo = (value) => {
+    const previousMarkIndex = value/1;
+    const previousMark = marks[previousMarkIndex];
+    const remainder = value % 1;
+    if (remainder === 0) {
+      return  previousMark.img;
+    } 
+    
+  }
 
   const name = (value) => {
     const previousMarkIndex = value;
@@ -110,6 +125,16 @@ const RangeProgressBar = () => {
     if (remainder === 0) {
    
       return  previousMark.name;
+    }
+   
+  }
+  const total = (value) => {
+    const previousMarkIndex = value;
+    const previousMark = marks[previousMarkIndex];
+    const remainder = value % 1;
+    if (remainder === 0) {
+   
+      return  previousMark.total;
     }
    
   }
@@ -123,21 +148,23 @@ const RangeProgressBar = () => {
     }
    
   }
-  const scaleValue = scale(value) 
   const scaleRoi = roi(value)
+  const scaleValue = scale(value) 
+  const calLogo = CalLogo(value) 
+  const TotalReturn = total(value) 
 
-  const handleChangeCommit =() =>{
-
-    setCalculetOne( ((scaleValue * scaleRoi / 100) * 3) + scale(value) )
-    // setCalculetThree(((scale(value) * roi(value) / 100) * 3) + scale(value));
-  }
-
-
+  
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+    setValue(newValue); 
 
   };
-
+  
+  const handleChangeCommit =() =>{
+      // calculetOne
+    // setCalculetThree(((scale(value) * roi(value) / 100) * 3) + scale(value));
+    // setCalculetOne( ((scaleValue * scaleRoi / 100) * 3) + scale(value) )
+  }
+  
  
 
   // console.log(value)
@@ -160,7 +187,7 @@ const RangeProgressBar = () => {
               {/* <ThemeProvider theme={finalTheme}> */}
                 <Box  >
                
-                  <SuccessSlider marks={marks} min={0} step={1} max={6} value={value} scale={scale}  onChange={handleChange} onChangeCommitted={handleChangeCommit}  valueLabelDisplay="off" aria-labelledby="non-linear-slider" />
+                  <SuccessSlider marks={marks} min={0} step={1} max={6} value={value} scale={scale}  onChange={handleChange} onChangeCommitted={handleChangeCommit}  valueLabelDisplay="on" aria-labelledby="non-linear-slider" />
                   {/* <Form.Range value={value} onChange={handleChange}/> */}
                 </Box>
                
@@ -170,21 +197,23 @@ const RangeProgressBar = () => {
             <Row className="d-flex justify-content-between">
               <Col xs={12} md={6} className="text-start text-center">
                 <p className="text-uppercase fs-18 fw-500 text-white">
-                  <BsFillCircleFill size={8} className="me-1 text-main-green" />{" "}
-                  Tenure: 36 Months
+                  {/* <BsFillCircleFill size={8} className="me-1 text-main-green" />{" "} */}
+                  <img src={locking} alt="locking" className="img-fluid me-2" style={{width:"1.5rem"}} />{" "}
+                 <span>Lock In: 12 Months</span> 
                 </p>
               </Col>
               <Col xs={12} md={6} className="text-end text-center">
                 <p className="text-uppercase fs-18 fw-500 text-white">
-                  <BsFillCircleFill size={8} className="me-1 text-main-green" />{" "}
-                  Lock In: 12 Months
+                 <img src={timerglass} alt="" style={{width:"1.5rem"}} />{" "}
+                  
+                  Tenure: 36 Months
                 </p>
               </Col>
             </Row>
             <div className="text-center ">
               
               <h3 className="text-main-gold fw-600 fs-30 my-3 my-md-4">
-              <img src={moneyWings} alt="" className="img-fluid"/> {name(value)}
+              <img src={calLogo} alt="" className="img-fluid me-2"/> {name(value)}
               </h3>
             </div>
             <Row className="pt-4">
@@ -197,7 +226,7 @@ const RangeProgressBar = () => {
               </div>
               <div className="text-center px-2">
                 <h2 className="text-main-green fw-600 fs-30 fs-sm-22 text-capitalize mb-1">
-                <span className="px-1">₹</span>{ rupee_format(calculetOne)}
+                <span className="px-1">₹</span>{ rupee_format(TotalReturn)}
                 </h2>
                 <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">
                  <span className="pe-2">Total Returns</span>

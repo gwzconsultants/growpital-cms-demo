@@ -3,8 +3,7 @@ import { Col, Container, Image, Row, Nav } from "react-bootstrap";
 import Logo from "../assets/img/logo.png";
 import { FaFacebookF } from "react-icons/fa";
 import { BsYoutube, BsLinkedin, BsInstagram, BsWhatsapp, BsTelegram } from "react-icons/bs";
-import upi from "../assets/img/upi.png"
-import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>

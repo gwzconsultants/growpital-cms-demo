@@ -1,6 +1,6 @@
 import React from 'react'
-import { Col, Container, Form, Image, Row } from 'react-bootstrap'
-import contactImg from "../assets/img/Rectangle 71.jpg"
+import { Col, Container, Form, Row } from 'react-bootstrap'
+
 import {
     youtube,
     fb,
@@ -40,12 +40,12 @@ const ContactPage = () => {
                                 <Col xs={3} className=" p-0"><img src={linkdin} alt="" /></Col>
                                 <Col xs={3} className=" p-0"><img src={insta} alt="" /></Col>
                             </Row>
-                            <Row className='my-3'>
+                            {/* <Row className='my-3'>
                                 <Col >
                                 <div className="mapouter"><div className="gmap_canvas"><iframe className="gmap_iframe" width="100%" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} src="https://maps.google.com/maps?width=372&height=272&hl=en&q=166A, Triveni Nagar, Arjun Nagar, Jaipur, Rajasthan 302018&t=&z=14&ie=UTF8&iwloc=B&output=embed" /><a href="https://mcpenation.com/">https://mcpenation.com</a></div><style dangerouslySetInnerHTML={{__html: ".mapouter{position:relative;text-align:right;width:100%;height:272px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:272px;}.gmap_iframe {height:272px!important;}" }} /></div>
 
                                 </Col>
-                            </Row>
+                            </Row> */}
 
 
 
@@ -60,15 +60,15 @@ const ContactPage = () => {
                                 <Form>
                                     <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
 
-                                        <Form.Control size="lg" type="name" placeholder="name" />
+                                        <Form.Control size="lg" type="name" placeholder="Name" required />
                                     </Form.Group>
                                     <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
 
-                                        <Form.Control size="lg" type="tel" placeholder="phone number" pattern="[0-9]{5}-[0-9]{5}" />
+                                        <Form.Control size="lg" type="tel" placeholder="Phone Number" pattern="[0-9]{5}-[0-9]{5}" required/>
                                     </Form.Group>
                                     <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
 
-                                        <Form.Control size="lg" type="email" placeholder="Email" />
+                                        <Form.Control size="lg" type="email" placeholder="Email" required/>
                                     </Form.Group>
                                     <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
 

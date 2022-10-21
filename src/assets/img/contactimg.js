@@ -38,9 +38,20 @@ import logo6 from "./logo6.png"
 import About_us_img from "./About-Us.jpg"
 import growpital_icon from "./Growpital_Icon.png"
 import tractor from "./tractor_gif.gif"
+import beby_framing from "./Baby Farming.svg"
+import banyan from "./Banyan Tree.svg"
+import plant_return from "./Planty Returns.svg"
+import harvest from "./Harvest Premium.svg"
+import locking from "./locking.svg"
+import timerglass from "./vintage-hourglass-svgrepo-com 1.svg"
 
 
 
+import gifHome1 from "./Comp-1_2.gif"
+import about_section from "./about-section.jpg"
+import tractormain from "./tracketer.gif"
+import whatsappImg from "./whatsapp-svgrepo-com.svg"
+import callImg from "./call-center-svgrepo-com (1) 1.svg"
 export {
     youtube,
     fb,
@@ -81,5 +92,17 @@ export {
     logo6,
     About_us_img,
     growpital_icon,
-    tractor
+    tractor,
+    gifHome1,
+    about_section,
+    tractormain,
+    whatsappImg,
+    callImg,
+    beby_framing,
+    banyan,
+    plant_return,
+    harvest,
+    locking,
+    timerglass,
+
 }

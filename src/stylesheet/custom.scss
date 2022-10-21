@@ -1,6 +1,7 @@
 @import "./palates";
 @import "./typography";
 @import "./buttons";
+@import "./custom2.scss";
 
 .navbar {
   background-color: var(--color-woodsmoke);
@@ -751,7 +752,22 @@ footer {
   background-color: transparent;
 }
 
-.star-img{
-  // background-color: aquamarine;
-  // width: 50%;
+.accordian-main{
+
+  .carousel-inner {
+    .carousel-item{
+      .accordian-main-img{
+
+        width: 25rem;
+      }
+
+      @media (max-width:500px) {
+        .accordian-main-img{
+// margin-left: 1.5rem;
+          width: 20rem;
+        }
+      }
+    }
+  }
 }
+

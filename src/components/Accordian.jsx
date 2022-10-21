@@ -7,10 +7,10 @@ const Accordian = (props) => {
 
   const [index, setIndex] = useState();
 
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
 
-  // const handleSelect = (selectedIndex, e) => {
-  //   console.log(e.target.value)
-  // };
 
 
  
@@ -46,25 +46,25 @@ const Accordian = (props) => {
   ];
   return (
     <>
-
-      <Row className="d-flex justify-content-center align-items-start pt-5">
-        <Col xs={12} md={12} lg={6} className="text-center text-lg-start mb-5 mb-lg-0" >
-          <Carousel activeIndex={index}  className="vertical" controls={false} indicators={false} autoPlay={true} interval={5000}   >
+<div className="accordian-main">
+      <Row className="  pt-5 mx-auto">
+        <Col xs={12} md={12} lg={6} className="text-center text-lg-start mb-5 mb-lg-0  d-flex justify-content-center justify-content-md-start align-items-center" >
+          <Carousel activeIndex={index}  className="vertical text-center " controls={false} indicators={false} autoPlay={true} interval={5000} onSelect={handleSelect} >
             <Carousel.Item  >
               <img
               
-                className="d-block "
+                className="d-block img-fluid accordian-main-img"
                 src={step1}
                 alt="First slide"
-                style={{width:"27rem"}}
+              
                 />
 
             </Carousel.Item>
             <Carousel.Item>
               <img
               
-              style={{width:"27rem"}}
-              className="d-block "
+              // style={{width:"27rem"}}
+              className="d-block img-fluid accordian-main-img "
               src={step3}
               alt="First slide"
               />
@@ -73,8 +73,8 @@ const Accordian = (props) => {
             <Carousel.Item>
               <img
               
-              style={{width:"27rem"}}
-                className="d-block "
+              // style={{width:"27rem"}}
+                className="d-block img-fluid accordian-main-img"
                 src={step2}
                 alt="First slide"
               />
@@ -83,10 +83,10 @@ const Accordian = (props) => {
             <Carousel.Item >
               <img
              
-                className="d-block img-fluid"
+                className="d-block img-fluid accordian-main-img"
                 src={step4}
                 alt="First slide"
-                style={{width:"27rem"}}
+                // style={{width:"27rem"}}
               />
 
             </Carousel.Item>
@@ -97,7 +97,7 @@ const Accordian = (props) => {
 
         </Col>
         <Col xs={12} md={12} lg={6} className="text-center text-md-end" >
-          <Accordion activeKey={index} className="home-accordian"  >
+          <Accordion activeKey={index}  className="home-accordian"  >
             {AccorianItems.map((Items) => (
               <Accordion.Item
                 eventKey={Items.Id}
@@ -115,7 +115,7 @@ const Accordian = (props) => {
         </Col>
       </Row>
 
-
+      </div>
 
     </>
   );

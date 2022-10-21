@@ -52,7 +52,7 @@ const FaqsAccordian = (props) => {
         <>
             <Container>
                 <Row>
-                    <Col md={6}> <Accordion defaultActiveKey="0" className="faqs-accordian" >
+                    <Col md={6}> <Accordion  className="faqs-accordian" >
                         {AccorianItems.map((Items) => (
                             <Accordion.Item
                                 eventKey={Items.Id}
@@ -67,7 +67,7 @@ const FaqsAccordian = (props) => {
                             </Accordion.Item>
                         ))}
                     </Accordion></Col>
-                    <Col md={6}> <Accordion defaultActiveKey="1" className="faqs-accordian" >
+                    <Col md={6}> <Accordion  className="faqs-accordian" >
                         {Accorian2Items.map((Items) => (
                             <Accordion.Item
                                 eventKey={Items.Id}

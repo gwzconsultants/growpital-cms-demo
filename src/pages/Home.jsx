@@ -69,7 +69,7 @@ const Home = () => {
                         <Card.Title className="fw-400 text-center fs-20 mb-0 pt-2">
                           Grow your {" "}
                           <span className="fw-600 text-main-gold">capital</span>
-                          {/* <span className="fw-600 text-main-gold">ZERO</span>{" "} */}
+                          <span className="fw-600 text-main-gold">ZERO</span>{" "}
 
                         </Card.Title>
                       </Card.Body>
@@ -130,6 +130,7 @@ const Home = () => {
               className="text-center text-lg-end mt-lg-0 mt-md-5 mt-5"
 
             >
+              {/* <img src="BrowserPreview_tmp.gif?1666269773" className="img-fluid"  alt=""/> */}
               <Image src={mobile} className="img-fluid" alt="" />
             </Col>
           </Row>

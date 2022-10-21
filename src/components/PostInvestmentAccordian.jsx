@@ -44,7 +44,7 @@ const PostInvestmentAccordian= (props) => {
                 <Row>
                     <Col md={6}> 
                     <div className="faq-div">
-                    <Accordion defaultActiveKey="0" className="faqs-accordian" >
+                    <Accordion  className="faqs-accordian" >
                         {AccorianItems.map((Items) => (
                             <Accordion.Item
                                 eventKey={Items.Id}
@@ -62,7 +62,7 @@ const PostInvestmentAccordian= (props) => {
                     </Accordion>
                     </div>
                     </Col>
-                    <Col md={6}> <Accordion defaultActiveKey="1" className="faqs-accordian" >
+                    <Col md={6}> <Accordion  className="faqs-accordian" >
                         {Accorian2Items.map((Items) => (
                             <Accordion.Item
                                 eventKey={Items.Id}

@@ -1,3 +1,4 @@
+import chatIcon from "./icons8-chat-room-96.png"
 import youtube from "./youtube.svg"
 import fb from './fb.svg'
 import linkdin from './linkdin.svg'
@@ -124,4 +125,5 @@ export {
     TotalInvestments,
     TopIcon1,
     TopIcon2,
+    chatIcon,
 }

@@ -27,7 +27,7 @@ import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalabl
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
 import AccordingQue from "../components/AccordingQue";
-import { callImg,   homepage,   whatsappImg } from "../assets/img/contactimg";
+import { callImg,   homepage,   whatsappImg, chatIcon } from "../assets/img/contactimg";
 import {  TopIcon1,  TopIcon2 } from "../assets/img/contactimg";
 
 const Home = () => {
@@ -354,7 +354,7 @@ const Home = () => {
                         className="px-3 px-md-5 py-3 w-100"
 
                       >
-                        <img src={whatsappImg} className="img-fluid me-3 " style={{width:"3rem"}}  alt="" />{" "}
+                        <img src={chatIcon} className="img-fluid me-3 " style={{width:"3rem"}}  alt="" />{" "}
                         Chat
                       </Button>
                     </a>

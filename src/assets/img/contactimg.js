@@ -44,6 +44,7 @@ import plant_return from "./Planty Returns.svg"
 import harvest from "./Harvest Premium.svg"
 import locking from "./locking.svg"
 import timerglass from "./vintage-hourglass-svgrepo-com 1.svg"
+import homepage from "./Home-Page-img (2) (1).jpg"
 
 
 
@@ -104,5 +105,6 @@ export {
     harvest,
     locking,
     timerglass,
+    homepage,
 
 }

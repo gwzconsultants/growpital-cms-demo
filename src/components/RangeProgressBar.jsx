@@ -213,7 +213,7 @@ const RangeProgressBar = () => {
             <div className="text-center ">
               
               <h3 className="text-main-gold fw-600 fs-30 my-3 my-md-4">
-              <img src={calLogo} alt="" className="img-fluid me-2 w-25"/> {name(value)}
+              <img src={calLogo} alt="" className="img-fluid me-2" style={{width:"6%"}}/> {name(value)}
               </h3>
             </div>
             <Row className="pt-4">

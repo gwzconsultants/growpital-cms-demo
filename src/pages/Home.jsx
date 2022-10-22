@@ -27,7 +27,7 @@ import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalabl
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
 import AccordingQue from "../components/AccordingQue";
-import { callImg, gifHome1,  tractormain, whatsappImg } from "../assets/img/contactimg";
+import { callImg, gifHome1,  homepage,  tractormain, whatsappImg } from "../assets/img/contactimg";
 
 const Home = () => {
 
@@ -130,7 +130,7 @@ const Home = () => {
 
             >
               {/* <img src="BrowserPreview_tmp.gif?1666269773" className="img-fluid"  alt=""/> */}
-              <Image src={gifHome1} className="img-fluid" alt="" />
+              <Image src={ homepage} className="img-fluid" alt="" />
             </Col>
           </Row>
         </Container>
@@ -146,7 +146,7 @@ const Home = () => {
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Its like a{" "}
-                <span className="text-main-green">Fixed Deposit</span> but a
+                <span className="text-main-green fix-mutual-slider"></span> but a
                 much better one!
               </h2>
               <div className="d-flex justify-content-md-start justify-content-center align-items-center my-5 my-md-5 py-4 py-md-4" >
@@ -187,9 +187,9 @@ const Home = () => {
                     SubTitle="We providing much higher returns than FD and several bonds."
                   />
                 </Col>
-              <div>
+              {/* <div>
                 <img src={ tractormain} alt="" className="position-absolute main-gift-tractor" />
-              </div>
+              </div> */}
               </Row>
             </Col>
           </Row>

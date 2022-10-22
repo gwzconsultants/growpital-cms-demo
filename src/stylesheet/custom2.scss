@@ -31,3 +31,14 @@
     };
     }
     
+    .fix-mutual-slider::before{
+        content:"Fixed Deposit" ;
+         animation: animate infinite 5s;
+    
+    }
+
+    @keyframes animate {
+        0%   {content:"Fixed Deposit" ;}
+       
+        50% {content:"Mutual Fund";}
+      }

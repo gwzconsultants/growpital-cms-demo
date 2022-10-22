@@ -63,7 +63,7 @@ const Footer = () => {
                   <Nav.Link href="https://wa.me/message/FCMTNVU3NDJOB1" ><BsWhatsapp className="text-darkgreen"/></Nav.Link>
                 </Nav.Item>
                 <Nav.Item className="pe-4 foot-icon">
-                  <Nav.Link href="" ><BsTelegram className="text-blue"/></Nav.Link>
+                  <Nav.Link href="https://t.me/growpitalofficial" ><BsTelegram className="text-blue"/></Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>

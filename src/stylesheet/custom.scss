@@ -241,7 +241,7 @@
         }
 
         &::after {
-          background-image: url(../assets/img/10.png);
+          background-image: url(../assets/img/down-arrow-yelow.png);
           height: 30px;
           width: 30px;
           background-color: var(--color-woodsmoke);
@@ -645,19 +645,19 @@ footer {
 }
 
 .contact-us {
-  margin-top: 5rem;
+  margin-top:2rem;
 
 
   @media (max-width:800px) {
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
 
   @media (max-width:800px) {
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
 
   @media (max-width:500px) {
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
 }
 

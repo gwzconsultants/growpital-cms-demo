@@ -45,12 +45,12 @@ export const marks = [
           },
           {
             value: 4,
-            total:148000,
+            total:296000,
             img:harvest,
             name:"Harvest Premium",
-            scaledValue: 100000,
+            scaledValue: 200000,
             roi: 16,
-            label: "1L",
+            label: "2L",
             frequency: "Quarterly"
           },
           {

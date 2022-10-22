@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Container, Form, Row } from 'react-bootstrap'
+import { BsTelegram, BsWhatsapp } from 'react-icons/bs'
 
 import {
     youtube,
@@ -24,7 +25,7 @@ const ContactPage = () => {
 
             <section>
                 <Container>
-                    <Row className='text-white  py-5'>
+                    <Row className='text-white  '>
                         <Col md={5} className="px-4 px-md-5 mb-5">
                             <div className='d-flex flex-column '>
 
@@ -34,11 +35,14 @@ const ContactPage = () => {
                                 <div className='d-inline-flex mb-4'><i className='fas fa-at me-4 mt-1' /><a  href="mailto:info@growpital.com" style={{ color: "#07e57d" ,textDecorationColor: "#17171a" }}>info@growpital.com</a></div>
                                 <div className='d-inline-flex mb-4'><i className='fas fa-clock-o me-4 mt-1' /><p className='me-5'>Mon – Fri : 9:00 – 18:00 </p></div>
                             </div>
-                            <Row className="me-5 px-4 mb-5">
-                                <Col xs={3} className=" p-0"><img src={fb} alt="" /></Col>
-                                <Col xs={3} className=" p-0"><img src={youtube} alt="" /></Col>
-                                <Col xs={3} className=" p-0"><img src={linkdin} alt="" /></Col>
-                                <Col xs={3} className=" p-0"><img src={insta} alt="" /></Col>
+                            <Row className="me-5 px-2 mb-5">
+                                <Col xs={2} className=" p-0"><a  href=" https://www.facebook.com/growpital"><img src={fb} alt="" /></a></Col>
+                                <Col xs={2} className=" p-0"><a href="https://www.youtube.com/channel/UC01PIsA1RufWKdul_yve63g"><img src={youtube} alt="" /></a></Col>
+                                <Col xs={2} className=" p-0"><a href=" https://www.linkedin.com/company/growpital/"><img src={linkdin} alt="" /></a></Col>
+                                <Col xs={2} className=" p-0"><a href="https://www.instagram.com/growpital/"><img src={insta} alt="" /></a></Col>
+                                <Col xs={2} className=" p-0"><a href="https://t.me/growpitalofficial"><BsTelegram className="" style={{fontSize:"32"}}/></a></Col>
+                                <Col xs={2} className=" p-0"> <a href="https://wa.me/message/FCMTNVU3NDJOB1"><BsWhatsapp className="fs-32" style={{color:"lightgreen", fontSize:"32" }}/></a></Col>
+                             
                             </Row>
                             {/* <Row className='my-3'>
                                 <Col >

@@ -229,7 +229,7 @@ const RangeProgressBar = () => {
                 <span className="px-1">₹</span>{ rupee_format(TotalReturn)}
                 </h2>
                 <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">
-                 <span className="pe-2">Total Returns</span>
+                 <span className="pe-2">Takeaway</span>
                 </p>
               </div>
               <div className="text-center">
@@ -238,7 +238,7 @@ const RangeProgressBar = () => {
                 {frequen(value)}
                 </h2>
                 <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">
-                <span className="pe-2">Payout Frequency</span>
+                <span className="pe-2">Payout </span>
                 </p>
               </div>
               </Col>

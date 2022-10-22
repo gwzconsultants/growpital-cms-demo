@@ -33,12 +33,12 @@
     
     .fix-mutual-slider::before{
         content:"Fixed Deposit" ;
-         animation: mutu-fix infinite 5s;
+         animation: mutu-fix infinite 9s;
     
     }
     .tax-reguler-fix::before{
         content:"Tax Free" ;
-         animation: tax  infinite 5s;
+         animation: tax  infinite 6s;
     }
     @keyframes mutu-fix {
         0%   {content:"Fixed Deposit" ;}
@@ -48,6 +48,6 @@
     @keyframes tax {
         0%   {content:"Tax Free" ;}
        
-        50% {content:"Regular Payout";}
-        100% {content:"Fixed Payout";}
+        33% {content:"Regular Payout";}
+        67% {content:"Fixed Payout";}
       }

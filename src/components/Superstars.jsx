@@ -60,34 +60,34 @@ const Superstars = (props) => {
       Designa: "Founder, CEO",
       link:"https://www.linkedin.com/in/riturajsharma123/",
       SubTitle:
-        "Rituraj is an alumnus of IMT Nagpur and an engineer. He has over 10 years of experience being a serial entrepreneur in industries related to Solar Energy & Agriculture. Apart from being a true leader and motivator for the team, his rich experience and business acumen helps organizations to manoeuvre through all challenges.",
+        "Rituraj is an alumnus of IMT Nagpur and an engineer. He has over 10 years of experience being a serial entrepreneur in industries related to Solar Energy & Agriculture.",
     },
     {
       Id: "2",
       Img: Star2,
       Title: "Krishna Joshi",
-      Designa: "CoFounder & Farming Operations Lead",
+      Designa: "Co-Founder & COO",
       link:"https://www.linkedin.com/in/krishnna-joshi-a33638118/",
       SubTitle:
-        "Krishna is a process oriented and operations freak person. His educational background in commerce & business management have led him to see through various industries. He comes with vast experience of 12 years across industries ranging from BFSI, Marketing & automobile. His operations expertise across industries makes him one of a kind. ",
+        "Krishna comes with vast experience of 12 years across industries ranging from BFSI, Marketing & automobile. His educational background in commerce & business management have led him to see through various industries.",
     },
     {
       Id: "3",
       Img: Star3,
       Title: "Sudhir Paswan",
-      Designa: "Operations & Agronomy",
+      Designa: "BU Head - Farm Portfolio",
       link:"https://www.linkedin.com/in/sudhir-paswan-19326969/",
       SubTitle:
-        "An Agriculture Graduate with 16+ years of agribusiness experience with Corporates and social organisations like Reliance, REI, PepsiCo, KGVK, Swades Foundation. Married to Srilagna who is an IT Analyst with TCS and son Sourish who is 3 years studying in nursery with DPS.",
+        "An Agriculture Graduate with 16+ years of agribusiness experience with Corporates and social organisations like Reliance, REI, PepsiCo, KGVK, Swades Foundation.",
     },
     {
       Id: "4",
       Img: Star4,
       Title: "Karan Agrawal",
-      Designa: "Growth & Operations",
+      Designa: "Strategic Partnership",
       link:"https://www.linkedin.com/in/karan-agrawal-623b5531/",
       SubTitle:
-        "Karan is a motivated and self driven person with diverse experience of around 10 years in power and agriculture sector. He is B. Tech (Honors) in Mechanical engineering from NIT Raipur and PGDM Operations and Strategy from MDI Gurgaon. He has a rich experience in operations & growth and comes with an entrepreneurial mindset.",
+        "Karan is a self driven person with diverse experience of around 10 years in power and agriculture sector. He is B. Tech (Honors) in Mechanical engineering from NIT Raipur & PGDM Operations and Strategy from MDI Gurgaon.",
     },
   // ];
   // const SuperStars2 = [
@@ -95,37 +95,37 @@ const Superstars = (props) => {
       Id: "5",
       Img: Star5,
       Title: "Ankush Agrawal",
-      Designa: "CRO (Post Harvest Sales)",
+      Designa: "Head - Business Operations",
       link:"https://www.linkedin.com/in/ankushragrawal/",
       SubTitle:
-        "Ankush is a Problem Solver and Knowledge Seeker. He has 10+ years experience spanning Social Media & Digital Marketing, Market Research & Consumer Insights, Data Analytics & Business Strategy responsibilities across multiple sectors. A PGDM in Marketing & Operations from IMT Nagpur & B Tech UDCT Mumbai graduate.",
+        "Ankush has 10+ years experience spanning Social Media & Digital Marketing, Market Research & Consumer Insights, Data Analytics & Business Strategy responsibilities across multiple sectors. A PGDM in Marketing & Operations from IMT Nagpur & B Tech UDCT Mumbai graduate.",
     },
     {
       Id: "6",
       Img: Star6,
       Title: "Utkarsh Srivastava",
-      Designa: "Marketing",
+      Designa: "Chief Business Oficer",
       link:"https://www.linkedin.com/in/utkarsh-srivastava-30210417/",
       SubTitle:
-        "Utkarsh is a first principles person. Graduated from IMT Nagpur & did his B Tech in computer science prior to that. He is also an Alumnus of IIM Lucknow. He has an analytical bent of mind and looks for exponential growth in every sphere of life. He has over a decade of diversified experience in BFSI, Fintech and Edtech industries.",
+        "Utkarsh is a first principles person. Graduated from IMT Nagpur & did his B Tech in computer science prior to that. He is also an Alumnus of IIM Lucknow. He has over a decade of diversified experience in BFSI, Fintech and Edtech industries.",
     },
     {
       Id: "7",
       Img: Star7,
       Title: "Shubhanshu Chouhan",
-      Designa: "CTO",
+      Designa: "Chief Technical Officer",
       link:"https://www.linkedin.com/in/shubhanshu-chouhan/",
       SubTitle:
-        "Passionate about developing high-performing teams and using transformational leadership to accelerate business capabilities and optimize IT value. Recognized for creating impactful relationships, strategic sourcing, consensus building, and leading full-cycle global projects to enhance the portfolio of enterprise applications.",
+        "Passionate about developing high-performing teams using transformational leadership to accelerate business capabilities and optimize IT value. Recognized for creating impactful relationships, strategic sourcing, consensus building, and leading full-cycle global projects.",
     },
     {
       Id: "8",
       Img: Star8,
       Title: "Fahad Shaikh",
-      Designa: "Farm Operations",
+      Designa: "VP- Farm Operations",
       link:"https://www.linkedin.com/in/fahad-shaikh-611b43217/",
       SubTitle:
-        "Fahad is an energetic & goal driven individual. His experience spans more than a decade in Supply Chain, Agriculture, Restaurants, Entrepreneurship and Telecommunication sector. He has operational skills and also possesses expertise in team management, vendor management, client management, and quality assurance.",
+        "Fahad's experience spans more than a decade in Supply Chain, Agriculture, Restaurants, Entrepreneurship and Telecommunication sector. He has operational skills and also possesses expertise in team management, vendor management, client management, and quality assurance.",
     },
   ];
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { Card } from "react-bootstrap";
-import User from "../assets/img/user.png";
+// import User from "../assets/img/user.png";
 import { BsFillStarFill } from "react-icons/bs";
 import { RiDoubleQuotesR, RiDoubleQuotesL } from "react-icons/ri";
 

@@ -18,6 +18,7 @@ definitions:
         name: Install
         script:
           - npm install
+          - export CI=false
           - npm run build
         artifacts:
           - build/**

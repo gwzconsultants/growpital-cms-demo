@@ -159,7 +159,7 @@ const Home = () => {
                   </p>
                   <p className="fs-24 fs-sm-18 fw-400 text-white ms-4 mb-5">Delay</p>
                   <p className="fs-24 fs-sm-18 fw-400 text-white ms-2 mb-0">
-                    Brokerage fees
+                    Brokerage
                   </p>
                 </div>
               </div>
@@ -405,8 +405,7 @@ const Home = () => {
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
-                <BsFillCircleFill size={8} className="me-1" /> HOW TO GET
-                STARTED?
+                <BsFillCircleFill size={8} className="me-1" /> What our investors say about us!
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Happy to boast a <span className="text-main-green"> 4.7 rating</span>  by customers

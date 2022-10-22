@@ -68,7 +68,7 @@ const Home = () => {
                         <Card.Title className="fw-400 text-center fs-20 mb-0 pt-2">
                           Grow your {" "}
                           <span className="fw-600 text-main-gold">capital</span>
-                          <span className="fw-600 text-main-gold">ZERO</span>{" "}
+                        
 
                         </Card.Title>
                       </Card.Body>
@@ -149,7 +149,7 @@ const Home = () => {
                 <span className="text-main-green">Fixed Deposit</span> but a
                 much better one!
               </h2>
-              <div className="d-flex justify-content-start align-items-center my-5 my-md-5 py-4 py-md-4" >
+              <div className="d-flex justify-content-md-start justify-content-center align-items-center my-5 my-md-5 py-4 py-md-4" >
                 {/* <h2 className="display-1 fw-900 text-main-gold mb-0">0</h2> */}
                 <Image src={zero} className="img-fluid" alt="" />
                 <div className="text-start">
@@ -331,7 +331,7 @@ const Home = () => {
 
 
                       >
-                        <img src={callImg} className="img-fluid me-3 bg-yellow" alt=""  style={{width:"3rem"}} />{" "}
+                        <img src={callImg} className="img-fluid me-3" alt=""  style={{width:"3rem"}} />{" "}
                         Schedule a call
                       </Button>
                     </a>

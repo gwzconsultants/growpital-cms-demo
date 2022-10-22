@@ -72,7 +72,7 @@ const ContactPage = () => {
                                     </Form.Group>
                                     <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
 
-                                        <Form.Control as="textarea" placeholder="Massage" rows={3} />
+                                        <Form.Control as="textarea" placeholder="message" rows={3} />
                                     </Form.Group>
                                 </Form>
 

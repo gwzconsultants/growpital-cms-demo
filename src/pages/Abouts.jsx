@@ -9,13 +9,13 @@ import SuperstarsAbout from '../components/SuperStartAbout'
 import Footer from '../layout/Footer'
 import Header from '../layout/Header'
 // import contactImg from "../assets/img/Rectangle 71.jpg"
-import { About_us_img, tractor } from "../assets/img/contactimg";
+// import { About_us_img, tractor } from "../assets/img/contactimg";
 const Abouts = () => {
   return (
     <>
       <Header />
       <div className='about'>
-        <section className='mb-md-5 mb-3  '  >
+        {/* <section className='mb-md-5 mb-3  '  >
           <Container  >
             <Row >
               <Col>
@@ -28,7 +28,7 @@ const Abouts = () => {
               </Col>
             </Row>
           </Container>
-        </section>
+        </section> */}
 
         <section className='mb-md-5 mb-3 pt-5 text-start text-white'>
           <Container>
@@ -43,7 +43,7 @@ const Abouts = () => {
               <button className="main-btn maincolor mb-3 my-3 fs-5">Get Started</button>
 </Col>
                 <Col md={6}>
-                <img src={tractor} alt="Farm GIF " className='img-fluid w-100'  />
+                {/* <img src={tractor} alt="Farm GIF " className='img-fluid w-100'  /> */}
                 {/* <p>Farm GIF</p> */}
                 </Col>
               </Row>
@@ -72,7 +72,7 @@ const Abouts = () => {
             </Row>
           </Container>
         </section>
-        <section className='mb-md-5 mb-3'>
+        <section className='mb-md-3 mb-3'>
           <Container className='text-white'>
             <Row className="d-flex justify-content-center align-items-center">
               <Col className="text-center mb-4">
@@ -89,7 +89,7 @@ const Abouts = () => {
             </Row>
           </Container>
         </section>
-        <section className="py-5 mb-md-5 mb-3" id="team">
+        <section className=" mb-md-5 mb-3" id="team">
           <Container>
             <Row className="d-flex justify-content-center align-items-center">
               <Col className="text-center ">
@@ -107,7 +107,7 @@ const Abouts = () => {
             </Row>
           </Container>
         </section>
-        <section className="py-5 mb-md-5 mb-3">
+        <section className=" mb-md-5 mb-3">
         <Container>
             <Row className="d-flex justify-content-center align-items-center">
               <Col className="text-center">

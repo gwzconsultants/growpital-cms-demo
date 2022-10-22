@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Col, Image, Row } from "react-bootstrap";
-import Start1 from "../assets/img/start.png";
+// import Start1 from "../assets/img/start.png";
 import { AiFillLinkedin } from "react-icons/ai";
 import Slider from "react-slick";
 
@@ -19,7 +19,7 @@ const Superstars = (props) => {
     dots: false,
     infinite: true,
     autoplay: true,
-    speed: 3000,
+    speed: 4000,
     autoplaySpeed: 700,
     cssEase: "linear",
     arrows: false,
@@ -89,10 +89,10 @@ const Superstars = (props) => {
       SubTitle:
         "Karan is a motivated and self driven person with diverse experience of around 10 years in power and agriculture sector. He is B. Tech (Honors) in Mechanical engineering from NIT Raipur and PGDM Operations and Strategy from MDI Gurgaon. He has a rich experience in operations & growth and comes with an entrepreneurial mindset.",
     },
-  ];
-  const SuperStars2 = [
+  // ];
+  // const SuperStars2 = [
     {
-      Id: "1",
+      Id: "5",
       Img: Star5,
       Title: "Ankush Agrawal",
       Designa: "CRO (Post Harvest Sales)",
@@ -101,7 +101,7 @@ const Superstars = (props) => {
         "Ankush is a Problem Solver and Knowledge Seeker. He has 10+ years experience spanning Social Media & Digital Marketing, Market Research & Consumer Insights, Data Analytics & Business Strategy responsibilities across multiple sectors. A PGDM in Marketing & Operations from IMT Nagpur & B Tech UDCT Mumbai graduate.",
     },
     {
-      Id: "2",
+      Id: "6",
       Img: Star6,
       Title: "Utkarsh Srivastava",
       Designa: "Marketing",
@@ -110,7 +110,7 @@ const Superstars = (props) => {
         "Utkarsh is a first principles person. Graduated from IMT Nagpur & did his B Tech in computer science prior to that. He is also an Alumnus of IIM Lucknow. He has an analytical bent of mind and looks for exponential growth in every sphere of life. He has over a decade of diversified experience in BFSI, Fintech and Edtech industries.",
     },
     {
-      Id: "3",
+      Id: "7",
       Img: Star7,
       Title: "Shubhanshu Chouhan",
       Designa: "CTO",
@@ -119,7 +119,7 @@ const Superstars = (props) => {
         "Passionate about developing high-performing teams and using transformational leadership to accelerate business capabilities and optimize IT value. Recognized for creating impactful relationships, strategic sourcing, consensus building, and leading full-cycle global projects to enhance the portfolio of enterprise applications.",
     },
     {
-      Id: "4",
+      Id: "8",
       Img: Star8,
       Title: "Fahad Shaikh",
       Designa: "Farm Operations",
@@ -132,7 +132,7 @@ const Superstars = (props) => {
     < >
      {/* <section className="">  */}
      <Row className="d-flex justify-content-center align-items-start pt-3 superstars">
-       <Col md={12}   className="d-none d-md-block">
+       <Col md={12}   className="d-none d-md-block px-1">
      <Slider {...settings} className="d-md-none" >
         {SuperStars.map((Items) => (
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white" key={Items.Id}>
@@ -165,7 +165,7 @@ const Superstars = (props) => {
         </Row>
         <Slider {...settings}  >
      {SuperStars.map((Items) => (
-          <Col md={12} lg={6} key={Items.Id} >
+          <Col md={12} lg={6} key={Items.Id} className=" px-1" >
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
               <Card.Body className="m-1 bg-dark-gradient rounded p-4">
                 <Row>
@@ -190,7 +190,7 @@ const Superstars = (props) => {
           </Col>
         ))}
         </Slider>
-       <Slider {...settings}  >
+       {/* <Slider {...settings}  >
      {SuperStars2.map((Items) => (
           <Col md={12} lg={6} key={Items.Id} >
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
@@ -216,7 +216,7 @@ const Superstars = (props) => {
             </Card>
           </Col>
         ))}
-        </Slider>
+        </Slider> */}
 
     </>
   );

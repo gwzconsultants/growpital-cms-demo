@@ -338,7 +338,7 @@ const Home = () => {
                   </div>
 
                   <div>
-                    <a href="https://wa.me/message/FCMTNVU3NDJOB1">
+                    <a href="#sibConversationsExpanded">
                       <Button
                         variant="dark"
                         size="lg"

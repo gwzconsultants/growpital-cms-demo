@@ -1,0 +1,48 @@
+image: node:16-alpine
+definitions:
+  steps:
+    - step: &build-dev
+        caches:
+          - node
+        image: node:16-alpine
+        name: Install
+        script:
+          - npm install
+          - npm run build
+        artifacts:
+          - build/**
+    - step: &build-main
+        caches:
+          - node
+        image: node:16-alpine
+        name: Install
+        script:
+          - npm install
+          - export CI=false
+          - npm run build
+        artifacts:
+          - build/**
+    - step: &default-pipeline
+        caches:
+          - node
+        image: node:14-alpine
+        name: default-pipeline
+        script:
+          - npm -v
+    - step: &deploy-main
+        caches:
+          - node
+        image: atlassian/pipelines-awscli
+        name: Deploy to S3
+        script:
+          - mkdir -p ~/.aws
+          - echo -e "[default]\naws_access_key_id = $AWS_ACCESS_KEY_ID\naws_secret_access_key = $AWS_SECRET_ACCESS_KEY" > ~/.aws/credentials
+          - aws s3 cp build/ s3://website.growpital.com --recursive
+          - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_WEBSITE_ID --paths "/*"
+pipelines:
+  default:
+    - step: *default-pipeline
+  branches:
+    main:
+      - step: *build-main
+      - step: *deploy-main

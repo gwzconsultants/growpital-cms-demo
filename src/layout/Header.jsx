@@ -2,7 +2,7 @@
 // import React, { useState } from "react";
 import { Container, Nav, Navbar, Button, Image } from "react-bootstrap";
 // import { Link } from "react-router-dom";
-import Logo from "../assets/img/logo.png";
+import Logo from "../assets/img/newlogo.png";
 
 const Header = () => {
     // const [active, setActive] = useState('default');

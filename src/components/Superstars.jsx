@@ -29,7 +29,7 @@ const Superstars = (props) => {
         settings: {
           centerPadding: "10px",
           slidesToShow: 1,
-          rows: 2,
+          rows: 1,
           slidesPerRow: 1,
           slidesToScroll: 1,
           speed: 3000,
@@ -132,7 +132,7 @@ const Superstars = (props) => {
     < >
      {/* <section className="">  */}
      <Row className="d-flex justify-content-center align-items-start pt-3 superstars">
-       <Col md={12}   className="d-none d-md-block px-1">
+       <Col md={12}   className="d-none d-md-block px-5">
      <Slider {...settings} className="d-md-none" >
         {SuperStars.map((Items) => (
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white" key={Items.Id}>

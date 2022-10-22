@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Image, Row, Nav } from "react-bootstrap";
-import Logo from "../assets/img/logo.png";
+import Logo from "../assets/img/newlogo.png";
 import { FaFacebookF } from "react-icons/fa";
 import { BsYoutube, BsLinkedin, BsInstagram, BsWhatsapp, BsTelegram } from "react-icons/bs";
 
@@ -13,16 +13,15 @@ const Footer = () => {
             <Col xs={12} md={6} lg={3}>
               <Image src={Logo} className="img-fluid w-75" alt="logo" />
               <p className="text-white fs-18 fs-sm-22 fw-400 my-3">
-                Learn To Love Growth And Change And You Will Be A Success.
-                Microsoft Patch
+                We connect you to the world of agri investment
               </p>
             </Col>
             <Col xs={12} md={6} lg={3}>
               <h6 className="fs-22 fs-sm-24 mb-4 mb-md-3 mt-4 mt-md-0 fw-600 text-white">Growpital</h6>
               <Nav defaultActiveKey="/home" className="flex-column">
-                <Nav.Link href="/abouts">About Us</Nav.Link>
-                <Nav.Link href="/abouts#how_it_works" >How it works?</Nav.Link>
-                <Nav.Link href="/abouts#team">Team</Nav.Link>
+                <Nav.Link href="/about">About Us</Nav.Link>
+                <Nav.Link href="/about/#how_it_works" >How it works?</Nav.Link>
+                <Nav.Link href="/about/#team">Team</Nav.Link>
                 <Nav.Link href="/blog">Blogs</Nav.Link>
                 <Nav.Link href="/contact">Contact Us</Nav.Link>
               </Nav>

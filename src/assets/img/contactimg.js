@@ -45,6 +45,8 @@ import harvest from "./Harvest Premium.svg"
 import locking from "./locking.svg"
 import timerglass from "./vintage-hourglass-svgrepo-com 1.svg"
 import homepage from "./Home-Page-img (2) (1).jpg"
+import about_gif from "./Untitled-2.gif"
+import user_icon from "./user-svgrepo-com.svg"
 
 
 
@@ -106,5 +108,7 @@ export {
     locking,
     timerglass,
     homepage,
+    about_gif,
+    user_icon
 
 }

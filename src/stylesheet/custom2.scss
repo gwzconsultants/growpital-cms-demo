@@ -33,12 +33,21 @@
     
     .fix-mutual-slider::before{
         content:"Fixed Deposit" ;
-         animation: animate infinite 5s;
+         animation: mutu-fix infinite 5s;
     
     }
-
-    @keyframes animate {
+    .tax-reguler-fix::before{
+        content:"Tax Free" ;
+         animation: tax  infinite 5s;
+    }
+    @keyframes mutu-fix {
         0%   {content:"Fixed Deposit" ;}
        
         50% {content:"Mutual Fund";}
+      }
+    @keyframes tax {
+        0%   {content:"Tax Free" ;}
+       
+        50% {content:"Regular Payout";}
+        100% {content:"Fixed Payout";}
       }

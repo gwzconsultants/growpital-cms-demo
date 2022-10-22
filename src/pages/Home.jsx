@@ -27,7 +27,7 @@ import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalabl
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
 import AccordingQue from "../components/AccordingQue";
-import { callImg, gifHome1,  homepage,  tractormain, whatsappImg } from "../assets/img/contactimg";
+import { callImg,   homepage,   whatsappImg } from "../assets/img/contactimg";
 
 const Home = () => {
 
@@ -49,9 +49,9 @@ const Home = () => {
                 </h5>
               </div>
               <h1 className="text-white fw-600 display-5 mb-3 mb-md-4">
-                Invest and earn regular assured return
-                <span className="text-main-green">
-                  <BsArrowRight /> Tax Free
+                Invest and earn assured returns  <span className="text-main-green pe-2"> <BsArrowRight /></span>  
+                <span className="text-main-green tax-reguler-fix">
+                 
                 </span>
               </h1>
               <p className="text-white fw-400 fs-24 my-3 mb-md-4 py-2">
@@ -120,17 +120,17 @@ const Home = () => {
 
                   <span className="text-white fs-18 ms-1">4.7 by user</span>
                 </p>
-              </div>
+              </div>mb
             </Col>
             <Col
               xs={12}
               md={12}
               lg={5}
-              className="text-center text-lg-end mt-lg-0 mt-md-5 mt-5"
+              className="text-center text-lg-end mt-lg-0 mt-md-5 mt-5 p-3 mb-4"
 
             >
               {/* <img src="BrowserPreview_tmp.gif?1666269773" className="img-fluid"  alt=""/> */}
-              <Image src={ homepage} className="img-fluid" alt="" />
+              <Image src={ homepage} className="img-fluid rounded-4" alt="" />
             </Col>
           </Row>
         </Container>

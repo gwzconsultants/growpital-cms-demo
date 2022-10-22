@@ -48,7 +48,7 @@ const Accordian = (props) => {
     <>
 <div className="accordian-main">
       <Row className="  pt-5 mx-auto">
-        <Col xs={12} md={12} lg={6} className="text-center text-lg-start mb-5 mb-lg-0  d-flex justify-content-center justify-content-md-start align-items-center" >
+        <Col xs={12} md={12} lg={6} className="text-center text-lg-start mb-5 mb-lg-0  d-flex justify-content-center justify-content-lg-start align-items-center" >
           <Carousel activeIndex={index}  className="vertical text-center " controls={false} indicators={false} autoPlay={true} interval={5000} onSelect={handleSelect} >
             <Carousel.Item  >
               <img
@@ -56,13 +56,13 @@ const Accordian = (props) => {
                 className="d-block img-fluid accordian-main-img"
                 src={step1}
                 alt="First slide"
-              
+              style={{width:"24rem"}}
                 />
 
             </Carousel.Item>
             <Carousel.Item>
               <img
-              
+               style={{width:"24rem"}}
               // style={{width:"27rem"}}
               className="d-block img-fluid accordian-main-img "
               src={step3}

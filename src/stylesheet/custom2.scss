@@ -31,3 +31,23 @@
     };
     }
     
+    .fix-mutual-slider::before{
+        content:"Fixed Deposit" ;
+         animation: mutu-fix infinite 9s;
+    
+    }
+    .tax-reguler-fix::before{
+        content:"Tax Free" ;
+         animation: tax  infinite 6s;
+    }
+    @keyframes mutu-fix {
+        0%   {content:"Fixed Deposit" ;}
+       
+        50% {content:"Mutual Fund";}
+      }
+    @keyframes tax {
+        0%   {content:"Tax Free" ;}
+       
+        33% {content:"Regular Payout";}
+        67% {content:"Fixed Payout";}
+      }

@@ -183,7 +183,7 @@ const RangeProgressBar = () => {
               </p>
             </div>
             <div>
-              <div className="mb-3 px-2">
+              <div className="mb-3 px-3">
               {/* <ThemeProvider theme={finalTheme}> */}
                 <Box  >
                
@@ -213,7 +213,7 @@ const RangeProgressBar = () => {
             <div className="text-center ">
               
               <h3 className="text-main-gold fw-600 fs-30 my-3 my-md-4">
-              <img src={calLogo} alt="" className="img-fluid me-2"/> {name(value)}
+              <img src={calLogo} alt="" className="img-fluid me-2" style={{width:"6%"}}/> {name(value)}
               </h3>
             </div>
             <Row className="pt-4">
@@ -229,7 +229,7 @@ const RangeProgressBar = () => {
                 <span className="px-1">₹</span>{ rupee_format(TotalReturn)}
                 </h2>
                 <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">
-                 <span className="pe-2">Total Returns</span>
+                 <span className="pe-2">Takeaway</span>
                 </p>
               </div>
               <div className="text-center">
@@ -238,7 +238,7 @@ const RangeProgressBar = () => {
                 {frequen(value)}
                 </h2>
                 <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">
-                <span className="pe-2">Payout Frequency</span>
+                <span className="pe-2">Payout </span>
                 </p>
               </div>
               </Col>

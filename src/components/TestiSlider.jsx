@@ -1,11 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
 import { Card } from "react-bootstrap";
-import User from "../assets/img/user.png";
+// import User from "../assets/img/user.png";
 import { BsFillStarFill } from "react-icons/bs";
 import { RiDoubleQuotesR, RiDoubleQuotesL } from "react-icons/ri";
 
-import { aditya, gujan, prashenjeet ,  saurabh,  shanshank, shuman, vipul } from "../assets/img/contactimg";
+import { aditya, gujan, prashenjeet ,  saurabh,  shanshank, shuman, user_icon, vipul } from "../assets/img/contactimg";
 
 const TestiSlider = () => {
   var settings = {
@@ -90,7 +90,7 @@ const TestiSlider = () => {
     },
     {
       Id: "2",
-      Img: User,
+      Img: user_icon,
       Title: "Mehul Anil Doshi",
       Designa: "Bengaluru",
       SubTitle:"Growpital is a really convenient & high ROI, tax-free alternative investment option to diversify your portfolio. Having interacted with the key team members I really trust their business model & am sure it's going to do well.",

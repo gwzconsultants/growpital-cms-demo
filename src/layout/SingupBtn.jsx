@@ -24,7 +24,7 @@ const SingupBtn = () => {
                             <div className='darkcard p-1 rounded-4 z-index-1 mx-auto d-flex justify-content-center align-items-center'>
                                 <div className='darkcard-icon p-2 shadow-none'>
 
-                                    <Link><img src={Call24} alt="" className='img-fluid' /></Link>
+                                    <Link to="/contact"><img src={Call24} alt="" className='img-fluid' /></Link>
                                 </div>
                             </div>
                         </Col>

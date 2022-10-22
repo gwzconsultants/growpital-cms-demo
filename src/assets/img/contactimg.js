@@ -44,6 +44,9 @@ import plant_return from "./Planty Returns.svg"
 import harvest from "./Harvest Premium.svg"
 import locking from "./locking.svg"
 import timerglass from "./vintage-hourglass-svgrepo-com 1.svg"
+import homepage from "./Home-Page-img (2) (1).jpg"
+import about_gif from "./Untitled-2.gif"
+import user_icon from "./user-svgrepo-com.svg"
 
 
 
@@ -52,6 +55,14 @@ import about_section from "./about-section.jpg"
 import tractormain from "./tracketer.gif"
 import whatsappImg from "./whatsapp-svgrepo-com.svg"
 import callImg from "./call-center-svgrepo-com (1) 1.svg"
+import CropHarvestedImg from "./CropHarvested.svg"
+import Returns from "./Returns.svg"
+import TotalInvestments from "./TotalInvestments.svg"
+import TopIcon1 from "./TopIcon1.svg"
+import TopIcon2 from "./TopIcon2.svg"
+
+
+
 export {
     youtube,
     fb,
@@ -104,5 +115,13 @@ export {
     harvest,
     locking,
     timerglass,
+    homepage,
+    about_gif,
+    user_icon,
 
+    CropHarvestedImg,
+    Returns,
+    TotalInvestments,
+    TopIcon1,
+    TopIcon2,
 }

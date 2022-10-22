@@ -1,9 +1,8 @@
 import React from "react";
 import { Col, Card, Image } from "react-bootstrap";
-import Icon1 from "../assets/img/icon-investment.png";
-import Icon2 from "../assets/img/icon-return.png";
-import Icon3 from "../assets/img/8.png";
+
 import CountUp from 'react-countup';
+import { CropHarvestedImg, Returns, TotalInvestments } from "../assets/img/contactimg";
 
 const CardCounter = (props) => {
   const Counter = [
@@ -14,7 +13,7 @@ const CardCounter = (props) => {
       Count: "700",
       after:"+",
       Tenur: "Lakhs",
-      Img: Icon1
+      Img: TotalInvestments,
     },
     {
       Id: "",
@@ -22,7 +21,7 @@ const CardCounter = (props) => {
       Count: "16",
       after:"%",
       Tenur: "Per AnnUm",
-      Img: Icon2
+      Img: Returns
     },
     {
       Id: "",
@@ -30,7 +29,7 @@ const CardCounter = (props) => {
       Count: "1000",
       after:"+",
       Tenur: "Acres",
-      Img: Icon3
+      Img: CropHarvestedImg
     },
   ];
   return (

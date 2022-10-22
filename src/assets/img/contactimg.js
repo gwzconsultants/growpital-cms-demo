@@ -52,6 +52,14 @@ import about_section from "./about-section.jpg"
 import tractormain from "./tracketer.gif"
 import whatsappImg from "./whatsapp-svgrepo-com.svg"
 import callImg from "./call-center-svgrepo-com (1) 1.svg"
+import CropHarvestedImg from "./CropHarvested.svg"
+import Returns from "./Returns.svg"
+import TotalInvestments from "./TotalInvestments.svg"
+import TopIcon1 from "./TopIcon1.svg"
+import TopIcon2 from "./TopIcon2.svg"
+
+
+
 export {
     youtube,
     fb,
@@ -104,5 +112,9 @@ export {
     harvest,
     locking,
     timerglass,
-
+    CropHarvestedImg,
+    Returns,
+    TotalInvestments,
+    TopIcon1,
+    TopIcon2,
 }

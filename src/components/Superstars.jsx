@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Col, Image, Row } from "react-bootstrap";
-import Start1 from "../assets/img/start.png";
+// import Start1 from "../assets/img/start.png";
 import { AiFillLinkedin } from "react-icons/ai";
 import Slider from "react-slick";
 

@@ -13,7 +13,7 @@ const LogoSlider = () => {
         rows: 1,
         slidesPerRow: 1,
         slidesToScroll: 1,
-        dots: true,
+        // dots: true,
         infinite: true,
         autoplay: true,
         speed: 3000,

@@ -112,11 +112,11 @@ const Abouts = () => {
             <Row className="d-flex justify-content-center align-items-center">
               <Col className="text-center">
                 <p className="text-uppercase fs-18 fw-500 fs-fm-16 text-main-green pb-1 mb-1" >
-                  <BsFillCircleFill size={8} className="me-1" /> We are not just a team, we are a family
+                  <BsFillCircleFill size={8} className="me-1" />Want to know how it works?
                 </p>
                 <h2 className="text-white fw-600 display-6 mb-0 mb-md-4 content-text">
-                Meet the superstars behind {" "}
-                  <span className="text-main-green">Growpital</span>
+                Know how your capital helps you make money {" "}
+                  {/* <span className="text-main-green">Growpital</span> */}
                 </h2>
               </Col>
             </Row>

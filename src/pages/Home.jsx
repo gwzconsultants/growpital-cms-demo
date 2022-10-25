@@ -27,8 +27,9 @@ import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalabl
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
 import AccordingQue from "../components/AccordingQue";
-import { callImg,   homepage,   whatsappImg } from "../assets/img/contactimg";
-import {  TopIcon1,  TopIcon2 } from "../assets/img/contactimg";
+import { callImg, homepage, whatsappImg } from "../assets/img/contactimg";
+import { TopIcon1, TopIcon2 } from "../assets/img/contactimg";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
 
@@ -50,9 +51,20 @@ const Home = () => {
                 </h5>
               </div>
               <h1 className="text-white fw-600 display-5 mb-3 mb-md-4">
-                Invest and earn assured returns  <span className="text-main-green pe-2"> <BsArrowRight /></span>  
-                <span className="text-main-green tax-reguler-fix">
-                 
+                Invest and earn assured returns  <span className="text-main-green pe-2"> <BsArrowRight /></span>
+                <span className="text-main-green ">
+                  <TypeAnimation
+                    sequence={[
+                      'Tax Free', 
+                      3000, // Waits 1s
+                      'Regular Payout', 
+                      3000, // Waits 2s
+                      'Fixed Payout', 
+                    ]}
+                    wrapper="span"
+                    cursor={true}
+                    repeat={Infinity}
+                  />
                 </span>
               </h1>
               <p className="text-white fw-400 fs-24 my-3 mb-md-4 py-2">
@@ -69,7 +81,7 @@ const Home = () => {
                         <Card.Title className="fw-400 text-center fs-20 mb-0 pt-2">
                           Grow your {" "}
                           <span className="fw-600 text-main-gold">capital</span>
-                        
+
 
                         </Card.Title>
                       </Card.Body>
@@ -131,7 +143,7 @@ const Home = () => {
 
             >
               {/* <img src="BrowserPreview_tmp.gif?1666269773" className="img-fluid"  alt=""/> */}
-              <Image src={ homepage} className="img-fluid rounded-4" alt="" />
+              <Image src={homepage} className="img-fluid rounded-4" alt="" />
             </Col>
           </Row>
         </Container>
@@ -147,7 +159,17 @@ const Home = () => {
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Its like a{" "}
-                <span className="text-main-green fix-mutual-slider"></span> but a
+                <span className="text-main-green"> <TypeAnimation
+                    sequence={[
+                      'Fixed Deposit', 
+                      3000, 
+                      'Mutual Fund',
+                      3000, 
+                      ]}
+                    wrapper="span"
+                    cursor={true}
+                    repeat={Infinity}
+                  /></span> but a
                 much better one!
               </h2>
               <div className="d-flex justify-content-md-start justify-content-center align-items-center my-5 my-md-5 py-4 py-md-4" >
@@ -174,7 +196,7 @@ const Home = () => {
                     Cardicon={CardIcon1}
                     Title="Assured Growth "
                     SubTitle="We provide much higher returns than FD and several bonds."
-                    
+
                   />
                   <CardDark
                     Cardicon={CardIcon3}
@@ -189,7 +211,7 @@ const Home = () => {
                     SubTitle="Free from Stock market volatality. Quaterly payouts in your wallet."
                   />
                 </Col>
-              {/* <div>
+                {/* <div>
                 <img src={ tractormain} alt="" className="position-absolute main-gift-tractor" />
               </div> */}
               </Row>
@@ -219,12 +241,12 @@ const Home = () => {
             <Col md={12} className="text-center mt-5 mt-md-0" >
               <ButtonStar />
               <div className="pt-3">
-              <p className="text-white fw-600 fs-24 fs-sm-16  mb-3 mb-md-4" >
-              Subscribed 100% in 6 hours on  <a href='tel:+91-7231844488' style={{ color: "#07e57d", textDecoration: "none"}}> Tyke Invest</a>
-              </p>
-              <p className="text-white fw-600 fs-24 fs-sm-16 mb-3 mb-md-4" >
-                Trusted by investor community spread across <span style={{ color: "#07e57d"}}>10+ </span> countries and <span style={{ color: "#07e57d"}}>150+ </span> cities
-              </p>
+                <p className="text-white fw-600 fs-24 fs-sm-16  mb-3 mb-md-4" >
+                  Subscribed 100% in 6 hours on  <a href='tel:+91-7231844488' style={{ color: "#07e57d", textDecoration: "none" }}> Tyke Invest</a>
+                </p>
+                <p className="text-white fw-600 fs-24 fs-sm-16 mb-3 mb-md-4" >
+                  Trusted by investor community spread across <span style={{ color: "#07e57d" }}>10+ </span> countries and <span style={{ color: "#07e57d" }}>150+ </span> cities
+                </p>
               </div>
             </Col>
           </Row>
@@ -340,8 +362,8 @@ const Home = () => {
 
 
                       >
-                        <img src={callImg} className="img-fluid me-3 bg-yellow" alt=""  style={{width:"3rem"}} />{" "}
-                         Call
+                        <img src={callImg} className="img-fluid me-3 bg-yellow" alt="" style={{ width: "3rem" }} />{" "}
+                        Call
                       </Button>
                     </a>
                   </div>
@@ -354,7 +376,7 @@ const Home = () => {
                         className="px-3 px-md-5 py-3 w-100"
 
                       >
-                        <img src={whatsappImg} className="img-fluid me-3 " style={{width:"3rem"}}  alt="" />{" "}
+                        <img src={whatsappImg} className="img-fluid me-3 " style={{ width: "3rem" }} alt="" />{" "}
                         Chat
                       </Button>
                     </a>
@@ -369,7 +391,7 @@ const Home = () => {
 
                       >
                         <img src={telegram} className="img-fluid me-3" style={{ maxWidth: "50px" }} alt="" />{" "}
-                       Community
+                        Community
                       </Button>
                     </a>
                   </div>
@@ -386,7 +408,7 @@ const Home = () => {
             <Col className="text-center">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" />  MEET OUR
-                TEAM 
+                TEAM
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 The spirit behind{" "}

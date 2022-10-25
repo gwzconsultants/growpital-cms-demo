@@ -5,7 +5,7 @@ import { Star1, Star2, Star3, Star4, Star5, Star6, Star7, Star8 } from "../asset
 
 import { AiFillLinkedin } from "react-icons/ai";
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
+
 
 
 

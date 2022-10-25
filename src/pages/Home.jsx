@@ -59,7 +59,8 @@ const Home = () => {
                       3000, // Waits 1s
                       'Regular Payout', 
                       3000, // Waits 2s
-                      'Fixed Payout', 
+                      'Fixed Payout',
+                      3000, 
                     ]}
                     wrapper="span"
                     cursor={true}

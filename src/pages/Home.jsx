@@ -347,9 +347,9 @@ const Home = () => {
               xs={12}
               md={12}
               lg={7}
-              className="text-center d-flex justify-content-end align-items-center"
+              className="text-center d-flex justify-content-md-end justify-content-center align-items-center"
             >
-              <Row className="mt-5 mt-lg-0 pe-5 me-5">
+              <Row className="mt-5 mt-lg-0 pe-md-5 me-md-5">
                 <Col xs={12} className="d-grid gap-4">
                   <div>
                     <a href="https://koalendar.com/e/know-growpital-pc">

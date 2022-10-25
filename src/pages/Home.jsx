@@ -29,7 +29,8 @@ import SingupBtn from "../layout/SingupBtn";
 import AccordingQue from "../components/AccordingQue";
 import { callImg, homepage, whatsappImg } from "../assets/img/contactimg";
 import { TopIcon1, TopIcon2 } from "../assets/img/contactimg";
-import { TypeAnimation } from "react-type-animation";
+import { Typewriter } from "react-simple-typewriter";
+
 
 const Home = () => {
 
@@ -53,19 +54,15 @@ const Home = () => {
               <h1 className="text-white fw-600 display-5 mb-3 mb-md-4">
                 Invest and earn assured returns  <span className="text-main-green pe-2"> <BsArrowRight /></span>
                 <span className="text-main-green ">
-                  <TypeAnimation
-                    sequence={[
-                      'Tax Free', 
-                      3000, // Waits 1s
-                      'Regular Payout', 
-                      3000, // Waits 2s
-                      'Fixed Payout',
-                      3000, 
-                    ]}
-                    wrapper="span"
-                    cursor={true}
-                    repeat={Infinity}
-                  />
+                <Typewriter
+            words={['Tax Free', 'Regular Payout', 'Fixed Payout']}
+            loop={3}
+            cursor
+            cursorStyle='|'
+            typeSpeed={100}
+            deleteSpeed={50}
+            delaySpeed={3000}
+          />
                 </span>
               </h1>
               <p className="text-white fw-400 fs-24 my-3 mb-md-4 py-2">
@@ -160,17 +157,17 @@ const Home = () => {
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Its like a{" "}
-                <span className="text-main-green"> <TypeAnimation
-                    sequence={[
-                      'Fixed Deposit', 
-                      3000, 
-                      'Mutual Fund',
-                      3000, 
-                      ]}
-                    wrapper="span"
-                    cursor={true}
-                    repeat={Infinity}
-                  /></span> but a
+                <span className="text-main-green">
+                <Typewriter
+            words={['Fixed Deposit', 'Mutual Fund']}
+            loop={2}
+            cursor
+            cursorStyle='|'
+            typeSpeed={100}
+            deleteSpeed={50}
+            delaySpeed={3000}
+          /></span>{" "}
+               
                 much better one!
               </h2>
               <div className="d-flex justify-content-md-start justify-content-center align-items-center my-5 my-md-5 py-4 py-md-4" >
@@ -460,7 +457,7 @@ const Home = () => {
                 Get content straight to you.
                 Be the first to learn the news about new features and product updates. What is going on in agri industry, promotions and more.
               </p>
-              <div className="mt-5 d-none d-md-block ">
+              {/* <div className="mt-5 d-none d-md-block "> */}
                 <div>
                   <a href="https://t.me/growpitalofficial">
                     <Button
@@ -469,12 +466,12 @@ const Home = () => {
                       className="px-3 px-md-5 py-3"
 
                     >
-                      <img src={telegram} className="img-fluid me-3" style={{ maxWidth: "50px" }} alt="" />{" "}
+                      <img src={telegram} className="img-fluid me-3" style={{maxWidth: "50px" }} alt="" />{" "}
                       Join Telegram Channel
                     </Button>
                   </a>
                 </div>
-              </div>
+              {/* </div> */}
             </Col>
             <Col xs={12} md={12} lg={6} className="  mt-5 mt-lg-0">
               <div className="faq-accordian text-center text-lg-end"  >

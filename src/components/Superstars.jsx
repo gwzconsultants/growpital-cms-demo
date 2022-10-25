@@ -58,7 +58,8 @@ const Superstars = (props) => {
       Img: Star1,
       Title: "Rituraj Sharma",
       Designa: "Founder, CEO",
-      link:"https://www.linkedin.com/in/riturajsharma123/",
+      link:
+      "https://www.linkedin.com/in/riturajsharma123/",
       SubTitle:
         "Rituraj is an alumnus of IMT Nagpur and an engineer. He has over 10 years of experience being a serial entrepreneur in industries related to Solar Energy & Agriculture.",
     },
@@ -165,7 +166,7 @@ const Superstars = (props) => {
         </Row>
         <Slider {...settings}  >
      {SuperStars.map((Items) => (
-          <Col md={12} lg={6} key={Items.Id} className=" px-1" >
+          <Col md={12} lg={6} key={Items.Id} className=" px-1 " >
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
               <Card.Body className="m-1 bg-dark-gradient rounded p-4">
                 <Row>

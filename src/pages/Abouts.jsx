@@ -102,7 +102,7 @@ const Abouts = () => {
                 </h2>
               </Col>
             </Row>
-            <Row className="d-flex justify-content-center align-items-start pt-0">
+            <Row className="d-flex justify-content-center align-items-start py-5 pt-md-0 ">
               <SuperstarsAbout />
             </Row>
           </Container>
@@ -120,7 +120,7 @@ const Abouts = () => {
                 </h2>
               </Col>
             </Row>
-            <Row className="d-flex justify-content-center align-items-start pt-0">
+            <Row className="d-flex justify-content-center align-items-start pt-3 pt-md-0">
               <Col>
                 <img src={about_section} alt="" className='img-fluid w-100' />
               </Col>

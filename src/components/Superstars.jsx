@@ -130,7 +130,7 @@ const Superstars = (props) => {
   ];
   return (
     < >
-     <section className="main-team-slider"> 
+     {/* <section className="main-team-slider">  */}
      <Row className="d-flex justify-content-center align-items-start pt-3 superstars">
        <Col md={12}   className="d-none d-md-block px-5">
      <Slider {...settings} className="d-md-none" >
@@ -217,7 +217,7 @@ const Superstars = (props) => {
           </Col>
         ))}
         </Slider> */}
-</section>
+{/* </section> */}
     </>
   );
 };

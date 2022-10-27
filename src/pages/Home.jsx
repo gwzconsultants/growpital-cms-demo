@@ -27,7 +27,7 @@ import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalabl
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
 import AccordingQue from "../components/AccordingQue";
-import { callImg, homepage, whatsappImg,chatIcon  } from "../assets/img/contactimg";
+import { callImg, homepage,chatIcon } from "../assets/img/contactimg";
 import { TopIcon1, TopIcon2 } from "../assets/img/contactimg";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -303,9 +303,14 @@ const Home = () => {
           </Row>
           <Row>
             <Col md={12} className="text-center mt-5 mt-md-4">
-              <ButtonStar />
+              <ButtonStar />{" "}
+              <div>
+
+              <a href="https://drive.google.com/file/d/1bUF3cdfk5gGHGSK7Jh35kQD9ZwrQMLTK/view" className="fs-16 fw-700 text-white text-center py-2">More FAQs</a>
+              </div>
             </Col>
           </Row>
+          
         </Container>
       </section>
 
@@ -374,7 +379,7 @@ const Home = () => {
                         className="px-3 px-md-5 py-3 w-100"
 
                       >
-                        <img src={whatsappImg} className="img-fluid me-3 " style={{width:"3rem"}}  alt="" />{" "}
+                        <img src={chatIcon} className="img-fluid me-3 " style={{width:"3rem"}}  alt="" />{" "}
                         Chat
                       </Button>
                     </a>

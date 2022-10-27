@@ -89,7 +89,7 @@ const Abouts = () => {
             </Row>
           </Container>
         </section>
-        <section className=" mb-md-5 mb-3" id="team">
+        <section className="pt-5 mb-md-4 mb-3" id="team">
           <Container>
             <Row className="d-flex justify-content-center align-items-center">
               <Col className="text-center ">

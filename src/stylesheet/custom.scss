@@ -475,12 +475,12 @@ footer {
 
 .contact-from {
   .form-control {
-    background-color: transparent;
+    background-color: transparent !important;
     color: white;
   }
 
   .form-control::placeholder {
-    color: white;
+    color: rgb(170, 167, 167);
     font-weight: 400;
     font-size: 18px;
   }

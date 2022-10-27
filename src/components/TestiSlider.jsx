@@ -6,6 +6,7 @@ import { BsFillStarFill } from "react-icons/bs";
 import { RiDoubleQuotesR, RiDoubleQuotesL } from "react-icons/ri";
 
 import { aditya, gujan, prashenjeet ,  saurabh,  shanshank, shuman, user_icon, vipul } from "../assets/img/contactimg";
+import { AiFillLinkedin } from "react-icons/ai";
 
 const TestiSlider = () => {
   var settings = {
@@ -57,6 +58,7 @@ const TestiSlider = () => {
       Img: aditya,
       Title: "Aditya Patra",
       Designa: "Bhubaneswar",
+      link:"https://www.linkedin.com/in/aditya-patra",
       SubTitle: "One of THE BEST alternative investment platforms I've come across. With the stock market being unreliable, I was looking for safer investment opportunities and BANG - Came across Growpital 🤩. The best part - the RETURNS ARE TAX FREE!.",
     },
     {
@@ -64,6 +66,7 @@ const TestiSlider = () => {
       Img: vipul,
       Title: "Vipul Rawal",
       Designa: "Delhi",
+      link:"https://www.linkedin.com/in/vipulraw/",
       SubTitle:"Growpital allows to invest in a market which can barely has bad times. Agriproduce will always find buyers, use of technology to maximise the output is so obvious but rare.",
     },
     {
@@ -71,6 +74,7 @@ const TestiSlider = () => {
       Img:  prashenjeet,
       Title: "Prashenjeet Biswas",
       Designa: "Odisha",
+      link:"https://www.linkedin.com/in/impjb",
       SubTitle:"It is a unique alternative investment platform. I wish it grows big and helps investors as well as country in improving farming sector. I love that I'm investing for a better cause like farming which will help the bottom line of our country.",
     },
     {
@@ -78,6 +82,7 @@ const TestiSlider = () => {
       Img: shanshank,
       Title: "Shashank Tiwari",
       Designa: "Pune",
+      link:"https://www.linkedin.com/mwlite/in/shashank-tiwari-frm-795148b7",
       SubTitle: "Unique concept and kudos to Rituraj for being available to clear any queries. May you grow further and create wealth for investors as well as help build sustainable environment.",
     },
     {
@@ -85,6 +90,7 @@ const TestiSlider = () => {
       Img: shuman,
       Title: "Suman Sarkar",
       Designa: "Kolkata",
+      link:"https://www.linkedin.com/in/suman-sarkar-588b885a",
       SubTitle:
         "Very good unique Platform for totally different type of tax free Investment.",
     },
@@ -93,6 +99,7 @@ const TestiSlider = () => {
       Img: user_icon,
       Title: "Mehul Anil Doshi",
       Designa: "Bengaluru",
+      link:"https://www.linkedin.com/in/mehul-doshi-69871b13/",
       SubTitle:"Growpital is a really convenient & high ROI, tax-free alternative investment option to diversify your portfolio. Having interacted with the key team members I really trust their business model & am sure it's going to do well.",
     },
     {
@@ -100,6 +107,7 @@ const TestiSlider = () => {
       Img: saurabh,
       Title: "Saurabh Sharma",
       Designa: "Nagpur",
+      // link:"https://www.linkedin.com/in/mehul-doshi-69871b13/",
       SubTitle:
         "A great platform and opportunity presented by Growpital for safe investments with high returns. The income being tax-free is another cherry on top. Have invested in 1 plan till now, planning to invest more.",
     },
@@ -108,6 +116,7 @@ const TestiSlider = () => {
       Img: gujan,
       Title: "Gunjan Dhote",
       Designa: "Nagpur",
+      link:"",
       SubTitle:
         "Investing in farms is something I have wished for since a long time. I have started investing with Growpital since last 6 months and have been really impressed with the customer support and the high returns. Great job!",
     },
@@ -137,6 +146,9 @@ const TestiSlider = () => {
                       <div className="ms-3 text-start">
                         <h6 className="fw-600 fs-13 mb-0 pt-2">
                           {Items.Title}
+                          <a href={Items.link} target="blank">
+                      <AiFillLinkedin size={18} className="ms-2 text-indigo" />
+                      </a>
                         </h6>
                         <p className="fw-300 fs-12 mb-0 pt-2 text-start">
                           {Items.Designa}

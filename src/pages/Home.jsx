@@ -131,7 +131,7 @@ const Home = () => {
 
                   <span className="text-white fs-18 ms-1">4.7 by user</span>
                 </p>
-              </div>mb
+              </div>
             </Col>
             <Col
               xs={12}

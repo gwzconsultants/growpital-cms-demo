@@ -110,7 +110,7 @@ const ContactPage = () => {
                                             {/* <Form.Label>City</Form.Label> */}
                                             <Form.Control type="text" placeholder="Name" required />
                                             <Form.Control.Feedback type="invalid">
-                                                Please provide a valid city.
+                                                Please provide a valid name.
                                             </Form.Control.Feedback>
                                         </Form.Group>
                                         <Form.Group as={Col} xs={12} controlId="validationCustom04" className="mb-4">

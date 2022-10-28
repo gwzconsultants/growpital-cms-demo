@@ -288,7 +288,7 @@ const Home = () => {
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Estimate your
-                <span className="text-main-green">  Earning </span>
+                <span className="text-main-green">  Earnings </span>
                 before Investing
               </h2>
             </Col>
@@ -305,8 +305,7 @@ const Home = () => {
             <Col md={12} className="text-center mt-5 mt-md-4">
               <ButtonStar />{" "}
               <div>
-
-              <a href="https://drive.google.com/file/d/1bUF3cdfk5gGHGSK7Jh35kQD9ZwrQMLTK/view" className="fs-16 fw-700 text-white text-center py-2">More FAQs</a>
+              <a href="https://drive.google.com/file/d/1bUF3cdfk5gGHGSK7Jh35kQD9ZwrQMLTK/view" className="fs-16 fw-700 text-white text-center py-2">Know more</a>
               </div>
             </Col>
           </Row>
@@ -314,7 +313,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="py-5">
+      <section className="py-5 bg-charade">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">

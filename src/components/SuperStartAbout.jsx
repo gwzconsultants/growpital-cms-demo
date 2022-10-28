@@ -5,7 +5,7 @@ import { Star1, Star2, Star3, Star4, Star5, Star6, Star7, Star8 } from "../asset
 
 import { AiFillLinkedin } from "react-icons/ai";
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
+
 
 
 
@@ -179,7 +179,10 @@ const SuperstarsAbout = (props) => {
                     </Card.Title>
                     <Card.Title className="fw-600 fs-14 mb-3 pt-2 text-italian">
                       <cite>{Items.Designa}</cite>
+                      <a href={Items.link} target="blank">
+
                       <AiFillLinkedin size={18} className="ms-2 text-indigo" />
+                      </a>
                     </Card.Title>
                     <Card.Text className="fw-300 fs-15 lh-24">
                       {Items.SubTitle}

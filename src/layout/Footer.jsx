@@ -17,7 +17,7 @@ const Footer = () => {
               </p>
             </Col>
             <Col xs={12} md={6} lg={3}>
-              <h6 className="fs-22 fs-sm-24 mb-4 mb-md-3 mt-4 mt-md-0 fw-600 text-white">Growpital</h6>
+              <h6 className="fs-22 fs-sm-24  mb-md-3 mt-4 mt-md-0 fw-600 text-white">Growpital</h6>
               <Nav defaultActiveKey="/home" className="flex-column">
                 <Nav.Link href="/about">About Us</Nav.Link>
                 <Nav.Link href="/about/#how_it_works" >How it works?</Nav.Link>
@@ -27,7 +27,7 @@ const Footer = () => {
               </Nav>
             </Col>
             <Col xs={12} md={6} lg={3}>
-              <h6 className="fs-22 fs-sm-24 mb-4 mb-md-3 mt-4 mt-md-0 fw-600 text-white">Important Links</h6>
+              <h6 className="fs-22 fs-sm-24  mb-md-3 mt-4 mt-md-0 fw-600 text-white">Important Links</h6>
               <Nav defaultActiveKey="/home" className="flex-column">
                 <Nav.Link href="/#calci">Returns Calculator</Nav.Link>
                 <Nav.Link href="/faqs">FAQs</Nav.Link>
@@ -37,7 +37,7 @@ const Footer = () => {
               </Nav>
             </Col>
             <Col xs={12} md={6} lg={3}>
-              <h6 className="fs-22 fs-sm-24 mb-4 mb-md-3 mt-4 mt-md-0 fw-600 text-white">Contact us</h6>
+              <h6 className="fs-22 fs-sm-24  mb-md-3 mt-4 mt-md-0 fw-600 text-white">Contact us</h6>
               <Nav defaultActiveKey="/home" className="flex-column">
                 <a href='tel:+91-7231844488' style={{ color: "#07e57d", textDecorationColor: "#17171a"}}>+91-7231844488</a>
                 <a  href="mailto:info@growpital.com" style={{ color: "#07e57d" ,textDecorationColor: "#17171a" }}>info@growpital.com</a>

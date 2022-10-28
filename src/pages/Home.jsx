@@ -27,8 +27,10 @@ import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalabl
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
 import AccordingQue from "../components/AccordingQue";
-import { callImg,   homepage,   whatsappImg, chatIcon } from "../assets/img/contactimg";
-import {  TopIcon1,  TopIcon2 } from "../assets/img/contactimg";
+import { callImg, homepage,chatIcon } from "../assets/img/contactimg";
+import { TopIcon1, TopIcon2 } from "../assets/img/contactimg";
+import { Typewriter } from "react-simple-typewriter";
+
 
 const Home = () => {
 
@@ -50,9 +52,17 @@ const Home = () => {
                 </h5>
               </div>
               <h1 className="text-white fw-600 display-5 mb-3 mb-md-4">
-                Invest and earn assured returns  <span className="text-main-green pe-2"> <BsArrowRight /></span>  
-                <span className="text-main-green tax-reguler-fix">
-                 
+                Invest and earn assured returns  <span className="text-main-green pe-2"> <BsArrowRight /></span>
+                <span className="text-main-green ">
+                <Typewriter
+            words={['Tax Free', 'Regular Payout', 'Fixed Payout']}
+            loop={3}
+            cursor
+            cursorStyle='|'
+            typeSpeed={100}
+            deleteSpeed={50}
+            delaySpeed={3000}
+          />
                 </span>
               </h1>
               <p className="text-white fw-400 fs-24 my-3 mb-md-4 py-2">
@@ -69,7 +79,7 @@ const Home = () => {
                         <Card.Title className="fw-400 text-center fs-20 mb-0 pt-2">
                           Grow your {" "}
                           <span className="fw-600 text-main-gold">capital</span>
-                        
+
 
                         </Card.Title>
                       </Card.Body>
@@ -121,7 +131,7 @@ const Home = () => {
 
                   <span className="text-white fs-18 ms-1">4.7 by user</span>
                 </p>
-              </div>mb
+              </div>
             </Col>
             <Col
               xs={12}
@@ -131,7 +141,7 @@ const Home = () => {
 
             >
               {/* <img src="BrowserPreview_tmp.gif?1666269773" className="img-fluid"  alt=""/> */}
-              <Image src={ homepage} className="img-fluid rounded-4" alt="" />
+              <Image src={homepage} className="img-fluid rounded-4" alt="" />
             </Col>
           </Row>
         </Container>
@@ -147,7 +157,17 @@ const Home = () => {
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Its like a{" "}
-                <span className="text-main-green fix-mutual-slider"></span> but a
+                <span className="text-main-green">
+                <Typewriter
+            words={['Fixed Deposit', 'Mutual Fund']}
+            loop={2}
+            cursor
+            cursorStyle='|'
+            typeSpeed={100}
+            deleteSpeed={50}
+            delaySpeed={3000}
+          /></span>{" "}
+               
                 much better one!
               </h2>
               <div className="d-flex justify-content-md-start justify-content-center align-items-center my-5 my-md-5 py-4 py-md-4" >
@@ -174,7 +194,7 @@ const Home = () => {
                     Cardicon={CardIcon1}
                     Title="Assured Growth "
                     SubTitle="We provide much higher returns than FD and several bonds."
-                    
+
                   />
                   <CardDark
                     Cardicon={CardIcon3}
@@ -189,7 +209,7 @@ const Home = () => {
                     SubTitle="Free from Stock market volatality. Quaterly payouts in your wallet."
                   />
                 </Col>
-              {/* <div>
+                {/* <div>
                 <img src={ tractormain} alt="" className="position-absolute main-gift-tractor" />
               </div> */}
               </Row>
@@ -219,12 +239,12 @@ const Home = () => {
             <Col md={12} className="text-center mt-5 mt-md-0" >
               <ButtonStar />
               <div className="pt-3">
-              <p className="text-white fw-600 fs-24 fs-sm-16  mb-3 mb-md-4" >
-              Subscribed 100% in 6 hours on  <a href='tel:+91-7231844488' style={{ color: "#07e57d", textDecoration: "none"}}> Tyke Invest</a>
-              </p>
-              <p className="text-white fw-600 fs-24 fs-sm-16 mb-3 mb-md-4" >
-                Trusted by investor community spread across <span style={{ color: "#07e57d"}}>10+ </span> countries and <span style={{ color: "#07e57d"}}>150+ </span> cities
-              </p>
+                <p className="text-white fw-600 fs-24 fs-sm-16  mb-3 mb-md-4" >
+                  Subscribed 100% in 6 hours on  <a href='tel:+91-7231844488' style={{ color: "#07e57d", textDecoration: "none" }}> Tyke Invest</a>
+                </p>
+                <p className="text-white fw-600 fs-24 fs-sm-16 mb-3 mb-md-4" >
+                  Trusted by investor community spread across <span style={{ color: "#07e57d" }}>10+ </span> countries and <span style={{ color: "#07e57d" }}>150+ </span> cities
+                </p>
               </div>
             </Col>
           </Row>
@@ -268,7 +288,7 @@ const Home = () => {
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Estimate your
-                <span className="text-main-green">  Earning </span>
+                <span className="text-main-green">  Earnings </span>
                 before Investing
               </h2>
             </Col>
@@ -283,13 +303,17 @@ const Home = () => {
           </Row>
           <Row>
             <Col md={12} className="text-center mt-5 mt-md-4">
-              <ButtonStar />
+              <ButtonStar />{" "}
+              <div>
+              <a href="https://drive.google.com/file/d/1bUF3cdfk5gGHGSK7Jh35kQD9ZwrQMLTK/view" className="fs-16 fw-700 text-white text-center py-2">Know more</a>
+              </div>
             </Col>
           </Row>
+          
         </Container>
       </section>
 
-      <section className="py-5">
+      <section className="py-5 bg-charade">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center">
@@ -327,9 +351,9 @@ const Home = () => {
               xs={12}
               md={12}
               lg={7}
-              className="text-center d-flex justify-content-end align-items-center"
+              className="text-center d-flex justify-content-md-end justify-content-center align-items-center"
             >
-              <Row className="mt-5 mt-lg-0 pe-5 me-5">
+              <Row className="mt-5 mt-lg-0 pe-md-5 me-md-5">
                 <Col xs={12} className="d-grid gap-4">
                   <div>
                     <a href="https://koalendar.com/e/know-growpital-pc">
@@ -340,8 +364,8 @@ const Home = () => {
 
 
                       >
-                        <img src={callImg} className="img-fluid me-3 bg-yellow" alt=""  style={{width:"3rem"}} />{" "}
-                         Call
+                        <img src={callImg} className="img-fluid me-3 bg-yellow" alt="" style={{ width: "3rem" }} />{" "}
+                        Call
                       </Button>
                     </a>
                   </div>
@@ -369,7 +393,7 @@ const Home = () => {
 
                       >
                         <img src={telegram} className="img-fluid me-3" style={{ maxWidth: "50px" }} alt="" />{" "}
-                       Community
+                        Community
                       </Button>
                     </a>
                   </div>
@@ -386,7 +410,7 @@ const Home = () => {
             <Col className="text-center">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" />  MEET OUR
-                TEAM 
+                TEAM
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 The spirit behind{" "}
@@ -436,7 +460,7 @@ const Home = () => {
                 Get content straight to you.
                 Be the first to learn the news about new features and product updates. What is going on in agri industry, promotions and more.
               </p>
-              <div className="mt-5 d-none d-md-block ">
+              {/* <div className="mt-5 d-none d-md-block "> */}
                 <div>
                   <a href="https://t.me/growpitalofficial">
                     <Button
@@ -445,12 +469,12 @@ const Home = () => {
                       className="px-3 px-md-5 py-3"
 
                     >
-                      <img src={telegram} className="img-fluid me-3" style={{ maxWidth: "50px" }} alt="" />{" "}
+                      <img src={telegram} className="img-fluid me-3" style={{maxWidth: "50px" }} alt="" />{" "}
                       Join Telegram Channel
                     </Button>
                   </a>
                 </div>
-              </div>
+              {/* </div> */}
             </Col>
             <Col xs={12} md={12} lg={6} className="  mt-5 mt-lg-0">
               <div className="faq-accordian text-center text-lg-end"  >

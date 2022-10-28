@@ -58,7 +58,8 @@ const Superstars = (props) => {
       Img: Star1,
       Title: "Rituraj Sharma",
       Designa: "Founder, CEO",
-      link:"https://www.linkedin.com/in/riturajsharma123/",
+      link:
+      "https://www.linkedin.com/in/riturajsharma123/",
       SubTitle:
         "Rituraj is an alumnus of IMT Nagpur and an engineer. He has over 10 years of experience being a serial entrepreneur in industries related to Solar Energy & Agriculture.",
     },
@@ -130,7 +131,7 @@ const Superstars = (props) => {
   ];
   return (
     < >
-     {/* <section className="">  */}
+     {/* <section className="main-team-slider">  */}
      <Row className="d-flex justify-content-center align-items-start pt-3 superstars">
        <Col md={12}   className="d-none d-md-block px-5">
      <Slider {...settings} className="d-md-none" >
@@ -165,7 +166,7 @@ const Superstars = (props) => {
         </Row>
         <Slider {...settings}  >
      {SuperStars.map((Items) => (
-          <Col md={12} lg={6} key={Items.Id} className=" px-1" >
+          <Col md={12} lg={6} key={Items.Id} className=" px-1 " >
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
               <Card.Body className="m-1 bg-dark-gradient rounded p-4">
                 <Row>
@@ -178,7 +179,9 @@ const Superstars = (props) => {
                     </Card.Title>
                     <Card.Title className="fw-600 fs-14 mb-3 pt-2 text-italian">
                       <cite>{Items.Designa}</cite>
+                      <a href={Items.link} target="blank">
                       <AiFillLinkedin size={18} className="ms-2 text-indigo" />
+                      </a>
                     </Card.Title>
                     <Card.Text className="fw-300 fs-15 lh-24">
                       {Items.SubTitle}
@@ -217,7 +220,7 @@ const Superstars = (props) => {
           </Col>
         ))}
         </Slider> */}
-
+{/* </section> */}
     </>
   );
 };

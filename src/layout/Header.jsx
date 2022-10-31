@@ -22,7 +22,7 @@ const Header = () => {
                         <Nav className="m-auto"  activeKey="/home">
                             <Nav.Link href="/" eventKey="default" >Home</Nav.Link>
                             <Nav.Link href="/about" eventKey="link-1">About</Nav.Link>
-                          {/* <Nav.Link href="https://www.growpital.com/blog" eventKey="link-2">Blog</Nav.Link> */}
+                          <Nav.Link href="https://blogs.growpital.com/" eventKey="link-2">Blog</Nav.Link>
                             <Nav.Link href="/faqs" eventKey="link-3">FAQs</Nav.Link>
                             <Nav.Link href="/contact" eventKey="link-4">Contact Us</Nav.Link>
 

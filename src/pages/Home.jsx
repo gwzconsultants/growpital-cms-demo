@@ -323,7 +323,7 @@ const Home = () => {
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
                 Connect with us & get your answers
               </h2>
-            </Col>
+            </Col>3
           </Row>
           <Row className="d-flex justify-content-center align-items-strech pt-5">
             <Col xs={12} md={12} lg={5} className="text-center text-md-start">

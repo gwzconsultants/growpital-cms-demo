@@ -19,6 +19,7 @@ import BlogDetailsNine from './components/blogdetails/blogDetailsNine';
 import BlogDetailsTen from './components/blogdetails/blogDetailsTen';
 import BlogDetailsEleven from './components/blogdetails/blogDetailsEleven';
 import BlogDetailsTwelve from './components/blogdetails/blogDetailsTwelve';
+import ScrollToTop from './hooks/AfterNav';
 
 
 
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
     <BrowserRouter >
+    <ScrollToTop />
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/faqs' element={<Faqs />} />

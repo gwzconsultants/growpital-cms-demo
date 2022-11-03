@@ -1,8 +1,9 @@
 import React from 'react'
-import { Button, Card, Col, Container, Form, Row } from 'react-bootstrap'
-import { IconContext } from 'react-icons'
-import { BsSearch } from 'react-icons/bs'
-import { blogsmall } from '../assets/img/contactimg'
+import {  Card, Col, Container,Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+// import { IconContext } from 'react-icons'
+// import { BsSearch } from 'react-icons/bs'
+import { blogImg2 } from '../assets/img/contactimg'
 import BlogArry from '../components/BlogArry'
 import Footer from '../layout/Footer'
 import Header from '../layout/Header'
@@ -17,9 +18,8 @@ const Blog = () => {
                         <Col className="d-flex justify-content-center align-items-center text-white mt-3">
                             <div className='text-center '>
                                 <h1>What's new</h1>
-                                <p className="subheading">Got a question? We've got answers.<br />
-                                    If you have some other questions, contact us using email.</p>
-                                <div className='faqs-search my-4 py-3'>
+                                <p className="subheading">Read on latest updates about latest investment opportunities, Industry insights and partners update.</p>
+                                {/* <div className='faqs-search my-4 py-3'>
                                     <Form className="d-flex ">
                                         <Form.Control
                                             type="search"
@@ -38,7 +38,7 @@ const Blog = () => {
 
                                         </IconContext.Provider>
                                     </Form>
-                                </div>
+                                </div> */}
 
                             </div>
 
@@ -46,28 +46,34 @@ const Blog = () => {
                     </Row>
                 </Container>
             </section>
+            <Link to={
+            {pathname: `/blog/farm-sizes-by-country`}
+            }  style={{ textDecoration: "none" }}>
             <section className='py-5'>
                 <Container>
                     <Row>
                         <Col md={6}>
                             <div>
-                                <img src={blogsmall} alt="blog-img" className='img-fluid rounded-3' />
+                                <img src={blogImg2} alt="blog-img" className='img-fluid rounded-3' />
                             </div>
                         </Col>
                         <Col md={6}>
                             <Card className='bg-transparent border-0 text-white'>
                                 <Card.Body>
                                     <Card.Text>
-                                        oct 3,2022 | 15mit read
+                                        Oct 3,2022 
 
                                     </Card.Text>
-                                        <Card.Subtitle className="mb-2 ">Banking</Card.Subtitle>
-                                    <Card.Title>What are Hydroponics and Aquaponics farming techniques?</Card.Title>
+                                        {/* <Card.Subtitle className="mb-2 ">Banking</Card.Subtitle> */}
+                                    <Card.Title>Farm Sizes by Country</Card.Title>
 
                                     <Card.Text>
-                                    The major benefit of hydroponics is that it can be easily set up. The lack of soil makes it easier
+                                    Almost 38% of the global land surface is used for agricultural purposes, in one way or the other. In absolute terms, it is over five billion hectares.
 
-                                        for urban farm enthusiasts, as you don’t need to pay any attention to soil quality. Secondly, hydroponics is a great technique for indoor farming. There are several vegetables and herbs that can be cultivated using this method.
+
+
+However, only one-third of this is for cropland cultivation and the rest are pastures, majorly used for grazing. India has the largest cultivated land area, in terms of percentage of total land mass, amounting to around 53.7%. The country also holds the second position globally, regarding the number of farms, second only to China
+
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -75,6 +81,7 @@ const Blog = () => {
                     </Row>
                 </Container>
             </section>
+            </Link>
             <section>
                 <Container>
                     <Row>

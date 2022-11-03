@@ -12,6 +12,7 @@ import {
     call
 } from '../assets/img/contactimg'
 
+
 const ContactPage = () => {
     const [validated, setValidated] = useState(false);
 
@@ -135,6 +136,7 @@ const ContactPage = () => {
                                     <Button type="submit" className="main-btn maincolor mb-2">Submit</Button>
                                 </Form>
                                 </div> 
+                              
                             </Col>
                         </Row>
                     </Container>

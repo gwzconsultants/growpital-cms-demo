@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap'
+import {  Col, Container, Row } from 'react-bootstrap'
 import { blogpage4 } from '../../assets/img/contactimg'
 // import blog1 from "../../assets/img/blogLarge.jpg"
 import Header from '../../layout/Header'
@@ -11,18 +11,16 @@ const BlogDetailsFour = () => {
             <Header />
             <section>
                 <Container  >
-                    <Row className='text-white'>
+                    <Row className='text-white mb-3'>
                         <Col xs={12}>
-                            <Card className='bg-transparent border-0'>
-                                <Card.Img variant="top" src={blogpage4} className="img-thumbnail  rounded-4" />
-                                <Card.Body>
-                                    <Row className='py-3'>
-                                        <Col><Card.Text><span> april 11,2022</span></Card.Text></Col>
-  {/* <Col className='text-end'><Card.Text>Banking</Card.Text></Col> */}
-                                    </Row>
-
-                                </Card.Body>
-                            </Card>
+                        <div className='profile '>
+                        <div className='cover-profile'>
+                            <img src={blogpage4} alt="" className='cover-img w-100 h-100 text-center rounded-4' />
+                        </div>
+                    </div>
+                    <div>
+                        <p className='py-3'>July 11,2022</p>
+                    </div>
                         </Col>
                     </Row>
                 </Container>

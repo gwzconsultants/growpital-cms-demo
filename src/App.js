@@ -21,6 +21,8 @@ import BlogDetailsEleven from './components/blogdetails/blogDetailsEleven';
 import BlogDetailsTwelve from './components/blogdetails/blogDetailsTwelve';
 
 
+
+
 function App() {
   return (
     <>
@@ -33,18 +35,19 @@ function App() {
       <Route path='/privacy-policy' element={<Privacy />} />
       <Route path='/terms' element={<Terms />} />
       <Route path='/blog' element={<Blog />} />
-      <Route path='/blog/1' element={<BlogDetailsone />} />
-      <Route path='/blog/2' element={<BlogDetailsTwo />} />
-      <Route path='/blog/3' element={<BlogDetailsThree />} />
-      <Route path='/blog/4' element={<BlogDetailsFour />} />
-      <Route path='/blog/5' element={<BlogDetailsFive />} />
-      <Route path='/blog/6' element={<BlogDetailsSix />} />
-      <Route path='/blog/7' element={<BlogDetailsSeven />} />
-      <Route path='/blog/8' element={<BlogDetailsEight />} />
-      <Route path='/blog/9' element={<BlogDetailsNine />} />
-      <Route path='/blog/10' element={<BlogDetailsTen />} />
-      <Route path='/blog/11' element={<BlogDetailsEleven />} />
-      <Route path='/blog/12' element={<BlogDetailsTwelve />} />
+      <Route path='/blog/myths-about-indian-agriculture' element={<BlogDetailsone />} />
+      <Route path='/blog/farm-sizes-by-country' element={<BlogDetailsTwo />} />
+      <Route path='/blog/markets-are-now-pricing-in-100-risk-of-a-u-s-recession-before-year-s-end-deutsche-bank' element={<BlogDetailsThree />} />
+      <Route path='/blog/What-are-Hydroponics-and-Aquaponics-farming-techniques?' element={<BlogDetailsFour />} />
+      <Route path='/blog/Why-is-the-Indian-stock-market-falling?' element={<BlogDetailsFive />} />
+      <Route path='/blog/What-are-different-types-of-Farming?' element={<BlogDetailsSix />} />
+      <Route path='/blog/Exports-Future-of-Indias-agriculture' element={<BlogDetailsSeven />} />
+      <Route path='/blog/Beyond-Traditional-Investment' element={<BlogDetailsEight />} />
+      <Route path='/blog/Alternative-investments-Pros-&-Cons' element={<BlogDetailsNine />} />
+      <Route path='/blog/Exploring-new-and-safe-investment-options' element={<BlogDetailsTen />} />
+      <Route path='/blog/Behavioral-finance-Do-emotions-overpower-obvious-characteristics' element={<BlogDetailsEleven />} />
+      <Route path='/blog/Alternative-investments' element={<BlogDetailsTwelve />} />
+     
 
 
     </Routes>

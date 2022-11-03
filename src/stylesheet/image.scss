@@ -1,7 +1,14 @@
-.logo-img{
+.logo-img {
     max-width: 100%;
 }
 
-.cover-img{
+.cover-img {
     object-fit: contain !important;
+}
+
+.profile {
+    display: flex;
+    position: relative;
+    height: 70vh;
+    justify-content: center
 }

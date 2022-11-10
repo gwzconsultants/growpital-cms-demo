@@ -20,6 +20,7 @@ import BlogDetailsTen from './components/blogdetails/blogDetailsTen';
 import BlogDetailsEleven from './components/blogdetails/blogDetailsEleven';
 import BlogDetailsTwelve from './components/blogdetails/blogDetailsTwelve';
 import ScrollToTop from './hooks/AfterNav';
+import BlogDetails13 from './components/blogdetails/blogDetails13';
 
 
 
@@ -49,6 +50,7 @@ function App() {
       <Route path='/blog/Exploring-new-and-safe-investment-options' element={<BlogDetailsTen />} />
       <Route path='/blog/Behavioral-finance-Do-emotions-overpower-obvious-characteristics' element={<BlogDetailsEleven />} />
       <Route path='/blog/Alternative-investments' element={<BlogDetailsTwelve />} />
+      <Route path='/blog/India-is-importer-or-exporter-of-Farm-produce' element={<BlogDetails13 />} />
      
 
 

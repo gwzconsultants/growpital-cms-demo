@@ -3,7 +3,7 @@ import {  Card, Col, Container,Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 // import { IconContext } from 'react-icons'
 // import { BsSearch } from 'react-icons/bs'
-import { blogImg2 } from '../assets/img/contactimg'
+import { blogImg13} from '../assets/img/contactimg'
 import BlogArry from '../components/BlogArry'
 import Footer from '../layout/Footer'
 import Header from '../layout/Header'
@@ -47,33 +47,29 @@ const Blog = () => {
                 </Container>
             </section>
             <Link to={
-            {pathname: `/blog/farm-sizes-by-country`}
+            {pathname: `/blog/India-is-importer-or-exporter-of-Farm-produce`}
             }  style={{ textDecoration: "none" }}>
             <section className='py-5'>
                 <Container>
                     <Row>
                         <Col md={6}>
                             <div>
-                                <img src={blogImg2} alt="blog-img" className='img-fluid rounded-3' />
+                                <img src={blogImg13} alt="blog-img" className='img-fluid rounded-3' />
                             </div>
                         </Col>
                         <Col md={6}>
                             <Card className='bg-transparent border-0 text-white'>
                                 <Card.Body>
                                     <Card.Text>
-                                        Oct 3,2022 
+                                        Nov 5,2022 
 
                                     </Card.Text>
                                         {/* <Card.Subtitle className="mb-2 ">Banking</Card.Subtitle> */}
-                                    <Card.Title>Farm Sizes by Country</Card.Title>
+                                    <Card.Title>India is importer or exporter of Farm produce?</Card.Title>
 
                                     <Card.Text>
-                                    Almost 38% of the global land surface is used for agricultural purposes, in one way or the other. In absolute terms, it is over five billion hectares.
-
-
-
-However, only one-third of this is for cropland cultivation and the rest are pastures, majorly used for grazing. India has the largest cultivated land area, in terms of percentage of total land mass, amounting to around 53.7%. The country also holds the second position globally, regarding the number of farms, second only to China
-
+                                    India is known for being an agricultural powerhouse. In fact, it has been self-sufficient for much of its agricultural needs for the last few decades. However, India still depends on agrarian imports for Agri and allied commodities .
+                                    The country has a place in both the lists of top 10 agricultural exporters and top 10 importers . You must have heard or read in the news that India’s agricultural exports have increased manifolds in the last one decade. However, it needs to be noted that during the same time our imports have gone up too.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>

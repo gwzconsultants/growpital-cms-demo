@@ -1,8 +1,17 @@
-import { blogsmall,blogImg3,  blogImg4,blogImg5,blogImg6,blogImg7,blogImg8,blogImg9,blogImg10,blogImg11,blogImg12 } from "../assets/img/contactimg";
+import { blogsmall,blogImg3,  blogImg4,blogImg5,blogImg6,blogImg7,blogImg8,blogImg9,blogImg10,blogImg11,blogImg12, blogImg2 } from "../assets/img/contactimg";
 
 export const blogData = [
     {
         id:1 ,
+        img:blogImg2,
+        heading:"Farm Sizes by Country",
+       date: "Oct 3,2022",
+       link:"farm-sizes-by-country"
+    //    read_time:"15min read",
+    //    title:"banking"
+    },
+    {
+        id:2 ,
         img:blogsmall,
         heading:" Myths about Indian Agriculture !!!",
        date: "sep 29 ,2022",
@@ -10,15 +19,6 @@ export const blogData = [
     //    read_time:"15min read",
     //    title:"banking"
     },
-    // {
-    //     id:2 ,
-    //     img:blogImg2,
-    //     heading:"Farm Sizes by Country",
-    //    date: "mar 13,2022",
-    //    link:"farm-sizes-by-country"
-    // //    read_time:"15min read",
-    // //    title:"banking"
-    // },
     {
             id:3 ,
         img:blogImg3,
@@ -103,7 +103,7 @@ export const blogData = [
     {
             id:12,
         img:blogImg12,
-        heading:"Alternative investments : Pros & Cons",
+        heading:"Making balance with recession...",
        date: "jan 13,2022",
        link:"Alternative-investments"
     //    read_time:"15min read",

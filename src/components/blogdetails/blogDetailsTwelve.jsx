@@ -30,7 +30,7 @@ const BlogDetailsTwelve = () => {
                     <Row className='text-white'>
                         <Col xs={12}>
                             <h1 className='pb-3'>
-                                Exports: Future of India's agriculture
+                            Making balance with recession...
                             </h1>
                         
                                 

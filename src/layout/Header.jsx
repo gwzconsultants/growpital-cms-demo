@@ -1,11 +1,13 @@
 
 // import React, { useState } from "react";
 import { Container, Nav, Navbar, Button, Image } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import Logo from "../assets/img/newlogo.png";
 
 const Header = () => {
     // const [active, setActive] = useState('default');
+    const currentRoute = useLocation().location.pathname.toLowerCase();
     return (
         <>
             <Navbar expand="lg" className="py-3 sticky-top overflow-hidden top-0 mb-3" >
@@ -20,7 +22,7 @@ const Header = () => {
                    
                     <Navbar.Collapse id="basic-navbar-nav" >
                         <Nav className="m-auto"  activeKey="/home">
-                            <Nav.Link href="/" eventKey="default" >Home</Nav.Link>
+                            <Nav.Link href="/" eventKey="default"   className={currentRoute.includes("home") ? "tab active" : "tab"}>Home</Nav.Link>
                             <Nav.Link href="/about" eventKey="link-1">About</Nav.Link>
                           {/* <Nav.Link href="https://blogs.growpital.com/" eventKey="link-2">Blogs</Nav.Link> */}
                           <Nav.Link href="/blog" eventKey="link-2">Blogs</Nav.Link>

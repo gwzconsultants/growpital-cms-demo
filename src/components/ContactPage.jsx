@@ -39,7 +39,7 @@ const ContactPage = () => {
                 <section>
                     <Container>
                         <Row className='text-white  '>
-                            <Col md={5} className="px-4 px-md-5 mb-5">
+                            <Col md={5} className="px-4 px-md-5 mb-5" data-aos="fade-up">
                                 <div className='d-flex flex-column '>
 
                                     <h1 className='fw-bold fs-md-48 fs-40 mb-4'>Get in touch</h1>
@@ -67,43 +67,12 @@ const ContactPage = () => {
 
 
                             </Col>
-                            <Col md={7} className="px-4 px-md-5">
+                            <Col md={7} className="px-4 px-md-5" data-aos="fade-up">
                                 <div>
                                     <h1 className='fs-md-48 fs-40 fw-bold mb-4'>Contact Us</h1>
                                     <p className='mb-4'>Would you like to speak to one of our financial advisers over the phone? Just submit your details and we’ll be in touch shortly. You can also e-mail us for any further concern.</p>
                                 </div>
-                                {/* 
-                                <div className='contact-from text-white'>
-                                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                                        <Row className="mb-3">
-                                            <Form.Group as={Col}  controlId="validationCustom01">
-                                                <Form.Label>First name</Form.Label>
-                                                <Form.Control
-                                                size="lg"
-                                                    required
-                                                    type="text"
-                                                    placeholder="Name"
-                                                    className="mb-4"
-                                                />
-                                                <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                                            </Form.Group>
-                                            <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-
-                                                <Form.Control size="lg" type="tel" placeholder="Phone Number" pattern="[0-9]{5}-[0-9]{5}" required />
-                                            </Form.Group>
-                                            <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-
-                                                <Form.Control size="lg" type="email" placeholder="Email" required />
-                                            </Form.Group>
-                                            <Form.Group className="mb-4" controlId="exampleForm.ControlTextarea1">
-
-                                                <Form.Control as="textarea" placeholder="message" rows={3} />
-                                            </Form.Group>
-                                        </Row>
-                                    </Form>
-
-                                    <Button className="main-btn maincolor mb-2" type="submit">Submit</Button>
-                                </div> */}
+                               
                                 <div className='contact-from text-white'>
                                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
                                     <Row className="mb-3">

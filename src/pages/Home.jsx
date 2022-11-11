@@ -27,7 +27,7 @@ import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalabl
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
 import AccordingQue from "../components/AccordingQue";
-import { callImg, homepage,chatIcon } from "../assets/img/contactimg";
+import { callImg, homepage, chatIcon } from "../assets/img/contactimg";
 import { TopIcon1, TopIcon2 } from "../assets/img/contactimg";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -40,37 +40,39 @@ const Home = () => {
       <Header />
       <SingupBtn />
 
-      <section className="hero-area py-5 ">
+      <section className="hero-area py-5 "  >
         <Container>
           <Row className="d-flex justify-content-center align-items-center py-0  mt-0 " >
-            <Col xs={12} md={12} lg={7} className="text-center text-md-start">
-              <div className="bg-shark3 rounded p-1 p-md-2 d-inline-block mb-3 ">
+            <Col xs={12} md={12} lg={7} className="text-center text-md-start"  >
+              <div className="bg-shark3 rounded p-1 p-md-2 d-inline-block mb-3 "   >
                 <h5 className="text-main-gradient fw-500 fs-22 fs-sm-18 mb-0">
                   <Image src={TopIcon2} className="img-fluid me-2" alt="" />
                   Agriculture Investments
                   <Image src={TopIcon1} className="img-fluid ms-2" alt="" />
                 </h5>
               </div>
-              <h1 className="text-white fw-600 display-5 mb-3 mb-md-4">
-                Invest and earn assured returns  <span className="text-main-green pe-2"> <BsArrowRight /></span>
-                <span className="text-main-green ">
-                <Typewriter
-            words={['Tax Free', 'Regular Payout', 'Fixed Payout']}
-            loop={3}
-            cursor
-            cursorStyle='|'
-            typeSpeed={100}
-            deleteSpeed={50}
-            delaySpeed={3000}
-          />
-                </span>
-              </h1>
-              <p className="text-white fw-400 fs-24 my-3 mb-md-4 py-2">
-                Diversify your portfolio with safe agri-investments.
-              </p>
+              <div  >
+                <h1 className="text-white fw-600 display-5 mb-3 mb-md-4">
+                  Invest and earn assured returns  <span className="text-main-green pe-2"> <BsArrowRight /></span>
+                  <span className="text-main-green ">
+                    <Typewriter
+                      words={['Tax Free', 'Regular Payout', 'Fixed Payout']}
+                      loop={3}
+                      cursor
+                      cursorStyle='|'
+                      typeSpeed={100}
+                      deleteSpeed={50}
+                      delaySpeed={3000}
+                    />
+                  </span>
+                </h1>
+                <p className="text-white fw-400 fs-24 my-3 mb-md-4 py-2">
+                  Diversify your portfolio with safe agri-investments.
+                </p>
+              </div>
               <div className="px-5 px-lg-0">
                 <Row>
-                  <Col md={4} lg={4}>
+                  <Col md={4} lg={4} data-aos="fade-up">
                     <Card className="darkcard mb-3 mb-md-4 p-0 rounded text-start text-white">
                       <Card.Body className="m-1 bg-dark-gradient rounded px-4 py-5 py-md-4">
                         <div className="darkcard-icon p-3 mx-auto mb-4 mb-md-2 d-flex justify-content-center align-items-center">
@@ -85,7 +87,7 @@ const Home = () => {
                       </Card.Body>
                     </Card>
                   </Col>
-                  <Col md={4} lg={4}>
+                  <Col md={4} lg={4} data-aos="fade-up">
                     <Card className="darkcard mb-3 mb-md-4 p-0 rounded text-start text-white">
                       <Card.Body className="m-1 bg-dark-gradient rounded px-4 py-5 py-md-4">
                         <div className="darkcard-icon p-3 mx-auto mb-4 mb-md-2 d-flex justify-content-center align-items-center">
@@ -99,7 +101,7 @@ const Home = () => {
                       </Card.Body>
                     </Card>
                   </Col>
-                  <Col md={4} lg={4}>
+                  <Col md={4} lg={4} data-aos="fade-up">
 
                     <Card className="darkcard mb-5 mb-md-4 p-0 rounded text-start text-white">
                       <Card.Body className="m-1 bg-dark-gradient rounded px-4 py-5 py-md-4">
@@ -117,9 +119,10 @@ const Home = () => {
                   </Col>
                 </Row>
               </div>
-
-              <ButtonStar />
-              <div className="mx-2 py-1">
+              <div data-aos="fade-up" data-aos-offset="50" >
+                <ButtonStar />
+              </div>
+              <div className="mx-2 py-1" data-aos="fade-up" data-aos-offset="50">
                 <p className="mb-1 text-md-start  text-center ">
                   <span className="text-white fs-18 me-2">Rated </span>
 
@@ -138,7 +141,7 @@ const Home = () => {
               md={12}
               lg={5}
               className="text-center text-lg-end mt-lg-0 mt-md-5 mt-5 p-3 mb-4"
-
+              data-aos="fade-up"
             >
               {/* <img src="BrowserPreview_tmp.gif?1666269773" className="img-fluid"  alt=""/> */}
               <Image src={homepage} className="img-fluid rounded-4" alt="" />
@@ -151,26 +154,26 @@ const Home = () => {
         <Container>
           <Row className="d-flex justify-content-center align-items-center pb-0 ">
             <Col xs={12} md={12} lg={6} className="text-center text-md-start ">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" >
+              <p className="text-uppercase fs-18 fw-500 text-main-green" data-aos="fade-up">
                 <BsFillCircleFill size={8} className="me-1" /> WHAT ARE
                 GROWPITAL INVESTMENTS LIKE?
               </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
+              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" data-aos="fade-up">
                 Its like a{" "}
-                <span className="text-main-green">
-                <Typewriter
-            words={['Fixed Deposit', 'Mutual Fund']}
-            loop={2}
-            cursor
-            cursorStyle='|'
-            typeSpeed={100}
-            deleteSpeed={50}
-            delaySpeed={3000}
-          /></span>{" "}
-               
+                <span className="text-main-green" >
+                  <Typewriter
+                    words={['Fixed Deposit', 'Mutual Fund']}
+                    loop={2}
+                    cursor
+                    cursorStyle='|'
+                    typeSpeed={100}
+                    deleteSpeed={50}
+                    delaySpeed={3000}
+                  /></span>{" "}
+
                 much better one!
               </h2>
-              <div className="d-flex justify-content-md-start justify-content-center align-items-center my-5 my-md-5 py-4 py-md-4" >
+              <div className="d-flex justify-content-md-start justify-content-center align-items-center my-5 my-md-5 py-4 py-md-4" data-aos="fade-up">
                 {/* <h2 className="display-1 fw-900 text-main-gold mb-0">0</h2> */}
                 <Image src={zero} className="img-fluid" alt="" />
                 <div className="text-start">
@@ -183,26 +186,30 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="mb-2">
+              <div className="mb-2" data-aos="fade-up" >
                 <ButtonStar />
               </div>
             </Col>
             <Col xs={12} md={12} lg={6} className="text-center text-md-end mt-5 mt-md-5 mt-lg-0 position-relative">
               <Row className="d-flex justify-content-center align-items-center ">
-                <Col md={6}>
-                  <CardDark
-                    Cardicon={CardIcon1}
-                    Title="Assured Growth "
-                    SubTitle="We provide much higher returns than FD and several bonds."
+                <Col md={6} >
+                  <div data-aos="fade-up">
+                    <CardDark
+                      Cardicon={CardIcon1}
+                      Title="Assured Growth "
+                      SubTitle="We provide much higher returns than FD and several bonds."
 
-                  />
-                  <CardDark
-                    Cardicon={CardIcon3}
-                    Title="Safe & Secure"
-                    SubTitle="Sales contracts, crop insurance & professional farming, ensure assured returns."
-                  />
+                    />
+                  </div>
+                  <div data-aos="fade-up">
+                    <CardDark
+                      Cardicon={CardIcon3}
+                      Title="Safe & Secure"
+                      SubTitle="Sales contracts, crop insurance & professional farming, ensure assured returns."
+                    />
+                  </div>
                 </Col>
-                <Col md={6}>
+                <Col md={6} data-aos="fade-up">
                   <CardDark
                     Cardicon={CardIcon2}
                     Title="Consistent Returns"
@@ -223,7 +230,7 @@ const Home = () => {
       <section className="py-5 d-flex justify-content-center align-items-center bg-charade">
         <Container className="">
           <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center">
+            <Col className="text-center" data-aos="fade-up">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> WHAT ARE WE PROUD
                 ABOUT?
@@ -236,7 +243,7 @@ const Home = () => {
           </Row>
           <Row className="d-flex justify-content-center align-items-center ">
             <CardCounter />
-            <Col md={12} className="text-center mt-5 mt-md-0" >
+            <Col md={12} className="text-center mt-5 mt-md-0" data-aos="fade-up">
               <ButtonStar />
               <div className="pt-3">
                 <p className="text-white fw-600 fs-24 fs-sm-16  mb-3 mb-md-4" >
@@ -255,7 +262,7 @@ const Home = () => {
       <section className="py-5">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center">
+            <Col className="text-center" data-aos="fade-up">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> HOW TO GET
                 STARTED?
@@ -267,12 +274,12 @@ const Home = () => {
             </Col>
           </Row>
           <Row className="d-flex  pt-3">
-            <Col className="text-center text-md-end" >
+            <Col className="text-center text-md-end" data-aos="fade-up" >
               <Accordian Display_Sr_No="text-main-gold me-3" />
             </Col>
           </Row>
           <Row>
-            <Col md={12} className="text-center mt-5 mt-md-5" >
+            <Col md={12} className="text-center mt-5 mt-md-5" data-aos="fade-up">
               <ButtonStar />
             </Col>
           </Row>
@@ -282,7 +289,7 @@ const Home = () => {
       <section className="py-5" id="calci">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center">
+            <Col className="text-center" data-aos="fade-up">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" />CALCULATE YOUR RETURNS ON INVESTMENT
               </p>
@@ -294,7 +301,7 @@ const Home = () => {
             </Col>
           </Row>
           <Row className="d-flex justify-content-center px-md-5  align-items-center pt-2 " >
-            <Col xs={12} md={12} lg={12} className="text-center" style={{ maxWidth: "40rem" }}  >
+            <Col xs={12} md={12} lg={12} className="text-center" style={{ maxWidth: "40rem" }} data-aos="fade-up" >
               <RangeProgressBar />
             </Col>
             {/* <Col xs={12} md={12} lg={6} className="text-center text-md-start" >
@@ -302,21 +309,21 @@ const Home = () => {
             </Col> */}
           </Row>
           <Row>
-            <Col md={12} className="text-center mt-5 mt-md-4">
+            <Col md={12} className="text-center mt-5 mt-md-4" data-aos="fade-up">
               <ButtonStar />{" "}
               <div>
-              <a href="https://drive.google.com/file/d/1bUF3cdfk5gGHGSK7Jh35kQD9ZwrQMLTK/view" className="fs-16 fw-700 text-white text-center py-2">Know more</a>
+                <a href="https://drive.google.com/file/d/1bUF3cdfk5gGHGSK7Jh35kQD9ZwrQMLTK/view" className="fs-16 fw-700 text-white text-center py-2">Know more</a>
               </div>
             </Col>
           </Row>
-          
+
         </Container>
       </section>
 
       <section className="py-5 bg-charade">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center">
+            <Col className="text-center" data-aos="fade-up">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> HAVE QUESTIONS?
               </p>
@@ -326,7 +333,7 @@ const Home = () => {
             </Col>3
           </Row>
           <Row className="d-flex justify-content-center align-items-strech pt-5">
-            <Col xs={12} md={12} lg={5} className="text-center text-md-start">
+            <Col xs={12} md={12} lg={5} className="text-center text-md-start" data-aos="fade-up">
               <p className="fs-26 fs-sm-22 fw-500 text-white mb-5" >
                 Curiosity is one of the greatest secrets of Success.
               </p>
@@ -354,7 +361,7 @@ const Home = () => {
               className="text-center d-flex justify-content-md-end justify-content-center align-items-center"
             >
               <Row className="mt-5 mt-lg-0 pe-md-5 me-md-5">
-                <Col xs={12} className="d-grid gap-4">
+                <Col xs={12} className="d-grid gap-4" data-aos="fade-up">
                   <div>
                     <a href="https://koalendar.com/e/know-growpital-pc">
                       <Button
@@ -378,7 +385,7 @@ const Home = () => {
                         className="px-3 px-md-5 py-3 w-100"
 
                       >
-                        <img src={chatIcon} className="img-fluid me-3 " style={{width:"3rem"}}  alt="" />{" "}
+                        <img src={chatIcon} className="img-fluid me-3 " style={{ width: "3rem" }} alt="" />{" "}
                         Chat
                       </Button>
                     </a>
@@ -407,7 +414,7 @@ const Home = () => {
       <section className="py-5">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center">
+            <Col className="text-center" data-aos="fade-up">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" />  MEET OUR
                 TEAM
@@ -418,16 +425,16 @@ const Home = () => {
               </h2>
             </Col>
           </Row>
-
-          <Superstars />
-
+         
+            <Superstars />
+         
         </Container>
       </section>
 
       <section className="py-5">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center">
+            <Col className="text-center" data-aos="fade-up">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> What our investors say about us!
               </p>
@@ -439,7 +446,7 @@ const Home = () => {
         </Container>
         <Container fluid>
           <Row className="d-flex justify-content-center align-items-start pt-3">
-            <Col className="text-center text-md-start">
+            <Col className="text-center text-md-start" data-aos="fade-up">
               <TestiSlider />
             </Col>
           </Row>
@@ -449,7 +456,7 @@ const Home = () => {
       <section className="py-5">
         <Container>
           <Row className="d-flex justify-content-center align-items-start">
-            <Col xs={12} md={12} lg={6} className="text-center text-lg-start">
+            <Col xs={12} md={12} lg={6} className="text-center text-lg-start" data-aos="fade-up">
               <p className="text-uppercase fs-18 fw-500 text-main-green text-uppercase" >
                 <BsFillCircleFill size={8} className="me-1" />Join us on our Telegram channel
               </p>
@@ -461,23 +468,23 @@ const Home = () => {
                 Be the first to learn the news about new features and product updates. What is going on in agri industry, promotions and more.
               </p>
               {/* <div className="mt-5 d-none d-md-block "> */}
-                <div>
-                  <a href="https://t.me/growpitalofficial">
-                    <Button
-                      variant="dark"
-                      size="lg"
-                      className="px-3 px-md-5 py-3"
+              <div data-aos="fade-up">
+                <a href="https://t.me/growpitalofficial">
+                  <Button
+                    variant="dark"
+                    size="lg"
+                    className="px-3 px-md-5 py-3"
 
-                    >
-                      <img src={telegram} className="img-fluid me-3" style={{maxWidth: "50px" }} alt="" />{" "}
-                      Join Telegram Channel
-                    </Button>
-                  </a>
-                </div>
+                  >
+                    <img src={telegram} className="img-fluid me-3" style={{ maxWidth: "50px" }} alt="" />{" "}
+                    Join Telegram Channel
+                  </Button>
+                </a>
+              </div>
               {/* </div> */}
             </Col>
             <Col xs={12} md={12} lg={6} className="  mt-5 mt-lg-0">
-              <div className="faq-accordian text-center text-lg-end"  >
+              <div className="faq-accordian text-center text-lg-end" data-aos="fade-up" >
                 <AccordingQue Display_Sr_No="text-main-gold me-3 d-none" />
               </div>
               <a href="/faqs" className="fs-16 fw-700 text-white text-start">More FAQs</a>

@@ -21,11 +21,24 @@ import BlogDetailsEleven from './components/blogdetails/blogDetailsEleven';
 import BlogDetailsTwelve from './components/blogdetails/blogDetailsTwelve';
 import ScrollToTop from './hooks/AfterNav';
 import BlogDetails13 from './components/blogdetails/blogDetails13';
-
-
+import { useEffect } from 'react';
+import AOS from "aos"
 
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  useEffect (() =>{
+    AOS.init(
+      {
+        offset: 150,
+        easing: 'ease-in-sine',
+         delay: 100, 
+        duration:"500"
+      }
+    );
+  })
   return (
     <>
     <BrowserRouter >

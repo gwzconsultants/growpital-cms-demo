@@ -40,7 +40,7 @@ const AboutPage = () => {
 
                     <Row className='text-white'>
                         {Abouter.map((item, index) => (
-                            <Col xs={12} md={12} lg={4} className="d-flex justify-content-center  ps-md-5 ps-lg-3" key={index}>
+                            <Col xs={12} md={12} lg={4} className="d-flex justify-content-center  ps-md-5 ps-lg-3" key={index} data-aos="fade-up">
                                 <Card className=" text-center darkcard rounded p-1 d-flex mb-3" style={{ width: '28rem' }} >
                                     <Card.Body className=" bg-dark-gradient rounded">
                                         <Image src={item.Img} className="img-fluid my-3" alt="" />

@@ -35,7 +35,7 @@ const CardCounter = (props) => {
   return (
     <>
       {Counter.map((Item,index) => (
-        <Col xs={12} md={12} lg={4} className="d-flex justify-content-start justify-content-lg-center ps-5 ps-md-5 ps-lg-3"  key={index}>
+        <Col xs={12} md={12} lg={4} className="d-flex justify-content-start justify-content-lg-center ps-5 ps-md-5 ps-lg-3"  key={index} data-aos="fade-up">
           <Card className="mt-4 mb-md-4 p-0 border-0 text-start bg-transparent"  >
             <Card.Body className="d-flex justify-content-start align-items-center px-0">
               <Image src={Item.Img} className="img-fluid me-3" alt="" />

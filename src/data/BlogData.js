@@ -6,7 +6,8 @@ export const blogData = [
         img:blogImg2,
         heading:"Farm Sizes by Country",
        date: "Oct 3,2022",
-       link:"farm-sizes-by-country"
+       link:"farm-sizes-by-country",
+       Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },
@@ -15,7 +16,8 @@ export const blogData = [
         img:blogsmall,
         heading:" Myths about Indian Agriculture !!!",
        date: "sep 29 ,2022",
-       link:"myths-about-indian-agriculture"
+       link:"myths-about-indian-agriculture",
+       Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },
@@ -24,7 +26,8 @@ export const blogData = [
         img:blogImg3,
         heading:"Markets are now pricing in 100% risk of a U.S. recession before year’s end: Deutsche Bank",
        date: "aug 25,2022",
-       link:"markets-are-now-pricing-in-100-risk-of-a-u-s-recession-before-year-s-end-deutsche-bank"
+       link:"markets-are-now-pricing-in-100-risk-of-a-u-s-recession-before-year-s-end-deutsche-bank",
+        Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },
@@ -33,7 +36,8 @@ export const blogData = [
         img:blogImg4,
         heading:"What are Hydroponics and Aquaponics farming techniques?",
        date: "july 11,2022",
-       link:"What-are-Hydroponics-and-Aquaponics-farming-techniques?"
+       link:"What-are-Hydroponics-and-Aquaponics-farming-techniques?",
+        Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },
@@ -42,7 +46,8 @@ export const blogData = [
         img:blogImg5,
         heading:"Why is the Indian stock market falling?",
        date: "june 5,2022",
-       link:"Why-is-the-Indian-stock-market-falling?"
+       link:"Why-is-the-Indian-stock-market-falling?",
+        Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },
@@ -51,7 +56,8 @@ export const blogData = [
         img:blogImg6,
         heading:" What are different types of Farming?",
        date: "june 15,2022",
-       link:"What-are-different-types-of-Farming?"
+       link:"What-are-different-types-of-Farming?",
+        Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },
@@ -60,7 +66,8 @@ export const blogData = [
         img:blogImg7,
         heading:"Exports: Future of India's agriculture",
        date: "may 23,2022",
-       link:"Exports-Future-of-Indias-agriculture"
+       link:"Exports-Future-of-Indias-agriculture",
+        Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },
@@ -69,7 +76,8 @@ export const blogData = [
         img:blogImg8,
         heading:"Beyond Traditional Investment !!!",
        date: "apr 12,2022",
-       link:"Beyond-Traditional-Investment"
+       link:"Beyond-Traditional-Investment",
+        Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },
@@ -78,7 +86,8 @@ export const blogData = [
         img:blogImg9,
         heading:"Alternative investments : Pros & Cons",
        date: "apr 24,2022",
-       link:"Alternative-investments-Pros-&-Cons"
+       link:"Alternative-investments-Pros-&-Cons",
+        Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },
@@ -87,7 +96,8 @@ export const blogData = [
         img:blogImg10,
         heading:"Exploring new and safe investment options",
        date: "mar 9,2022",
-       link:"Exploring-new-and-safe-investment-options"
+       link:"Exploring-new-and-safe-investment-options",
+        Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },
@@ -96,7 +106,8 @@ export const blogData = [
         img:blogImg11,
         heading:"Behavioral finance: Do emotions overpower obvious characteristics?",
        date: "mar 20,2022",
-       link:"Behavioral-finance-Do-emotions-overpower-obvious-characteristics"
+       link:"Behavioral-finance-Do-emotions-overpower-obvious-characteristics",
+        Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },
@@ -105,7 +116,8 @@ export const blogData = [
         img:blogImg12,
         heading:"Making balance with recession...",
        date: "jan 13,2022",
-       link:"Alternative-investments"
+       link:"Alternative-investments",
+        Animation:"fade-up"
     //    read_time:"15min read",
     //    title:"banking"
     },

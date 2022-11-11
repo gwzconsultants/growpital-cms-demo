@@ -127,7 +127,7 @@ const SuperstarsAbout = (props) => {
      <div className="superstarsAbout"> 
      <Row>
         {SuperStars.map((Items) => (
-          <Col md={6}  key={Items.Id}  className="d-none d-lg-block">
+          <Col md={6}  key={Items.Id}  className="d-none d-lg-block" data-aos="fade-up">
             
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
               <Card.Body className="m-1 bg-dark-gradient rounded p-3">

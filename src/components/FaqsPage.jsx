@@ -12,10 +12,10 @@ const FaqsPage = () => {
             <section className='py-0 mt-0 mt-md-0'>
                 <Container>
                     <Row>
-                        <Col className="d-flex justify-content-center align-items-center text-white">
+                        <Col className="d-flex justify-content-center align-items-center text-white" >
                             <div className='text-center '>
-                                <h1>Frequently Asked Questions</h1>
-                                <p className="subheading">Got a question? We've got answers.<br />
+                                <h1 data-aos="fade-up">Frequently Asked Questions</h1>
+                                <p className="subheading" data-aos="fade-up">Got a question? We've got answers.<br />
                                     If you have some other questions, contact us using email.</p>
                                 {/* <div className='faqs-search my-4 py-3'>
                                     <Form className="d-flex ">
@@ -49,7 +49,7 @@ const FaqsPage = () => {
             <section className='mt-4 mb-3 py-3'>
                 <Container className='text-white'>
                     <Row>
-                        <Col>
+                        <Col data-aos="fade-up">
                         <div className='text-center mx-auto mb-3'>
                             <p className='fw-500 fs-32 mb-3 py-3'>GENERAL QUESTIONS</p>
                         </div>
@@ -61,7 +61,7 @@ const FaqsPage = () => {
             <section className='mt-5 mb-3 py-0'>
                 <Container className='text-white'>
                     <Row>
-                        <Col>
+                        <Col data-aos="fade-up">
                         <div className='text-center mx-auto mb-3'>
                             <p className='fw-bold fs-32 mb-3 py-4'>Finance</p>
                         </div>
@@ -75,7 +75,7 @@ const FaqsPage = () => {
             <section className='my-5 mb-3 py-0'>
                 <Container className='text-white'>
                     <Row>
-                        <Col>
+                        <Col data-aos="fade-up">
                         <div className='text-center mx-auto mb-2'>
                             <p className='fw-bold fs-32 mb-3 py-4'>Banking</p>
                         </div>

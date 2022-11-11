@@ -41,11 +41,12 @@
 
       &:hover,
       &:focus
+      &:active
      {
         color: var(--color-main-green) !important;
       }
-      &:active{
-        color: var(--color-main-green) !important;
+      &.active{
+        color: var(--color-main-green) ;
         
       }
     }

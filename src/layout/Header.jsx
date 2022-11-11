@@ -7,7 +7,8 @@ import Logo from "../assets/img/newlogo.png";
 
 const Header = () => {
     // const [active, setActive] = useState('default');
-    const currentRoute = useLocation().location.pathname.toLowerCase();
+    let currentRoute = useLocation().pathname;
+    console.log(currentRoute)
     return (
         <>
             <Navbar expand="lg" className="py-3 sticky-top overflow-hidden top-0 mb-3" >
@@ -21,13 +22,13 @@ const Header = () => {
                     </Navbar.Brand>
                    
                     <Navbar.Collapse id="basic-navbar-nav" >
-                        <Nav className="m-auto"  activeKey="/home">
-                            <Nav.Link href="/" eventKey="default"   className={currentRoute.includes("home") ? "tab active" : "tab"}>Home</Nav.Link>
-                            <Nav.Link href="/about" eventKey="link-1">About</Nav.Link>
+                        <Nav className="m-auto"  activeKey="/">
+                            <Nav.Link href="/" eventKey="default" className={currentRoute.endsWith("/") ? "nav-link active" : "nav-link"}  >Home</Nav.Link>
+                            <Nav.Link href="/about" eventKey="link-1" className={currentRoute.endsWith("/about") ? "nav-link active" : "nav-link"} >About</Nav.Link>
                           {/* <Nav.Link href="https://blogs.growpital.com/" eventKey="link-2">Blogs</Nav.Link> */}
-                          <Nav.Link href="/blog" eventKey="link-2">Blogs</Nav.Link>
-                            <Nav.Link href="/faqs" eventKey="link-3">FAQs</Nav.Link>
-                            <Nav.Link href="/contact" eventKey="link-4">Contact Us</Nav.Link>
+                          <Nav.Link href="/blog" eventKey="link-2" className={currentRoute.endsWith("/blog") ? "nav-link active" : "nav-link"} >Blogs</Nav.Link>
+                            <Nav.Link href="/faqs" eventKey="link-3" className={currentRoute.endsWith("/faqs") ? "nav-link active" : "nav-link"} >FAQs</Nav.Link>
+                            <Nav.Link href="/contact" eventKey="link-4" className={currentRoute.endsWith("/contact") ? "nav-link active" : "nav-link"} >Contact Us</Nav.Link>
 
                         </Nav>
                         <div className="d-flex d-none d-md-block">

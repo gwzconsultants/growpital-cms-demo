@@ -30,6 +30,7 @@ import AccordingQue from "../components/AccordingQue";
 import { callImg, homepage, chatIcon } from "../assets/img/contactimg";
 import { TopIcon1, TopIcon2 } from "../assets/img/contactimg";
 import { Typewriter } from "react-simple-typewriter";
+import SuperStars2 from "../components/SuperStars2";
 
 
 const Home = () => {
@@ -37,9 +38,10 @@ const Home = () => {
 
   return (
     <>
+
       <Header />
       <SingupBtn />
-
+     
       <section className="hero-area py-5 "  >
         <Container>
           <Row className="d-flex justify-content-center align-items-center py-0  mt-0 " >
@@ -426,8 +428,8 @@ const Home = () => {
             </Col>
           </Row>
          
-            <Superstars />
-         
+            {/* <Superstars /> */}
+<SuperStars2 />      
         </Container>
       </section>
 

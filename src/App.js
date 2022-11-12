@@ -23,6 +23,7 @@ import ScrollToTop from './hooks/AfterNav';
 import BlogDetails13 from './components/blogdetails/blogDetails13';
 import { useEffect } from 'react';
 import AOS from "aos"
+import "swiper/css/bundle"
 
 
 function App() {

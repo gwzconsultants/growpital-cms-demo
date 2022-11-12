@@ -1,63 +1,13 @@
-import React from "react";
-
-import { Card, Col, Image, Row } from "react-bootstrap";
-// import Start1 from "../assets/img/start.png";
-import { AiFillLinkedin } from "react-icons/ai";
-import Slider from "react-slick";
-
+import React from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Star1, Star2, Star3, Star4, Star5, Star6, Star7, Star8 } from "../assets/img/contactimg";
+import { Card, Col, Image, Row } from "react-bootstrap";
+import { AiFillLinkedin } from 'react-icons/ai';
+import 'swiper/css';
+import { Autoplay, EffectCards } from 'swiper';
 
-
-
-const Superstars = (props) => {
-  var settings = {
-    waitForAnimate:true,
-    pauseOnFocus:true,
-    className: "center",
-    centerMode: true,
-    centerPadding: "15px",
-    slidesToShow: 2,
-    rows: 1,
-    slidesPerRow: 1,
-    slidesToScroll: 1,
-    dots: false,
-    infinite: true,
-    autoplay:true,
-    speed: 4000,
-    autoplaySpeed: 700,
-    cssEase: "linear",
-    arrows: false,
-    pauseOnHover:true,
-    touchMove:true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          centerPadding: "10px",
-          slidesToShow: 1,
-          rows: 1,
-          slidesPerRow: 1,
-          slidesToScroll: 1,
-          speed: 3000,
-          autoplaySpeed: 700,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          centerPadding: "10px",
-          slidesToShow: 1,
-          rows: 1,
-          slidesPerRow: 1,
-          slidesToScroll: 1,
-          speed: 2000,
-          dots: true,
-          autoplaySpeed: 1000,
-        },
-      },
-    ],
-  };
-
+const SuperStars2 = () => {
+    
   const SuperStars = [
     {
       Id: "1",
@@ -137,20 +87,58 @@ const Superstars = (props) => {
   ];
 
   return (
+    <Swiper
+    breakpoints={{
+0:{
+    spaceBetween:10,
+          slidesPerView: 1,
+},
 
-    < >
-     {/* <section className="main-team-slider">  */}
-     <Row className="d-flex justify-content-center align-items-start pt-3 superstars">
+        576: {
+       spaceBetween:10,
+          slidesPerView: 1,
+        },
+        768: {
+          
+          slidesPerView: 1,
+        },
+       1000: {
+          
+          slidesPerView: 2,
+        },
+        1200: {
+          
+          slidesPerView: 2,
+        },
+
+      }}
+    modules={[Autoplay ,EffectCards]}
+    spaceBetween={5}
+    speed={500}
+    slidesPerView={2}
+    grabCursor={true}
+    loop={true}
+    effect={"fade"}
+    autoplay={
+       { delay: 3000,
+        disableOnInteraction: false,}
+    }
+
+   
+  >
+    
+    <Row className="d-flex justify-content-center align-items-start pt-3 superstars">
        <Col md={12}   className="d-none d-md-block px-5">
-     <Slider {...settings} className="d-md-none" >
         {SuperStars.map((Items) => (
-            <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white" key={Items.Id} >
-              <Card.Body className="m-1 bg-dark-gradient rounded p-4 d-flex">
-               
-                  <div className="star-img" >
-                    <Image src={Items.Img} alt="" />
-                  </div>
-                  <div className="ms-3">
+       <SwiperSlide>
+             <Col md={12}  key={Items.Id} className=" px-1 " >
+            <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
+              <Card.Body className="m-1 bg-dark-gradient rounded p-4">
+                <Row>
+                  <Col xs={12} md={4}>
+                    <Image src={Items.Img} className="img-fluid w-100 mb-md-0 mb-3" alt="" />
+                  </Col>
+                  <Col xs={12} md={8}>
                     <Card.Title className="fw-600 fs-20 mb-0 pt-2">
                       {Items.Title}
                     </Card.Title>
@@ -163,74 +151,20 @@ const Superstars = (props) => {
                     <Card.Text className="fw-300 fs-15 lh-24">
                       {Items.SubTitle}
                     </Card.Text>
-                  </div>
-        
+                  </Col>
+                </Row>
               </Card.Body>
             </Card>
+          </Col>
+        </SwiperSlide>
         ))}
         {/* </section> */}
-        </Slider>
         </Col>
         </Row>
-        <Slider {...settings}  >
-     {SuperStars.map((Items) => (
-          <Col md={12} lg={6} key={Items.Id} className=" px-1 " >
-            <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
-              <Card.Body className="m-1 bg-dark-gradient rounded p-4">
-                <Row>
-                  <Col xs={12} md={4}>
-                    <Image src={Items.Img} className="img-fluid w-100 mb-md-0 mb-3" alt="" />
-                  </Col>
-                  <Col xs={12} md={8}>
-                    <Card.Title className="fw-600 fs-20 mb-0 pt-2">
-                      {Items.Title}
-                    </Card.Title>
-                    <Card.Title className="fw-600 fs-14 mb-3 pt-2 text-italian">
-                      <cite>{Items.Designa}</cite>
-                      <a href={Items.link} target="blank">
-                      <AiFillLinkedin size={18} className="ms-2 text-indigo" />
-                      </a>
-                    </Card.Title>
-                    <Card.Text className="fw-300 fs-15 lh-24">
-                      {Items.SubTitle}
-                    </Card.Text>
-                  </Col>
-                </Row>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-        </Slider>
-       {/* <Slider {...settings}  >
-     {SuperStars2.map((Items) => (
-          <Col md={12} lg={6} key={Items.Id} >
-            <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
-              <Card.Body className="m-1 bg-dark-gradient rounded p-4">
-                <Row>
-                  <Col xs={12} md={4}>
-                    <Image src={Items.Img} className="img-fluid w-100 mb-md-0 mb-3" alt="" />
-                  </Col>
-                  <Col xs={12} md={8}>
-                    <Card.Title className="fw-600 fs-20 mb-0 pt-2">
-                      {Items.Title}
-                    </Card.Title>
-                    <Card.Title className="fw-600 fs-14 mb-3 pt-2 text-italian">
-                      <cite>{Items.Designa}</cite>
-                      <AiFillLinkedin size={18} className="ms-2 text-indigo" />
-                    </Card.Title>
-                    <Card.Text className="fw-300 fs-15 lh-24">
-                      {Items.SubTitle}
-                    </Card.Text>
-                  </Col>
-                </Row>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-        </Slider> */}
-{/* </section> */}
-    </>
-  );
-};
+     
+    ...
+  </Swiper>
+  )
+}
 
-export default Superstars;
+export default SuperStars2

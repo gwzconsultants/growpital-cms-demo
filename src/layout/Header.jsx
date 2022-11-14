@@ -16,7 +16,6 @@ const Header = () => {
     if(!homeLink){
      link = "/home"
     } 
-  console.log(link)
     return (
         <>
             <Navbar expand="lg" className="py-3 sticky-top overflow-hidden top-0 mb-3" >

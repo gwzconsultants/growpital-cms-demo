@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 import { Card, CardGroup, Col, Row, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { blogData } from '../data/BlogData'

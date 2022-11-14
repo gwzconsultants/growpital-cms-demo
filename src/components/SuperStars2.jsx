@@ -130,8 +130,8 @@ const SuperStars2 = () => {
     <Row className="d-flex justify-content-center align-items-start pt-3 superstars">
        <Col md={12}   className="d-none d-md-block px-5">
         {SuperStars.map((Items) => (
-       <SwiperSlide>
-             <Col md={12}  key={Items.Id} className=" px-1 " >
+       <SwiperSlide key={Items.Id} >
+             <Col md={12}  className=" px-1 " >
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
               <Card.Body className="m-1 bg-dark-gradient rounded p-4">
                 <Row>

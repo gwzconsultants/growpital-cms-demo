@@ -8,7 +8,7 @@ import zero from "../assets/img/zero.png";
 import CardDark from "../components/CardDark";
 import CardCounter from "../components/CardCounter";
 import Accordian from "../components/Accordian";
-import Superstars from "../components/Superstars";
+// import Superstars from "../components/Superstars";
 import ButtonStar from "../components/ButtonStar";
 import TestiSlider from "../components/TestiSlider";
 import RangeProgressBar from "../components/RangeProgressBar";
@@ -33,6 +33,7 @@ import { Typewriter } from "react-simple-typewriter";
 import SuperStars2 from "../components/SuperStars2";
 
 
+
 const Home = () => {
 
 
@@ -41,7 +42,6 @@ const Home = () => {
 
       <Header />
       <SingupBtn />
-     
       <section className="hero-area py-5 "  >
         <Container>
           <Row className="d-flex justify-content-center align-items-center py-0  mt-0 " >
@@ -302,13 +302,12 @@ const Home = () => {
               </h2>
             </Col>
           </Row>
+          {/* <Row className=" pt-2 " > */}
           <Row className="d-flex justify-content-center px-md-5  align-items-center pt-2 " >
-            <Col xs={12} md={12} lg={12} className="text-center" style={{ maxWidth: "40rem" }} data-aos="fade-up" >
+            
               <RangeProgressBar />
-            </Col>
-            {/* <Col xs={12} md={12} lg={6} className="text-center text-md-start" >
-              <TotalInvestment />
-            </Col> */}
+            
+           
           </Row>
           <Row>
             <Col md={12} className="text-center mt-5 mt-md-4" data-aos="fade-up">
@@ -413,10 +412,10 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="py-5">
+      <section className="py-md-5 pt-5 pb-0">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center" data-aos="fade-up">
+            <Col className="text-center" data-aos="fade-up" data-aos-offset="500">
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" />  MEET OUR
                 TEAM
@@ -436,7 +435,7 @@ const Home = () => {
       <section className="py-5">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center" data-aos="fade-up">
+            <Col className="text-center" data-aos="fade-up" >
               <p className="text-uppercase fs-18 fw-500 text-main-green" >
                 <BsFillCircleFill size={8} className="me-1" /> What our investors say about us!
               </p>

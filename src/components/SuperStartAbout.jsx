@@ -1,40 +1,40 @@
 import React from "react";
 import { Card, Col, Image, Row } from "react-bootstrap";
-
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Star1, Star2, Star3, Star4, Star5, Star6, Star7, Star8 } from "../assets/img/contactimg";
-
 import { AiFillLinkedin } from "react-icons/ai";
-import Slider from "react-slick";
-
+// import Slider from "react-slick";
+import 'swiper/css';
+import { Autoplay, EffectCards } from 'swiper';
 
 
 
 const SuperstarsAbout = (props) => {
-  var settings = {
-    responsive: [
+  // var settings = {
+  //   responsive: [
      
-       {
-        breakpoint: 1000,
-        settings: {
-          className: "center",
-          centerMode: true,
-          infinite: true,
-          autoplay: true,
-          cssEase: "linear",
-          arrows: false,
-          centerPadding: "10px",
-          slidesToShow: 1,
-          rows: 1,
-          slidesPerRow: 1,
-          slidesToScroll: 1,
-          speed: 2000,
-          dots: true,
-          autoplaySpeed: 1000,
-        },
+  //      {
+  //       breakpoint: 1000,
+  //       settings: {
+  //         className: "center",
+  //         centerMode: true,
+  //         infinite: true,
+  //         autoplay: true,
+  //         cssEase: "linear",
+  //         arrows: false,
+  //         centerPadding: "10px",
+  //         slidesToShow: 1,
+  //         rows: 1,
+  //         slidesPerRow: 1,
+  //         slidesToScroll: 1,
+  //         speed: 2000,
+  //         dots: true,
+  //         autoplaySpeed: 1000,
+  //       },
         
-      },
-    ],
-  };
+  //     },
+  //   ],
+  // };
 
   const SuperStars = [
     {
@@ -164,9 +164,49 @@ const SuperstarsAbout = (props) => {
         </Row>
 
 
-       <Slider {...settings} className="d-lg-none" >
+       {/* <Slider {...settings} className="d-lg-none" > */}
+       <Swiper
+    breakpoints={{
+0:{
+    spaceBetween:10,
+          slidesPerView: 1,
+},
+
+        576: {
+       spaceBetween:10,
+          slidesPerView: 1,
+        },
+        768: {
+          
+          slidesPerView: 1,
+        },
+       1000: {
+          
+          slidesPerView: 2,
+        },
+        1200: {
+          
+          slidesPerView: 2,
+        },
+
+      }}
+    modules={[Autoplay ,EffectCards]}
+    spaceBetween={5}
+    speed={500}
+    // slidesPerView={2}
+    grabCursor={true}
+    loop={true}
+    effect={"fade"}
+    autoplay={
+       { delay: 3000,
+        disableOnInteraction: false,}
+    }
+    className="d-lg-none"
+   
+  >
      {SuperStars.map((Items) => (
-          <Col md={12} lg={6} key={Items.Id} >
+       <SwiperSlide key={Items.Id} >
+          <Col md={12} lg={6} >
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
               <Card.Body className="m-1 bg-dark-gradient rounded p-4">
                 <Row>
@@ -192,8 +232,10 @@ const SuperstarsAbout = (props) => {
               </Card.Body>
             </Card>
           </Col>
+          </SwiperSlide>
         ))}
-        </Slider>
+        {/* </Slider> */}
+        </Swiper>
         </div>
     </>
   );

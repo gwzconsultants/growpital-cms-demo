@@ -75,3 +75,15 @@ export const marks = [
           },
          
   ];
+
+
+
+  export const graphdata  =[
+    {
+      name: 'Marine Sprite',
+      data: [44, 55, 41, 37, 22, 43, 21]
+    }, {
+      name: 'Striking Calf',
+      data: [53, 32, 33, 52, 13, 43, 32]
+    }, 
+  ];

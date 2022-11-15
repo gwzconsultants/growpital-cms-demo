@@ -304,10 +304,10 @@ const Home = () => {
           </Row>
           {/* <Row className=" pt-2 " > */}
           <Row className="d-flex justify-content-center px-md-5  align-items-center pt-2 " >
-            
-              <RangeProgressBar />
-            
-           
+
+            <RangeProgressBar />
+
+
           </Row>
           <Row>
             <Col md={12} className="text-center mt-5 mt-md-4" data-aos="fade-up">
@@ -426,9 +426,9 @@ const Home = () => {
               </h2>
             </Col>
           </Row>
-         
-            {/* <Superstars /> */}
-<SuperStars2 />      
+
+          {/* <Superstars /> */}
+          <SuperStars2 />
         </Container>
       </section>
 

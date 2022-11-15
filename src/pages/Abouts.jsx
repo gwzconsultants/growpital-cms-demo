@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { BsFillCircleFill } from 'react-icons/bs'
+import { useParams } from 'react-router-dom'
 import { about_gif, about_section } from '../assets/img/contactimg'
 // import { faqsimg1, faqspage } from '../assets/img/contactimg'
 import AboutPage from '../components/AboutPage'
@@ -11,6 +12,7 @@ import Header from '../layout/Header'
 // import contactImg from "../assets/img/Rectangle 71.jpg"
 // import { About_us_img, tractor } from "../assets/img/contactimg";
 const Abouts = () => {
+
   return (
     <>
       <Header />

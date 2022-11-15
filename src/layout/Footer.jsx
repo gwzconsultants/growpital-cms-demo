@@ -13,7 +13,7 @@ const Footer = () => {
             <Col xs={12} md={6} lg={3}>
               <Image src={Logo} className="img-fluid w-75" alt="logo" />
               <p className="text-white fs-18 fs-sm-22 fw-400 my-3">
-                We connect you to the world of agri investment
+                We connect you to the world of agri investment.
               </p>
             </Col>
             <Col xs={12} md={6} lg={3}>
@@ -22,7 +22,7 @@ const Footer = () => {
                 <Nav.Link href="/about">About Us</Nav.Link>
                 <Nav.Link href="/about/#how_it_works" >How it works?</Nav.Link>
                 <Nav.Link href="/about/#team">Team</Nav.Link>
-                <Nav.Link href="https://blogs.growpital.com/">Blogs</Nav.Link>
+                <Nav.Link href="/blog">Blogs</Nav.Link>
                 <Nav.Link href="/contact">Contact Us</Nav.Link>
               </Nav>
             </Col>

@@ -249,10 +249,6 @@ const RangeProgressBar = () => {
 
       {/* bargraph  */}
 
-      {/* <Col xs={12} md={12} lg={6} className="text-center text-md-start" >
-
-       <BarGraph />
-      </Col> */}
     </>
   );
 };

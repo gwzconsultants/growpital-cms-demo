@@ -9,8 +9,7 @@ const Header = () => {
     // const [active, setActive] = useState('default');
     let currentRoute = useLocation().pathname;
     const homeLink = useLocation().pathname.endsWith("/")
-   
-   
+ 
 
     let link = "/"
     if(!homeLink){

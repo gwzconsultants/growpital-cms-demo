@@ -1,6 +1,6 @@
 import './App.scss';
 import Home from './pages/Home';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Contact from './pages/Contact';
 import Faqs from './pages/Faqs';
 import Privacy from './pages/privacy';
@@ -27,16 +27,19 @@ import "swiper/css/bundle"
 
 
 function App() {
+
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   useEffect (() =>{
     AOS.init(
       {
+        once: true,
         offset: 150,
         easing: 'ease-in-sine',
-         delay: 100, 
-        duration:"500"
+         delay:50, 
+        duration:"300"
       }
     );
   })

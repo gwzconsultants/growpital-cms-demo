@@ -66,7 +66,9 @@ const SuccessSlider = styled(Slider)(({ theme }) => ({
 
 const RangeProgressBar = () => {
   const [value, setValue] = useState(0);
-  // const [calculetOne, setCalculetOne] = useState(6500)
+  const [fdProfitValue, setFdProfitValue] = useState()
+  const [mfProfitValue, setMfProfitValue] = useState()
+  const [gpProfitValue, setGpProfitValue] = useState()
   
   const rupee_format = (str) => {
     if (str) {
@@ -159,16 +161,17 @@ const RangeProgressBar = () => {
 
   const handleChangeCommit = () => {
     // calculetOne
-    // setCalculetThree(((scale(value) * roi(value) / 100) * 3) + scale(value));
-    // setCalculetOne( ((scaleValue * scaleRoi / 100) * 3) + scale(value) )
+    setFdProfitValue((scaleValue * 6)/100);
+    setMfProfitValue((scaleValue * 8)/100);
+    setGpProfitValue( (scaleValue * scaleRoi / 100)  )
   }
 
 
 
-  // console.log(value)
+
   return (
     <>
-      <Col xs={12} md={12} lg={12} className="text-center" style={{ maxWidth: "40rem" }} data-aos="fade-up" >
+      <Col xs={12} md={12}  className="text-center" style={{ maxWidth: "40rem" }} data-aos="fade-up" >
         <div className="range-progress">
           <Card className="darkcard mt-3 mt-md-4 p-0 rounded text-start text-white">
             <Card.Body className="m-1 bg-dark-gradient rounded p-4">
@@ -248,6 +251,13 @@ const RangeProgressBar = () => {
       </Col>
 
       {/* bargraph  */}
+      {/* <Col xs={12} md={6}  >
+        <BarGraph 
+        fd={fdProfitValue}
+        mf={mfProfitValue}
+        gp={gpProfitValue}
+        />
+      </Col> */}
 
     </>
   );

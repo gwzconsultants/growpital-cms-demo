@@ -1,6 +1,16 @@
-import { blogsmall,blogImg3,  blogImg4,blogImg5,blogImg6,blogImg7,blogImg8,blogImg9,blogImg10,blogImg11,blogImg12, blogImg2 } from "../assets/img/contactimg";
+import { blogsmall,blogImg3,  blogImg4,blogImg5,blogImg6,blogImg7,blogImg8,blogImg9,blogImg10,blogImg11,blogImg12, blogImg2, blogImg13 } from "../assets/img/contactimg";
 
 export const blogData = [
+    {
+        id:1 ,
+        img:blogImg13,
+        heading:"India is importer or exporter of Farm produce?",
+       date: " Nov 5,2022",
+       link:"India-is-importer-or-exporter-of-Farm-produce",
+       Animation:"fade-up"
+    //    read_time:"15min read",
+    //    title:"banking"
+    },
     {
         id:1 ,
         img:blogImg2,

@@ -24,6 +24,7 @@ import BlogDetails13 from './components/blogdetails/blogDetails13';
 import { useEffect } from 'react';
 import AOS from "aos"
 import "swiper/css/bundle"
+import BlogDetails14 from './components/blogdetails/blogDetails14';
 
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
       <Route path='/blog/Behavioral-finance-Do-emotions-overpower-obvious-characteristics' element={<BlogDetailsEleven />} />
       <Route path='/blog/Alternative-investments' element={<BlogDetailsTwelve />} />
       <Route path='/blog/India-is-importer-or-exporter-of-Farm-produce' element={<BlogDetails13 />} />
+      <Route path='/blog/Lack-of-Financing-in-Farmland' element={<BlogDetails14 />} />
      
 
 

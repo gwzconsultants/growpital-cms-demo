@@ -73,6 +73,7 @@ import blogImg10 from "./image 211.jpg"
 import blogImg11 from "./image 210 (1).jpg"
 import blogImg12 from "./image 207.jpg"
 import blogImg13 from "./pexels-photo-13839278 1.jpg"
+import blogImg14 from "./Group 975.jpg"
 import blogpage3 from "./pexels-photo-7567223.webp"
 import blogpage4 from "./pexels-photo-4199756.jpeg"
 import blogpage5 from "./pexels-photo-6523153.jpeg"
@@ -84,6 +85,7 @@ import blogpage10 from "./coins-currency-investment-insurance-128867.jpeg"
 import blogpage11 from "./c741edbb-ccbc-4cf0-a826-6dd7f4814700.jpeg"
 import blogpage12 from "./3a7ee1de-31e9-4d63-bbe9-373c06bee0f3.jpeg"
 import blogpage13 from "./pexels-photo-13839278.jpeg"
+import blogpage14 from "./Group 976.jpg"
 import blogpage3_graph from "./im-583978.jpg"
 
 
@@ -164,6 +166,7 @@ export {
     blogpage11,
     blogpage12,
     blogpage13,
+    blogpage14,
     blogImg2,
     blogImg3,
     blogImg4,
@@ -176,5 +179,6 @@ export {
     blogImg11,
     blogImg12,
     blogImg13,
+    blogImg14,
 
 }

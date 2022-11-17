@@ -3,7 +3,7 @@ import { Card, Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 // import { IconContext } from 'react-icons'
 // import { BsSearch } from 'react-icons/bs'
-import { blogImg13 } from '../assets/img/contactimg'
+import {  blogImg14 } from '../assets/img/contactimg'
 import BlogArry from '../components/BlogArry'
 import Footer from '../layout/Footer'
 import Header from '../layout/Header'
@@ -47,29 +47,33 @@ const Blog = () => {
                 </Container>
             </section>
             <Link to={
-                { pathname: `/blog/India-is-importer-or-exporter-of-Farm-produce` }
+                { pathname: `/blog/Lack-of-Financing-in-Farmland` }
             } style={{ textDecoration: "none" }}>
                 <section className='py-5'>
                     <Container>
                         <Row>
                             <Col md={6} data-aos="fade-up">
                                 <div>
-                                    <img src={blogImg13} alt="blog-img" className='img-fluid rounded-3' />
+                                    <img src={blogImg14} alt="blog-img" className='img-fluid rounded-3' />
                                 </div>
                             </Col>
                             <Col md={6} data-aos="fade-up">
                                 <Card className='bg-transparent border-0 text-white'>
                                     <Card.Body>
                                         <Card.Text>
-                                            Nov 5,2022
+                                        Nov 15,2022
 
                                         </Card.Text>
                                         {/* <Card.Subtitle className="mb-2 ">Banking</Card.Subtitle> */}
-                                        <Card.Title className='fw-bold fs-4'>India is importer or exporter of Farm produce?</Card.Title>
+                                        <Card.Title className='fw-bold fs-4'>Lack of Financing in Farmland</Card.Title>
 
                                         <Card.Text>
-                                            India is known for being an agricultural powerhouse. In fact, it has been self-sufficient for much of its agricultural needs for the last few decades. However, India still depends on agrarian imports for Agri and allied commodities .
-                                            The country has a place in both the lists of top 10 agricultural exporters and top 10 importers . You must have heard or read in the news that India’s agricultural exports have increased manifolds in the last one decade. However, it needs to be noted that during the same time our imports have gone up too.
+                                        The global agricultural market size is estimated to be around $12,541.15 billion in 2022, yet
+finding farmland funding is an increasing challenge. Studies suggest that the global food demand will increase by 70% by 2050, calling for billions of dollars in investments, from the public and private sectors.
+Most of this capital needs to come from the private sector. This is especially in light of the
+commercialization of the agricultural industry as a whole, a positive shift towards large-scale
+mechanization, climate-smart technologies, processing, and agri-food logistics
+
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>

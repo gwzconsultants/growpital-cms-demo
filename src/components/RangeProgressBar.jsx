@@ -6,7 +6,7 @@ import { Card, Col, Row,} from "react-bootstrap";
 import { alpha, styled } from '@mui/material/styles';
 import {  marks } from "../data/InventData";
 import { locking, timerglass } from "../assets/img/contactimg";
-import BarGraph from "./BarGraph";
+// import BarGraph from "./BarGraph";
 
 
 
@@ -66,9 +66,9 @@ const SuccessSlider = styled(Slider)(({ theme }) => ({
 
 const RangeProgressBar = () => {
   const [value, setValue] = useState(0);
-  const [fdProfitValue, setFdProfitValue] = useState()
-  const [mfProfitValue, setMfProfitValue] = useState()
-  const [gpProfitValue, setGpProfitValue] = useState()
+  // const [fdProfitValue, setFdProfitValue] = useState(300)
+  // const [mfProfitValue, setMfProfitValue] = useState(400)
+  // const [gpProfitValue, setGpProfitValue] = useState(500)
   
   const rupee_format = (str) => {
     if (str) {
@@ -161,9 +161,9 @@ const RangeProgressBar = () => {
 
   const handleChangeCommit = () => {
     // calculetOne
-    setFdProfitValue((scaleValue * 6)/100);
-    setMfProfitValue((scaleValue * 8)/100);
-    setGpProfitValue( (scaleValue * scaleRoi / 100)  )
+    // setFdProfitValue((scaleValue * 6)/100);
+    // setMfProfitValue((scaleValue * 8)/100);
+    // setGpProfitValue( (scaleValue * scaleRoi / 100)  )
   }
 
 

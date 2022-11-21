@@ -196,7 +196,46 @@
   }
 }
 
+.Service-Card{
+  
+.main-btn-service {
+  width: 100%;
+  padding:.6rem 0 ;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-charade);
+  cursor: pointer;
+  // height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 200% 100%;
 
+  border-radius: 5px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.main-btn-service:hover,
+.main-btn-service:focus {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  outline: none;
+  color: var(--color-charade);
+}
+
+
+.main-btn.maincolor {
+  background-image: linear-gradient(to right, #07E57D, #FED365, #FAA49E);
+  color: var(--color-charade);
+  // box-shadow: 0px 0px 20px  #07E57D;
+}
+
+}
 // .main-btn {
 //   width: 306px;
 //   font-size: 15px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { blogpage14 } from '../../assets/img/contactimg'
+import { blogpage14 } from '../../assets/img/blog_imgs'
 // import blog1 from "../../assets/img/blogLarge.jpg"
 import Header from '../../layout/Header'
 import Footer from '../../layout/Footer'

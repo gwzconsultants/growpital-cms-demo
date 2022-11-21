@@ -31,6 +31,7 @@ import { callImg, homepage, chatIcon } from "../assets/img/contactimg";
 import { TopIcon1, TopIcon2 } from "../assets/img/contactimg";
 import { Typewriter } from "react-simple-typewriter";
 import SuperStars2 from "../components/SuperStars2";
+import ServiceCard from "../components/ServiceCard";
 
 
 
@@ -287,6 +288,28 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+      <section className="py-3" >
+        <Container>
+          <Row className="d-flex justify-content-center align-items-center">
+            <Col className="text-center" data-aos="fade-up">
+              <p className="text-uppercase fs-18 fw-500 text-main-green" >
+                <BsFillCircleFill size={8} className="me-1" />WHICH PLAN WHOULD YOU LIKE TO INVEST IN ?
+              </p>
+              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
+                CHOOSE PLAN
+              </h2>
+            </Col>
+          </Row>
+          {/* <Row className=" pt-2 " > */}
+          <Row className="d-flex justify-content-center px-md-5  align-items-center pt-2 " >
+
+           <ServiceCard />
+
+          </Row>
+        
+
+        </Container>
+      </section>
 
       <section className="py-5" id="calci">
         <Container>
@@ -312,9 +335,7 @@ const Home = () => {
           <Row>
             <Col md={12} className="text-center mt-5 mt-md-4" data-aos="fade-up">
               <ButtonStar />{" "}
-              <div>
-                <a href="https://drive.google.com/file/d/1bUF3cdfk5gGHGSK7Jh35kQD9ZwrQMLTK/view" className="fs-16 fw-700 text-white text-center py-2">Know more</a>
-              </div>
+             
             </Col>
           </Row>
 

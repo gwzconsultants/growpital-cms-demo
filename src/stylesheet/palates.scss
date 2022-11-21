@@ -128,3 +128,7 @@ html {
 .prelative {
   position: relative;
 }
+.maincolor {
+  background-image: linear-gradient(to right, #07E57D, #FED365, #FAA49E);
+  color: var(--color-charade);
+}

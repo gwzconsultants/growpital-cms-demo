@@ -1,4 +1,4 @@
-import { blogsmall,blogImg3,  blogImg4,blogImg5,blogImg6,blogImg7,blogImg8,blogImg9,blogImg10,blogImg11,blogImg12, blogImg2, blogImg13 } from "../assets/img/contactimg";
+import { blogsmall,blogImg3,  blogImg4,blogImg5,blogImg6,blogImg7,blogImg8,blogImg9,blogImg10,blogImg11,blogImg12, blogImg2, blogImg13 } from "../assets/img/blog_imgs";
 
 export const blogData = [
     {

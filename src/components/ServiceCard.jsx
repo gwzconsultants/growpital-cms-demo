@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, Col, Row } from 'react-bootstrap'
+import { Button, Card, Col, OverlayTrigger, Row, Tooltip } from 'react-bootstrap'
 import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -34,7 +34,13 @@ const ServiceCard = () => {
                                     <div>
                                         <Card.Title className='text-main-green'>₹ {item.amout}/unit </Card.Title>
                                         <Card.Text>
-                                            Cost per Unit<img src={item.i_img} alt="" style={{ width: "1rem" }} className='ms-1' />
+                                            Cost per Unit 
+                                            <OverlayTrigger
+                                                    placement="right"
+                                                    delay={{ show: 250, hide: 400 }}
+                                                    overlay={<Tooltip id="tooltip-disabled">Tooltip!</Tooltip>} >
+                                                    <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} />
+                                                </OverlayTrigger>
                                         </Card.Text>
                                     </div>
                                     <div>
@@ -48,13 +54,31 @@ const ServiceCard = () => {
                                     <div className='d-flex align-items-center justify-content-between mb-3 text-start'>
                                         <div>
                                             <Card.Text className=''>
-                                                <img src={timerglass} alt="" style={{ width: "1rem" }} />{" "}   Tenure <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} />
+                                                <img src={timerglass} alt="" style={{ width: "1rem" }} />{" "}   Tenure   
+                                                <OverlayTrigger
+                                                    placement="right"
+                                                    delay={{ show: 250, hide: 400 }}
+                                                    overlay={<Tooltip id="tooltip-disabled">Tooltip!</Tooltip>} >
+                                                    <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} />
+                                                </OverlayTrigger>
                                             </Card.Text>
                                             <Card.Text className=''>
-                                                <img src={locking} alt="locking" className="img-fluid " style={{ width: "1rem" }} />{" "}  Locking period<img src={item.i_img} alt="" className='img-fluid ' style={{ width: "1rem" }} />
+                                                <img src={locking} alt="locking" className="img-fluid " style={{ width: "1rem" }} />{" "}  Locking period
+                                                <OverlayTrigger
+                                                    placement="right"
+                                                    delay={{ show: 250, hide: 400 }}
+                                                    overlay={<Tooltip id="tooltip-disabled">Tooltip!</Tooltip>} >
+                                                    <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} />
+                                                </OverlayTrigger>
                                             </Card.Text>
                                             <Card.Text>
-                                                <img src={payoutIcon} alt="locking" className="img-fluid " style={{ width: "1.2rem" }} />{" "}  Payout<img src={item.i_img} alt="" style={{ width: "1rem" }} className='ms-1' />
+                                                <img src={payoutIcon} alt="locking" className="img-fluid " style={{ width: "1.2rem" }} />{" "}  Payout
+                                                <OverlayTrigger
+                                                    placement="right"
+                                                    delay={{ show: 250, hide: 400 }}
+                                                    overlay={<Tooltip id="tooltip-disabled">Tooltip!</Tooltip>} >
+                                                    <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} />
+                                                </OverlayTrigger>
                                             </Card.Text>
                                         </div>
                                         <div>
@@ -81,11 +105,11 @@ const ServiceCard = () => {
                                         </div>
                                     </div>
                                     <div className='py-2'>
-                                    <Button className=" main-btn-service maincolor bg-transparent ">Invest know</Button>
+                                        <Button className=" main-btn-service maincolor bg-transparent ">Invest know</Button>
                                     </div>
                                     <div className='py-2'>
-                                                <a href="https://drive.google.com/file/d/bc1qre8jdw2azrg6tf49wmp652w00xltddxmpk98xp/view" className="fs-16 fw-700 text-white text-center py-2">Know more</a>
-                                            </div>
+                                        <a href="https://drive.google.com/file/d/bc1qre8jdw2azrg6tf49wmp652w00xltddxmpk98xp/view" className="fs-16 fw-700 text-white text-center py-2">Know more</a>
+                                    </div>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -183,7 +207,7 @@ const ServiceCard = () => {
                                             <div className='d-flex align-items-center justify-content-between mb-3 text-start'>
                                                 <div>
                                                     <Card.Text className=''>
-                                                        <img src={timerglass} alt="" style={{ width: "1rem" }} />{" "}   Tenure <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} />
+                                                        <img src={timerglass} alt="" style={{ width: "1rem" }} />{" "}   Tenure  <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} />
                                                     </Card.Text>
                                                     <Card.Text className=''>
                                                         <img src={locking} alt="locking" className="img-fluid " style={{ width: "1rem" }} />{" "}  Locking period<img src={item.i_img} alt="" className='img-fluid ' style={{ width: "1rem" }} />
@@ -216,9 +240,9 @@ const ServiceCard = () => {
                                                 </div>
                                             </div>
                                             <div className='py-2'>
-                                    <Button className=" main-btn-service maincolor bg-transparent ">Invest know</Button>
-                                    </div>
-                                    <div className='py-2'>
+                                                <Button className=" main-btn-service maincolor bg-transparent ">Invest know</Button>
+                                            </div>
+                                            <div className='py-2'>
                                                 <a href="https://drive.google.com/file/d/bc1qre8jdw2azrg6tf49wmp652w00xltddxmpk98xp/view" className="fs-16 fw-700 text-white text-center py-2">Know more</a>
                                             </div>
                                         </Card.Body>

@@ -433,7 +433,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="py-md-5 pt-5 pb-0">
+      <section className="py-md-5 ">
         <Container>
           <Row className="d-flex justify-content-center align-items-center">
             <Col className="text-center" data-aos="fade-up" data-aos-offset="500">

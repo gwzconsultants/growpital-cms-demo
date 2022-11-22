@@ -38,7 +38,7 @@ const Header = () => {
 
                         </Nav>
                         <div className="d-flex d-none d-md-block">
-                            <a href="https://app.growpital.com/signup?_gl=1*jb0rsu*_ga*MTM4OTAyNDk1Ny4xNjY1Mzg2MTc4*_ga_YFL1QCKH2V*MTY2NjI3NTU3Ny4xOC4xLjE2NjYyNzU1NzcuMC4wLjA."> <Button className="main-btn-nav maincolor mb-2 fs-11">Sign up/Login</Button></a>
+                            <a href="https://app.growpital.com/signup"> <Button className="main-btn-nav maincolor mb-2 fs-11">Sign up/Login</Button></a>
                         </div>
                     </Navbar.Collapse>
 

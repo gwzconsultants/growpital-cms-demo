@@ -181,19 +181,20 @@ const ServiceCard = () => {
 
 
                                         style={{ width: '20rem' }}
-                                        className="mb-2 bg-dark-gradient text-white"
+                                        className="mb-2 bg-dark-gradient text-white px-3"
                                     >
-                                        <Card.Header className='d-inline-flex align-items-center '>
+                                        <Card.Header className='d-inline-flex align-items-center py-3 fw-bold fs-5'>
                                             <p className="colan-icon text-center d-inline-block mb-0 d-flex justify-content-center align-items-center me-4 p-2">
                                                 <img src={item.img} alt="" className="img-fluid" />
                                             </p>
                                             {item.title}
                                         </Card.Header>
-                                        <Card.Header className='d-flex align-items-center justify-content-between'>
+                                        <Card.Header className='d-flex align-items-center justify-content-between py-3'>
                                             <div>
                                                 <Card.Title className='text-main-green'>₹ {item.amout}/unit </Card.Title>
                                                 <Card.Text>
-                                                    Cost per Unit<img src={item.i_img} alt="" style={{ width: "1rem" }} className='ms-1' />
+                                                    Cost per Unit
+                                                    {/* <img src={item.i_img} alt="" style={{ width: "1rem" }} className='ms-1' /> */}
                                                 </Card.Text>
                                             </div>
                                             <div>
@@ -207,13 +208,16 @@ const ServiceCard = () => {
                                             <div className='d-flex align-items-center justify-content-between mb-3 text-start'>
                                                 <div>
                                                     <Card.Text className=''>
-                                                        <img src={timerglass} alt="" style={{ width: "1rem" }} />{" "}   Tenure  <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} />
+                                                        <img src={timerglass} alt="" style={{ width: "1rem" }} />{" "}   Tenure 
+                                                         {/* <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} /> */}
                                                     </Card.Text>
                                                     <Card.Text className=''>
-                                                        <img src={locking} alt="locking" className="img-fluid " style={{ width: "1rem" }} />{" "}  Locking period<img src={item.i_img} alt="" className='img-fluid ' style={{ width: "1rem" }} />
+                                                        <img src={locking} alt="locking" className="img-fluid " style={{ width: "1rem" }} />{" "}  Locking period 
+                                                        {/* <img src={item.i_img} alt="" className='img-fluid ' style={{ width: "1rem" }} /> */}
                                                     </Card.Text>
                                                     <Card.Text>
-                                                        <img src={payoutIcon} alt="locking" className="img-fluid " style={{ width: "1.2rem" }} />{" "}  Payout<img src={item.i_img} alt="" style={{ width: "1rem" }} className='ms-1' />
+                                                        <img src={payoutIcon} alt="locking" className="img-fluid " style={{ width: "1.2rem" }} />{" "}  Payout
+                                                        {/* <img src={item.i_img} alt="" style={{ width: "1rem" }} className='ms-1' /> */}
                                                     </Card.Text>
                                                 </div>
                                                 <div>

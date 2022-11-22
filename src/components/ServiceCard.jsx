@@ -243,7 +243,7 @@ const ServiceCard = () => {
                                                 <Button className=" main-btn-service maincolor bg-transparent ">Invest know</Button>
                                             </div>
                                             <div className='py-2'>
-                                                <a href="https://drive.google.com/file/d/bc1qre8jdw2azrg6tf49wmp652w00xltddxmpk98xp/view" className="fs-16 fw-700 text-white text-center py-2">Know more</a>
+                                                <a href="https://drive.google.com/file/d/1bUF3cdfk5gGHGSK7Jh35kQD9ZwrQMLTK/view" className="fs-16 fw-700 text-white text-center py-2">Know more</a>
                                             </div>
                                         </Card.Body>
                                     </Card>

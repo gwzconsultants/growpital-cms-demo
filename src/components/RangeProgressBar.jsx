@@ -11,6 +11,7 @@ import { locking, timerglass } from "../assets/img/contactimg";
 
 
 
+
 const SuccessSlider = styled(Slider)(({ theme }) => ({
 
   height: "12px",

@@ -296,7 +296,9 @@ const Home = () => {
                 <BsFillCircleFill size={8} className="me-1" />WHICH PLAN WHOULD YOU LIKE TO INVEST IN ?
               </p>
               <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
-                CHOOSE PLAN
+              Invest in our 
+              <span className="text-main-green">   high return </span>
+               plans
               </h2>
             </Col>
           </Row>

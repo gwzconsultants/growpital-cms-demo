@@ -9,7 +9,7 @@ export const service =[
         amout:"5000",
         avaiableUnit:987,
         RoiValue:10,
-        payout:"Quaterly"
+        payout:"Quarterly"
         
     },
     {
@@ -20,7 +20,7 @@ export const service =[
         amout:"20,000",
         avaiableUnit:987,
         RoiValue:12,
-        payout:"Quaterly",
+        payout:"Quarterly",
         
         
     },
@@ -29,10 +29,10 @@ export const service =[
         i_img: i_icon,
         img:harvest,
         title:"Harvest Premium",
-        amout:"1,00,000",
+        amout:"2,00,000",
         avaiableUnit:987,
         RoiValue:16,
-        payout:"Quaterly"
+        payout:"Quarterly"
     },
     {
         id: 4,

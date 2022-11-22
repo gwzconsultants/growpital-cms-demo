@@ -1,7 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { BsFillCircleFill } from 'react-icons/bs'
-import { useParams } from 'react-router-dom'
 import { about_gif, about_section } from '../assets/img/contactimg'
 // import { faqsimg1, faqspage } from '../assets/img/contactimg'
 import AboutPage from '../components/AboutPage'
@@ -42,7 +41,7 @@ const Abouts = () => {
                   <p>
                     Growpital was incepted to radically democratize farm investment by providing access to high profit opportunities to retail investors. We Firmly believe that agriculture is a safe, stable and attractive long-term investment for everyone, if invested with right projects.
                   </p>
-                  <button className="main-btn maincolor mb-3 my-3 fs-5">Get Started</button>
+                  <a href="https://app.growpital.com/signup">     <button className="main-btn maincolor mb-3 my-3 fs-5">Get Started</button> </a>
                 </Col>
                 <Col md={6} className="px-4" data-aos="fade-up">
                   <img src={about_gif} alt="Farm GIF " className='img-fluid w-100' />

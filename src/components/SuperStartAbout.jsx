@@ -125,6 +125,7 @@ const SuperstarsAbout = (props) => {
   return (
     <>
      <div className="superstarsAbout"> 
+     {/* desktop view mode */}
      <Row>
         {SuperStars.map((Items) => (
           <Col md={6}  key={Items.Id}  className="d-none d-lg-block" data-aos="fade-up">
@@ -164,7 +165,7 @@ const SuperstarsAbout = (props) => {
         </Row>
 
 
-       {/* <Slider {...settings} className="d-lg-none" > */}
+       {/* mobile view slider */}
        <Swiper
     breakpoints={{
 0:{

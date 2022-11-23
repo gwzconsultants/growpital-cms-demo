@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, Col,  Row, } from 'react-bootstrap'
+import { Button, Card, Col, Row, } from 'react-bootstrap'
 import { Autoplay, Navigation, Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,13 +11,17 @@ import { service } from '../data/ServicePlanData'
 
 const ServiceCard = () => {
     return (
+
         <>
 
+
+            {/* check changes on both mode */}
+            {/* desktop mode view */}
             <Col md={9} className='Service-Card d-none d-xl-block '>
                 <Row className="d-flex justify-content-center  align-items-center   ">
                     {service.map((item) => (
 
-                        <Col  lg={6} className="d-flex justify-content-center  align-items-center  mb-5 " key={item.id} data-aos="fade-up">
+                        <Col lg={6} className="d-flex justify-content-center  align-items-center  mb-5 " key={item.id} data-aos="fade-up">
                             <Card
 
 
@@ -26,7 +30,7 @@ const ServiceCard = () => {
                             >
                                 <Card.Header className='d-inline-flex align-items-center py-3 fw-bold fs-4 '>
                                     <p className="colan-icon text-center d-inline-block mb-0 d-flex justify-content-center align-items-center me-4 p-2">
-                                        <img src={item.img} alt="" className="img-fluid" style={{ width: "1rem" }}/>
+                                        <img src={item.img} alt="" className="img-fluid" style={{ width: "1rem" }} />
                                     </p>
                                     {item.title}
                                 </Card.Header>
@@ -34,7 +38,7 @@ const ServiceCard = () => {
                                     <div>
                                         <Card.Title className='text-main-green'>₹ {item.amout}/unit </Card.Title>
                                         <Card.Text>
-                                            Cost per Unit 
+                                            Investment
                                             {/* <OverlayTrigger
                                                     placement="right"
                                                     delay={{ show: 250, hide: 400 }}
@@ -54,7 +58,7 @@ const ServiceCard = () => {
                                     <div className='d-flex align-items-center justify-content-between mb-3 text-start'>
                                         <div>
                                             <Card.Text className=''>
-                                                <img src={timerglass} alt="" style={{ width: "1rem" }}  className="mb-1"/>{" "}   Tenure   
+                                                <img src={timerglass} alt="" style={{ width: "1rem" }} className="mb-1" />{" "}   Tenure
                                                 {/* <OverlayTrigger
                                                     placement="right"
                                                     delay={{ show: 250, hide: 400 }}
@@ -63,7 +67,7 @@ const ServiceCard = () => {
                                                 </OverlayTrigger> */}
                                             </Card.Text>
                                             <Card.Text className=''>
-                                                <img src={locking} alt="locking" className="img-fluid mb-1" style={{ width: "1rem" }} />{" "}  Locking period
+                                                <img src={locking} alt="locking" className="img-fluid mb-1" style={{ width: "1rem" }} />{" "}  Lockin period
                                                 {/* <OverlayTrigger
                                                     placement="right"
                                                     delay={{ show: 250, hide: 400 }}
@@ -105,10 +109,10 @@ const ServiceCard = () => {
                                         </div>
                                     </div>
                                     <div className='py-2'>
-                                    <a href="https://app.growpital.com/signup">   <Button className=" main-btn-service maincolor bg-transparent ">Invest know</Button> </a>
+                                        <a href="https://app.growpital.com/signup">   <Button className=" main-btn-service maincolor bg-transparent ">Invest know</Button> </a>
                                     </div>
                                     <div className='py-2'>
-                                        <a href="https://drive.google.com/file/d/1bUF3cdfk5gGHGSK7Jh35kQD9ZwrQMLTK/view"    className="fs-16 fw-700 text-white text-center py-2">Know more</a>
+                                        <a href="https://drive.google.com/file/d/1bUF3cdfk5gGHGSK7Jh35kQD9ZwrQMLTK/view" className="fs-16 fw-700 text-white text-center py-2">Know more</a>
                                     </div>
                                 </Card.Body>
                             </Card>
@@ -120,9 +124,8 @@ const ServiceCard = () => {
 
             </Col>
 
+            {/* check changes on both mode */}
             {/* mobile view swiper */}
-
-
             <Swiper
                 slidesPerView={4}
                 spaceBetween={10}
@@ -193,7 +196,7 @@ const ServiceCard = () => {
                                             <div>
                                                 <Card.Title className='text-main-green'>₹ {item.amout}/unit </Card.Title>
                                                 <Card.Text>
-                                                    Cost per Unit
+                                                    Investment
                                                     {/* <img src={item.i_img} alt="" style={{ width: "1rem" }} className='ms-1' /> */}
                                                 </Card.Text>
                                             </div>
@@ -208,11 +211,11 @@ const ServiceCard = () => {
                                             <div className='d-flex align-items-center justify-content-between mb-3 text-start'>
                                                 <div>
                                                     <Card.Text className=''>
-                                                        <img src={timerglass} alt="" style={{ width: "1rem" }} />{" "}   Tenure 
-                                                         {/* <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} /> */}
+                                                        <img src={timerglass} alt="" style={{ width: "1rem" }} />{" "}   Tenure
+                                                        {/* <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} /> */}
                                                     </Card.Text>
                                                     <Card.Text className=''>
-                                                        <img src={locking} alt="locking" className="img-fluid " style={{ width: "1rem" }} />{" "}  Locking period 
+                                                        <img src={locking} alt="locking" className="img-fluid " style={{ width: "1rem" }} />{" "}  Locking period
                                                         {/* <img src={item.i_img} alt="" className='img-fluid ' style={{ width: "1rem" }} /> */}
                                                     </Card.Text>
                                                     <Card.Text>

@@ -3,8 +3,11 @@ import { Col, Container, Image, Row, Nav } from "react-bootstrap";
 import Logo from "../assets/img/newlogo.png";
 import { FaFacebookF } from "react-icons/fa";
 import { BsYoutube, BsLinkedin, BsInstagram, BsWhatsapp, BsTelegram } from "react-icons/bs";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
+  let currentRoute = useLocation().pathname;
+ 
   return (
     <>
       <footer className="py-4  margin-top">
@@ -19,17 +22,17 @@ const Footer = () => {
             <Col xs={12} md={6} lg={3}>
               <h6 className="fs-22 fs-sm-24  mb-md-3 mt-4 mt-md-0 fw-600 text-white">Growpital</h6>
               <Nav defaultActiveKey="/home" className="flex-column">
-                <Nav.Link href="/about">About Us</Nav.Link>
-                <Nav.Link href="/about/#how_it_works" >How it works?</Nav.Link>
-                <Nav.Link href="/about/#team"> Team</Nav.Link>
-                <Nav.Link href="/blog">Blogs</Nav.Link>
-                <Nav.Link href="/contact">Contact Us</Nav.Link>
+                <Nav.Link href="/about"  className={currentRoute.includes("/about")}>About Us</Nav.Link>
+                <Nav.Link href="/about#how_it_works" className={currentRoute.endsWith("about#how_it_works") }>How it works?</Nav.Link>
+                <Nav.Link href="/about#team" className={currentRoute.endsWith("/about#team")}> Team</Nav.Link>
+                <Nav.Link href="/blog" className={currentRoute.endsWith("/blog") }>Blogs</Nav.Link>
+                <Nav.Link href="/contact" className={currentRoute.endsWith("/contact") }>Contact Us</Nav.Link>
               </Nav>
             </Col>
             <Col xs={12} md={6} lg={3}>
               <h6 className="fs-22 fs-sm-24  mb-md-3 mt-4 mt-md-0 fw-600 text-white">Important Links</h6>
               <Nav defaultActiveKey="/home" className="flex-column">
-                <Nav.Link href="/#calci">Returns Calculator</Nav.Link>
+                <Nav.Link href="/home#calci">Returns Calculator</Nav.Link>
                 <Nav.Link href="/faqs">FAQs</Nav.Link>
                 <Nav.Link href="https://app.growpital.com/signup?_gl=1*jb0rsu*_ga*MTM4OTAyNDk1Ny4xNjY1Mzg2MTc4*_ga_YFL1QCKH2V*MTY2NjI3NTU3Ny4xOC4xLjE2NjYyNzU1NzcuMC4wLjA.">Sign up/Login </Nav.Link>
                 <Nav.Link href="/terms">Terms of Service</Nav.Link>

@@ -29,8 +29,8 @@ const Header = () => {
 
                     <Navbar.Collapse id="basic-navbar-nav" >
                         <Nav className="m-auto" activeKey="/">
-                            <Nav.Link href={link} eventKey="default"  className={currentRoute.endsWith(link) ? "nav-link active" : "nav-link"}  >Home</Nav.Link>
-                            <Nav.Link href="/about" eventKey="link-1" className={currentRoute.endsWith("/about") ? "nav-link active" : "nav-link"} >About</Nav.Link>
+                            <Nav.Link href={link} eventKey="default"  className={currentRoute.includes(link) ? "nav-link active" : "nav-link"}  >Home</Nav.Link>
+                            <Nav.Link href="/about" eventKey="link-1" className={currentRoute.includes("about") ? "nav-link active" : "nav-link"} >About</Nav.Link>
                             {/* <Nav.Link href="https://blogs.growpital.com/" eventKey="link-2">Blogs</Nav.Link> */}
                             <Nav.Link href="/blog" eventKey="link-2" className={currentRoute.endsWith("/blog") ? "nav-link active" : "nav-link"} >Blogs</Nav.Link>
                             <Nav.Link href="/faqs" eventKey="link-3" className={currentRoute.endsWith("/faqs") ? "nav-link active" : "nav-link"} >FAQs</Nav.Link>

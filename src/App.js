@@ -1,6 +1,6 @@
 import './App.scss';
 import Home from './pages/Home';
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from './pages/Contact';
 import Faqs from './pages/Faqs';
 import Privacy from './pages/privacy';
@@ -25,6 +25,7 @@ import { useEffect } from 'react';
 import AOS from "aos"
 import "swiper/css/bundle"
 import BlogDetails14 from './components/blogdetails/blogDetails14';
+import  { ScrollHandler } from './hooks/ScrollHandlerID';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
     <>
     <BrowserRouter >
     <ScrollToTop />
+  <ScrollHandler />
     <Routes>
     <Route path='/' element={<Home />} />
       <Route path='/home' element={<Home />} />

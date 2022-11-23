@@ -21,7 +21,7 @@ const Footer = () => {
               <Nav defaultActiveKey="/home" className="flex-column">
                 <Nav.Link href="/about">About Us</Nav.Link>
                 <Nav.Link href="/about/#how_it_works" >How it works?</Nav.Link>
-                <Nav.Link href="/about/#team">Team</Nav.Link>
+                <Nav.Link href="/about/#team"> Team</Nav.Link>
                 <Nav.Link href="/blog">Blogs</Nav.Link>
                 <Nav.Link href="/contact">Contact Us</Nav.Link>
               </Nav>

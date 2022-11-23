@@ -6,7 +6,7 @@ export const service =[
         i_img: i_icon,
         img:beby_framing,
         title:"Baby Farming",
-        amout:"5000",
+        amout:"5,000",
         avaiableUnit:987,
         RoiValue:10,
         payout:"Quarterly"

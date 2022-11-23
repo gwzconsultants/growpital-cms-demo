@@ -215,7 +215,7 @@ const ServiceCard = () => {
                                                         {/* <img src={item.i_img} alt="" className='ms-1' style={{ width: "1rem" }} /> */}
                                                     </Card.Text>
                                                     <Card.Text className=''>
-                                                        <img src={locking} alt="locking" className="img-fluid " style={{ width: "1rem" }} />{" "}  Locking period
+                                                        <img src={locking} alt="locking" className="img-fluid " style={{ width: "1rem" }} />{" "}  Lockingit period
                                                         {/* <img src={item.i_img} alt="" className='img-fluid ' style={{ width: "1rem" }} /> */}
                                                     </Card.Text>
                                                     <Card.Text>

@@ -10,7 +10,12 @@ export const marks = [
             name:"Baby Farming",
             roi: 10,
             label: "5,000",
-            frequency: "Quarterly"
+            frequency: "Quarterly",
+            fd:810,
+            fdtax:90,
+            mf:1785,
+            mftax:315,
+            gp:1500,
           },
           {
             value: 1,
@@ -20,7 +25,12 @@ export const marks = [
             scaledValue: 10000,
             roi: 10,
             label: "",
-            frequency: "Quarterly"
+            frequency: "Quarterly",
+            fd:1620,
+            fdtax:180,
+            mf:3570,
+            mftax:630,
+            gp:3000,
           },
           {
             value: 2,
@@ -31,7 +41,12 @@ export const marks = [
             scaledValue: 20000,
             roi: 12,
             label: "20,000",
-            frequency: "Quarterly"
+            frequency: "Quarterly",
+            fd:3240,
+            fdtax:360,
+            mf:7140,
+            mftax:1260,
+            gp:7200,
           },
           {
             value: 3,
@@ -41,7 +56,12 @@ export const marks = [
             scaledValue: 40000,
             roi: 12,
             label: "",
-            frequency: "Quarterly"
+            frequency: "Quarterly",
+            fd:6480,
+            fdtax:720,
+            mf:14280,
+            mftax:2520,
+            gp:14400,
           },
           {
             value: 4,
@@ -51,7 +71,12 @@ export const marks = [
             scaledValue: 200000,
             roi: 16,
             label: "2L",
-            frequency: "Quarterly"
+            frequency: "Quarterly",
+            fd:32400,
+            fdtax:3600,
+            mf:71400,
+            mftax:12600,
+            gp:96000,
           },
           {
             value: 5,
@@ -61,7 +86,12 @@ export const marks = [
             scaledValue: 1000000,
             roi: 17,
             label: "",
-            frequency: "Half Yearly"
+            frequency: "Half Yearly",
+            fd:162000,
+            fdtax:18000,
+            mf:357000,
+            mftax:63000,
+            gp:510000,
           },
           {
             value: 6,
@@ -71,7 +101,12 @@ export const marks = [
             scaledValue: 2000000,
             roi: 17,
             label: "20L",
-            frequency: "Half Yearly"
+            frequency: "Half Yearly",
+            fd:324000,
+            fdtax:36000,
+            mf:714000,
+            mftax:126000,
+            gp:1020000,
           },
          
   ];

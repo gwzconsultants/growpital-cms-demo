@@ -6,7 +6,9 @@ import { Card, Col, Row,} from "react-bootstrap";
 import { alpha, styled } from '@mui/material/styles';
 import {  marks } from "../data/InventData";
 import { locking, timerglass } from "../assets/img/contactimg";
-// import BarGraph from "./BarGraph";
+
+import BarGraphDesktop from "./BarGraphDesktop";
+import BarGraphMobile from "./BarGraphMobile";
 
 
 
@@ -67,9 +69,8 @@ const SuccessSlider = styled(Slider)(({ theme }) => ({
 
 const RangeProgressBar = () => {
   const [value, setValue] = useState(0);
-  // const [fdProfitValue, setFdProfitValue] = useState(300)
-  // const [mfProfitValue, setMfProfitValue] = useState(400)
-  // const [gpProfitValue, setGpProfitValue] = useState(500)
+  
+
   
   const rupee_format = (str) => {
     if (str) {
@@ -92,87 +93,40 @@ const RangeProgressBar = () => {
     const remainder = value % 1
     if (remainder === 0) {
 
-      return previousMark.scaledValue;
+     return previousMark.scaledValue 
     }
 
-
+   
   };
 
 
 
-  const roi = (value) => {
+  const dataValue = (value) => {
     const previousMarkIndex = value / 1;
     const previousMark = marks[previousMarkIndex];
     const remainder = value % 1;
     if (remainder === 0) {
-      return previousMark.roi;
+      return previousMark;
     }
 
   }
-  const CalLogo = (value) => {
-    const previousMarkIndex = value / 1;
-    const previousMark = marks[previousMarkIndex];
-    const remainder = value % 1;
-    if (remainder === 0) {
-      return previousMark.img;
-    }
-
-  }
-
-  const name = (value) => {
-    const previousMarkIndex = value;
-    const previousMark = marks[previousMarkIndex];
-    const remainder = value % 1;
-    if (remainder === 0) {
-
-      return previousMark.name;
-    }
-
-  }
-  const total = (value) => {
-    const previousMarkIndex = value;
-    const previousMark = marks[previousMarkIndex];
-    const remainder = value % 1;
-    if (remainder === 0) {
-
-      return previousMark.total;
-    }
-
-  }
-  const frequen = (value) => {
-    const previousMarkIndex = value;
-    const previousMark = marks[previousMarkIndex];
-    const remainder = value % 1;
-    if (remainder === 0) {
-
-      return previousMark.frequency;
-    }
-
-  }
-  const scaleRoi = roi(value)
+  
+  const scalePro = dataValue(value)
   const scaleValue = scale(value)
-  const calLogo = CalLogo(value)
-  const TotalReturn = total(value)
+
 
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-
+ 
   };
-
-  const handleChangeCommit = () => {
-    // calculetOne
-    // setFdProfitValue((scaleValue * 6)/100);
-    // setMfProfitValue((scaleValue * 8)/100);
-    // setGpProfitValue( (scaleValue * scaleRoi / 100)  )
-  }
 
 
 
 
   return (
     <>
-      <Col xs={12} md={12}  className="text-center" style={{ maxWidth: "40rem" }} data-aos="fade-up" >
+      <Col xs={12} lg={6}  className="text-center mb-3 mb-md-0" style={{ maxWidth: "40rem" }} data-aos="fade-up" >
         <div className="range-progress">
           <Card className="darkcard mt-3 mt-md-4 p-0 rounded text-start text-white">
             <Card.Body className="m-1 bg-dark-gradient rounded p-4">
@@ -190,7 +144,7 @@ const RangeProgressBar = () => {
                   {/* <ThemeProvider theme={finalTheme}> */}
                   <Box  >
 
-                    <SuccessSlider marks={marks} min={0} step={1} max={6} value={value} scale={scale} onChange={handleChange} onChangeCommitted={handleChangeCommit} valueLabelDisplay="on" aria-labelledby="non-linear-slider" />
+                    <SuccessSlider marks={marks} min={0} step={1} max={6} value={value} scale={scale} onChange={handleChange}  valueLabelDisplay="auto" aria-labelledby="non-linear-slider" />
                     {/* <Form.Range value={value} onChange={handleChange}/> */}
                   </Box>
 
@@ -216,20 +170,21 @@ const RangeProgressBar = () => {
               <div className="text-center ">
 
                 <h3 className="text-main-gold fw-600 fs-30 my-3 my-md-4">
-                  <img src={calLogo} alt="" className="img-fluid me-2" style={{ width: "6%" }} /> {name(value)}
+                  <img src={scalePro.img} alt="" className="img-fluid me-2" style={{ width: "6%" }} /> 
+                  {scalePro.name}
                 </h3>
               </div>
               <Row className="pt-4">
                 <Col className="d-flex justify-content-around">
                   <div className="text-center px-2 mx-0">
                     <h2 className="text-main-green fw-600 fs-30 fs-sm-22 text-capitalize mb-1">
-                      {scaleRoi}%
+                      {scalePro.roi}%
                     </h2>
                     <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">ROI</p>
                   </div>
                   <div className="text-center px-2">
                     <h2 className="text-main-green fw-600 fs-30 fs-sm-22 text-capitalize mb-1">
-                      <span className="px-1">₹</span>{rupee_format(TotalReturn)}
+                      <span className="px-1">₹</span>{rupee_format(scalePro.total)}
                     </h2>
                     <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">
                       <span className="pe-2">Takeaway</span>
@@ -238,7 +193,7 @@ const RangeProgressBar = () => {
                   <div className="text-center">
                     <h2 className="text-main-green fw-600 fs-30 fs-sm-22 text-capitalize mb-1">
                       {/* <span className="px-1">₹</span>{rupee_format(calculetThree)} */}
-                      {frequen(value)}
+                      {scalePro.frequency}
                     </h2>
                     <p className="fs-18 fs-sm-16 fw-500 text-white mb-4 mb-md-0">
                       <span className="pe-2">Payout </span>
@@ -252,13 +207,34 @@ const RangeProgressBar = () => {
       </Col>
 
       {/* bargraph  */}
-      {/* <Col xs={12} md={6}  >
-        <BarGraph 
-        fd={fdProfitValue}
-        mf={mfProfitValue}
-        gp={gpProfitValue}
+
+      {/* desktop mode  */}
+      <Col xs={12} lg={6}  className="d-none d-lg-block">
+        <BarGraphDesktop 
+       fd={scalePro.fd}
+       fdtax={scalePro.fdtax}
+       mftax={scalePro.mftax}
+       mf={scalePro.mf}
+       gp={scalePro.gp}
+       
         />
-      </Col> */}
+       
+
+       {/* moblie mode  */}
+      </Col>
+      <Col xs={12} lg={6} className="d-lg-none">
+      <BarGraphMobile 
+       fd={scalePro.fd}
+       fdtax={scalePro.fdtax}
+       mftax={scalePro.mftax}
+       mf={scalePro.mf}
+       gp={scalePro.gp}
+       
+        />
+       
+
+        
+      </Col>
 
     </>
   );

@@ -13,6 +13,7 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 import React from 'react'
 // import { Card } from 'react-bootstrap';
 import { Bar } from 'react-chartjs-2'
+
 ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -23,39 +24,52 @@ ChartJS.register(
     Title
 );
 
-const BarGraph = (item) => {
-    const { fd, mf, gp } = item
-    const profitfd = fd - ((fd * 10) / 100)
-    const profitmf = mf - ((mf * 10) / 100)
-    const taxfd = ((fd * 10) / 100)
-    const taxmd = ((mf * 10) / 100)
+
+
+
+const BarGraphDesktop = (item) => {
+    const rupee_format = (str) => {
+        if (str) {
+          var x = str;
+          x = x.toString();
+          var lastThree = x.substring(x.length - 3);
+          var otherNumbers = x.substring(0, x.length - 3);
+          if (otherNumbers !== "") lastThree = "," + lastThree;
+          var res = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
+          return res;
+        } else {
+          return;
+        }
+      };
+    const { fd, mf, gp, fdtax, mftax } = item
+ 
     const taxgp = ((gp * 0))
     // const yprofit =[profitfd,profitmf,gp]
     // const ytax = [taxfd,taxmd]
+
     const data = {
         labels: ["Bank FD", "Mutual Fund", "Growpital"],
         axis: 'y',
         datasets: [
             {
-                label: "profit",
+                label: "Profit",
                 strokeColor: "#79D1CF",
-                // barThickness: 75,
-                // maxBarThickness: 75,
                 barPercentage: 0.6,
                 borderRadius: 7,
                 type: 'bar',
-                data: [profitfd, profitmf, gp],
+                data: [fd, mf, gp],
                 backgroundColor: "#07E57D",
 
             },
             {
-                label: "tax",
+                label: "Tax",
+                
                 // barThickness: 75,
                 // maxBarThickness: 79,
                 barPercentage: 0.6,
                 borderRadius: 7,
                 type: 'bar',
-                data: [taxfd, taxmd, taxgp],
+                data: [fdtax, mftax, taxgp],
                 backgroundColor: "#FE4226"
             }
         ]
@@ -87,6 +101,7 @@ const BarGraph = (item) => {
                 }
             },
             datalabels: {
+               
                 display: true,
                 color: "white",
                 anchor: "end",
@@ -120,17 +135,17 @@ const BarGraph = (item) => {
 
                     let sum = datasetArray.reduce(totalSum, 0)
                     if (context.datasetIndex === datasetArray.length - 1)
-                        return sum
+                        return "₹ "  +rupee_format(sum)
                     else
                         return ''
                 },
             }
         },
-
+        
 
         layout: {
             borderColor: "white",
-            padding: 25
+            // padding: 25
         },
 
 
@@ -142,11 +157,11 @@ const BarGraph = (item) => {
                 gridLines: { color: "white" },
                 display: true,
                 color: "white",
-                padding: 4,
                 grid: {
                     borderWidth: 3,
                     borderColor: 'white',
-                    display: false
+                    display: true,
+                    z: 1,
                 },
                 stacked: true,
                 beginAtZero: true,
@@ -157,7 +172,7 @@ const BarGraph = (item) => {
                     font: {
                         size: 20
                     },
-                    z: 1,
+
                 }
 
             },
@@ -167,6 +182,7 @@ const BarGraph = (item) => {
                 color: "white",
                 beginAtZero: true,
                 grid: {
+
 
                     borderWidth: 3,
                     borderColor: 'white',
@@ -183,21 +199,18 @@ const BarGraph = (item) => {
     return (
         <>
             <section className='bargraph'>
-                {/* <Card className='bg-transparent py-3 '> */}
-                {/* <Card.Body className='bg-transparent '> */}
+                <div id="canvas-container">
 
-                <Bar
-                    // plugins={[ChartDataLabels]}
-                    data={data}
-                    height={500}
+                    <Bar
+                        // plugins={[ChartDataLabels]}
+                        data={data}
+                        height={500}
 
-                    options={options} />
-                {/* </Card.Body> */}
-
-                {/* </Card> */}
+                        options={options} />
+                </div>
             </section>
         </>
     )
 }
 
-export default BarGraph
+export default BarGraphDesktop

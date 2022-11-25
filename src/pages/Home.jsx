@@ -43,7 +43,7 @@ const Home = () => {
 
       <Header />
       <SingupBtn />
-      <section className="hero-area py-5 "  >
+      <section className=" py-md-5 pt-3 pb-5  "  >
         <Container>
           <Row className="d-flex justify-content-center align-items-center py-0  mt-0 " >
             <Col xs={12} md={12} lg={7} className="text-center text-md-start"  >
@@ -327,8 +327,8 @@ const Home = () => {
               </h2>
             </Col>
           </Row>
-          {/* <Row className=" pt-2 " > */}
-          <Row className="d-flex justify-content-center px-md-5  align-items-center pt-2 " >
+          <Row className=" pt-2 " >
+          {/* <Row className="d-flex justify-content-center px-md-5  align-items-center pt-2 " > */}
 
             <RangeProgressBar />
 

@@ -146,7 +146,7 @@ const BarGraphMobile = (item) => {
 
         layout: {
             borderColor: "white",
-            padding:25gi
+            padding:25
         },
         
 

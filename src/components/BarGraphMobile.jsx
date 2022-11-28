@@ -44,13 +44,13 @@ const BarGraphMobile = (item) => {
     };
 
     // props content
-    const { fd, mf, gp, fdtax, mftax } = item
+    const { fd, mf, gp, fdtax, mftax,bond,bondtax } = item
     const taxgp = ((gp * 0))
 
 
     // data value for chart js
     const data = {
-        labels: ["Bank FD","Mutual Fund","Growpital"],
+        labels: ["Bank FD","Bond", "Mutual Fund", "Growpital"],
         axis: 'y',
         datasets: [
             {
@@ -59,7 +59,7 @@ const BarGraphMobile = (item) => {
                 strokeColor: "#79D1CF",
                 borderRadius: 7,
                 type: 'bar',
-                data: [fd, mf, gp],
+                data: [fd,bond, mf, gp],
                 backgroundColor: "#07E57D",
                 
             },
@@ -67,7 +67,7 @@ const BarGraphMobile = (item) => {
                 label: "Tax",
                 borderRadius: 7,
                 type: 'bar',
-                data: [fdtax, mftax, taxgp],
+                data: [fdtax,bondtax, mftax, taxgp],
                 backgroundColor: "#FE4226"
             }
         ]
@@ -143,9 +143,7 @@ const BarGraphMobile = (item) => {
 
         layout: {
             borderColor: "white",
-            padding:{
-                y:0
-            }
+            padding:12+6
         },
         
 
@@ -219,6 +217,7 @@ const BarGraphMobile = (item) => {
                         // plugins={[ChartDataLabels]}
                         data={data}
                         height={400}
+                        width={200}
 
                         options={options} />
                 </div>

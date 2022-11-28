@@ -41,14 +41,14 @@ const BarGraphDesktop = (item) => {
           return;
         }
       };
-    const { fd, mf, gp, fdtax, mftax } = item
+    const { fd, mf, gp, fdtax, mftax,bond,bondtax } = item
  
     const taxgp = ((gp * 0))
     // const yprofit =[profitfd,profitmf,gp]
     // const ytax = [taxfd,taxmd]
 
     const data = {
-        labels: ["Bank FD", "Mutual Fund", "Growpital"],
+        labels: ["Bank FD","Bond", "Mutual Fund", "Growpital"],
         axis: 'y',
         datasets: [
             {
@@ -57,7 +57,7 @@ const BarGraphDesktop = (item) => {
                 barPercentage: 0.6,
                 borderRadius: 7,
                 type: 'bar',
-                data: [fd, mf, gp],
+                data: [fd,bond, mf, gp],
                 backgroundColor: "#07E57D",
 
             },
@@ -69,7 +69,7 @@ const BarGraphDesktop = (item) => {
                 barPercentage: 0.6,
                 borderRadius: 7,
                 type: 'bar',
-                data: [fdtax, mftax, taxgp],
+                data: [fdtax,bondtax, mftax, taxgp],
                 backgroundColor: "#FE4226"
             }
         ]
@@ -106,7 +106,7 @@ const BarGraphDesktop = (item) => {
                 color: "white",
                 anchor: "end",
                 align: "top",
-                offset: 39,
+                offset: 25,
                 z: 0,
                 labels: {
 
@@ -145,7 +145,7 @@ const BarGraphDesktop = (item) => {
 
         layout: {
             borderColor: "white",
-            // padding: 25
+            padding: 35
         },
 
 
@@ -168,7 +168,7 @@ const BarGraphDesktop = (item) => {
                 ticks: {
                     mirror: true,
                     color: "white",
-                    labelOffset: -58,
+                    labelOffset: -40,
                     font: {
                         size: 20
                     },
@@ -205,6 +205,7 @@ const BarGraphDesktop = (item) => {
                         // plugins={[ChartDataLabels]}
                         data={data}
                         height={500}
+                        width={400}
 
                         options={options} />
                 </div>

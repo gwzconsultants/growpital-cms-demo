@@ -69,6 +69,7 @@ const SuccessSlider = styled(Slider)(({ theme }) => ({
 
 const RangeProgressBar = () => {
   const [value, setValue] = useState(0);
+ 
   
 
   
@@ -118,9 +119,8 @@ const RangeProgressBar = () => {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
- 
+    
   };
-
 
 
 
@@ -215,6 +215,8 @@ const RangeProgressBar = () => {
        fdtax={scalePro.fdtax}
        mftax={scalePro.mftax}
        mf={scalePro.mf}
+       bond={scalePro.bond}
+       bondtax={scalePro.bondtax}
        gp={scalePro.gp}
        
         />
@@ -229,7 +231,8 @@ const RangeProgressBar = () => {
        mftax={scalePro.mftax}
        mf={scalePro.mf}
        gp={scalePro.gp}
-       
+       bond={scalePro.bond}
+       bondtax={scalePro.bondtax}
         />
        
 

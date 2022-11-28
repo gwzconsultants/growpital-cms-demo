@@ -102,16 +102,19 @@ const BarGraphMobile = (item) => {
             datalabels: {
                 display: true,
                 color: "white",
-                anchor: "end",
+                anchor: "start",
                 align: "top",
-                offset: 27,
+                offset: 20,
+                padding:{
+                    x:45,
+                    y:45
+                },
                 z: 0,
                 labels: {
                     
                     title: {
-                        
                         font: {
-                            size: 20,
+                            size: 17,
                             weight: "bold"
                         }
                     },
@@ -143,7 +146,7 @@ const BarGraphMobile = (item) => {
 
         layout: {
             borderColor: "white",
-            padding:12+6
+            padding:25gi
         },
         
 

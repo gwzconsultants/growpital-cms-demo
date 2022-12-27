@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 
 export const fetchChoosegrowpital = createAsyncThunk("about/choose-growpital", async()=> {
-    return fetch(`http://3.110.118.82:1337/api/why-choose-growpitals?populate=*`).then((res)=> res.json())
+    return fetch(`/api/why-choose-growpitals?populate=*`).then((res)=> res.json())
 })
 
 

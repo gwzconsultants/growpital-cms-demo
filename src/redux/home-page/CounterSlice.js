@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchCounter = createAsyncThunk("fetchCounter", async()=>{
 
-    return fetch(`${process.env.REACT_APP_BASE_URL}/api/counters?populate=*`).then(
+    return fetch(`/api/counters?populate=*`).then(
     (res)=> res.json() )
     }) 
 

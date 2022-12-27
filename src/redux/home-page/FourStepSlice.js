@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchFourStep = createAsyncThunk("fetchFourStep", async()=>{
 
-    return fetch(`${process.env.REACT_APP_BASE_URL}/api/four-step-accordians`).then(
+    return fetch(`/api/four-step-accordians`).then(
     (res)=> res.json() )
     }) 
 

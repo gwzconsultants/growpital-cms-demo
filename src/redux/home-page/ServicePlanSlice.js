@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchServicePlan = createAsyncThunk("fetchServicePlan", async()=>{
 
-    return fetch(`${process.env.REACT_APP_BASE_URL}/api/service-plans?sort=[id]&&populate=*`).then(
+    return fetch(`/api/service-plans?sort=[id]&&populate=*`).then(
     (res)=> res.json() )
     }) 
 

@@ -7,7 +7,7 @@ export const fetchFaqsCategory = createAsyncThunk("faqs/fetchFaqsCategory", asyn
 });
 export const fetchFaqsAccordian = createAsyncThunk("faqs/fetchFaqsAccordian", async()=>{
 
-    return fetch(`${process.env.REACT_APP_BASE_URL}/api/faqs-accordians?populate=*&&sort=[id]`).then(
+    return fetch(`/api/faqs-accordians?populate=*&&sort=[id]`).then(
     (res)=> res.json() )
     
 });

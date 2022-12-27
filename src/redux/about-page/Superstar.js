@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 
 export const fetchSuperstar = createAsyncThunk("about/teem", async()=> {
-    return fetch(`http://3.110.118.82:1337/api/co-founders?sort=[id]&&populate=*`).then((res)=> res.json())
+    return fetch(`/api/co-founders?sort=[id]&&populate=*`).then((res)=> res.json())
 })
 
 

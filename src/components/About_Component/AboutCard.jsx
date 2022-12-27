@@ -98,7 +98,7 @@ console.log(cards);
                                                 {item.title}
                                             </Card.Title>
 
-                                            <Card.Text className="fw-300 fs-14 text-white ">{item. description}</Card.Text>
+                                            <Card.Text className="fw-300 fs-14 text-white ">{item.description}</Card.Text>
                                         </div>
                                     </Card.Body>
                                 </Card>

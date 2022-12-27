@@ -10,7 +10,7 @@ import ScrollToTop from './hooks/AfterNav';
 import { useEffect } from 'react';
 import AOS from "aos"
 import "swiper/css/bundle"
-import  { ScrollHandler } from './hooks/ScrollHandlerID';
+// import  { ScrollHandler } from './hooks/ScrollHandlerID';
 import Blog from './pages/Blog';
 import BlogDetails from './components/Blog_Component/BlogDetails';
 

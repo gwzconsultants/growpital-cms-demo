@@ -101,11 +101,11 @@ const CardCounter = (props) => {
                 <Card.Title className="fw-700 display-5 text-main-green mb-0">
 
                   <CountUp end={Item.value} duration={2} enableScrollSpy prefix={Item.before} suffix={Item.after} scrollSpyOnce={true}  >
-                    {({ countUpRef, start }) => (
+                    {/* {({ countUpRef, start }) => (
                       <ReactVisibilitySensor onChange={start} >
                         <span ref={countUpRef} />
                       </ReactVisibilitySensor>
-                    )}
+                    )} */}
                   </CountUp>
                 </Card.Title>
                 <Card.Text className="fw-500 fs-14 text-white text-uppercase">{Item.units}</Card.Text>

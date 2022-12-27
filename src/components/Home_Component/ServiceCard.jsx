@@ -1,16 +1,73 @@
 import React from 'react'
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { Button, Card, Col, Row, } from 'react-bootstrap'
+import { useDispatch, useSelector } from 'react-redux';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
-import { locking, payoutIcon, timerglass } from '../assets/img/contactimg'
-import { service } from '../data/ServicePlanData'
+import { locking, payoutIcon, timerglass } from '../../assets/img/contactimg'
+// import { service } from '../data/ServicePlanData'
+import { fetchServicePlan } from '../../redux/home-page/ServicePlanSlice';
 
 
 const ServiceCard = () => {
-    return (
+
+    const { loading, plans, error } = useSelector((state) => ({ ...state.Servieceplan }))
+  const [modifiedService, setModifiedService] = useState([])
+ 
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(fetchServicePlan())
+  }, [dispatch])
+
+
+  useEffect(() => {
+  if (plans) {
+      const newPlans = plans.map((items) => {
+        const {  PlanName,amount,units,roi,payout} = items.attributes;
+     const{url} = items.attributes.planImg.data.attributes; 
+
+        const { id } = items
+
+
+        return {
+            PlanName,amount,units,roi,payout,url ,
+          id
+        }
+
+
+
+
+
+
+      })
+      //  const data = item.attributes.faqs_accordians.data;
+      setModifiedService(newPlans)
+    } else { setModifiedService([]) }}
+
+
+  , [plans]);
+
+
+
+  if (loading) {
+    return (<h3>Loading...</h3>)
+  }
+  if (!plans) {
+
+    <h2>network are slow</h2>
+
+
+  }
+
+  if (error) {
+    return (<p>{error.massage}</p>)
+  }
+  return (
 
         <>
 
@@ -19,7 +76,7 @@ const ServiceCard = () => {
             {/* desktop mode view */}
             <Col md={9} className='Service-Card d-none d-xl-block '>
                 <Row className="d-flex justify-content-center  align-items-center   ">
-                    {service.map((item) => (
+                    {modifiedService.map((item) => (
 
                         <Col lg={6} className="d-flex justify-content-center  align-items-center  mb-5 " key={item.id} data-aos="fade-up">
                             <Card
@@ -30,13 +87,13 @@ const ServiceCard = () => {
                             >
                                 <Card.Header className='d-inline-flex align-items-center py-3 fw-bold fs-4 '>
                                     <p className="colan-icon text-center d-inline-block mb-0 d-flex justify-content-center align-items-center me-4 p-2">
-                                        <img src={item.img} alt="" className="img-fluid" style={{ width: "1rem" }} />
+                                        <img src={`${process.env.REACT_APP_BASE_URL}${item.url}`} alt="" className="img-fluid" style={{ width: "1rem" }} />
                                     </p>
-                                    {item.title}
+                                    {item.PlanName}
                                 </Card.Header>
                                 <Card.Header className='d-flex align-items-center justify-content-between py-3'>
                                     <div>
-                                        <Card.Title className='text-main-green'>₹ {item.amout}/unit </Card.Title>
+                                        <Card.Title className='text-main-green'>₹ {item.amount}/unit </Card.Title>
                                         <Card.Text>
                                             Investment
                                             {/* <OverlayTrigger
@@ -48,7 +105,7 @@ const ServiceCard = () => {
                                         </Card.Text>
                                     </div>
                                     <div>
-                                        <Card.Title className='text-main-green'>{item.RoiValue}% </Card.Title>
+                                        <Card.Title className='text-main-green'>{item.roi}% </Card.Title>
                                         <Card.Text>
                                             ROI
                                         </Card.Text>
@@ -177,7 +234,7 @@ const ServiceCard = () => {
             >
                 <Col md={12} className=''>
                     <Row className="d-flex justify-content-center  align-items-center   ">
-                        {service.map((item) => (
+                        {modifiedService.map((item) => (
                             <SwiperSlide key={item.id} className="mb-5">
                                 <Col md={12} className="d-flex justify-content-center  align-items-center   "  >
                                     <Card
@@ -188,9 +245,9 @@ const ServiceCard = () => {
                                     >
                                         <Card.Header className='d-inline-flex align-items-center py-3 fw-bold fs-5'>
                                             <p className="colan-icon text-center d-inline-block mb-0 d-flex justify-content-center align-items-center me-4 p-2">
-                                                <img src={item.img} alt="" className="img-fluid" />
+                                                {/* <img src={`http://localhost:1337${item.url}`} alt="" className="img-fluid" /> */}
                                             </p>
-                                            {item.title}
+                                            {item.PlanName}
                                         </Card.Header>
                                         <Card.Header className='d-flex align-items-center justify-content-between py-3'>
                                             <div>

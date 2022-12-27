@@ -2,10 +2,11 @@ import React from 'react'
 import {  Col, Container, Row } from 'react-bootstrap'
 // import { IconContext } from 'react-icons';
 // import { BsSearch } from "react-icons/bs";
-import FinanceAccordian  from './FinanceAccordian';
-import PostInvestmentAccordian from "./PostInvestmentAccordian";
+// import FinanceAccordian  from './FinanceAccordian';
+// import PostInvestmentAccordian from "./PostInvestmentAccordian";
 
-import FaqsAccordian from './FaqsAccordian';
+// import FaqsAccordian from './FaqsAccordian';
+import FaqsAccordianAPI from './FaqsAccordianAPI';
 const FaqsPage = () => {
     return (
         <>
@@ -45,20 +46,20 @@ const FaqsPage = () => {
 
                 </Container>
             </section>
-
             <section className='mt-4 mb-3 py-3'>
                 <Container className='text-white'>
                     <Row>
-                        <Col data-aos="fade-up">
+                        {/* <Col data-aos="fade-up">
                         <div className='text-center mx-auto mb-3'>
-                            <p className='fw-500 fs-32 mb-3 py-3'>GENERAL QUESTIONS</p>
+                        <p className='fw-500 fs-32 mb-3 py-3'>GENERAL QUESTIONS</p>
                         </div>
                         <FaqsAccordian />
-                        </Col>
+                    </Col> */}
+                    <FaqsAccordianAPI />
                     </Row>
                 </Container>
             </section>
-            <section className='mt-5 mb-3 py-0'>
+            {/* <section className='mt-5 mb-3 py-0'>
                 <Container className='text-white'>
                     <Row>
                         <Col data-aos="fade-up">
@@ -83,7 +84,7 @@ const FaqsPage = () => {
                         </Col>
                     </Row>
                 </Container>
-            </section>
+            </section> */}
         </>
     )
 }

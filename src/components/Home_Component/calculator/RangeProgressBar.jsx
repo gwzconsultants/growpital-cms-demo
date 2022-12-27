@@ -4,8 +4,8 @@ import React from "react";
 import { useState } from "react";
 import { Card, Col, Row,} from "react-bootstrap";
 import { alpha, styled } from '@mui/material/styles';
-import {  marks } from "../data/InventData";
-import { locking, timerglass } from "../assets/img/contactimg";
+import {  marks } from "../../../data/InventData";
+import { locking, timerglass } from "../../../assets/img/contactimg";
 
 import BarGraphDesktop from "./BarGraphDesktop";
 import BarGraphMobile from "./BarGraphMobile";

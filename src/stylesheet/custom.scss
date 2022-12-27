@@ -305,6 +305,7 @@
 }
 
 .faq-accordian {
+  
   .home-accordian {
     .accordion-item {
       .accordion-body {
@@ -486,7 +487,18 @@ footer {
     font-weight: 400;
     font-size: 18px;
   }
+  .form-control:focus{
+    box-shadow: none;
+  }
 
+  .form-check-input{
+    background-color: transparent !important;
+    border: 1px solid var(--color-main-gold);
+  }
+  .form-check-input:focus{
+    box-shadow: none;
+  }
+  
 }
 
 
@@ -498,50 +510,51 @@ footer {
     box-shadow: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-
+    
   }
 
   .searchbtn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border: 1px solid #ced4da;
-
+    
   }
-
+  
   .searchbtn:hover {
     border: 1px solid #ced4da
   }
 }
 
 // for faqs
-
-.faqs-accordian {
-  .accordion-item {
-    border: 1px solid var(--color-charade);
-    margin-bottom: 0;
-    padding: 3px;
-    border-radius: 6px;
-
-    &:first-child,
-    &:last-child {
-      border-top: 1px solid;
-      border-bottom: 1px solid;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      box-shadow: 1.22411px 1.22411px 6.12057px rgba(32, 34, 43, 0.2),
-        -1.22411px -1.22411px 6.12057px rgba(32, 34, 43, 0.2),
-        1.22411px -1.22411px 6.12057px rgba(32, 34, 43, 0.9),
-        -1.22411px 1.22411px 6.12057px rgba(32, 34, 43, 0.9);
-      border-radius: 7.34468px;
-    }
-
-    .accordion-header {
-      border: 0;
-
-      .accordion-button,
+// .faqs-col{
+  
+  .faqs-accordian {
+    .accordion-item {
+      border: 1px solid var(--color-charade);
+      margin-bottom: 0;
+  padding: 3px;
+  border-radius: 6px;
+  
+  &:first-child,
+  &:last-child {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+  
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 1.22411px 1.22411px 6.12057px rgba(32, 34, 43, 0.2),
+    -1.22411px -1.22411px 6.12057px rgba(32, 34, 43, 0.2),
+    1.22411px -1.22411px 6.12057px rgba(32, 34, 43, 0.9),
+    -1.22411px 1.22411px 6.12057px rgba(32, 34, 43, 0.9);
+    border-radius: 7.34468px;
+  }
+  
+  .accordion-header {
+    border: 0;
+    
+    .accordion-button,
       .accordion-button:focus {
         border: 1px solid transparent;
         outline: none;
@@ -549,7 +562,7 @@ footer {
         padding: 1rem 1rem;
         background: rgb(38, 44, 48);
         background: linear-gradient(90deg,
-            rgba(38, 44, 48, 1) 0%,
+        rgba(38, 44, 48, 1) 0%,
             rgba(30, 34, 38, 1) 100%);
         font-size: 22px;
         font-weight: 600;
@@ -563,7 +576,7 @@ footer {
         &::after {
           // transform: rotateX(180deg);\
           background-image: url(../assets/img/down-arrow-yelow.png);
-
+          
           height: 30px;
           width: 30px;
           background-color: var(--color-woodsmoke);
@@ -573,14 +586,14 @@ footer {
           background-size: 15px;
         }
       }
-
+      
       .accordion-button.collapsed {
         padding: 1rem 1rem;
         background: rgb(38, 44, 48);
         background: linear-gradient(90deg,
-            rgba(38, 44, 48, 1) 0%,
+        rgba(38, 44, 48, 1) 0%,
             rgba(30, 34, 38, 1) 100%);
-        font-size: 22px;
+            font-size: 22px;
         font-weight: 600;
         border: 1px solid var(--color-charade);
         border-radius: 6px;
@@ -592,7 +605,7 @@ footer {
       }
 
       @media (max-width: 576px) {
-
+        
         .accordion-button,
         .accordion-button:focus,
         .accordion-button.collapsed {
@@ -602,6 +615,7 @@ footer {
     }
 
     .accordion-body {
+  
       color: var(--color-white);
       font-size: 15px;
       font-weight: 300;
@@ -624,7 +638,7 @@ footer {
     }
   }
 }
-
+// }
 
 // signup btn
 .signup-page {

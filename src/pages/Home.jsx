@@ -6,12 +6,12 @@ import { BsArrowRight, BsFillCircleFill, BsCheck2Square, BsFillStarFill } from "
 // import mobile from "../assets/img/mobile.png";
 import zero from "../assets/img/zero.png";
 import CardDark from "../components/CardDark";
-import CardCounter from "../components/CardCounter";
-import Accordian from "../components/Accordian";
+import CardCounter from "../components/Home_Component/CardCounter";
+import Accordian from "../components/Home_Component/Accordian";
 // import Superstars from "../components/Superstars";
 import ButtonStar from "../components/ButtonStar";
 import TestiSlider from "../components/TestiSlider";
-import RangeProgressBar from "../components/RangeProgressBar";
+import RangeProgressBar from "../components/Home_Component/calculator/RangeProgressBar";
 // import TotalInvestment from "../components/TotalInvestment";
 import HeroIcon1 from "../assets/img/2.png";
 import HeroIcon2 from "../assets/img/1.png";
@@ -26,18 +26,25 @@ import telegram from "../assets/img/kisspng-telegram-logo-computer-icons-scalabl
 
 // import Icon1 from "../assets/img/dark-card-icon.png";
 import SingupBtn from "../layout/SingupBtn";
-import AccordingQue from "../components/AccordingQue";
+import AccordingQue from "../components/Home_Component/AccordingQue";
 import { callImg, homepage, chatIcon } from "../assets/img/contactimg";
 import { TopIcon1, TopIcon2 } from "../assets/img/contactimg";
 import { Typewriter } from "react-simple-typewriter";
-import SuperStars2 from "../components/SuperStars2";
-import ServiceCard from "../components/ServiceCard";
+import SuperStars from "../components/Home_Component/SuperStarsHome";
+import ServiceCard from "../components/Home_Component/ServiceCard";
 
 
 
 
 const Home = () => {
-
+  (function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:3275465,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 
   return (
     <>
@@ -452,7 +459,7 @@ const Home = () => {
           </Row>
 
           {/* <Superstars /> */}
-          <SuperStars2 />
+          <SuperStars />
         </Container>
       </section>
 

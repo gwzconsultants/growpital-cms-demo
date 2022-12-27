@@ -1,5 +1,5 @@
 import React from 'react'
-import FaqsPage from '../components/FaqsPage'
+import FaqsPage from '../components/Faqs_Component/FaqsPage'
 import Footer from '../layout/Footer'
 import Header from '../layout/Header'
 

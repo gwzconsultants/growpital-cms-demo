@@ -121,6 +121,9 @@ const TestiSlider = () => {
         "Investing in farms is something I have wished for since a long time. I have started investing with Growpital since last 6 months and have been really impressed with the customer support and the high returns. Great job!",
     },
   ];
+
+
+  
   return (
     <div>
       <div className="testislider">

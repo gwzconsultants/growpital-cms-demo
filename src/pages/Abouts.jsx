@@ -3,9 +3,9 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { BsFillCircleFill } from 'react-icons/bs'
 import { about_gif, about_section } from '../assets/img/contactimg'
 // import { faqsimg1, faqspage } from '../assets/img/contactimg'
-import AboutPage from '../components/AboutPage'
-import LogoSlider from '../components/LogoSlider'
-import SuperstarsAbout from '../components/SuperStartAbout'
+import AboutCard from '../components/About_Component/AboutCard'
+import SuperstarsAbout from '../components/About_Component/SuperStartAbout'
+import LogoSlider from '../components/About_Component/LogoSlider'
 import Footer from '../layout/Footer'
 import Header from '../layout/Header'
 // import contactImg from "../assets/img/Rectangle 71.jpg"
@@ -86,7 +86,7 @@ const Abouts = () => {
               </Col>
             </Row>
             <Row className="" >
-              <AboutPage />
+              <AboutCard />
             </Row>
           </Container>
         </section>

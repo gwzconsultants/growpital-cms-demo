@@ -1,9 +1,9 @@
 import React from 'react'
 import {  Col, Container, Row } from 'react-bootstrap'
-import { blogpage2 } from '../../assets/img/blog_imgs'
+import { blogpage2 } from '../../../assets/img/blog_imgs'
 // import blog1 from "../../assets/img/blogLarge.jpg"
-import Header from '../../layout/Header'
-import Footer from '../../layout/Footer'
+import Header from '../../../layout/Header'
+import Footer from '../../../layout/Footer'
 
 const BlogDetailsTwo = () => {
     return (

@@ -6,7 +6,7 @@ import { Col, Card, Image } from "react-bootstrap";
 
 import CountUp  from 'react-countup';
 import { useDispatch, useSelector } from "react-redux";
-import ReactVisibilitySensor from "react-visibility-sensor";
+// import ReactVisibilitySensor from "react-visibility-sensor";
 // import { CropHarvestedImg, Returns, TotalInvestments } from "../../assets/img/contactimg";
 import { fetchCounter } from "../../redux/home-page/CounterSlice";
 

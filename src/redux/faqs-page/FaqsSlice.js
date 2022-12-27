@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchFaqsCategory = createAsyncThunk("faqs/fetchFaqsCategory", async()=>{
-    return fetch(`${process.env.REACT_APP_BASE_URL}/api/faqs-categories?sort=[id]&&populate=*`).then(
+    return fetch(`/api/faqs-categories?sort=[id]&&populate=*`).then(
     (res)=> res.json())
     
 });

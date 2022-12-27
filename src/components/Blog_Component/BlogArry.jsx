@@ -77,7 +77,7 @@ const BlogArry = (props) => {
                     <CardGroup  >
                       <Card className='bg-transparent border-0 text-white cover-img ' >
                         <Card.Body >
-                          <Card.Img variant="top" src={`${process.env.REACT_APP_BASE_URL}${item.url}`} className="rounded-3 " style={{ maxHeight: "18rem" }} />
+                          <Card.Img variant="top" src={`${item.url}`} className="rounded-3 " style={{ maxHeight: "18rem" }} />
                           <Row className='pt-2 w-100'>
                             <Col className='text-capitalize'><Card.Text><span>{item.date}</span> </Card.Text></Col>
                             <Col className='text-end'><Card.Text>{item.category_name}</Card.Text></Col>

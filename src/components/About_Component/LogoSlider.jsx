@@ -5,7 +5,7 @@ import { Image } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 // import { Col } from 'react-bootstrap';
 import Slider from 'react-slick';
-import { logo1, logo2, logo3, logo4, logo5, logo6 } from "../../assets/img/contactimg";
+// import { logo1, logo2, logo3, logo4, logo5, logo6 } from "../../assets/img/contactimg";
 import { fetchPatnerLogo } from '../../redux/about-page/PatnerLogo';
 
 

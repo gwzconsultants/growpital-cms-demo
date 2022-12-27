@@ -1,25 +1,25 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+// import { useEffect } from "react";
+// import { useLocation } from "react-router-dom";
 
-export const ScrollHandler = ({ children}) => {
+// export const ScrollHandler = ({ children}) => {
 
-    const { pathname, hash } = useLocation()
+//     const { pathname, hash } = useLocation()
 
-    const handleScroll = () => {
+//     const handleScroll = () => {
 
-        const element = document.getElementById(hash.replace("#", ""));
+//         const element = document.getElementById(hash.replace("#", ""));
 
-        setTimeout(() => {
-            window.scrollTo({
-                behavior: element ? "smooth" : "auto",
-                top: element ? element.offsetTop : 0
-            });
-        }, 100);
-    };
+//         setTimeout(() => {
+//             window.scrollTo({
+//                 behavior: element ? "smooth" : "auto",
+//                 top: element ? element.offsetTop : 0
+//             });
+//         }, 100);
+//     };
 
-    useEffect(() => {
-        handleScroll()
-    }, [pathname, hash])
+//     useEffect(() => {
+//         handleScroll()
+//     }, [pathname, hash])
 
-    return children
-}
+//     return children
+// }

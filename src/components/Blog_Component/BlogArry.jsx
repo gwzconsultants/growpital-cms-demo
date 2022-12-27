@@ -77,7 +77,7 @@ const BlogArry = (props) => {
                     <CardGroup  >
                       <Card className='bg-transparent border-0 text-white cover-img ' >
                         <Card.Body >
-                          <Card.Img variant="top" src={item.url} className="rounded-3 " style={{ maxHeight: "18rem" }} />
+                          <Card.Img variant="top" src={`/${item.url}` }className="rounded-3 " style={{ maxHeight: "18rem" }} />
                           <Row className='pt-2 w-100'>
                             <Col className='text-capitalize'><Card.Text><span>{item.date}</span> </Card.Text></Col>
                             <Col className='text-end'><Card.Text>{item.category_name}</Card.Text></Col>
@@ -104,7 +104,7 @@ const BlogArry = (props) => {
                       <Row>
                         <Col md={6} data-aos="fade-up" data-aos-once="true" >
                           <div>
-                            <img src={item.url} alt="blog-img" className='img-fluid rounded-3' />
+                            <img src={`/${item.url}`} alt="blog-img" className='img-fluid rounded-3' />
                           </div>
                         </Col>
                         <Col md={6} data-aos="fade-up">

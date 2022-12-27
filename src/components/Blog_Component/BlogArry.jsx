@@ -104,7 +104,7 @@ const BlogArry = (props) => {
                       <Row>
                         <Col md={6} data-aos="fade-up" data-aos-once="true" >
                           <div>
-                            <img src={`/${item.url}`} alt="blog-img" className='img-fluid rounded-3' />
+                            <img src={`/api/${item.url}`} alt="blog-img" className='img-fluid rounded-3' />
                           </div>
                         </Col>
                         <Col md={6} data-aos="fade-up">

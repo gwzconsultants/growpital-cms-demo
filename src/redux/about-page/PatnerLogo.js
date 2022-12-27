@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 
 export const fetchPatnerLogo = createAsyncThunk("about/patner-logo", async()=> {
-    return fetch(`${process.env.REACT_APP_BASE_URL}/api/portfolio-patner-logos?populate=*`).then((res)=> res.json())
+    return fetch(`http://3.110.118.82:1337/api/portfolio-patner-logos?populate=*`).then((res)=> res.json())
 })
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { BsFillCircleFill } from 'react-icons/bs'
-import { about_gif, about_section } from '../assets/img/contactimg'
+import { about_gif } from '../assets/img/contactimg'
 // import { faqsimg1, faqspage } from '../assets/img/contactimg'
 import AboutCard from '../components/About_Component/AboutCard'
 import SuperstarsAbout from '../components/About_Component/SuperStartAbout'

@@ -5,8 +5,9 @@ import { Image } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 // import { Col } from 'react-bootstrap';
 import Slider from 'react-slick';
+import { fetchPatnerLogo } from '../../redux/about-page/AboutSlice';
 // import { logo1, logo2, logo3, logo4, logo5, logo6 } from "../../assets/img/contactimg";
-import { fetchPatnerLogo } from '../../redux/about-page/PatnerLogo';
+
 
 
 const LogoSlider = () => {
@@ -55,7 +56,7 @@ const LogoSlider = () => {
     };
 
 
-    const { loading, Logo, error } = useSelector((state) => ({ ...state.patnerLogo }))
+    const { loading, Logo, error } = useSelector((state) => ({ ...state.aboutUsPage }))
     const [modifiedLogo, setModifiedLogo] = useState([])
     const dispatch = useDispatch()
 

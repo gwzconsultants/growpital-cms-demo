@@ -8,6 +8,8 @@ import SuperstarsAbout from '../components/About_Component/SuperStartAbout'
 import LogoSlider from '../components/About_Component/LogoSlider'
 import Footer from '../layout/Footer'
 import Header from '../layout/Header'
+import AboutSecondSection from '../components/About_Component/AboutSecondSection'
+import AboutHowItWork from '../components/About_Component/AboutHowItWork'
 // import contactImg from "../assets/img/Rectangle 71.jpg"
 // import { About_us_img, tractor } from "../assets/img/contactimg";
 const Abouts = () => {
@@ -55,39 +57,13 @@ const Abouts = () => {
 
         <section className='mb-md-5 mb-3 ' id="how_it_works">
           <Container className='text-white'>
-            <Row className='d-flex align-items-center'>
-
-              <Col md={12} className="pe-5 mb-3  " >
-                <p className="text-uppercase fs-18 fs-fm-16 fw-500 text-main-green  text-center pb-1 mb-1 mt-5" data-aos="fade-up" >
-                  <BsFillCircleFill size={8} className="me-1" /> Providing tax free passing earning opportunities
-                </p>
-                <p className='fw-bold fs-48 text-center content-text pb-3 mt-0 '  data-aos="fade-up">What do we do?</p>
-                <p className='text-center d-flex align-items-center justify-content-center ms-1' data-aos="fade-up">We open up tax free passive earning avenues for you while increasing income and productivity of agriculture sector.
-                  <br></br>Investments in Alternative asset classes was previously reserved only for institutions and the ultra-wealthy. Sub-segmenting it to Agriculture, it is pretty niche and popular as an investment class. We want to provide opportunity to own fraction of Agriculture asset classes and participate in passive income generation for yourself that were typically off-limits.
-                  <br></br>Think of us a fund, but for agri projects where the allocation is done on the basis of parameters which fits to agriculture like crop tenure, harvest cycles, insurance, Government MSP, crop segment, crop type etc.
-                </p>
-              </Col>
-              {/* <Col md={6} className="ps-md-5 text-center text-md-end py-5 px-5">
-                <img src={faqsimg1} alt="" className='img-fluid px-5' />
-              </Col> */}
-            </Row>
+           <AboutSecondSection />
           </Container>
         </section>
         <section className='mb-md-3 mb-3'>
           <Container className='text-white'>
-            <Row className="d-flex justify-content-center align-items-center">
-              <Col className="text-center mb-4" >
-                <p className="text-uppercase fs-18 fs-fm-16 fw-500 text-main-green pb-1 mb-1" data-aos="fade-up">
-                  <BsFillCircleFill size={8} className="me-1" /> Invest with us, grow your capital
-                </p>
-                <p className="text-white fw-600 display-6 mb-3 mb-md-4 content-text" data-aos="fade-up">
-                  Why choose Growpital?
-                </p>
-              </Col>
-            </Row>
-            <Row className="" >
+          
               <AboutCard />
-            </Row>
           </Container>
         </section>
         <section className="pt-5 mb-md-4 mb-3" id="team">
@@ -110,22 +86,7 @@ const Abouts = () => {
         </section>
         <section className=" mb-md-5 mb-3">
           <Container>
-            <Row className="d-flex justify-content-center align-items-center">
-              <Col className="text-center">
-                <p className="text-uppercase fs-18 fw-500 fs-fm-16 text-main-green pb-1 mb-1" data-aos="fade-up">
-                  <BsFillCircleFill size={8} className="me-1" /> Want to know how it works?
-                </p>
-                <h2 className="text-white fw-600 display-6 mb-0 mb-md-4 content-text" data-aos="fade-up">
-                Know how your capital helps you make money {" "}
-                  {/* <span className="text-main-green">Growpital</span> */}
-                </h2>
-              </Col>
-            </Row>
-            <Row className="d-flex justify-content-center align-items-start pt-3 pt-md-0">
-              <Col data-aos="fade-up">
-                <img src={about_section} alt="" className='img-fluid w-100' />
-              </Col>
-            </Row>
+           <AboutHowItWork />
           </Container>
         </section>
         <section className="bg-charade py-5 mb-md-5 mb-3" >

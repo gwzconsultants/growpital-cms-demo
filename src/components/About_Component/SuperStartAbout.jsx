@@ -7,14 +7,14 @@ import { Autoplay, EffectCards } from 'swiper';
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import { useEffect } from "react";
-import { fetchSuperstar } from "../../redux/about-page/Superstar";
+import { fetchSuperstar } from "../../redux/about-page/AboutSlice";
 
 
 
 const SuperstarsAbout = (props) => {
  
 
-  const { loading,teem , error } = useSelector((state) => ({ ...state.Superstar }))
+  const { loading,teem , error } = useSelector((state) => ({ ...state.aboutUsPage}))
   const [modifiedTeam, setModifiedTeam] = useState([])
   const dispatch = useDispatch()
 
@@ -63,7 +63,7 @@ const SuperstarsAbout = (props) => {
      {/* desktop view mode */}
      <Row>
         {modifiedTeam.map((Items) => (
-          <Col md={6}  key={Items.id}  className="d-none d-lg-block" data-aos="fade-up">
+          <Col md={6}    className="d-none d-lg-block" data-aos="fade-up" key={Items.id}>
             
             <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
               <Card.Body className="m-1 bg-dark-gradient rounded p-3">
@@ -72,7 +72,7 @@ const SuperstarsAbout = (props) => {
                     
                   <Col xs={12} md={4}>
                   
-                    <Image  src={`${process.env.REACT_APP_BASE_URL}${Items.url}`} className="img-fluid w-100 mb-md-0 mb-3" alt="profile pic" />
+                   <Image  src={`${process.env.REACT_APP_BASE_URL}${Items.url}`} className="img-fluid w-100 mb-md-0 mb-3" alt="profile pic" />
                     
                   </Col>
                   

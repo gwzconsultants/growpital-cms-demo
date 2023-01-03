@@ -1,12 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 import BlogSlice from "../redux/blog-page/BlogSlice";
 import FaqsSlice from "../redux/faqs-page/FaqsSlice";
-import Superstar from "../redux/about-page/Superstar";
-import patnerLogoSlice from "../redux/about-page/PatnerLogo";
-import ServicePlanSlice from "../redux/home-page/ServicePlanSlice";
-import CounterSlice from "../redux/home-page/CounterSlice";
-import ChooseGropitalSlice from "../redux/about-page/ChooseGropital";
-import FourStepSlice from "../redux/home-page/FourStepSlice";
+import AboutSlice from "../redux/about-page/AboutSlice";
+import contactUsSlice from "../redux/contact-page/contactUsSlice";
+import HomePageSlice from "../redux/home-page/HomePageSlice";
 
 
 
@@ -15,11 +12,9 @@ export default configureStore({
     reducer :{
       blog : BlogSlice,
       faqs : FaqsSlice,
-      Superstar: Superstar,
-      Servieceplan: ServicePlanSlice,
-      patnerLogo: patnerLogoSlice,
-      counterUp:CounterSlice ,
-      choiceCard : ChooseGropitalSlice,
-      fourStep : FourStepSlice
-    }
+      home : HomePageSlice,
+      aboutUsPage : AboutSlice,
+      contactUs:contactUsSlice
+
+    } 
 })

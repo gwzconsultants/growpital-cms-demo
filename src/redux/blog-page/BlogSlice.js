@@ -1,13 +1,13 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchBlog = createAsyncThunk("blog/fetchBlog", async()=>{
-    return fetch(`/api/blogs?sort=[date]&&populate=*`).then(
+    return fetch(`${process.env.REACT_APP_BASE_URL}/api/blog-details?sort=[date]&&populate=*`).then(
     (res)=> res.json()
     )
 });
 export const fetchBlogSearch= createAsyncThunk("blog/fetchBlog/search", async({value})=>{
 console.log({value});
-    return fetch(`/api/blogs?sort=[date]&&populate=*&&filters[$or][0][title][$contains]=${value}&filters[$or][1][description][$contains]=${value}&filters[$or][2][blog_category][category_name][$contains]=${value}`).then(
+    return fetch(`${process.env.REACT_APP_BASE_URL}/api/blog-details?sort=[date]&&populate=*&&filters[$or][0][title][$contains]=${value}&filters[$or][1][description][$contains]=${value}&filters[$or][2][blog_category][category_name][$contains]=${value}`).then(
     (res)=> res.json()
     );
 });
@@ -16,7 +16,7 @@ console.log({value});
 
 
 export const fetchBlogDetails = createAsyncThunk("blog/fetchBlogDetails", async({slug})=>{
-    return fetch(`/api/blog-details?populate=*&&filters[slug][$eq]=${slug}`).then(
+    return fetch(`${process.env.REACT_APP_BASE_URL}/api/blog-details?populate=*&&filters[slug][$eq]=${slug}`).then(
     (res)=> res.json()
     );
 });

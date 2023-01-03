@@ -6,7 +6,8 @@ import { Autoplay, EffectCards } from 'swiper';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { fetchSuperstar } from '../../redux/about-page/Superstar';
+import { fetchSuperstarHome } from '../../../redux/home-page/HomePageSlice';
+
 
 const SuperStars = () => {
 
@@ -88,12 +89,12 @@ const SuperStars = () => {
   //   },
   // ];
 
-  const { loading,teem , error } = useSelector((state) => ({ ...state.Superstar }))
+  const { loading,teem , error } = useSelector((state) => ({ ...state.home }))
   const [modifiedBlog, setModifiedBlogs] = useState([])
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(fetchSuperstar())
+    dispatch(fetchSuperstarHome())
   }, [dispatch])
   
   

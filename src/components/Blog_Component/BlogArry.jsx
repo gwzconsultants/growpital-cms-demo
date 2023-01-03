@@ -24,8 +24,8 @@ const BlogArry = (props) => {
   useEffect(() => {
     if (blogs) {
       const newBlogs = blogs.slice(0).reverse().map(item => {
-        const { title, date, description, slug, } = item.attributes;
-        const { url } = item.attributes.image.data.attributes;
+        const { title, date, description, slug,short_content } = item.attributes;
+        const { url } = item.attributes.image.data.attributes.formats.small;
         const { category_name } = item.attributes.blog_category.data.attributes
         let NewDate = moment(date).format("MMM DD,YYYY")
 
@@ -35,7 +35,8 @@ const BlogArry = (props) => {
           date: NewDate,
           description,
           slug,
-          url
+          url,
+          short_content
 
         }
       })
@@ -77,7 +78,7 @@ const BlogArry = (props) => {
                     <CardGroup  >
                       <Card className='bg-transparent border-0 text-white cover-img ' >
                         <Card.Body >
-                          <Card.Img variant="top" src={`/${item.url}` }className="rounded-3 " style={{ maxHeight: "18rem" }} />
+                          <Card.Img  src={`${process.env.REACT_APP_BASE_URL}${item.url}`} className="rounded-3 w-0 " style={{ maxHeight: "18rem" ,width:"0"}} />
                           <Row className='pt-2 w-100'>
                             <Col className='text-capitalize'><Card.Text><span>{item.date}</span> </Card.Text></Col>
                             <Col className='text-end'><Card.Text>{item.category_name}</Card.Text></Col>
@@ -104,7 +105,8 @@ const BlogArry = (props) => {
                       <Row>
                         <Col md={6} data-aos="fade-up" data-aos-once="true" >
                           <div>
-                            <img src={`${item.url}`} alt="blog-img" className='img-fluid rounded-3' />
+                          <Card.Img  src={`${process.env.REACT_APP_BASE_URL}${item.url}`} className="rounded-3 " style={{ maxHeight: "18rem" }} />
+
                           </div>
                         </Col>
                         <Col md={6} data-aos="fade-up">
@@ -118,7 +120,7 @@ const BlogArry = (props) => {
                                 </Row>
                               <Card.Title className='py-2'>{item.name}</Card.Title>
                               <Card.Text>
-                                {item.description}
+                                {item.short_content}
 
                               </Card.Text>
                             </Card.Body>
@@ -138,7 +140,7 @@ const BlogArry = (props) => {
                     <CardGroup  >
                       <Card className='bg-transparent border-0 text-white cover-img ' >
                         <Card.Body >
-                          <Card.Img variant="top" src={`${process.env.REACT_APP_BASE_URL}${item.url}`} className="rounded-3 " style={{ maxHeight: "18rem" }} />
+                          <Card.Img  src={`${process.env.REACT_APP_BASE_URL}${item.url}`} className="rounded-3 w-0" style={{ maxHeight: "18rem" }} />
                           <Row className='pt-2'>
                             <Col className='text-capitalize'><Card.Text><span>{item.date}</span> </Card.Text></Col>
                             <Col className='text-end'><Card.Text>{item.category_name}</Card.Text></Col>

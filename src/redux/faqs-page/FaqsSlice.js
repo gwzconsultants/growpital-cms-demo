@@ -1,13 +1,13 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const fetchFaqsCategory = createAsyncThunk("faqs/fetchFaqsCategory", async()=>{
-    return fetch(`/api/faqs-categories?sort=[id]&&populate=*`).then(
+    return fetch(`${process.env.REACT_APP_BASE_URL}/api/faqs-categories?sort=[id]&&populate=*`).then(
     (res)=> res.json())
     
 });
 export const fetchFaqsAccordian = createAsyncThunk("faqs/fetchFaqsAccordian", async()=>{
 
-    return fetch(`/api/faqs-accordians?populate=*&&sort=[id]`).then(
+    return fetch(`${process.env.REACT_APP_BASE_URL}/api/faqs-accordians?populate=*&&sort=[id]`).then(
     (res)=> res.json() )
     
 });
@@ -36,7 +36,7 @@ const FaqsSlice = createSlice({
         },
         [fetchFaqsCategory.rejected]: (state,action) =>{
             state.laoding = false
-            state.category = action.payload
+            state.error = action.payload
         },
 
         [fetchFaqsAccordian.pending]: (state,action) =>{
@@ -48,7 +48,7 @@ const FaqsSlice = createSlice({
         },
         [fetchFaqsAccordian.rejected]: (state,action) =>{
             state.laoding = false
-            state.category = action.payload
+            state.error = action.payload
         },
     
     

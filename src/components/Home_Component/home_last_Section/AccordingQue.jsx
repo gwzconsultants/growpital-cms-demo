@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Accordion, Col, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchFaqsAccordian } from '../../redux/faqs-page/FaqsSlice';
+import { fetchHomeFaqsAccordian } from '../../../redux/home-page/HomePageSlice';
+
 
 const AccordingQue = (props) => {
     // const AccorianItems = [
@@ -33,7 +34,7 @@ const AccordingQue = (props) => {
 
 
         
-  const { loading ,error, faqsAccords } = useSelector((state) => ({ ...state.faqs }))
+  const { loading ,error, faqsAccords } = useSelector((state) => ({ ...state.home }))
   const [modifiedFaqs, setModifiedFaqs] = useState([])
 
  
@@ -43,8 +44,10 @@ const AccordingQue = (props) => {
 
   useEffect(() => {
 
-    dispatch(fetchFaqsAccordian())
+    dispatch(fetchHomeFaqsAccordian())
   }, [dispatch])
+
+  
 
   useEffect(() => {
     if (faqsAccords) {

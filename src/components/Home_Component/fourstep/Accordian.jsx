@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { Accordion, Carousel, Col, Row } from "react-bootstrap";
+import { BsFillCircleFill } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 // import { step1, step2, step3, step4 } from "../../assets/img/contactimg";
 import { fetchFourStepobj } from "../../../redux/home-page/HomePageSlice";
@@ -65,7 +66,7 @@ const Accordian = (props) => {
 
   useEffect(() => {
     if (accordianobj.length !== 0 || accordianobj.id > 0 ) {
-      const { accord_title1, accord_title2, accord_title3, accord_title4, details1, details2, details3, details4, index1, index2, index3, index4, } = accordianobj.attributes
+      const { section_title,section_subtitle,accord_title1, accord_title2, accord_title3, accord_title4, details1, details2, details3, details4, index1, index2, index3, index4, } = accordianobj.attributes
       const { url: image1 } = accordianobj.attributes.image1.data.attributes
       const { url: image2 } = accordianobj.attributes.image2.data.attributes
       const { url: image3 } = accordianobj.attributes.image3.data.attributes
@@ -73,7 +74,7 @@ const Accordian = (props) => {
 
       // console.log(image1);
       const newblogDetails = {
-        accord_title1, accord_title2, details1, index1, index2, details2, image1, image2, image3, image4, accord_title3, accord_title4, details3, details4, index3, index4,
+        section_title,section_subtitle,  accord_title1, accord_title2, details1, index1, index2, details2, image1, image2, image3, image4, accord_title3, accord_title4, details3, details4, index3, index4,
       };
       setModifiedAccoridan(newblogDetails);
     } else {
@@ -93,7 +94,7 @@ const Accordian = (props) => {
   if (!modifiedAccoridan) {
     return <h2>No Details</h2>;
   } else {
-    const { accord_title1, accord_title2, details1, index1, index2, details2, image1, image2, image3, image4, accord_title3, accord_title4, details3, details4, index3, index4, } = modifiedAccoridan;
+    const { accord_title1,section_title,section_subtitle, accord_title2, details1, index1, index2, details2, image1, image2, image3, image4, accord_title3, accord_title4, details3, details4, index3, index4, } = modifiedAccoridan;
 
     return (
 
@@ -101,6 +102,19 @@ const Accordian = (props) => {
         {loading ? (
           <h2>Loading...</h2>
         ) : (
+
+          <>
+          <Row className="d-flex justify-content-center align-items-center">
+            <Col className="text-center" data-aos="fade-up">
+              <p className="text-uppercase fs-18 fw-500 text-main-green" >
+                <BsFillCircleFill size={8} className="me-1" />{section_subtitle}
+              </p>
+              <h2 className="text-white fw-600 display-6 mb-3 mb-md-3"  dangerouslySetInnerHTML={{__html: modifiedAccoridan["section_title"]}}>
+               
+               
+              </h2>
+            </Col>
+          </Row>
           <div className="accordian-main">
             <Row className="  pt-5 mx-auto">
               <Col xs={12} md={12} lg={6} className="text-center text-lg-start mb-5 mb-lg-0  d-flex justify-content-center justify-content-lg-start align-items-center" >
@@ -202,7 +216,7 @@ const Accordian = (props) => {
             </Row>
 
           </div>
-
+</>
         )};
       </>)
   }

@@ -37,6 +37,7 @@ import HomeSecondSection from "../components/Home_Component/home-second-section/
 import CounterSection from "../components/Home_Component/counter_Section/CounterSection";
 import HaveQue from "../components/Home_Component/have que/HaveQue";
 import JoinTelegram from "../components/Home_Component/home_last_Section/JoinTelegram";
+import ServiceCardSection from "../components/Home_Component/service card/serviceCardSection";
 
 
 
@@ -78,18 +79,6 @@ const Home = () => {
 
       <section className="py-5">
         <Container>
-          <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center" data-aos="fade-up">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" >
-                <BsFillCircleFill size={8} className="me-1" /> HOW TO GET
-                STARTED?
-              </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-3" >
-                Start investing in{" "}
-                <span className="text-main-green">4 simple steps</span>
-              </h2>
-            </Col>
-          </Row>
           <Row className="d-flex  pt-3">
             <Col className="text-center text-md-end" data-aos="fade-up" >
               <Accordian Display_Sr_No="text-main-gold me-3" />
@@ -104,26 +93,14 @@ const Home = () => {
       </section>
       <section className="py-3" >
         <Container>
-          <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center" data-aos="fade-up">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" >
-                <BsFillCircleFill size={8} className="me-1" />WHICH PLAN WHOULD YOU LIKE TO INVEST IN ?
-              </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
-                Invest in our
-                <span className="text-main-green">   high return </span>
-                plans
-              </h2>
-            </Col>
+        <Row className="d-flex justify-content-center align-items-center">
+          <ServiceCardSection />
           </Row>
-          {/* <Row className=" pt-2 " > */}
           <Row className="d-flex justify-content-center px-md-5  align-items-center pt-2 " >
 
             <ServiceCard />
 
           </Row>
-
-
         </Container>
       </section>
 
@@ -160,35 +137,21 @@ const Home = () => {
 
       <section className="py-5 bg-charade">
         <Container>
-      <HaveQue />
+          <HaveQue />
         </Container>
       </section>
 
       <section className="py-md-5 ">
         <Container>
-          <Row className="d-flex justify-content-center align-items-center">
-            <Col className="text-center" data-aos="fade-up" data-aos-offset="500">
-              <p className="text-uppercase fs-18 fw-500 text-main-green" >
-                <BsFillCircleFill size={8} className="me-1" />  MEET OUR
-                TEAM
-              </p>
-              <h2 className="text-white fw-600 display-6 mb-3 mb-md-4" >
-                The spirit behind{" "}
-                <span className="text-main-green">Growpital</span>
-              </h2>
-            </Col>
-          </Row>
-
-          {/* <Superstars /> */}
           <SuperStars />
         </Container>
       </section>
 
       <section className="py-5">
         <Container fluid>
-         
-              <TestiSlider />
-        
+
+          <TestiSlider />
+
         </Container>
       </section>
 

@@ -20,16 +20,20 @@ const HomePageIntro = () => {
     
     useEffect(() => {
         if (homeIntro.length !== 0   ||homeIntro.id > 0) {
-            const {subtitle,card_A_title,card_B_title,card_C_title,gredian_text,title} = homeIntro.attributes
+            const {typewriter_text,subtitle,card_A_title,card_B_title,card_C_title,gredian_text,title} = homeIntro.attributes
             const {url:card_A_url} = homeIntro.attributes.card_A_icon.data.attributes
             const {url:card_B_url} = homeIntro.attributes.card_B_icon.data.attributes
             const {url:card_C_url} = homeIntro.attributes.card_C_icon.data.attributes
             const {url:image} = homeIntro.attributes.image.data.attributes
-
+            const typeWriteArry = typewriter_text.split(",")
+            const typeWrite_1 = typeWriteArry[0]
+            const typeWrite_2 = typeWriteArry[1]
+            const typeWrite_3 = typeWriteArry[2]
+      
     
           
             const newblogDetails= {
-                gredian_text,  title,subtitle,card_A_title,card_B_title,card_C_title ,card_A_url,card_B_url, card_C_url,image
+              typeWrite_1,typeWrite_2,typeWrite_3 , gredian_text,  title,subtitle,card_A_title,card_B_title,card_C_title ,card_A_url,card_B_url, card_C_url,image
             };
             setModifiedData(newblogDetails);
         } else {
@@ -54,7 +58,7 @@ const HomePageIntro = () => {
     if (!modifiedData) {
         return <h2>No Details</h2>;
     } else {
-        const { title,subtitle,gredian_text,card_A_url,card_B_url, card_C_url,image    } = modifiedData;
+        const { title,subtitle,gredian_text,card_A_url,card_B_url, card_C_url,image  ,typeWrite_1, typeWrite_2, typeWrite_3  } = modifiedData;
 
         return (
             <>
@@ -78,7 +82,7 @@ const HomePageIntro = () => {
           {title} <span className="text-main-green pe-2"> <BsArrowRight /></span>
           <span className="text-main-green ">
             <Typewriter
-              words={['Tax Free', 'Regular Payout', 'Fixed Payout']}
+              words={[typeWrite_1,typeWrite_2 ,typeWrite_3]}
               loop={3}
               cursor
               cursorStyle='|'

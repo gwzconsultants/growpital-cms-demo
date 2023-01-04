@@ -4,6 +4,7 @@ import FaqsSlice from "../redux/faqs-page/FaqsSlice";
 import AboutSlice from "../redux/about-page/AboutSlice";
 import contactUsSlice from "../redux/contact-page/contactUsSlice";
 import HomePageSlice from "../redux/home-page/HomePageSlice";
+import FooterSlice from "../redux/footer/FooterSlice";
 
 
 
@@ -14,7 +15,8 @@ export default configureStore({
       faqs : FaqsSlice,
       home : HomePageSlice,
       aboutUsPage : AboutSlice,
-      contactUs:contactUsSlice
+      contactUs:contactUsSlice,
+      Footer:FooterSlice,
 
     } 
 })

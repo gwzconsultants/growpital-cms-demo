@@ -73,6 +73,19 @@ export const fetchTestimonial = createAsyncThunk("fetchTestimonial", async()=>{
     
 });
 
+export const fetchHomePageSuperStar = createAsyncThunk("fetchHomePageSuperStar", async()=>{
+
+    return fetch(`${process.env.REACT_APP_BASE_URL}/api/home-page-superstar`).then(
+    (res)=> res.json() )
+    
+});
+export const fetchHomePageServiceCard = createAsyncThunk("fetchHomePageServiceCard", async()=>{
+
+    return fetch(`${process.env.REACT_APP_BASE_URL}/api/home-service-card`).then(
+    (res)=> res.json() )
+    
+});
+
 const homePageSlice = createSlice({
     name: "home page",
     initialState: {
@@ -84,7 +97,9 @@ const homePageSlice = createSlice({
         counter: [],
         counterText:[],
         plans: [],
+        ServiceCard_heading: [],
         teem:[],
+        teemHeading:[],
         que:[],
         faqsAccords:[],
         joinTelegram:[],
@@ -231,7 +246,29 @@ const homePageSlice = createSlice({
             state.testimonial = action.payload.data;  
                        ;  
         },
-        [fetchTestimonial.rejected]: (state,action) =>{
+        [ fetchHomePageSuperStar.rejected]: (state,action) =>{
+            state.laoding = false
+            state.error = action.payload
+        },
+        [ fetchHomePageSuperStar.fulfilled]: (state,action) =>{
+            state.laoding = false;
+            state.teemHeading = action.payload.data;  
+                       ;  
+        },
+        [ fetchHomePageSuperStar.rejected]: (state,action) =>{
+            state.laoding = false
+            state.error = action.payload
+        },
+        [ fetchHomePageServiceCard.rejected]: (state,action) =>{
+            state.laoding = false
+            state.error = action.payload
+        },
+        [ fetchHomePageServiceCard.fulfilled]: (state,action) =>{
+            state.laoding = false;
+            state.ServiceCard_heading = action.payload.data;  
+                       
+        },
+        [ fetchHomePageServiceCard.rejected]: (state,action) =>{
             state.laoding = false
             state.error = action.payload
         },

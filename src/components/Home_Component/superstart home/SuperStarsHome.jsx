@@ -6,7 +6,8 @@ import { Autoplay, EffectCards } from 'swiper';
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { fetchSuperstarHome } from '../../../redux/home-page/HomePageSlice';
+import { fetchHomePageSuperStar, fetchSuperstarHome } from '../../../redux/home-page/HomePageSlice';
+import { BsFillCircleFill } from 'react-icons/bs';
 
 
 const SuperStars = () => {
@@ -89,27 +90,42 @@ const SuperStars = () => {
   //   },
   // ];
 
-  const { loading,teem , error } = useSelector((state) => ({ ...state.home }))
+  const { loading, teem, teemHeading, error } = useSelector((state) => ({ ...state.home }))
   const [modifiedBlog, setModifiedBlogs] = useState([])
+  const [modifiedData, setModifiedData] = useState([])
   const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(fetchSuperstarHome())
+    dispatch(fetchHomePageSuperStar())
   }, [dispatch])
-  
-  
+
+
   useEffect(() => {
+    if (teemHeading.length !== 0 || teemHeading.id > 0) {
+      const { subtitle, title } = teemHeading.attributes
+
+
+
+      const newblogDetails = {
+        subtitle, title
+      };
+      setModifiedData(newblogDetails);
+    } else {
+      setModifiedData(null);
+    }
+
     if (teem) {
       const newBlogs = teem.map(item => {
-        const { name,position,about_us ,linkdin_url } = item.attributes;
+        const { name, position, about_us, linkdin_url } = item.attributes;
         const { id } = item;
         const { url } = item.attributes.image.data.attributes;
-       
+
         // NewDate.split('T')[0];
-      
+
 
         return {
-          name,position,about: about_us,url,id,linkdin:linkdin_url
+          name, position, about: about_us, url, id, linkdin: linkdin_url
 
         }
       })
@@ -133,87 +149,112 @@ const SuperStars = () => {
   if (error) {
     return (<p>{error.massage}</p>)
   }
-  return (
-    <Swiper
-      breakpoints={{
-        0: {
-          spaceBetween: 10,
-          slidesPerView: 1,
-        },
-
-        576: {
-          spaceBetween: 10,
-          slidesPerView: 1,
-        },
-        768: {
-
-          slidesPerView: 1,
-        },
-        1000: {
-
-          slidesPerView: 2,
-        },
-        1200: {
-
-          slidesPerView: 2,
-        },
-
-      }}
-      modules={[Autoplay, EffectCards]}
-      spaceBetween={5}
-      speed={500}
-      slidesPerView={2}
-      grabCursor={true}
-      loop={true}
-      effect={"fade"}
-      autoplay={
-        {
-          delay: 3000,
-          disableOnInteraction: false,
-        }
-      }
 
 
-    >
 
-      <Row className="d-flex justify-content-center align-items-start pt-3 superstars">
-        <Col md={12} className="d-none d-md-block px-5">
-          {modifiedBlog.map((Items) => (
-            <SwiperSlide key={Items.id} >
-              <Col md={12} className=" px-1 " >
-                <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
-                  <Card.Body className="m-1 bg-dark-gradient rounded p-4">
-                    <Row>
-                      <Col xs={12} md={4}>
-                        <Image src={`${process.env.REACT_APP_BASE_URL}${Items.url}`} className="img-fluid w-100 mb-md-0 mb-3" alt="" />
-                      </Col>
-                      <Col xs={12} md={8}>
-                        <Card.Title className="fw-600 fs-20 mb-0 pt-2">
-                          {Items.name}
-                        </Card.Title>
-                        <Card.Title className="fw-600 fs-14 mb-3 pt-2 text-italian">
-                          <cite>{Items.position}</cite>
-                          <a href={Items.linkdin} target="blank">
-                            <AiFillLinkedin size={18} className="ms-2 text-indigo" />
-                          </a>
-                        </Card.Title>
-                        <Card.Text className="fw-300 fs-15 lh-24">
-                          {Items.about}
-                        </Card.Text>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
+
+  if (!modifiedData) {
+    return <h2>No Details</h2>;
+  } else {
+    const { title, subtitle } = modifiedData;
+
+    return (
+      <>
+        {loading ? (
+          <h2>Loading...</h2>
+        ) : (
+          <>
+            <Row className="d-flex justify-content-center align-items-center">
+              <Col className="text-center" data-aos="fade-up" >
+                <p className="text-uppercase fs-18 fw-500 text-main-green" >
+                  <BsFillCircleFill size={8} className="me-1" /> {subtitle}
+                </p>
+                <h2 className="text-white fw-600 display-6 mb-3 mb-md-4"  dangerouslySetInnerHTML={{__html: modifiedData["title"]}} >
+                
+                </h2>
               </Col>
-            </SwiperSlide>
-          ))}
-          {/* </section> */}
-        </Col>
-      </Row>
+            </Row>
+            <Swiper
+              breakpoints={{
+                0: {
+                  spaceBetween: 10,
+                  slidesPerView: 1,
+                },
 
-      ...
-    </Swiper>
-  )
+                576: {
+                  spaceBetween: 10,
+                  slidesPerView: 1,
+                },
+                768: {
+
+                  slidesPerView: 1,
+                },
+                1000: {
+
+                  slidesPerView: 2,
+                },
+                1200: {
+
+                  slidesPerView: 2,
+                },
+
+              }}
+              modules={[Autoplay, EffectCards]}
+              spaceBetween={5}
+              speed={500}
+              slidesPerView={2}
+              grabCursor={true}
+              loop={true}
+              effect={"fade"}
+              autoplay={
+                {
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }
+              }
+
+
+            >
+
+              <Row className="d-flex justify-content-center align-items-start pt-3 superstars">
+                <Col md={12} className="d-none d-md-block px-5">
+                  {modifiedBlog.map((Items) => (
+                    <SwiperSlide key={Items.id} >
+                      <Col md={12} className=" px-1 " >
+                        <Card className="darkcard mb-4 mb-md-4 p-0 rounded text-start text-white">
+                          <Card.Body className="m-1 bg-dark-gradient rounded p-4">
+                            <Row>
+                              <Col xs={12} md={4}>
+                                <Image src={`${process.env.REACT_APP_BASE_URL}${Items.url}`} className="img-fluid w-100 mb-md-0 mb-3" alt="" />
+                              </Col>
+                              <Col xs={12} md={8}>
+                                <Card.Title className="fw-600 fs-20 mb-0 pt-2">
+                                  {Items.name}
+                                </Card.Title>
+                                <Card.Title className="fw-600 fs-14 mb-3 pt-2 text-italian">
+                                  <cite>{Items.position}</cite>
+                                  <a href={Items.linkdin} target="blank">
+                                    <AiFillLinkedin size={18} className="ms-2 text-indigo" />
+                                  </a>
+                                </Card.Title>
+                                <Card.Text className="fw-300 fs-15 lh-24">
+                                  {Items.about}
+                                </Card.Text>
+                              </Col>
+                            </Row>
+                          </Card.Body>
+                        </Card>
+                      </Col>
+                    </SwiperSlide>
+                  ))}
+                  {/* </section> */}
+                </Col>
+              </Row>
+
+              ...
+            </Swiper>
+          </>
+        )}</>)
+  }
 }
-
 export default SuperStars
